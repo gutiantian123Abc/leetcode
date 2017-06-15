@@ -1,4 +1,4 @@
-/* Connecting Graph
+/* Connecting Graph I
 Given n nodes in a graph labeled from 1 to n. 
 There is no edges in the graph at beginning.
 
@@ -37,11 +37,11 @@ public class ConnectingGraph {
     
     public void connect(int a, int b) { //Union O(1)
         // Write your code here
-        int root1 = find(a);
-        int root2 = find(b);
+        int root_a = find(a);
+        int root_b = find(b);
         
-        if(root1 != root2) {
-            father[root1] = root2;
+        if(root_a != root_b) {
+            father[root_b] = root_a;
         }
     }
     
@@ -49,9 +49,74 @@ public class ConnectingGraph {
         
     public boolean  query(int a, int b) { //Find(Path Compression O(1))
         // Write your code here
-        int root1 = find(a);
-        int root2 = find(b);
+        int root_a = find(a);
+        int root_b = find(b);
         
-        return root1 == root2;
+        return root_a == root_b;
+    }
+}
+
+
+
+
+
+/* Connecting Graph II
+Given n nodes in a graph labeled from 1 to n. There is no edges in the graph at beginning.
+
+You need to support the following method:
+1. connect(a, b), an edge to connect node a and node b
+2. query(a), Returns the number of connected component nodes which include node a.
+
+Example
+5 // n = 5
+query(1) return 1
+connect(1, 2)
+query(1) return 2
+connect(2, 4)
+query(1) return 3
+connect(1, 4)
+query(1) return 3
+*/
+
+public class ConnectingGraph2 {
+    private int[] father;
+    private int[] size;
+
+    public ConnectingGraph2(int n) {
+        // initialize your data structure here.
+        father = new int[n + 1];
+        size = new int[n + 1];
+    
+        for(int i = 1; i < n + 1; i++) {
+            father[i] = i;
+            size[i] = 1;
+        }
+    }
+    
+    private int find(int x) {
+        if(father[x] == x) {
+            return x;
+        }
+        
+        father[x] = find(father[x]);
+        
+        return father[x];
+    }
+
+    public void connect(int a, int b) {
+        // Write your code here
+        int root_a = find(a);
+        int root_b = find(b);
+        
+        if(root_a != root_b) {
+            father[root_b] = root_a;
+            size[root_a] += size[root_b];
+        }
+    }
+        
+    public int query(int a) {
+        // Write your code here
+        int root_a = find(a);
+        return size[root_a];
     }
 }
