@@ -1,0 +1,4 @@
+PriorityQueue:
+insert O(logn)
+remove O(logn)
+getMin/Max O(1)
