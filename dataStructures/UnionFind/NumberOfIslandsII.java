@@ -45,9 +45,7 @@ public class Solution {
             }
         }
         
-        public void initilize(int x) {
-            father[x] = x;
-        }
+
         
         private int find(int x) {
             if(father[x] == x) {
@@ -95,7 +93,6 @@ public class Solution {
                 grid[x][y] = 1;
                 int root_current = uf.find(id);
                 count++;
-                uf.initilize(id);
                 for(int i = 0; i < 4; i++) {
                     int nx = x + dx[i];
                     int ny = y + dy[i];
