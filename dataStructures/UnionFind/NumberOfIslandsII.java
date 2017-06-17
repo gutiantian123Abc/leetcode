@@ -62,7 +62,7 @@ public class Solution {
             int root_b = find(b);
             
             if(root_a != root_b) {
-                father[root_b] = root_a;
+                father[root_b] = root_a; //一定注意这里， 是老大和老大间服从
             }
         } 
     }
@@ -119,3 +119,150 @@ public class Solution {
         return true;
     }
 }
+
+
+
+
+//HashMap Union Find Method
+/**
+ * Definition for a point.
+ * class Point {
+ *     int x;
+ *     int y;
+ *     Point() { x = 0; y = 0; }
+ *     Point(int a, int b) { x = a; y = b; }
+ * }
+ */
+public class Solution {
+    /**
+     * @param n an integer
+     * @param m an integer
+     * @param operators an array of point
+     * @return an integer array
+     */
+    public int convertId(int x, int y, int m) {
+        return x * m + y;
+    }
+     
+    public class UnionFind {
+        private HashMap<Integer, Integer> father;
+        
+        public UnionFind(int n, int m) {
+            father = new HashMap<Integer, Integer>();
+            for(int i = 0; i < n; i++) {
+                for(int j = 0; j < m; j++) {
+                    int id = convertId(i, j, m);
+                    father.put(id, id);
+                }
+            }
+        }
+        
+        
+        public int find(int x) {
+            if(father.get(x) == x) {
+                return x;
+            }
+            
+            int parent = father.get(x);
+            
+            while(parent != father.get(parent)) {
+                parent = father.get(parent);
+            }
+            
+            int temp = -1;
+            int fa = x;
+            
+            while(fa != father.get(fa)) {
+                temp = father.get(fa);
+                father.put(fa, parent);
+                fa = temp;
+            }
+            
+            return parent;
+        }
+        
+        
+        public void union(int a, int b) {
+            int root_a = father.get(a);
+            int root_b = father.get(b);
+            
+            if(root_a != root_b) {
+                father.put(root_a, root_b); //一定注意这里， 是老大和老大间服从
+            }
+        }
+        
+        public boolean sameUnion(int a, int b) {
+            int root_a = find(a);
+            int root_b = find(b);
+            
+            return root_a == root_b;
+        }
+        
+    }
+    
+    private boolean inBound(int x, int y, int n, int m) {
+        return x >= 0 && x < n && y >= 0 && y < m;
+    }
+    
+    public List<Integer> numIslands2(int n, int m, Point[] operators) {
+        // Write your code here
+        List<Integer> ans = new ArrayList<Integer>();
+        
+        if(operators == null || operators.length == 0) {
+            return ans;
+        }
+        
+        int[][] grid = new int[n][m];
+        
+        int count = 0;
+
+        int[] dx = {0, 1, 0, -1};
+        int[] dy = {1, 0, -1, 0};
+        
+        UnionFind uf = new UnionFind(n, m);
+        
+        for(Point point : operators) {
+            int x = point.x;
+            int y = point.y;
+            int id = convertId(x, y, m);
+            
+            if(grid[x][y] != 1) {
+                count++;
+                grid[x][y] = 1;
+                
+                for(int i = 0; i < 4; i++) {
+                    
+                    int nx = x + dx[i];
+                    int ny = y + dy[i];
+                    
+                    if(inBound(nx, ny, n, m)) {
+                        int nid = convertId(nx, ny, m);
+                    
+                        if(!uf.sameUnion(id, nid) && grid[nx][ny] == 1) {
+                            uf.union(id, nid);
+                            count--;
+                        }
+                    }
+                    
+                
+                }
+            }
+            
+            ans.add(count);
+        }
+        
+        
+        return ans;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
