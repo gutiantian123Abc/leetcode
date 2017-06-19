@@ -12,8 +12,8 @@ Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]], return false.
 
 Knowledge:
 For a graph to be a tree: 符合两个条件：
-1、 边的数必须等于点数 - 1
-2. 从一个点做BFS 或DFS可以碰到所有点
+1、 边的数必须等于点数 - 1 (判断是否有环)
+2. 从一个点做BFS 或DFS可以碰到所有点 （判断是否都联通）
 */
 
 public class Solution {
