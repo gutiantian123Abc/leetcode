@@ -85,7 +85,7 @@ public class WordDictionary {
             if(letter == '.') {
                 for(int i = 0; i < size; i++) {
                     TrieNode cur = queue.poll();
-                    for(TrieNode child : cur.children.values()) {
+                    for(TrieNode child : cur.children.values()) { //记住， 无论BFS或DFS都是word[index]与curNode.children 作比较， 因为index总是比root晚一步
                         queue.add(child);
                         flag |= child.hasWord;
                     }
@@ -100,7 +100,7 @@ public class WordDictionary {
                 for(int i = 0; i < size; i++) {
                     TrieNode cur = queue.poll();
                     if(cur.children.containsKey(letter)) {
-                        TrieNode child = cur.children.get(letter);
+                        TrieNode child = cur.children.get(letter);//记住， 无论BFS或DFS都是word[index]与curNode.children 作比较， 因为index总是比root晚一步
                         queue.add(child);
                         flag |= child.hasWord;
                     }
