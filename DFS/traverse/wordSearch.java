@@ -5,7 +5,10 @@ A word can start from any position in the matrix and go left/right/up/down to th
 */
 //http://www.lintcode.com/en/problem/word-search-ii/
 
-//DFS solution:  Tire + DFS 搜索矩阵类字符串
+//ONly solution！！！！！！:  Tire + DFS 搜索矩阵类字符串
+//知识点： 此种在char matrix 里面用Trie搜索字符串的问题不能用BFS(区别于在Trie里用BFS找word)， 在这里我们是用DFS或BFS配合Trie在matrix里面
+//遍历， 而不是用BFS或DFS遍历Trie, 所以只能用DFS+Trie
+
 public class Solution {
     /**
      * @param board: A list of lists of character

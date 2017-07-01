@@ -14,7 +14,7 @@ search("bad")  // return true
 search(".ad")  // return true
 search("b..")  // return true
 */
-
+//知识要点： 这里因为是在遍历Trie找词， 所以BFS和在DFS都可以应用， 但WordSearch题目里则只能用DFS！！！
 /*BFS + Tire*/
 public class WordDictionary {
     
