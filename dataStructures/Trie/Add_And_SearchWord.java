@@ -14,7 +14,7 @@ search("bad")  // return true
 search(".ad")  // return true
 search("b..")  // return true
 */
-
+//知识要点： 这里因为是在遍历Trie找词， 所以BFS和在DFS都可以应用， 但WordSearch题目里则只能用DFS！！！
 /*BFS + Tire*/
 public class WordDictionary {
     
@@ -22,7 +22,7 @@ public class WordDictionary {
         public char c;
         public HashMap<Character, TrieNode> children;
         public boolean hasWord;
-        
+        public String word;
         public TrieNode() {
             children = new HashMap<Character, TrieNode>();
             hasWord = false;
@@ -45,25 +45,19 @@ public class WordDictionary {
     // Adds a word into the data structure.
     public void addWord(String word) {
         // Write your code here
-        TrieNode curNode = root;
-        char[] wordArray = word.toCharArray();
-        HashMap<Character, TrieNode> children = root.children;
-        for(int i = 0; i < wordArray.length; i++) {
-            char curWord = wordArray[i];
-            if(!children.containsKey(curWord)) {
-                TrieNode newNode = new TrieNode(curWord);
-                children.put(curWord, newNode);
-                curNode = newNode;
-            }else {
-                curNode = children.get(curWord);
+            TrieNode curNode = root;
+            char[] wordArray = word.toCharArray();
+            for(int i = 0; i < wordArray.length; i++) {
+                char c = wordArray[i];
+                if(!curNode.children.containsKey(c)) {
+                    curNode.children.put(c, new TrieNode(c));
+                }
+                
+                curNode = curNode.children.get(c);
             }
             
-            children = curNode.children;
-            
-            if(i == wordArray.length - 1) {
-                curNode.hasWord = true;
-            }
-        }
+            curNode.word = word;
+            curNode.hasWord = true;
     }
 
     // Returns if the word is in the data structure. A word could
@@ -156,26 +150,19 @@ public class WordDictionary {
 
     // Adds a word into the data structure.
     public void addWord(String word) {
-        // Write your code here
-        TrieNode curNode = root;
-        char[] wordArray = word.toCharArray();
-        HashMap<Character, TrieNode> children = root.children;
-        for(int i = 0; i < wordArray.length; i++) {
-            char curWord = wordArray[i];
-            if(!children.containsKey(curWord)) {
-                TrieNode newNode = new TrieNode(curWord);
-                children.put(curWord, newNode);
-                curNode = newNode;
-            }else {
-                curNode = children.get(curWord);
+            TrieNode curNode = root;
+            char[] wordArray = word.toCharArray();
+            for(int i = 0; i < wordArray.length; i++) {
+                char c = wordArray[i];
+                if(!curNode.children.containsKey(c)) {
+                    curNode.children.put(c, new TrieNode(c));
+                }
+                
+                curNode = curNode.children.get(c);
             }
             
-            children = curNode.children;
-            
-            if(i == wordArray.length - 1) {
-                curNode.hasWord = true;
-            }
-        }
+            curNode.word = word;
+            curNode.hasWord = true;
     }
 
 

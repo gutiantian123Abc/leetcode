@@ -27,6 +27,7 @@ class TrieNode {
     // Initialize your data structure here.
     public boolean hasWord;
     public char c;
+    public String word;
     public HashMap<Character, TrieNode> children;
     public TrieNode() {
         this.hasWord = false;
@@ -47,51 +48,34 @@ public class Trie {
 
     // Inserts a word into the trie.
     public void insert(String word) {
-        TrieNode curNode = root;//注意， 因为这里是root啥都没有， 所以先改进curNode, children, 后check hasWord
-        HashMap<Character, TrieNode> children = root.children;
-        char[] wordArray = word.toCharArray();
-        for(int i = 0; i < wordArray.length; i++) {
-            char curWord = wordArray[i];
-            if(children.containsKey(curWord)) {
-                curNode = children.get(curWord);
-            }else {
-                TrieNode newNode = new TrieNode(curWord);
-                children.put(curWord, newNode);
-                curNode = newNode;//注意， 因为这里是root啥都没有， 所以先改进curNode, children, 后check hasWord
+            TrieNode curNode = root;
+            char[] wordArray = word.toCharArray();
+            for(int i = 0; i < wordArray.length; i++) {
+                char c = wordArray[i];
+                if(!curNode.children.containsKey(c)) {
+                    curNode.children.put(c, new TrieNode(c));
+                }
+                
+                curNode = curNode.children.get(c);
             }
             
-            children = curNode.children; //注意， 因为这里是root啥都没有， 所以先改进curNode, children, 后check hasWord
-            
-            if(i == wordArray.length - 1) {//注意， 因为这里是root啥都没有， 所以先改进curNode, children, 后check hasWord
-                curNode.hasWord = true;
-            }
-        }
+            curNode.word = word;
+            curNode.hasWord = true;
     }
 
     // Returns if the word is in the trie.
     public boolean search(String word) {
-        char[] wordArray = word.toCharArray();
-        TrieNode curNode = root;
-        HashMap<Character, TrieNode> children = root.children;
-        for(int i = 0; i < wordArray.length; i++) {
-            char curWord = wordArray[i];
-            if(!children.containsKey(curWord)) {
-                return false;
-            }else {
-                curNode = children.get(curWord);
-                children = curNode.children;//注意， 因为这里是root啥都没有， 所以先改进curNode, children, 后check hasWord
-            }
-            
-            if(i == wordArray.length - 1) {//注意， 因为这里是root啥都没有， 所以先改进curNode, children, 后check hasWord
-                if(curNode.hasWord) {
-                    return true;
-                }else {
+            TrieNode curNode = root;
+            char[] wordArray = word.toCharArray();
+            for(int i = 0; i < wordArray.length; i++) {
+                char c = wordArray[i];
+                if(!curNode.children.containsKey(c)) {
                     return false;
                 }
+                curNode = curNode.children.get(c);
             }
-        }
-        
-        return true;
+            
+            return curNode.hasWord;
     }
 
     // Returns if there is any word in the trie
