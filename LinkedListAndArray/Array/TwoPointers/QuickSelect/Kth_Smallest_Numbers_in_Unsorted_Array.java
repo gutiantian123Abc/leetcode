@@ -21,7 +21,7 @@ class Solution {
         }
         
         int i = start, j = end;
-        int pivot = nums[(start + end) / 2];
+        int pivot = nums[start + (end - start) / 2];
         while(i <= j) {
         	//必须是：nums[i] < pivot， 不能是 nums[i] <= pivot, 对比分区划分Partition Array！！！这里与分区或分数划分不同的原因在于我们最后可以乘return nums[j + 1]的便利
             while(i <= j && nums[i] < pivot) {
