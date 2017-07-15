@@ -25,8 +25,9 @@ public class Solution {
      * @param nums: A list of integers.
      * @return: the median of numbers
      */
+    private int numElement = 0;
     private Comparator<Integer> minComparator= new Comparator<Integer>() { //minheap, 记住， top ... largest //就用 minheap, smallest 就用maxheap
-        public int compare(Integer a, Integer b) { //记住这里一定用Integer, 不能用int
+        public int compare(Integer a, Integer b) {
             if(a > b) {
                 return 1;
             }else if(a < b) {
@@ -38,7 +39,7 @@ public class Solution {
     };
     
     private Comparator<Integer> maxComparator= new Comparator<Integer>() { //minheap, 记住， top ... largest //就用 minheap, smallest 就用maxheap
-        public int compare(Integer a, Integer b) {//记住这里一定用Integer, 不能用int
+        public int compare(Integer a, Integer b) {
             if(a > b) {
                 return -1;
             }else if(a < b) {
@@ -65,13 +66,29 @@ public class Solution {
         return result;
     }
     
-    private void addNum(int num) { //巧妙， 记住
-        maxHeap.offer(num);
-        minHeap.offer(maxHeap.poll());
-        if(maxHeap.size() < minHeap.size()) {
-            maxHeap.offer(minHeap.poll());
+    private void addNum(int num) {
+        if(maxHeap.size() == minHeap.size()) {
+            maxHeap.offer(num);
+            if(minHeap.size() == 0) {
+                return;
+            }else {
+                transit(maxHeap, minHeap);
+            }
+        }else {
+            minHeap.offer(num);
+            transit(maxHeap, minHeap);
         }
     }
+    
+    private void transit(PriorityQueue<Integer> maxheap, PriorityQueue<Integer> minheap) { //俩PriorityQueue求median倒腾
+            if(maxHeap.peek() > minHeap.peek()) {
+                Integer maxPeek = maxHeap.poll();
+                Integer minPeek = minHeap.poll();
+                maxHeap.offer(minPeek);
+                minHeap.offer(maxPeek);
+            }
+    }
+    
     
     private int getMedian() {
         return maxHeap.peek();
