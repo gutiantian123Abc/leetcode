@@ -85,12 +85,12 @@ public class Solution {
     }
     
     private void transit(PriorityQueue<Integer> maxheap, PriorityQueue<Integer> minheap) { //俩PriorityQueue求median倒腾
-            if(maxHeap.peek() > minHeap.peek()) {
-                Integer maxPeek = maxHeap.poll();
-                Integer minPeek = minHeap.poll();
-                maxHeap.offer(minPeek);
-                minHeap.offer(maxPeek);
-            }
+        if(maxHeap.peek() > minHeap.peek()) {
+            Integer maxPeek = maxHeap.poll();
+            Integer minPeek = minHeap.poll();
+            maxHeap.offer(minPeek);
+            minHeap.offer(maxPeek);
+        }
     }
     
     
