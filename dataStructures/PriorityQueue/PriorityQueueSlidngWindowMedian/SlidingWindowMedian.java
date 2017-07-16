@@ -53,8 +53,8 @@ public class Solution {
 	    }
 	}
 
-	public  ArrayList<Integer> medianSlidingWindow(int[] nums, int k) {
 
+	public ArrayList<Integer> medianSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         TreeSet<Node> minheap = new TreeSet<Node>();
         TreeSet<Node> maxheap = new TreeSet<Node>();
