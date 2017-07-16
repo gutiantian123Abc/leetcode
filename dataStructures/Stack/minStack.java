@@ -15,6 +15,8 @@ push(1)
 min()   // return 1
 */
 
+//非常重要的题目，如何测量一串数add, remove, min都是O(1), Space(n)
+
 public class MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
