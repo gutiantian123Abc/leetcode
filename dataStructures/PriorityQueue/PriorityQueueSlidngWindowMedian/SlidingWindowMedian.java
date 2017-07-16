@@ -56,22 +56,22 @@ public class Solution {
 
 	public ArrayList<Integer> medianSlidingWindow(int[] nums, int k) {
             int n = nums.length;
-        TreeSet<Node> minheap = new TreeSet<Node>();
-        TreeSet<Node> maxheap = new TreeSet<Node>();
-        ArrayList<Integer> result = new ArrayList<Integer> ();
-        
-        if (k == 0)
-            return result;
+            TreeSet<Node> minheap = new TreeSet<Node>();
+            TreeSet<Node> maxheap = new TreeSet<Node>();
+            ArrayList<Integer> result = new ArrayList<Integer> ();
+            
+            if (k == 0)
+                return result;
 
-        for(int i = 0; i < k - 1; i++) {
-            add(minheap, maxheap, new Node(i, nums[i]));
-        }
-        for(int i = k - 1; i < n; i++) {
-            add(minheap, maxheap, new Node(i, nums[i]));
-            result.add(maxheap.last().val);
-            remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));
-        }
-        return result;
+            for(int i = 0; i < k - 1; i++) {
+                add(minheap, maxheap, new Node(i, nums[i]));
+            }
+            for(int i = k - 1; i < n; i++) {
+                add(minheap, maxheap, new Node(i, nums[i]));
+                result.add(maxheap.last().val);
+                remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));
+            }
+            return result;
     }
     
     
