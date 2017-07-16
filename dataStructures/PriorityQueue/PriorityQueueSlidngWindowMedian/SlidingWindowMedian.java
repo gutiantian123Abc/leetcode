@@ -94,14 +94,14 @@ public class Solution {
 	}
 	
 	private void transit(TreeSet<Node>maxheap, TreeSet<Node> minheap) {  
-			if (minheap.first().val < maxheap.last().val) {
-				Node s = minheap.first();
-				Node b = maxheap.last();
-				minheap.remove(s);
-				maxheap.remove(b);
-				minheap.add(b);
-				maxheap.add(s);
-			}
+		if (minheap.first().val < maxheap.last().val) {
+			Node s = minheap.first();
+			Node b = maxheap.last();
+			minheap.remove(s);
+			maxheap.remove(b);
+			minheap.add(b);
+			maxheap.add(s);
+		}
 	}
 	
 	private void remove(TreeSet<Node>minheap, TreeSet<Node> maxheap, Node node) {
