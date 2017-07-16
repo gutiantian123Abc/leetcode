@@ -74,7 +74,11 @@ public class Solution {
             }else {
                 transit(maxHeap, minHeap);
             }
-        }else {
+        }else if(maxHeap.size() < minHeap.size()) {
+            maxHeap.offer(num);
+            transit(maxHeap, minHeap);
+        }
+        else { //maxHeap.size() > minHeap.size()
             minHeap.offer(num);
             transit(maxHeap, minHeap);
         }
