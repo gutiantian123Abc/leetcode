@@ -38,78 +38,78 @@ public class Solution {
 
 
 	public class Node implements Comparable<Node>{
-	    int id;
-	    int val;
-	    Node(int id, int val) {
-	        this.val = val;
-	    }
-	    public int compareTo(Node other) {//从小到大的TreeSet:(first())min ...... max(last())
-	        Node a = other;
-	        if(this.val == a.val) {
-	            return this.id - a.id;
-	        }else {
-	            return this.val - a.val;
-	        }
-	    }
+		int id;
+		int val;
+		Node(int id, int val) {
+			this.val = val;
+		}
+		public int compareTo(Node other) {//从小到大的TreeSet:(first())min ...... max(last())
+			Node a = other;
+			if(this.val == a.val) {
+				return this.id - a.id;
+			}else {
+				return this.val - a.val;
+			}
+		}
 	}
 
 
 	public ArrayList<Integer> medianSlidingWindow(int[] nums, int k) {
-            int n = nums.length;
-            TreeSet<Node> minheap = new TreeSet<Node>();
-            TreeSet<Node> maxheap = new TreeSet<Node>();
-            ArrayList<Integer> result = new ArrayList<Integer> ();
-            
-            if (k == 0)
-                return result;
+			int n = nums.length;
+			TreeSet<Node> minheap = new TreeSet<Node>();
+			TreeSet<Node> maxheap = new TreeSet<Node>();
+			ArrayList<Integer> result = new ArrayList<Integer> ();
+			
+			if (k == 0)
+				return result;
 
-            for(int i = 0; i < k - 1; i++) {
-                add(minheap, maxheap, new Node(i, nums[i]));
-            }
-            for(int i = k - 1; i < n; i++) {
-                add(minheap, maxheap, new Node(i, nums[i]));
-                result.add(maxheap.last().val);
-                remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));
-            }
-            return result;
-    }
-    
-    
-    private void add(TreeSet<Node>minheap, TreeSet<Node> maxheap, Node node) {//经典模板！！！用于两个Heap维护Median
-        if(maxheap.size() == minheap.size()) {
-            maxheap.add(node);
-            if(minheap.size() == 0) {
-                return;
-            }else {
-                transit(maxheap, minheap);
-            }
-        }else if(maxheap.size() < minheap.size()) {
-            maxheap.add(node);
-            transit(maxheap, minheap);
-        }
-        else {
-            minheap.add(node);
-            transit(maxheap, minheap);
-        }
-    }
-    
-    private void transit(TreeSet<Node>maxheap, TreeSet<Node> minheap) {  
-            if (minheap.first().val < maxheap.last().val) {
-                Node s = minheap.first();
-                Node b = maxheap.last();
-                minheap.remove(s);
-                maxheap.remove(b);
-                minheap.add(b);
-                maxheap.add(s);
-            }
-    }
-    
-    private void remove(TreeSet<Node>minheap, TreeSet<Node> maxheap, Node node) {
-        if (maxheap.contains(node)) {
-            maxheap.remove(node);
-        }else {
-            minheap.remove(node);
-        }
-    }
+			for(int i = 0; i < k - 1; i++) {
+				add(minheap, maxheap, new Node(i, nums[i]));
+			}
+			for(int i = k - 1; i < n; i++) {
+				add(minheap, maxheap, new Node(i, nums[i]));
+				result.add(maxheap.last().val);
+				remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));
+			}
+			return result;
+	}
+	
+	
+	private void add(TreeSet<Node>minheap, TreeSet<Node> maxheap, Node node) {//经典模板！！！用于两个Heap维护Median
+		if(maxheap.size() == minheap.size()) {
+			maxheap.add(node);
+			if(minheap.size() == 0) {
+				return;
+			}else {
+				transit(maxheap, minheap);
+			}
+		}else if(maxheap.size() < minheap.size()) {
+			maxheap.add(node);
+			transit(maxheap, minheap);
+		}
+		else {
+			minheap.add(node);
+			transit(maxheap, minheap);
+		}
+	}
+	
+	private void transit(TreeSet<Node>maxheap, TreeSet<Node> minheap) {  
+			if (minheap.first().val < maxheap.last().val) {
+				Node s = minheap.first();
+				Node b = maxheap.last();
+				minheap.remove(s);
+				maxheap.remove(b);
+				minheap.add(b);
+				maxheap.add(s);
+			}
+	}
+	
+	private void remove(TreeSet<Node>minheap, TreeSet<Node> maxheap, Node node) {
+		if (maxheap.contains(node)) {
+			maxheap.remove(node);
+		}else {
+			minheap.remove(node);
+		}
+	}
 }
 
