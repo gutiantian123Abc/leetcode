@@ -34,7 +34,7 @@ public class Solution {
                 
             }else if(c == '[') {
                 
-                stack.push(Integer.valueOf(number));
+                stack.push(Integer.valueOf(number)); //Integer.valueOf(word)   String.valueOf(word) 注意用法
                 number = 0;
                 
             }else if(c == ']') {
