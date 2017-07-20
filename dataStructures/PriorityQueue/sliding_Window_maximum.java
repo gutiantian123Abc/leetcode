@@ -55,12 +55,12 @@ public class Solution {
         }
         for (int i = 0; i < k - 1; i++) { //记住， TreeSet.first() 是最小值， 而非第一个值
             pq.add(new Node(nums[i], i)); //TreeSet.last() 是最小值， 而非最后一个一个值
-        }
+        }//注意Sliding Window的做法
         
-        for(int i = k - 1; i < nums.length; i++) {
-            pq.add(new Node(nums[i], i));
+        for(int i = k - 1; i < nums.length; i++) {//注意Sliding Window的做法
+            pq.add(new Node(nums[i], i));//注意Sliding Window的做法
             ans.add(pq.last().val);
-            pq.remove(new Node(nums[i - k + 1], i - k + 1));
+            pq.remove(new Node(nums[i - k + 1], i - k + 1));//注意Sliding Window的做法
         }
         return ans;
 

@@ -63,14 +63,14 @@ public class Solution {
 		if (k == 0)
 			return result;
 
-		for(int i = 0; i < k - 1; i++) {
+		for(int i = 0; i < k - 1; i++) { //注意Sliding Window的做法
 			add(minheap, maxheap, new Node(i, nums[i]));
 		}
-		for(int i = k - 1; i < n; i++) {
+		for(int i = k - 1; i < n; i++) { //注意Sliding Window的做法
 			add(minheap, maxheap, new Node(i, nums[i])); //记住， TreeSet.first() 是最小值， 而非第一个值
 			result.add(maxheap.last().val);
 			remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));//TreeSet.last() 是最小值， 而非最后一个一个值
-		}
+		}//注意Sliding Window的做法
 		return result;
 	}
 	
