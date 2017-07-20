@@ -46,7 +46,7 @@ public class Solution {
 		public int compareTo(Node other) {//从小到大的TreeSet:(first())min ...... max(last())
 			Node a = other;
 			if(this.val == a.val) {
-				return this.id - a.id;
+				return this.id - a.id;//一定注意， TreeSet 加 id 是为了去处重复
 			}else {
 				return this.val - a.val;
 			}
@@ -67,9 +67,9 @@ public class Solution {
 			add(minheap, maxheap, new Node(i, nums[i]));
 		}
 		for(int i = k - 1; i < n; i++) {
-			add(minheap, maxheap, new Node(i, nums[i]));
+			add(minheap, maxheap, new Node(i, nums[i])); //记住， TreeSet.first() 是最小值， 而非第一个值
 			result.add(maxheap.last().val);
-			remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));
+			remove(minheap,maxheap, new Node(i - k + 1, nums[i - k + 1]));//TreeSet.last() 是最小值， 而非最后一个一个值
 		}
 		return result;
 	}
