@@ -55,10 +55,19 @@ public class Solution {
             newLine = 1 - newLine;
             
             for(int j = 0; j < n; j++) {
-                if(i == 0 || j == 0) {
-                    f[newLine][j] = 1;//记住， 永远是求f[newLine][j]!!!
-                }else {
-                    f[newLine][j] = f[oldLine][j] + f[newLine][j - 1];//记住， 永远是求f[newLine][j]!!!
+
+                f[newLine][j] = 0;//这一步是必须的， 因为后面有 +=
+
+                if(i == 0 && j == 0) {
+                    f[newLine][j] = 1;
+                }
+                
+                if(i > 0) {
+                    f[newLine][j] += f[oldLine][j];
+                }
+                
+                if(j > 0) {
+                    f[newLine][j] += f[newLine][j - 1];
                 }
              
             }
@@ -144,6 +153,62 @@ public class Solution {
         }
         
         return arr[m - 1][n - 1];
+    }
+}
+
+//Space saving version: Space: O(n)
+public class Solution {
+    /**
+     * @param obstacleGrid: A list of lists of integers
+     * @return: An integer
+     */
+    public int uniquePathsWithObstacles(int[][] c) {
+        // write your code here
+        if(c == null || c.length == 0 || c[0].length == 0) {
+            return 0;
+        }
+        
+        int m = c.length;
+        int n = c[0].length;
+        
+        
+        if (c[0][0] == 1 || c[m-1][n-1] == 1) {
+            return 0;
+        }
+
+        int[][] f = new int [2][n];
+        int oldLine = 0, newLine = 0;
+        
+        
+        for(int i = 0; i < m; i++) {
+            oldLine = newLine;//两行交替法
+            newLine = 1 - newLine;
+            
+            for(int j = 0; j < n; j++) {
+                
+                if(c[i][j] == 1) {
+                    f[newLine][j] = 0;
+                }else {
+                    
+                    f[newLine][j] = 0;//这一步是必须的， 因为后面有 +=
+                    
+                    if(i == 0 && j == 0) {
+                        f[newLine][j] = 1;
+                    }
+                    
+                    if(i > 0) {
+                        f[newLine][j] += f[oldLine][j];
+                    }
+                    
+                    if(j > 0) {
+                        f[newLine][j] += f[newLine][j - 1];
+                    }
+            
+                }
+            }
+        }
+        
+        return f[newLine][n - 1];
     }
 }
 
