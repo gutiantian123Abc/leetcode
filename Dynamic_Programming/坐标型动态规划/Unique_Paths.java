@@ -9,6 +9,7 @@ Given m = 3 and n = 3, return 6.
 Given m = 4 and n = 5, return 35.
 */
 
+//Normal method: Time: O(mn), Space: O(mn)
 public class Solution {
     /**
      * @param n, m: positive integer (1 <= n ,m <= 100)
@@ -37,6 +38,44 @@ public class Solution {
         
     }
 }
+
+//Space saving method: Space: O(n)Time: O(mn)
+public class Solution {
+    /**
+     * @param n, m: positive integer (1 <= n ,m <= 100)
+     * @return an integer
+     */
+    public int uniquePaths(int m, int n) {
+        // write your code he
+        int[][] f = new int[2][n];
+        int oldLine = 0, newLine = 0;
+        
+        for(int i = 0; i < m; i++) {
+            oldLine = newLine;//两行交替法
+            newLine = 1 - newLine;
+            
+            for(int j = 0; j < n; j++) {
+                if(i == 0 || j == 0) {
+                    f[newLine][j] = 1;//记住， 永远是求f[newLine][j]!!!
+                }else {
+                    f[newLine][j] = f[oldLine][j] + f[newLine][j - 1];//记住， 永远是求f[newLine][j]!!!
+                }
+             
+            }
+        }
+        
+        return f[newLine][n - 1];
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
