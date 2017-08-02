@@ -31,15 +31,15 @@ public class Solution {
         int oldLine = 0;
         int newLine = 0;
         
-        for(int i = 1; i <= houseNum; i++) {//以0作为基石的就要从1 到 <= n
+        for(int i = 0; i < houseNum; i++) {//以0作为基石的就要从1 到 <= n
             oldLine = newLine; //Toggle pointers
             newLine = 1 - newLine;
 
             for(int j = 0; j < colorNum; j++) {
                 f[newLine][j] = Integer.MAX_VALUE;
                 for(int k = 0; k < colorNum; k++) {
-                    if(k != j && f[oldLine][k] + costs[i - 1][j] < f[newLine][j]) {//迭代找与非自己加和最小
-                        f[newLine][j] = f[oldLine][k] + costs[i - 1][j];//注意cost[i - 1]下标
+                    if(k != j && f[oldLine][k] + costs[i][j] < f[newLine][j]) {//迭代找与非自己加和最小
+                        f[newLine][j] = f[oldLine][k] + costs[i][j];//注意cost[i - 1]下标
                     }
                 }
             }
