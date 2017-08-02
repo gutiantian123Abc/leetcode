@@ -1,4 +1,4 @@
-/* Paint House 
+/* Paint House I & II
 
 There are a row of n houses, each house can be painted with one of the three colors: red, blue or green. 
 The cost of painting each house with a certain color is different. 
@@ -45,6 +45,80 @@ public class Solution {
             }
         }
         
+        int res = Integer.MAX_VALUE;
+        for(int i = 0; i < colorNum; i++) {
+            res = Math.min(res, f[newLine][i]);
+        }
+        
+        return res;
+    }
+}
+
+
+
+
+/*
+更好的方法: 原理：
+f[i][j] = mink≠j {f[i-1][k]} + cost[i-1][j]
+如果最小值是第i个元素，次小值是第j个元素
+1. 只要除掉的元素不是第i个，剩下的最小值就是第i个元素
+2. 如果除掉的元素是第i个，剩下的最小值就是第j个元素
+Time: O(NK)
+Space: O(N)
+*/
+public class Solution {
+    /**
+     * @param costs n x 3 cost matrix
+     * @return an integer, the minimum cost to paint all houses
+     */
+    public int minCost(int[][] costs) {
+        // Write your code here
+        int houseNum = costs.length;
+        if(houseNum == 0) {
+            return 0;
+        }
+        
+        int colorNum = costs[0].length;
+        int[][] f = new int[2][colorNum];
+        int oldLine = 0;
+        int newLine = 0;
+        
+        for(int i = 0; i < houseNum; i++) {
+            oldLine = newLine;
+            newLine = 1 - newLine;
+            
+            //每次需要求f[i-1][1], …, f[i-1][K]中除了一个元素之外其他元素的最小值!!!!!!!!
+            //  |
+            //  |
+            int min1 = Integer.MAX_VALUE;
+            int min2 = Integer.MAX_VALUE;
+            
+            for(int j = 0; j < colorNum; j++) {
+                if(f[oldLine][j] < min1) {
+                    min2 = min1;
+                    min1 = f[oldLine][j];
+                }else {
+                    if(f[oldLine][j] < min2) {
+                        min2 = f[oldLine][j];
+                    }
+                }
+            }
+            
+            for(int j = 0; j < colorNum; j++) {
+                if(f[oldLine][j] == min1) {
+                    f[newLine][j] = min2 + costs[i][j];
+                }else {
+                    f[newLine][j] = min1 + costs[i][j];
+                }
+            }
+
+            //  |
+            //  |
+            //每次需要求f[i-1][1], …, f[i-1][K]中除了一个元素之外其他元素的最小值!!!!!!!!
+
+        }
+      
+      
         int res = Integer.MAX_VALUE;
         for(int i = 0; i < colorNum; i++) {
             res = Math.min(res, f[newLine][i]);
