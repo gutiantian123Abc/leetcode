@@ -29,14 +29,91 @@ public class Solution {
         
         int oldLine = 0, newLine = 0;
         
-        for(int i = 1; i <= A.length; i++) {//买0套房子花0快钱， 所以买几套房子挣的钱从 1 到 <= A.length
+        //注意双线前倚式不需要考虑 i 从 0 还是 1 开始， 就算是要搞initialize, 也是顶多initilize f[oldLine][0], f[oldLine][1]啥的
+        //需要考虑i 从0还是1开始的是老方法
+        for(int i = 0; i < A.length; i++) {
             oldLine = newLine; //经典前倚式
             newLine = 1 - newLine;
             
             f[newLine][0] = Math.max(f[oldLine][0], f[oldLine][1]);//经典前倚式， 只更新 f[newLine][0],  f[newLine][1]
-            f[newLine][1] = A[i - 1] + f[oldLine][0];
+            f[newLine][1] = A[i] + f[oldLine][0];
         }
         
         return Math.max(f[newLine][0], f[newLine][1]);
     }
 };
+
+
+
+/* House Robber II 
+After robbing those houses on that street, 
+the thief has found himself a new place for his thievery so that he will not get too much attention. 
+This time, all houses at this place are arranged in a circle. 
+That means the first house is the neighbor of the last one. Meanwhile, 
+the security system for these houses remain the same as for those in the previous street.
+
+Given a list of non-negative integers representing the amount of money of each house, 
+determine the maximum amount of money you can rob tonight without alerting the police.
+
+Notice
+This is an extension of House Robber.
+Example
+nums = [3,6,4], return 6
+*/
+
+public class Solution {
+    /**
+     * @param nums: An array of non-negative integers.
+     * return: The maximum amount of money you can rob tonight
+     */
+    public int houseRobber2(int[] nums) {
+        // write your code here
+        if(nums == null || nums.length == 0) {
+            return 0;
+        }
+        
+        if(nums.length == 1) {
+            return nums[0];
+        }
+        
+        int res = 0;
+        //偷0号房， 不偷最后房子
+        int[][] f = new int[2][2];
+        int oldLine = 0, newLine = 0;
+        
+        //注意双线前倚式不需要考虑 i 从 0 还是 1 开始， 就算是要搞initialize, 也是顶多initilize f[oldLine][0], f[oldLine][1]啥的
+        //需要考虑i 从0还是1开始的是老方法
+        for(int i = 0; i < nums.length - 1; i++) {
+            oldLine = newLine;
+            newLine = 1 - newLine;
+            
+            f[newLine][0] = Math.max(f[oldLine][0], f[oldLine][1]);
+            f[newLine][1] = nums[i] + f[oldLine][0];
+        }
+        
+        
+        res = Math.max(f[newLine][0], f[newLine][1]);
+        
+        //不偷0号房， 偷最后房子
+        
+        oldLine = 0;
+        newLine = 0;
+        f = new int[2][2];
+        
+        //注意双线前倚式不需要考虑 i 从 0 还是 1 开始， 就算是要搞initialize, 也是顶多initilize f[oldLine][0], f[oldLine][1]啥的
+        //需要考虑i 从0还是1开始的是老方法
+        for(int i = 1; i < nums.length; i++) {
+            oldLine = newLine;
+            newLine = 1 - newLine;
+            
+            f[newLine][0] = Math.max(f[oldLine][0], f[oldLine][1]);
+            f[newLine][1] = nums[i] + f[oldLine][0];
+        }
+        
+        
+        res = Math.max(Math.max(f[newLine][0], f[newLine][1]), res);
+        
+        return res;
+    }
+}
+
