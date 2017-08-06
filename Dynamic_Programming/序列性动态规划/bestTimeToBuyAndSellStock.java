@@ -74,7 +74,74 @@ class Solution {
 };
 
 
+/* Best Time to Buy and Sell Stock III
+Say you have an array for which the ith element is the price of a given stock on day i.
 
+Design an algorithm to find the maximum profit. You may complete at most two transactions.
+
+You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+
+Example
+Given an example [4,4,6,1,1,4,2,5], return 6.
+*/
+
+/* 解题原理：
+五个阶段：
+1.第一次买之前   （第一次买）   2.持有股票     （第一次卖）    3.第一次卖之后，     （第二次买）   4.持有股票      （第二次卖）  5.第二次卖之后
+                                                          第二次买之前
+
+状态：f[i][j]表示前i天(第i-1天)结束后，在阶段j的最大获利
+
+阶段1,	3,	5	--- 手中无股票状态:
+f[i][j]	=	max{f[i-1][j],	       f[i-1][j-1] + Pi-1 – Pi-2}
+	            昨天没有持有股票      昨天持有股票，今天卖出清仓
+
+
+阶段2,	4 --- 手中有股票状态:
+f[i][j]	=	max{f[i-1][j]	+	Pi-1 – Pi-2,	f[i-1][j-1]}
+                昨天就持有股票，继续持有并获利       昨天没有持有股票，今天买入
+*/
+
+class Solution {
+    /**
+     * @param prices: Given an integer array
+     * @return: Maximum profit
+     */
+    public int maxProfit(int[] prices) {
+        // write your code here
+        if(prices == null || prices.length < 2) {
+            return 0;
+        }
+        
+        int[][] f = new int[2][5];
+        int newLine = 0, oldLine = 0;
+        int yesterday_Price = prices[0];
+        for(int i = 1; i < prices.length; i++) {//记住， newLine 是跟着 i 走的，i 从1开始是因为 today_Pirce - yesterday_Price，第0天不该获利
+            oldLine = newLine;
+            newLine = 1 - newLine;
+            int today_Pirce = prices[i];
+            for(int j = 0; j < 5; j++) {
+                if(j % 2 == 0) { //no
+                    if(j == 0) {
+                        f[newLine][j] = f[oldLine][j];
+                    }else {
+                        f[newLine][j] = Math.max(f[oldLine][j], f[oldLine][j - 1] + today_Pirce - yesterday_Price);
+                    }
+                }else {//yes
+                    f[newLine][j] = Math.max(f[oldLine][j - 1], f[oldLine][j] + today_Pirce - yesterday_Price);
+                }
+            }
+            yesterday_Price = prices[i];
+        }
+         
+        int res = 0;
+        for(int i = 0; i < 5; i++) {
+                res = Math.max(res, f[newLine][i]);
+        }
+        
+        return res;
+    }
+};
 
 
 
