@@ -74,7 +74,7 @@ class Solution {
 };
 
 
-/* Best Time to Buy and Sell Stock III
+/* Best Time to Buy and Sell Stock III (昨日多态法f[2][j]  !!!)
 Say you have an array for which the ith element is the price of a given stock on day i.
 
 Design an algorithm to find the maximum profit. You may complete at most two transactions.
@@ -142,6 +142,95 @@ class Solution {
         return res;
     }
 };
+
+
+/*Best Time to Buy and Sell Stock IV 
+Say you have an array for which the ith element is the price of a given stock on day i.
+Design an algorithm to find the maximum profit. You may complete at most k transactions.
+Example
+Given prices = [4,4,6,1,1,4,2,5], and k = 2, return 6.
+
+Challenge 
+O(nk) time.
+*/
+
+/* 解题原理：(与上同)
+五个阶段：
+1.第一次买之前   （第一次买）   2.持有股票     （第一次卖）    3.第一次卖之后，     （第二次买）   4.持有股票      （第二次卖）  5.第二次卖之后
+                                                          第二次买之前
+
+状态：f[i][j]表示前i天(第i-1天)结束后，在阶段j的最大获利
+
+阶段1,    3,  5   --- 手中无股票状态:
+f[i][j] =   max{f[i-1][j],         f[i-1][j-1] + Pi-1 – Pi-2}
+                昨天没有持有股票      昨天持有股票，今天卖出清仓
+
+
+阶段2,    4 --- 手中有股票状态:
+f[i][j] =   max{f[i-1][j]   +   Pi-1 – Pi-2,    f[i-1][j-1]}
+                昨天就持有股票，继续持有并获利       昨天没有持有股票，今天买入
+*/
+
+public class Solution {
+    /*
+     * @param : An integer
+     * @param : An integer array
+     * @return: Maximum profit
+     */
+    public int maxProfit(int K, int[] prices) {
+        // write your code here
+        if(prices == null || prices.length < 2) {
+            return 0;
+        }
+        
+        int n = prices.length;
+        
+        if (K == 0) {
+            return 0;
+        }
+        
+        int res = 0;
+        
+        if (K > n) { //非常重要， 好好体会
+            for (int i = 1; i < n; i++) {
+                if (prices[i] > prices[i - 1]) {
+                    res += prices[i] - prices[i - 1];
+                }
+            }
+            return res;
+        }
+        
+        int[][] f = new int[2][2 * K + 1];
+        int oldLine = 0, newLine = 0;
+        
+        for(int i = 1; i < prices.length; i++) {
+            oldLine = newLine;
+            newLine = 1 - newLine;
+            int price_today = prices[i];
+            int price_yesterday = prices[i - 1];
+            for(int j = 0; j < 2 * K + 1; j++) {
+                if(j % 2 == 0) {  //even, 没股票
+                    if(j == 0) {
+                        f[newLine][j] = f[oldLine][j];
+                    }else {
+                        f[newLine][j] = Math.max(f[oldLine][j], f[oldLine][j - 1] + price_today - price_yesterday);
+                    }
+                }else { //Odd, 有股票
+                    f[newLine][j] = Math.max(f[oldLine][j - 1], f[oldLine][j] + price_today - price_yesterday);
+                }
+            }
+        }
+        
+        for(int i = 0; i < 2 * K + 1; i++) {
+            res = Math.max(res, f[newLine][i]);
+        }
+        
+        return res;
+    }
+};
+
+
+
 
 
 
