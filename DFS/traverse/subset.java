@@ -20,6 +20,7 @@ If S = [1,2,3], a solution is:
 */
 
 // 对比 permutations, combinations, catlan combinations
+//SPace and Time: O(2^n)
 class Solution {
     /**
      * @param S: A set of numbers.
