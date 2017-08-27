@@ -37,3 +37,59 @@ class Solution {
         return (int)start;
     }
 }
+
+
+
+/* Sqrt II
+Implement double sqrt(double x) and x >= 0.
+
+Compute and return the square root of x.
+
+You do not care about the accuracy of the result, we will help you to output results.
+
+Have you met this question in a real interview? Yes
+Example
+Given n = 2 return 1.41421356
+*/
+
+public class Solution {
+    /**
+     * @param x a double
+     * @return the square root of x
+     */
+    public double sqrt(double x) {
+        // Write your code here
+        double left = 0;
+        double right = x;
+        double error = 1e-12; //看题意
+        if(right < 1.0) {//当 right < 1.0 时， 永远求不出结果， 只能变成1.0 才可以用二分法
+            right = 1.0;
+        }
+        while(left + error < right) {
+            double mid = (left + right) / 2.0;
+            if(mid * mid == x) {
+                return mid;
+            }else if(mid * mid < x) {
+                left = mid;
+            }else {
+                right = mid;
+            }
+        }
+        
+        return left; //double 只return left
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
