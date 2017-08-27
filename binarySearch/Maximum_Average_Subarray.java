@@ -1,3 +1,5 @@
+
+
 /* Maximum Average Subarray
 Given an array with positive and negative numbers, 
 find the maximum average subarray which length should be greater or equal to given length k.
@@ -19,6 +21,7 @@ public class Solution {
         // Write your code here
         double min = Integer.MAX_VALUE;
         double max = Integer.MIN_VALUE;
+        double error = 1e-12; //看题意！！！
         
         for(int i = 0; i < nums.length; i++) {
             if(nums[i] < min) {
@@ -30,7 +33,7 @@ public class Solution {
             }
         }
         
-        while(min + 1e-6 < max)  { //1e-6 是double 的 1， 对比int 的 start + 1 < end
+        while(min + error < max)  { //1e-6 是double 的 1， 对比int 的 start + 1 < end
             double mid = (min + max) / 2.0;
             if(check(nums, mid, k)) {
                 min = mid;
