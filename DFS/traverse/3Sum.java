@@ -35,9 +35,9 @@ public class Solution {
                 return;
             }
         }
-        int prev = Integer.MAX_VALUE;// repetation
+        
         for (int i = index; i < numbers.length; i++) {
-            if (prev != Integer.MAX_VALUE && prev == numbers[i]) {// repetation
+            if (prev != index && numbers[i] == numbers[i - 1]) {// repetation
                 continue;
             }
             list.add(numbers[i]);
