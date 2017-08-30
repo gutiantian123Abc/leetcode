@@ -37,7 +37,7 @@ public class Solution {
         }
         
         for (int i = index; i < numbers.length; i++) {
-            if (prev != index && numbers[i] == numbers[i - 1]) {// repetation
+            if (i != index && numbers[i] == numbers[i - 1]) {// repetation
                 continue;
             }
             list.add(numbers[i]);
