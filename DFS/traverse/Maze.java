@@ -50,96 +50,108 @@ The maze contains at least 2 empty spaces, and both the width and height of the 
 */
 //DFS:
 class Solution {
+    //DFS
+    private int[] dx = {1, -1, 0, 0};
+    private int[] dy = {0, 0, 1, -1};
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
-        int m = maze.length;
-        int n = maze[0].length;
+        int m = maze.length, n = maze[0].length;
+        boolean[][] stopped = new boolean[m][n];
         
-        if(destination[0] >= m || destination[1] >= n) {
-            return false;
-        }
-        
-        boolean[][] visited = new boolean[m][n];//注意， 这里是停下过的点， 而非滚过的点， 因为只有在停下时才能变换方向(进行下一步dfs)
-        return dfs(maze, visited, start, destination);
+        return dfs(maze, start, destination, stopped);
     }
     
-
-    
-    private boolean dfs(int[][] maze, boolean[][] visited, int[] start, int[] destination) {
+    private boolean dfs(int[][] maze, int[] start, int[] destination, boolean[][] stopped) {
         int row = start[0], col = start[1], m = maze.length, n = maze[0].length;
-        //本体注意， row, col 与 x, y 一定要分清楚
         if(row == destination[0] && col == destination[1]) {
             return true;
         }
         
-        visited[row][col] = true;
+        stopped[row][col] = true;
         
-        int left_col = col - 1, right_col = col + 1, up_row = row - 1, down_row = row + 1, new_row = 0, new_col = 0;
-        int[] newStart = new int[2];
-        
-//Left *****************************************************   
-        while(left_col >= 0 && maze[row][left_col] != 1) { //left
-            left_col--; //注意， 这里是求能否在重点停下， 而且只有在停下时才能转方向
-        }
-
-        new_row = row;
-        new_col = left_col + 1;
-
-        newStart = new int[2];
-        newStart[0] = new_row;
-        newStart[1] = new_col;
-        if(visited[new_row][new_col] == false && dfs(maze, visited, newStart, destination)) {
-            return true;
-        }               
-
-
-//right *****************************************************
-        while(right_col < maze[0].length && maze[row][right_col] != 1) {
-            right_col++;//注意， 这里是求能否在重点停下， 而且只有在停下时才能转方向
-        }
-
-        new_row = row;
-        new_col = right_col - 1;
-        newStart[0] = new_row;
-        newStart[1] = new_col;
-        newStart[1] = new_col;
-        if(visited[new_row][new_col] == false && dfs(maze, visited, newStart, destination)) {
-            return true;
-        }             
-
-
-//Up *****************************************************
-
-        while(up_row >= 0 && maze[up_row][col] != 1) { //up
-            up_row--;//注意， 这里是求能否在重点停下， 而且只有在停下时才能转方向
-        }
-
-        new_row = up_row + 1;
-        new_col = col;
-        newStart[0] = new_row;
-        newStart[1] = new_col;
-        newStart[1] = new_col;
-        if(visited[new_row][new_col] == false && dfs(maze, visited, newStart, destination)) {
-            return true;
-        }            
-
-
-//Down *****************************************************     
-        while(down_row < maze.length && maze[down_row][col] != 1) { //down
-            down_row++;//注意， 这里是求能否在重点停下， 而且只有在停下时才能转方向
-        }
-
-        new_row = down_row - 1;
-        new_col = col;
-        newStart[0] = new_row;
-        newStart[1] = new_col;
-        newStart[1] = new_col;
-        if(visited[new_row][new_col] == false && dfs(maze, visited, newStart, destination)) {
-            return true;
-        }               
+        for(int dir = 0; dir < 4; dir++) {//注意用dx[dir]直通的做法
+            int nrow = row + dx[dir];
+            int ncol = col + dy[dir];
+            
+            while(nrow >= 0 && nrow < m && ncol >= 0 && ncol < n && maze[nrow][ncol] != 1) {
+                nrow += dx[dir];
+                ncol += dy[dir];
+            }
+            
+            nrow = nrow - dx[dir];
+            ncol = ncol - dy[dir];
+            
+            if(stopped[nrow][ncol] == false) {
+                start[0] = nrow;
+                start[1] = ncol;
+                if(dfs(maze, start, destination, stopped) == true) {
+                    return true;
+                }            
+            }  
+        }   
         
         return false;
     }
 }
+
+
+
+
+/* Maze I BFS*/
+class Solution {
+    private class Pair {
+        public int row;
+        public int col;
+        
+        public Pair(int row, int col) {
+            this.row = row;
+            this.col = col;
+        }
+    }
+    
+    private int[] dx = {1, -1, 0, 0};
+    private int[] dy = {0, 0, 1, -1};
+    //BFS
+    public boolean hasPath(int[][] maze, int[] start, int[] destination) {
+        int m = maze.length, n = maze[0].length;
+        boolean[][] visited = new boolean[m][n];
+        Queue<Pair> queue = new LinkedList<Pair>();
+        queue.offer(new Pair(start[0], start[1]));
+        visited[start[0]][start[1]] = true;
+        while(queue.size() != 0) {
+            int size = queue.size();
+            for(int i = 0; i < size; i++) {
+                Pair cur = queue.poll();
+                for(int dir = 0; dir < 4; dir++) { //注意用dx[dir]直通的做法
+                    int nrow = cur.row + dx[dir];
+                    int ncol = cur.col + dy[dir];
+                    
+                    while(nrow >= 0 && nrow < m && ncol >= 0 && ncol < n && maze[nrow][ncol] != 1) {
+                        nrow += dx[dir];
+                        ncol += dy[dir];
+                    }
+                    
+                    nrow = nrow - dx[dir];
+                    ncol = ncol - dy[dir];
+                    if(visited[nrow][ncol] == false) {
+                        if(nrow == destination[0] && ncol == destination[1]) {
+                            return true;
+                        }else {
+                            visited[nrow][ncol] = true;
+                            queue.offer(new Pair(nrow, ncol));
+                        }
+                    }
+                }  
+            }       
+        }
+        return false;
+    }
+}
+
+
+
+
+
+
 
 
 
