@@ -284,6 +284,71 @@ class Solution {
 }
 
 //BFS + DP
+class Solution {
+    private class Pair {
+        public int row;
+        public int col;
+        
+        public Pair(int row, int col) {
+            this.row = row;
+            this.col = col;
+        }
+    }
+    
+    private int[] dx = {1, -1, 0, 0};
+    private int[] dy = {0, 0, 1, -1};
+    
+    public int shortestDistance(int[][] maze, int[] start, int[] destination) {
+        int m = maze.length, n = maze[0].length;
+        int[][] dp = new int[m][n];
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                dp[i][j] = -1;
+            }
+        }
+        
+        
+        Queue<Pair> queue = new LinkedList<Pair>();
+        queue.offer(new Pair(start[0], start[1]));
+        dp[start[0]][start[1]] = 0;
+        
+        while(queue.size() != 0) {
+            int size = queue.size();
+            for(int i = 0; i < size; i++) {
+                Pair cur = queue.poll();
+                int row = cur.row;
+                int col = cur.col;
+                
+                for(int dir = 0; dir < 4; dir++) {
+                    int n_row = row + dx[dir];
+                    int n_col = col + dy[dir];
+                    int step = 0;
+                    
+                    while(n_row >= 0 && n_row < m && n_col >= 0 && n_col < n && maze[n_row][n_col] != 1) {
+                        n_row += dx[dir];
+                        n_col += dy[dir];
+                        step++;
+                    }
+                    
+                    n_row = n_row - dx[dir];
+                    n_col = n_col - dy[dir];
+                    
+                    if(dp[n_row][n_col] == -1) {
+                        dp[n_row][n_col] = dp[row][col] + step;
+                        queue.offer(new Pair(n_row, n_col));
+                    }else {
+                        if(dp[n_row][n_col] > dp[row][col] + step) {
+                            dp[n_row][n_col] = dp[row][col] + step;
+                            queue.offer(new Pair(n_row, n_col));                           
+                        }   
+                    }                             
+                }
+            } 
+        }
+            
+        return dp[destination[0]][destination[1]];
+    }
+}
 
 
 
