@@ -67,3 +67,53 @@ class Solution {
         return sb.toString();
     }
 }
+
+
+
+
+
+
+//Stack 解法
+class Solution {
+    private class StringItem {
+        int times = 0;
+        StringBuilder sb = new StringBuilder();
+        
+        public StringItem(int times) {
+            this.times = times;
+        }
+    }
+    
+    public String decodeString(String s) {
+        if(s == null || s.length() == 0) {
+            return s;
+        }
+        Stack<StringItem> stack = new Stack<StringItem>();
+        stack.push(new StringItem(0));
+        int times = 0;
+        int index = 0;
+        while(index < s.length()) {
+            char c = s.charAt(index);
+            if(c >= '0' && c <= '9') {
+                while(s.charAt(index) >= '0' && s.charAt(index) <= '9') {
+                    times = times * 10 + (s.charAt(index) - '0');
+                    index++;
+                }
+                index--; //注意细节
+            }else if(c == '[') {
+                stack.push(new StringItem(times));
+                times = 0;
+            }else if(c == ']') {
+                StringItem st = stack.pop();
+                for(int i = 0; i < st.times; i++) {
+                    stack.peek().sb.append(st.sb.toString());
+                }
+            }else {
+                stack.peek().sb.append(c);
+            }
+            index++;
+        }
+
+        return stack.pop().sb.toString();
+    }
+}
