@@ -49,3 +49,10 @@ class Solution {
         dfs(nums, S, sum - curNum, index + 1);
     }
 }
+
+
+//DP 解法：
+
+
+
+
