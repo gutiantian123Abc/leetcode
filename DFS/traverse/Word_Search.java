@@ -17,6 +17,7 @@ word = "ABCB", -> returns false.
 
 */
 
+//解法1：
 public class Solution {
     /**
      * @param board: A list of lists of character
@@ -44,14 +45,14 @@ public class Solution {
         
         boolean found = false;
         
-        char temp = board[x][y];
+        char temp = board[x][y];//注意， 这里是backtracking， 注意区分DFS中的浸染法和尝试法
         board[x][y] = '#';
         for(int i = 0; i < 4; i++) {
             int newX = x + dx[i];
             int newY = y + dy[i];
             found = found || searchDFS(board, wordArray, newX, newY, index + 1); //注意， 这里一定这么写， 不能用found |..啦！！！
         }
-        board[x][y] = temp;
+        board[x][y] = temp;//注意， 这里是backtracking， 注意区分DFS中的浸染法和尝试法
         return found;
     }
     
@@ -72,5 +73,61 @@ public class Solution {
         }
         
         return false;
+    }
+}
+
+//解法2：
+class Solution {
+    private int[] dx = {1, -1, 0, 0};
+    private int[] dy = {0, 0, 1, -1};
+    
+    private boolean inRange(int i, int j, int m, int n) {
+        return i >= 0 && i < m && j >= 0 && j < n;
+    }
+    
+    public boolean exist(char[][] board, String word) {
+        if(board == null || board.length == 0 || board[0].length == 0 || word == null || word.length() == 0) {
+            return false;
+        }
+        int m = board.length, n = board[0].length;
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                boolean[][] visited = new boolean[m][n];
+                boolean result = dfs(board, i, j, 0, word, visited);
+                if(result) {
+                    return true;
+                }
+            }
+        } 
+        
+        return false;
+    }
+    
+    private boolean dfs(char[][] board, int i, int j, int index, String word, boolean[][] visited) {
+        
+        if(index == word.length() - 1) {
+           return word.charAt(index) == board[i][j];
+        }
+        
+        visited[i][j] = true; //注意， 这里是backtracking
+        int m = board.length, n = board[0].length;
+        if(word.charAt(index) == board[i][j]) {
+            for(int dir = 0; dir < 4; dir++) {
+                int nx = i + dx[dir];
+                int ny = j + dy[dir];
+                
+                if(inRange(nx, ny, m, n) && visited[nx][ny] == false) {
+                    boolean result = dfs(board, nx, ny, index + 1, word, visited);
+                    if(result) {
+                        return true;
+                    }
+                }
+            }
+            visited[i][j] = false;//注意， 这里是backtracking， 注意区分DFS中的浸染法和尝试法
+            return false;
+        }else {
+            visited[i][j] = false;//注意， 这里是backtracking， 注意区分DFS中的浸染法和尝试法
+            return false;
+        }
     }
 }
