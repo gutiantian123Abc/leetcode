@@ -1,3 +1,7 @@
+/*
+Design Q&A application as in Amazon has it for each product
+*/
+
 import java.util.*;
 
 public class OOPDesignQnA {
@@ -19,8 +23,8 @@ public class OOPDesignQnA {
         productQnAMap.put(productId, questionMap);
         if(productQuestions.containsKey(productId)) {
             List<Question> list = productQuestions.get(productId);
-            list.add(question);
-            Collections.sort(list);
+            list.add(question);//连带影响
+            Collections.sort(list);//连带影响
         }else{
             List<Question> questions = new ArrayList<>();
             questions.add(question);
@@ -32,8 +36,8 @@ public class OOPDesignQnA {
         Answer answer = new Answer(questionId, productId, text, userId);
         Question question = questionMap.get(questionId);
         List<Answer> answerList = question.answerList;
-        answerList.add(answer);
-        Collections.sort(answerList);
+        answerList.add(answer);//连带影响
+        Collections.sort(answerList);//连带影响
 
         if(questionAnswerMap.containsKey(question)){
             questionAnswerMap.get(question).put(answer.id, answer);
