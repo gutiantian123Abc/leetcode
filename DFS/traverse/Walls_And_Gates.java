@@ -19,7 +19,7 @@ After running your function, the 2D grid should be:
   1  -1   2  -1
   0  -1   3   4
 */
-//切记： 浸染法！！！
+//切记： 浸染法！！！, DFS 步数优化的问题！！！
 class Solution {
     public void wallsAndGates(int[][] rooms) {
         if(rooms == null || rooms.length == 0 || rooms[0].length == 0) {
