@@ -15,17 +15,20 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
  * }
  */
 class Solution {
-    public ListNode removeElements(ListNode head, int val) {
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode pre = dummy; //注意， 这里千万这么用， 不能另外设置ListNode pre = new ListNode(0), 要不然不好处理[1], 1的情况
-        while(pre.next != null) {
-            if(pre.next.val == val) {
-                pre.next = pre.next.next;
-            }else {
-                pre = pre.next;
-            }
+    public ListNode reverseList(ListNode head) {
+        if(head == null || head.next == null) {
+            return head;
         }
-        return dummy.next;
+        
+        ListNode pre = null;
+        
+        while(head != null) {
+            ListNode tmp = head.next;
+            head.next = pre;
+            pre = head;
+            head = tmp; 
+        }
+        
+        return pre;
     }
 }
