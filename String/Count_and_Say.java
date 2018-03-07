@@ -36,7 +36,7 @@ class Solution {
             int start = 0, end = 0;
             int j = 0;
           
-            while(j < ans.length()) { //记住， j = end 时， 一定用while, 不用 for
+            while(j < ans.length()) { //记住， j = end 时， 一定用while, 不用 for, 因为for 每次自动j++
                 start = j;
                 end = j;
                 while(end < ans.length() && ans.charAt(start) == ans.charAt(end)) {
