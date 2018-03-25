@@ -37,8 +37,9 @@ change the ranking? How do we evaluate whether the new ranking algorithm is bett
 It’s definitely impressive if candidates come up with these questions by themselves.
 	The reason to have better ranking is not that this seems the right thing to do. 
 Instead, everything should happen for a reason. Let’s say there are several core 
-metrics we care about, e.g. users stickiness, retention, ads revenue etc.. A better ranking system can significantly improve these metrics potentially, which also 
-answers how to evaluate if we are making progress.
+metrics we care about, e.g. users stickiness, retention, ads revenue etc.. 
+	A better ranking system can significantly improve these metrics potentially, which 
+also answers how to evaluate if we are making progress.
 	So back to the question – how should we rank feeds? A common strategy is to 
 calculate a feed score based on various features and rank feeds by its score, 
 which is one of the most common approaches for all ranking problems.
