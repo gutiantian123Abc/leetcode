@@ -6,9 +6,6 @@
     |userID|feedID|
   c. feedContent Table:(Optional)
      |feedID|feedContent|
-
-	In the design above, let’s see what happens when we fetch 
-feeds from all friends of a user.
 	The system will first get all userIDs of friends from friend table. 
 Then it fetches all feedIDs for each friend from user-feed table. 
 Finally, feed content is fetched based on feedID from feed table. 
@@ -26,9 +23,6 @@ and user-feed table. Otherwise, there is data inconsistency. This increases the 
 	Remember that there’s no one approach always better than the other 
 (normalization vs denormalization). It’s a matter of whether you want to optimize 
 for read or write.
-
-
-
 2.Ranking
 	The most straightforward way to rank feeds is by the time it was created. 
 Obviously, Facebook is doing more than that. “Important” feeds are ranked on top.
@@ -51,7 +45,6 @@ This is usually enough for a naive ranking system.
 	Just briefly summarize what we have discussed in part 1. We started with a simple 
 question – how to design news feed system for Facebook that allows users see feeds
 updates from friends. We modeled the whole system using relational database and talked about pros and cons of different design.
-
 	Ranking is an interesting topic for news feed system. We explained some general
 ideas of ranking in previous post. And in this post, we’ll continue the discussion
 ranking and also cover topics like feed publishing and so on.
@@ -59,7 +52,6 @@ ranking and also cover topics like feed publishing and so on.
 and then figure out how to combine them to calculate a final score. This approach is extremely common among lots of real-world systems.
 	As you can see that what matters here are two things – features and calculation
 algorithm. To give you a better idea of it, I’d like to briefly introduce how ranking actually works at Facebook – EdgeRank.
-
 	For each news update you have, whenever another user interacts with that feed,
 they’re creating what Facebook calls an Edge, which includes actions like like and comments.
 	First of all, let’s take a look at what features are used to evaluate the importance
@@ -78,7 +70,6 @@ used to reflect how close two people are. First of all, explicit interactions li
 friend quite a lot, but less frequent recently. In this case, we should lower the affinity score. So for each interaction, we should also put the time decay factor.
 	To sum up the ranking section, I hope this common approach for ranking can be one of
 your takeaways. Also, EdgeRank was first published at 2010 and it can be outdated.
-	
 3.Feed publishing
 	When a user loads all the feeds from his friends, it can be an extremely costly
 action. Remember that a user can have thousands of friends and each of them can publish a huge amount of updates especially for high profile users. To load all feeds from friends, the system requires at least two joins (get friends list and feed list.
