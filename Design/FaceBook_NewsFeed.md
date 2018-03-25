@@ -1,10 +1,10 @@
 1.Data Model:
   我们需要三个表：
-  1. friend-friend Table:
-     |userID|uSerID|
-  2. user-feed Table:
-     |userID|feedID|
-  3. feedContent Table:(Optional)
+  a. friend-friend Table:
+    |userID|uSerID|
+  b. user-feed Table:
+    |userID|feedID|
+  c. feedContent Table:(Optional)
      |feedID|feedContent|
 
 	In the design above, let’s see what happens when we fetch 
@@ -29,7 +29,7 @@ for read or write.
 
 
 
-2. Ranking
+2.Ranking
 	The most straightforward way to rank feeds is by the time it was created. 
 Obviously, Facebook is doing more than that. “Important” feeds are ranked on top.
 	Before jumping to the ranking algorithm, I’d usually like to ask why do we want to
@@ -79,7 +79,7 @@ friend quite a lot, but less frequent recently. In this case, we should lower th
 	To sum up the ranking section, I hope this common approach for ranking can be one of
 your takeaways. Also, EdgeRank was first published at 2010 and it can be outdated.
 	
-	Feed publishing
+3.Feed publishing
 	When a user loads all the feeds from his friends, it can be an extremely costly
 action. Remember that a user can have thousands of friends and each of them can publish a huge amount of updates especially for high profile users. To load all feeds from friends, the system requires at least two joins (get friends list and feed list.
 	So how to optimize and scale the feed publishing system?
