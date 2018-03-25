@@ -92,9 +92,12 @@ For each news update you have, whenever another user interacts with that feed, t
 
 First of all, let’s take a look at what features are used to evaluate the importance of an update/feed. Edge Rank basically is using three signals: affinity score, edge weight and time decay.
 
-Affinity score (u). For each news feed, affinity score evaluates how close you are with this user. For instance, you are more likely to care about feed from your close friends instead of someone you just met once. You might ask how affinity score is calculated, I’ll talk about it soon.
-Edge weight (e). Edge weight basically reflects importance of each edge. For instance, comments are worth more than likes.
-Time decay (d). The older the story, the less likely users find it interesting.
+Affinity score (u). 
+For each news feed, affinity score evaluates how close you are with this user. For instance, you are more likely to care about feed from your close friends instead of someone you just met once. You might ask how affinity score is calculated, I’ll talk about it soon.
+Edge weight (e). 
+Edge weight basically reflects importance of each edge. For instance, comments are worth more than likes.
+Time decay (d). 
+The older the story, the less likely users find it interesting.
 So how does Facebook rank feeds by these three features? The calculation algorithm is quite straightforward. For each feed you create, multiply these factors for each Edge then add the Edge scores up and you have an update’s EdgeRank. And the higher that is, the more likely your update is to appear in the user’s feed.
 
 Affinity score
@@ -113,13 +116,15 @@ So how to optimize and scale the feed publishing system?
 
 Basically there are two common approaches here – push and pull.
 
-For a push system, once a user has published a feed, we immediately pushing this feed (actually the pointer to the feed) to all his friends. The advantage is that when fetching feed, you don’t need to go through your friends list and get feeds for each of them. It significantly reduces read operation. However, the downside is also obvious. It increases write operation especially for people with a large number of friends.
+For a push system, 
+once a user has published a feed, we immediately pushing this feed (actually the pointer to the feed) to all his friends. The advantage is that when fetching feed, you don’t need to go through your friends list and get feeds for each of them. It significantly reduces read operation. However, the downside is also obvious. It increases write operation especially for people with a large number of friends.
 
-For a pull system, feeds are only fetched when users are loading their home pages. So feed data doesn’t need to be sent right after it’s created. You can see that this approach optimizes for write operation, but can be quite slow to fetch data even after using denormalization (check our previous post if you don’t understand this).
+For a pull system, 
+feeds are only fetched when users are loading their home pages. So feed data doesn’t need to be sent right after it’s created. You can see that this approach optimizes for write operation, but can be quite slow to fetch data even after using denormalization (check our previous post if you don’t understand this).
 
 Both approaches work well at certain circumstances and it’s always better to understand their pros and cons.
 
-Selective fanout
+Selective fanout,
 The process of pushing an activity to all your friends or followers is called a fanout. So the push approach is also called fanout on write, while the pull approach is fanout on load.
 
 Here I’d like to ask if you have any approaches to further optimize the fanout process?
