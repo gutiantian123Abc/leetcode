@@ -7,26 +7,44 @@
   3. feedContent Table:(Optional)
      |feedID|feedContent|
 
-In the design above, let’s see what happens when we fetch 
+	In the design above, let’s see what happens when we fetch 
 feeds from all friends of a user.
-
-The system will first get all userIDs of friends from friend table. 
+	The system will first get all userIDs of friends from friend table. 
 Then it fetches all feedIDs for each friend from user-feed table. 
 Finally, feed content is fetched based on feedID from feed table. 
 You can see that we need to perform 3 joins, which can affect performance.
-
-A common optimization is to store feed content together with feedID 
+	A common optimization is to store feed content together with feedID 
 in user-feed table so that we don’t need to join the feed table any more. 
 This approach is called denormalization, which means by adding redundant data, 
 we can optimize the read performance (reducing the number of joins).
 
 The disadvantages are obvious:
-
-Data redundancy. We are storing redundant data, which occupies storage space 
+	Data redundancy. We are storing redundant data, which occupies storage space 
 (classic time-space trade-off).
 Data consistency. Whenever we update a feed, we need to update both feed table 
 and user-feed table. Otherwise, there is data inconsistency. This increases the complexity of the system.
-Remember that there’s no one approach always better than the other 
+	Remember that there’s no one approach always better than the other 
 (normalization vs denormalization). It’s a matter of whether you want to optimize 
 for read or write.
+
+
+
+2. Ranking
+	The most straightforward way to rank feeds is by the time it was created. 
+Obviously, Facebook is doing more than that. “Important” feeds are ranked on top.
+	Before jumping to the ranking algorithm, I’d usually like to ask why do we want to
+change the ranking? How do we evaluate whether the new ranking algorithm is better? 
+It’s definitely impressive if candidates come up with these questions by themselves.
+	The reason to have better ranking is not that this seems the right thing to do. 
+Instead, everything should happen for a reason. Let’s say there are several core 
+metrics we care about, e.g. users stickiness, retention, ads revenue etc.. A better ranking system can significantly improve these metrics potentially, which also 
+answers how to evaluate if we are making progress.
+	So back to the question – how should we rank feeds? A common strategy is to 
+calculate a feed score based on various features and rank feeds by its score, 
+which is one of the most common approaches for all ranking problems.
+	More specifically, we can select several features that are mostly relevant to the
+importance of the feed, e.g. share/like/comments numbers, time of the update, 
+whether the feed has images/videos etc.. And then, a score can be computed by these features, maybe a linear combination. This is usually enough for a naive ranking system.
+
+
 
