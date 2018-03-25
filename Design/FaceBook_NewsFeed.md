@@ -23,6 +23,10 @@ and user-feed table. Otherwise, there is data inconsistency. This increases the 
 	Remember that there’s no one approach always better than the other 
 (normalization vs denormalization). It’s a matter of whether you want to optimize 
 for read or write.
+
+
+
+
 2.Ranking
 	The most straightforward way to rank feeds is by the time it was created. 
 Obviously, Facebook is doing more than that. “Important” feeds are ranked on top.
@@ -70,11 +74,15 @@ used to reflect how close two people are. First of all, explicit interactions li
 friend quite a lot, but less frequent recently. In this case, we should lower the affinity score. So for each interaction, we should also put the time decay factor.
 	To sum up the ranking section, I hope this common approach for ranking can be one of
 your takeaways. Also, EdgeRank was first published at 2010 and it can be outdated.
+
+
+
+
 3.Feed publishing
 	When a user loads all the feeds from his friends, it can be an extremely costly
 action. Remember that a user can have thousands of friends and each of them can publish a huge amount of updates especially for high profile users. To load all feeds from friends, the system requires at least two joins (get friends list and feed list.
 	So how to optimize and scale the feed publishing system?
-	Basically there are two common approaches here – push and pull.
+Basically there are two common approaches here – push and pull.
 	For a push system, once a user has published a feed, we immediately pushing this
 feed (actually the pointer to the feed) to all his friends. The advantage is that when fetching feed, you don’t need to go through your friends list and get feeds for each of them. It significantly reduces read operation. However, the downside is also obvious. 
 It increases write operation especially for people with a large number of friends.
