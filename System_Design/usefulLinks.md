@@ -9,6 +9,7 @@ http://highscalability.com/blog/2013/10/28/design-decisions-for-scaling-your-hig
 Tweeter Design:
 http://blog.gainlo.co/index.php/2016/02/17/system-design-interview-question-how-to-design-twitter-part-1/
 
-
+System Design Ultimate Practice:
+https://github.com/donnemartin/system-design-primer
 
 
