@@ -1,3 +1,4 @@
 1.load balancer: https://en.wikipedia.org/wiki/Load_balancing_(computing)#Internet-based_services
 2.CDN(Content Distribution Network): https://en.wikipedia.org/wiki/Content_delivery_network
 3.Java Multithreading Join(): https://blog.csdn.net/u013425438/article/details/80205693
+4. Java Mutithreading Complete Conclusion: https://blog.csdn.net/qq_23876873/article/details/69389081
