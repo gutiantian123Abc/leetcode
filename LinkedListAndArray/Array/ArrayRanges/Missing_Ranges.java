@@ -24,32 +24,47 @@ public class Solution {
      */
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
         // write your code here
-        List<String> ans = new ArrayList<>();
+        List<String> ans = new ArrayList<String>();
         if(nums == null || nums.length == 0) {
             addRange(ans, lower, upper);
             return ans;
         }
-        
-        addRange(ans, lower, (long)nums[0] - 1);
-        
-        for(int i = 1; i < nums.length; i++) {
-            addRange(ans, (long)nums[i - 1] + 1, (long)nums[i] - 1);
+        if(lower < nums[0]) {
+            addRange(ans, lower, nums[0] - 1);
         }
         
-        addRange(ans, (long)nums[nums.length - 1] + 1, upper);
+        if(nums.length >= 2) {
+            int i = 0, j = 1;
+            while(j < nums.length) {
+                addRange(ans, nums[i] + 1, nums[j] - 1);
+                i++;
+                j++;
+            }
+        }
+        
+        if(nums[nums.length - 1] < upper) {
+            addRange(ans, nums[nums.length - 1] + 1, upper);
+        }
+        
         return ans;
     }
     
-    private void addRange(List<String> ans, long lower, long upper) { //记住，add array ranges 模板
+    private void addRange(List<String> ans, int lower, int upper) {
         if(lower > upper) {
             return;
         }
         
+        StringBuilder sb = new StringBuilder();
+        
         if(lower == upper) {
-            ans.add(lower + "");
-            return;
+            sb.append(lower);
+        }else {
+            sb.append(lower);
+            sb.append("->");
+            sb.append(upper);
         }
         
-        ans.add(lower + "->" + upper);
+        ans.add(sb.toString());
+        
     }
 }
