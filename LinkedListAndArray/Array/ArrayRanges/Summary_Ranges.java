@@ -1,4 +1,5 @@
-/* Summary Ranges
+s
+/* Summary Ranges: https://www.lintcode.com/problem/summary-ranges/description
 Given a sorted integer array without duplicates, return the summary of its ranges.
 
 Example
@@ -21,35 +22,42 @@ public class Solution {
      */
     public List<String> summaryRanges(int[] nums) {
         // Write your code here
-        List<String> ans = new ArrayList<>();
+        List<String> ans = new ArrayList<String>();
         if(nums == null || nums.length == 0) {
             return ans;
         }
+        int j = 1, i = 0;
         
-        int j = 0;
-        for(int i = 1; i < nums.length; i++) {
-            if(nums[i - 1] + 1 == nums[i]) {
-                continue;
+        while(j < nums.length) {
+            while(j < nums.length && nums[j] == nums[j - 1] + 1) {
+                j++;
             }
-            addRange(ans, nums[j], nums[i - 1]);
-            j = i;
+            
+            addRange(nums, i, j - 1, ans);
+            
+            if(j >= nums.length) {
+                return ans;
+            }else {
+                i = j;
+                j++;
+            }
         }
         
-        addRange(ans, nums[j], nums[nums.length - 1]);
-        
+        addRange(nums, i, nums.length - 1, ans);
         return ans;
+        
     }
     
-    private void addRange(List<String> ans, int lower, int upper) {
-        if(lower > upper) {
-            return;
+    private void addRange(int[]nums, int start, int end, List<String> ans) {
+        StringBuilder sb = new StringBuilder();
+        if(start == end) {
+            sb.append(nums[start]);
+        }else{
+            sb.append(nums[start]);
+            sb.append("->");
+            sb.append(nums[end]);
         }
-        
-        if(lower == upper) {
-            ans.add(lower + "");
-            return;
-        }
-        
-        ans.add(lower + "->" + upper);
+
+        ans.add(sb.toString());
     }
 }
