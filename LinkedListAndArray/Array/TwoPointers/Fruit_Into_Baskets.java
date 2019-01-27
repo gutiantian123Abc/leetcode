@@ -58,24 +58,29 @@ Note:
 版权声明：本文为博主原创文章，转载请附上博文链接！*/
 
 class Solution { //O(n), Space(1)
-    public int totalFruit(int[] tree) {
+    public int totalFruit(int[] tree) { //参考Longest Substring with At Most K Distinct Characters
         HashMap<Integer, Integer> map = new HashMap<>();
-        int max = 0;
+        int ans = 0;
         int i = 0, j = 0;
         while(j < tree.length) {
-            map.put(tree[j], map.getOrDefault(tree[j], 0) + 1);
-            while(map.size() > 2) { //这道题可以扩展为： longest subarray with at most K distinct numbers
-                map.put(tree[i], map.get(tree[i]) - 1);
-                if(map.get(tree[i]) == 0) {
-                    map.remove(tree[i]);
-                }
-                i++;
+            while(map.size() <= 2 && j < tree.length) {
+                map.put(tree[j], map.getOrDefault(tree[j], 0) + 1);
+                j++;
             }
             
-            max = Math.max(max, j - i + 1);
-            j++;
+            if(map.size() == 2 + 1) {
+                ans = Math.max(ans, j - 1 - i);
+            }else {
+                ans = Math.max(ans, j - i);
+            }
+            
+            map.put(tree[i], map.get(tree[i]) - 1);
+            if(map.get(tree[i]) == 0) {
+                map.remove(tree[i]);
+            }
+            i++;
         }
         
-        return max;
+        return ans;
     }
 }
