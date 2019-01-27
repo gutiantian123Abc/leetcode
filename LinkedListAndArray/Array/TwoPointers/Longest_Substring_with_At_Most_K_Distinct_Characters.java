@@ -15,25 +15,37 @@ Explanation: T is "aa" which its length is 2.
 
 //详解参见 Fruit Basket
 //O(n), Space(K)
-class Solution {
+public class Solution {
+    /**
+     * @param s: A string
+     * @param k: An integer
+     * @return: An integer
+     */
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
+        // write your code here
+        int ans = 0;
         HashMap<Character, Integer> map = new HashMap<>();
         char[] S = s.toCharArray();
         int i = 0, j = 0;
-        int max = 0;
         while(j < S.length) {
-            map.put(S[j], map.getOrDefault(S[j], 0) + 1);
-            while(map.size() > k) {
-                map.put(S[i], map.get(S[i]) - 1);
-                if(map.get(S[i]) == 0) {
-                    map.remove(S[i]);
-                }
-                i++;
+            while(map.size() <= k && j < S.length) {
+                map.put(S[j], map.getOrDefault(S[j], 0) + 1);
+                j++;
             }
-            max = Math.max(max, j - i + 1);
-            j++;
+            
+            if(map.size() == k + 1) {
+                ans = Math.max(ans, j - 1 - i);
+            }else {
+                ans = Math.max(ans, j - i);
+            }
+            
+            map.put(S[i], map.get(S[i]) - 1);
+            if(map.get(S[i]) == 0) {
+                map.remove(S[i]);
+            }
+            i++;
         }
         
-        return max;
+        return ans;
     }
 }
