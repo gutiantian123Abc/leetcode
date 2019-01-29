@@ -36,13 +36,7 @@ Length of each word is greater than 0 and won't exceed 10.
 1 ≤ rows, cols ≤ 20,000
 */
 
-public class Solution {
-    /**
-     * @param sentence: a list of string
-     * @param rows: an integer
-     * @param cols: an integer
-     * @return: return an integer, denote times the given sentence can be fitted on the screen
-     */
+class Solution {
     public int wordsTyping(String[] sentence, int rows, int cols) {
         int times = 0;
         int index = 0;
@@ -51,10 +45,10 @@ public class Solution {
             int cx = 0;
             while(cx < cols) {
                 int len = sentence[index].length();
-                if(cx + len < cols) {
+                if(cx + len - 1 <= cols - 2) {
                     cx += len + 1;
                     index++;
-                }else if(cx + len == cols) {
+                }else if(cx + len - 1 == cols - 1) {
                     cx = cols;
                     index++;
                 }else {
