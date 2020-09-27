@@ -32,9 +32,6 @@ public class BlackJackCard extends Card{
         return value();
     }
 
-    
-    
-    
-    hahhaahahahahah
+    //hahaahahahahahahahahahaahahahahahahah
     }
 }
