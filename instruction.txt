@@ -1,1 +1,1 @@
-LOCAL
+local
