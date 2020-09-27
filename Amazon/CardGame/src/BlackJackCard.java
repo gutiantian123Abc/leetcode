@@ -32,11 +32,9 @@ public class BlackJackCard extends Card{
         return value();
     }
 
-    public int max_value() {
-        if(isAce()) {
-            return 10;
-        }
-
-        return value();
+    
+    
+    
+    hahhaahahahahah
     }
 }
