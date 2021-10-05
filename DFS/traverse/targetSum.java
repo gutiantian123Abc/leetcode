@@ -24,34 +24,32 @@ Your output answer is guaranteed to be fitted in a 32-bit integer.
 
 */
 
-//非常好的DFS， DP 题目
-
-//DFS 解法：
 class Solution {
-    int count = 0; //注意， int 不能像 ArrayList<Integer> result 那样跟traverse, 只能设为全局变量
-    public int findTargetSumWays(int[] nums, int S) { 
-        dfs(nums, S, 0, 0);
+    public int count = 0;
+    public int findTargetSumWays(int[] nums, int target) {
+        bt(nums, target, 0, 0);
         return count;
     }
     
-    private void dfs(int[] nums, int S, int sum, int index) {
+    private void bt(int[] nums, int target, int index, int sum) {
         if(index == nums.length) {
-            if(sum == S) {
+            if(sum == target) {
                 count++;
             }
             return;
         }
-
-        int curNum = nums[index]; //这里注意与combination, permutation, subset 区别， 没有for loop, 因为不是从什么地方开始
-        //+
-        dfs(nums, S, sum + curNum, index + 1);
-        //_
-        dfs(nums, S, sum - curNum, index + 1);
+        
+        // Try +
+        sum += nums[index];
+        bt(nums, target, index + 1, sum);
+        sum -= nums[index];
+        
+        // Try -
+        sum -= nums[index];
+        bt(nums, target, index + 1, sum);
+        sum += nums[index];
     }
 }
-
-
-//DP 解法：
 
 
 
