@@ -68,8 +68,8 @@ AddressId = 1 contains information about the address of PersonId = 2.
 
 --Solution 1: Join:
 # Write your MySQL query statement below
-SELECT FirstName, LastName, City, State 
-FROM Person LEFT JOIN Address
-ON Person.PersonId = Address.PersonId;
+select firstName, lastName, city, state
+from Person left outer join Address
+on Person.personId = Address.personId
 
 

@@ -41,26 +41,9 @@ Explanation: a@b.com is repeated two times.
 
 */
 
--- Solution 1: Using GROUP BY and a temporary table
-# Write your MySQL query statement below
-
-select Email
-from 
-(
-    select Email, count(Email) as num
-    from Person
-    group by Email
-) as Temp
-where num > 1;
-
-
-
--- Solution 2: Using GROUP BY and HAVING condition
-# Write your MySQL query statement below
-
-select Email
+select email as Email
 from Person
-group by Email
-having count(Email) > 1;
+group by email
+having count(*) > 1
 
 
