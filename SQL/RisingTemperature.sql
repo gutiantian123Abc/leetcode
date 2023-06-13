@@ -46,11 +46,7 @@ In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 */
 
 # Write your MySQL query statement below
-select 
-  W1.Id as id 
-from 
-  Weather as W1 
-  join Weather as W2 on (
-    DATEDIFF(W1.recordDate, W2.recordDate) = 1 
-    and W1.Temperature > W2.Temperature
-  );
+select W1.id
+from Weather as W1 inner join Weather as W2
+on datediff(W1.recordDate, W2.recordDate) = 1
+where W1.temperature > W2.temperature

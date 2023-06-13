@@ -39,10 +39,7 @@ Submissions
 */
 
 # Write your MySQL query statement below
-select 
-  Employee.name, 
-  Bonus.bonus 
-from 
-  Employee left join Bonus on Employee.empId = Bonus.empId 
-where 
-  Bonus.bonus < 1000 or Bonus.bonus is null;
+select E.name, B.bonus
+from Employee as E left outer join Bonus as B
+on E.empId = B.empId
+where B.bonus < 1000 or B.bonus is null

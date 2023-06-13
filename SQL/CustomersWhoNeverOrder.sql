@@ -64,9 +64,7 @@ Output:
 */
 -- Sokution: Using sub-query and NOT IN clause
 # Write your MySQL query statement below
-select Customers.name as Customers
-from Customers
-where Customers.id not in
-(
-    select CustomerId from Orders
-);
+select C.name as Customers
+from Customers as C left outer join Orders as O
+on C.id = O.customerId
+where O.id is null
