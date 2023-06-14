@@ -44,13 +44,7 @@ So the result is customer_number 3.
 Follow up: What if more than one customer have the largest number of orders, can you find all the customer_number in this case?
 */
 # Write your MySQL query statement below
-select 
-  customer_number 
-from 
-  Orders 
-group by 
-  customer_number 
-order by 
-  count(*) desc 
-limit 
-  1;
+select customer_number
+from Orders
+group by customer_number
+order by count(*) desc limit 1;
