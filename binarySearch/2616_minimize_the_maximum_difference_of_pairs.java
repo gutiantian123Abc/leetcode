@@ -58,9 +58,9 @@ class Solution {
         }
 
         if(test(nums, p, left) == p) {
-            return left;
+            return findLargestDifference(nums, p, left);
         } else {
-            return right;
+            return findLargestDifference(nums, p, right);
         }      
     }
 
@@ -76,5 +76,18 @@ class Solution {
         }
 
         return pairs;
+    }
+
+    private int findLargestDifference(int[] nums, int p, int maxDiff) {
+        int pairs = 0, largestDiff = 0;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] - nums[i - 1] <= maxDiff) {
+                largestDiff = Math.max(largestDiff, nums[i] - nums[i - 1]);
+                pairs++;
+                i++; // Skip the next element as it's already paired
+            }
+            if (pairs == p) break;
+        }
+        return largestDiff;
     }
 }
