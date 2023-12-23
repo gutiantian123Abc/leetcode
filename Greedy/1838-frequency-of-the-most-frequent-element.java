@@ -45,16 +45,15 @@ class Solution {
         Arrays.sort(nums);
 
         int start = 0, end = 0;
-        int prevSum = 0;
+        long curSum = 0; //(long) here means to prevent Integer Overflow
         int maxFreq = 0;
 
         while(end < nums.length) {
-            int target = nums[end];
-            prevSum += target;
+            curSum += nums[end];
 
-            while((long)target * (end - start + 1) - prevSum > k) {
-            	//(long) here means to prevent Integer Overflow
-                prevSum -= nums[start];
+            while((long) nums[end] * (end - start + 1) - curSum > k) {
+                //(long) here means to prevent Integer Overflow
+                curSum -= nums[start];
                 start++;
             }
             maxFreq = Math.max(end - start + 1, maxFreq);
