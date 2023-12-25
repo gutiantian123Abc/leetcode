@@ -76,6 +76,7 @@ class Solution {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(start);
         v[start] = true; // Mark firing bomb as visited when adding
+                        // Must mark here on adding to queue, not when poll()
 
         while(!queue.isEmpty()) {
             int size = queue.size();
@@ -87,6 +88,8 @@ class Solution {
                     if(!v[neighbor]) {
                         queue.add(neighbor);
                         v[neighbor] = true;// Mark firing when adding to the queue
+                        // Must mark here on adding to queue, not when poll()
+
                     }
                 }
             }
