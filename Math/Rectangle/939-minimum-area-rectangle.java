@@ -1,0 +1,78 @@
+/* 939. Minimum Area Rectangle
+
+https://leetcode.com/problems/minimum-area-rectangle/description/
+
+You are given an array of points in the X-Y plane points where points[i] = [xi, yi].
+
+Return the minimum area of a rectangle formed from these points, 
+with sides parallel to the X and Y axes. If there is not any such rectangle, return 0.
+
+ 
+
+Example 1:
+
+
+Input: points = [[1,1],[1,3],[3,1],[3,3],[2,2]]
+Output: 4
+Example 2:
+
+
+Input: points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]
+Output: 2
+ 
+
+Constraints:
+
+1 <= points.length <= 500
+points[i].length == 2
+0 <= xi, yi <= 4 * 104
+All the given points are unique.
+
+*/
+
+class Solution {
+    class Pair {
+        int x;
+        int y;
+        public Pair(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        public boolean equals(Object o) {
+            Pair pair = (Pair) o;
+            return this.x == pair.x && this.y == pair.y;
+        }
+
+        public int hashCode() {
+            return Objects.hash(x, y);
+        }
+    }
+
+    public int minAreaRect(int[][] points) {
+        Set<Pair> pairSet = new HashSet<>();
+        int minArea = Integer.MAX_VALUE;
+
+        for(int i = 0; i < points.length; i++) {
+            int[] point = points[i];
+            int x = point[0], y = point[1];
+            Pair pair = new Pair(x, y);
+            pairSet.add(pair);
+        }
+
+        for(int i = 0; i < points.length - 1; i++) {
+            for(int j = i + 1; j < points.length; j++) {
+                int x1 = points[i][0], y1 = points[i][1];
+                int x2 = points[j][0], y2 = points[j][1];
+
+                if(x1 != x2 && y1 != y2) {
+                    if(pairSet.contains(new Pair(x1, y2)) && pairSet.contains(new Pair(x2, y1))) {
+                        minArea = Math.min(minArea, Math.abs(x1-x2) * Math.abs(y1 - y2));
+                    }
+                }
+            }
+        }
+
+        return minArea == Integer.MAX_VALUE ? 0 : minArea;
+    }
+}
