@@ -1,7 +1,7 @@
 /* Subsets
 Given a set of distinct integers, return all possible subsets.
 
-Notice
+Notice:
 Elements in a subset must be in non-descending order.
 The solution set must not contain duplicate subsets.
 
