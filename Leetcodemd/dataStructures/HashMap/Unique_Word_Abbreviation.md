@@ -11,7 +11,39 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Unique Word AbbreviationAn abbreviation of a word follows the form <first letter><number><lastletter>. Below are some examples of word abbreviations:a) it                      --> it    (no abbreviation)     1b) d|o|g                   --> d1g              1    1  1     1---5----0----5--8c) i|nternationalizatio|n  --> i18n              1     1---5----0d) l|ocalizatio|n          --> l10nAssume you have a dictionary and given a word, find whether itsabbreviation is unique in the dictionary.A word's abbreviation is unique if no other word from the dictionary hasthe same abbreviation.Example:Given dictionary = [ "deer", "door", "cake", "card" ]isUnique("dear") -> falseisUnique("cart") -> trueisUnique("cane") -> falseisUnique("make") -> trueYour ValidWordAbbr object will be instantiated and called as such:ValidWordAbbr obj = new ValidWordAbbr(dictionary);boolean param_1 = obj.isUnique(word);*/</pre>
+/* Unique Word Abbreviation
+An abbreviation of a word follows the form <first letter><number><last letter>.
+ Below are some examples of word abbreviations:
+
+a) it                      --> it    (no abbreviation)
+
+     1
+b) d|o|g                   --> d1g
+
+              1    1  1
+     1---5----0----5--8
+c) i|nternationalizatio|n  --> i18n
+
+              1
+     1---5----0
+d) l|ocalizatio|n          --> l10n
+Assume you have a dictionary and given a word, find whether its abbreviation is unique in the dictionary. 
+A word's abbreviation is unique if no other word from the dictionary has the same abbreviation.
+
+Example: 
+Given dictionary = [ "deer", "door", "cake", "card" ]
+
+isUnique("dear") -> false
+isUnique("cart") -> true
+isUnique("cane") -> false
+isUnique("make") -> true
+
+
+Your ValidWordAbbr object will be instantiated and called as such:
+ValidWordAbbr obj = new ValidWordAbbr(dictionary);
+boolean param_1 = obj.isUnique(word); 
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

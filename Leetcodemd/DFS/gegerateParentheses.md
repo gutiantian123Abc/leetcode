@@ -11,7 +11,17 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Generate ParenthesesGiven n pairs of parentheses, write a function to generate all combinationsof well-formed parentheses.ExampleGiven n = 3, a solution set is:"((()))", "(()())", "(())()", "()(())", "()()()"*/    /**     * @param n n pairs     * @return All combinations of well-formed parentheses     */</pre>
+/* Generate Parentheses
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+Example
+Given n = 3, a solution set is:
+"((()))", "(()())", "(())()", "()(())", "()()()"
+*/
+    /**
+     * @param n n pairs
+     * @return All combinations of well-formed parentheses
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,7 +11,51 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Number of Airplanes in the SkyGiven an interval list which are flying and landing time of the flight. Howmany airplanes are on the sky at most?ExampleFor interval list[  (1,10),  (2,3),  (5,8),  (4,7)]Return 3NoticeIf landing and flying happens at the same time, we consider landing shouldhappen at first.*//* 知识要点：Sweep Line扫描线算法 区间问题巧妙解法扫描问题的特点1. 事件往往是以区间的形式存在2. 区间两端代表事件的开始和结束3. 按照区间起点排序，起点相同的按照终点排序扫描线要点将起点和终点打散排序[[1,3], [2,4]] => [[1,start],[2,start],[3,end],[4,end]]*//** * Definition of Interval: * public classs Interval { *     int start, end; *     Interval(int start, int end) { *         this.start = start; *         this.end = end; *     } * } */    /**     * @param airplanes: An interval array     * @return: Count of airplanes are in the sky.     */</pre>
+/* Number of Airplanes in the Sky
+Given an interval list which are flying and landing time of the flight. How many airplanes are on the sky at most?
+
+Example
+For interval list
+
+[
+  (1,10),
+  (2,3),
+  (5,8),
+  (4,7)
+]
+Return 3
+
+Notice
+If landing and flying happens at the same time, we consider landing should happen at first.
+*/
+/* 知识要点：
+Sweep Line
+扫描线算法 区间问题巧妙解法
+
+扫描问题的特点
+1. 事件往往是以区间的形式存在
+2. 区间两端代表事件的开始和结束
+3. 按照区间起点排序，起点相同的按照终点排序
+
+扫描线要点
+将起点和终点打散排序
+[[1,3], [2,4]] => [[1,start],[2,start],[3,end],[4,end]]
+*/
+/**
+ * Definition of Interval:
+ * public classs Interval {
+ *     int start, end;
+ *     Interval(int start, int end) {
+ *         this.start = start;
+ *         this.end = end;
+ *     }
+ * }
+ */
+    /**
+     * @param airplanes: An interval array
+     * @return: Count of airplanes are in the sky.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

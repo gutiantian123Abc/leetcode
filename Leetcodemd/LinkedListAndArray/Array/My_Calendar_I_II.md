@@ -11,7 +11,84 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* My Calendar IImplement a MyCalendar class to store your events.A new event can be added if adding the event will not cause a doublebooking.Your class will have the method, book(int start, int end).Formally, this represents a booking on the half open interval [start, end),the range of real numbers x such that start <= x < end.A double booking happens when two events have some non-empty intersection(ie., there is some time that is common to both events.)For each call to the method MyCalendar.book,return true if the event can be added to the calendar successfully withoutcausing a double booking.Otherwise, return false and do not add the event to the calendar.Your class will be called like this:MyCalendar cal = new MyCalendar(); MyCalendar.book(start, end)Example 1:MyCalendar();MyCalendar.book(10, 20); // returns trueMyCalendar.book(15, 25); // returns falseMyCalendar.book(20, 30); // returns trueExplanation:The first event can be booked.The second can't because time 15 is already booked by another event.The third event can be booked, as the first event takes every time lessthan 20,but not including 20.Note:The number of calls to MyCalendar.book per test case will be at most 1000.In calls to MyCalendar.book(start, end), start and end are integers in therange [0, 10^9].*//** * Your MyCalendar object will be instantiated and called as such: * MyCalendar obj = new MyCalendar(); * boolean param_1 = obj.book(start,end); *//* My Calendar IIImplement a MyCalendarTwo class to store your events.A new event can be added if adding the event will not cause a triplebooking.Your class will have one method, book(int start, int end).Formally, this represents a booking on the half open interval [start, end),the range of real numbers x such that start <= x < end.A triple booking happens when three events have some non-empty intersection(ie., there is some time that is common to all 3 events.)For each call to the method MyCalendar.book, return true if the eventcan be added to the calendar successfully without causing a triple booking.Otherwise,return false and do not add the event to the calendar.Your class will be called like this: MyCalendar cal = new MyCalendar();MyCalendar.book(start, end)Example 1:MyCalendar();MyCalendar.book(10, 20); // returns trueMyCalendar.book(50, 60); // returns trueMyCalendar.book(10, 40); // returns trueMyCalendar.book(5, 15); // returns falseMyCalendar.book(5, 10); // returns trueMyCalendar.book(25, 55); // returns trueExplanation:The first two events can be booked.  The third event can be double booked.The fourth event (5, 15) can't be booked, because it would result in atriple booking.The fifth event (5, 10) can be booked, as it does not use time 10 which isalready double booked.The sixth event (25, 55) can be booked, as the time in [25, 40) will bedouble booked with the third event;the time [40, 50) will be single booked, and the time [50, 55) will bedouble booked with the second event.Note:The number of calls to MyCalendar.book per test case will be at most 1000.In calls to MyCalendar.book(start, end), start and end are integers in therange [0, 10^9].*//** * Your MyCalendarTwo object will be instantiated and called as such: * MyCalendarTwo obj = new MyCalendarTwo(); * boolean param_1 = obj.book(start,end); */</pre>
+/* My Calendar I
+Implement a MyCalendar class to store your events. 
+A new event can be added if adding the event will not cause a double booking.
+
+Your class will have the method, book(int start, int end). 
+Formally, this represents a booking on the half open interval [start, end), 
+the range of real numbers x such that start <= x < end.
+
+A double booking happens when two events have some non-empty intersection 
+(ie., there is some time that is common to both events.)
+
+For each call to the method MyCalendar.book, 
+return true if the event can be added to the calendar successfully without causing a double booking. 
+Otherwise, return false and do not add the event to the calendar.
+
+Your class will be called like this: 
+MyCalendar cal = new MyCalendar(); MyCalendar.book(start, end)
+Example 1:
+MyCalendar();
+MyCalendar.book(10, 20); // returns true
+MyCalendar.book(15, 25); // returns false
+MyCalendar.book(20, 30); // returns true
+Explanation: 
+The first event can be booked.  
+The second can't because time 15 is already booked by another event.
+The third event can be booked, as the first event takes every time less than 20, 
+but not including 20.
+Note:
+
+The number of calls to MyCalendar.book per test case will be at most 1000.
+In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
+*/
+/**
+ * Your MyCalendar object will be instantiated and called as such:
+ * MyCalendar obj = new MyCalendar();
+ * boolean param_1 = obj.book(start,end);
+ */
+/* My Calendar II
+Implement a MyCalendarTwo class to store your events. 
+A new event can be added if adding the event will not cause a triple booking.
+
+Your class will have one method, book(int start, int end). 
+Formally, this represents a booking on the half open interval [start, end), 
+the range of real numbers x such that start <= x < end.
+
+A triple booking happens when three events have some non-empty intersection 
+(ie., there is some time that is common to all 3 events.)
+
+For each call to the method MyCalendar.book, return true if the event 
+can be added to the calendar successfully without causing a triple booking. Otherwise, 
+return false and do not add the event to the calendar.
+
+Your class will be called like this: MyCalendar cal = new MyCalendar(); MyCalendar.book(start, end)
+Example 1:
+MyCalendar();
+MyCalendar.book(10, 20); // returns true
+MyCalendar.book(50, 60); // returns true
+MyCalendar.book(10, 40); // returns true
+MyCalendar.book(5, 15); // returns false
+MyCalendar.book(5, 10); // returns true
+MyCalendar.book(25, 55); // returns true
+Explanation: 
+The first two events can be booked.  The third event can be double booked.
+The fourth event (5, 15) can't be booked, because it would result in a triple booking.
+The fifth event (5, 10) can be booked, as it does not use time 10 which is already double booked.
+The sixth event (25, 55) can be booked, as the time in [25, 40) will be double booked with the third event;
+the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event.
+Note:
+
+The number of calls to MyCalendar.book per test case will be at most 1000.
+In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
+*/
+/**
+ * Your MyCalendarTwo object will be instantiated and called as such:
+ * MyCalendarTwo obj = new MyCalendarTwo();
+ * boolean param_1 = obj.book(start,end);
+ */
+</pre>
 </div>
 
 <h2>Solution</h2>

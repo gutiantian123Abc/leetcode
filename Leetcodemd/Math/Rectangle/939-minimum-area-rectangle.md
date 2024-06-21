@@ -11,7 +11,38 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 939. Minimum Area Rectanglehttps://leetcode.com/problems/minimum-area-rectangle/description/You are given an array of points in the X-Y plane points where points[i] =[xi, yi].Return the minimum area of a rectangle formed from these points,with sides parallel to the X and Y axes. If there is not any suchrectangle, return 0.Example 1:Input: points = [[1,1],[1,3],[3,1],[3,3],[2,2]]Output: 4Example 2:Input: points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]Output: 2Constraints:1 <= points.length <= 500points[i].length == 20 <= xi, yi <= 4 * 104All the given points are unique.*/</pre>
+/* 939. Minimum Area Rectangle
+
+https://leetcode.com/problems/minimum-area-rectangle/description/
+
+You are given an array of points in the X-Y plane points where points[i] = [xi, yi].
+
+Return the minimum area of a rectangle formed from these points, 
+with sides parallel to the X and Y axes. If there is not any such rectangle, return 0.
+
+ 
+
+Example 1:
+
+
+Input: points = [[1,1],[1,3],[3,1],[3,3],[2,2]]
+Output: 4
+Example 2:
+
+
+Input: points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]
+Output: 2
+ 
+
+Constraints:
+
+1 <= points.length <= 500
+points[i].length == 2
+0 <= xi, yi <= 4 * 104
+All the given points are unique.
+
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

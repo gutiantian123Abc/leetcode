@@ -11,7 +11,27 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Parking Lot Design Using OO Design*//* 2.Event listener infrastructure :The next question is who will forward events to the controller.We have vehicle sensors at multiple points of entry and exit.These sensors are able to scan a vehicle's props such as plate, height,type etc.and notify entry and exit event listeners about entry and exit.Note that this enables a real time feel and reduces waiting for vehicles(as spots can be made async available) if slots are full.Sensors run on their own threads. We have the flexibility of havingsensors:listeners in a m:n relationship through the use of the composite listenerpool.Further note: SensorData is inner for enhanced encapsulation.*//* 3. ParkingLot : Facade for the parking lot subsystem. ManagesparkingSpot assignments.Validates vehicles to ensure that they follow parking policy (for eg maxheight).A parking spot encapsulates level, spot no and vehicle types it is suitablefor.This enables a vehicle to enter through a different level(floor) and parkat a completely different floor(in case there was no space available on the entry floor.)Validators are strategy objects to ensure flexibility around differentparking policies that mightarise. Spot assignment is again based on strategy objects which decidewhich spot goes to which vehicle based on parameters.Additionally, it would be easy to add timekeeping as shown. This would aidbilling.*/</pre>
+/*Parking Lot Design Using OO Design*/
+/* 2.Event listener infrastructure : 
+The next question is who will forward events to the controller. 
+We have vehicle sensors at multiple points of entry and exit. 
+These sensors are able to scan a vehicle's props such as plate, height, type etc. 
+and notify entry and exit event listeners about entry and exit. 
+Note that this enables a real time feel and reduces waiting for vehicles 
+(as spots can be made async available) if slots are full.
+Sensors run on their own threads. We have the flexibility of having sensors:
+listeners in a m:n relationship through the use of the composite listener pool.
+Further note: SensorData is inner for enhanced encapsulation.
+*/
+/* 3. ParkingLot : Facade for the parking lot subsystem. Manages parkingSpot assignments. 
+Validates vehicles to ensure that they follow parking policy (for eg max height).
+A parking spot encapsulates level, spot no and vehicle types it is suitable for. 
+This enables a vehicle to enter through a different level(floor) and park at a completely different floor 
+(in case there was no space available on the entry floor.)
+Validators are strategy objects to ensure flexibility around different parking policies that might 
+arise. Spot assignment is again based on strategy objects which decide which spot goes to which vehicle based on parameters.
+Additionally, it would be easy to add timekeeping as shown. This would aid billing.*/
+</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,7 +11,35 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Minimum Subtree (Related Problem: Subtree with Maximum Average)Given a binary tree, find the subtree with minimum sum. Return the root ofthe subtree.ExampleGiven a binary tree:     1   /   \ -5     2 / \   /  \0   2 -4  -5return the node 1.*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root the root of binary tree     * @return the root of the minimum subtree     */</pre>
+/* Minimum Subtree (Related Problem: Subtree with Maximum Average)
+Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.
+
+Example
+Given a binary tree:
+
+     1
+   /   \
+ -5     2
+ / \   /  \
+0   2 -4  -5 
+return the node 1.
+*/
+/**
+ * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
+ */
+    /**
+     * @param root the root of binary tree
+     * @return the root of the minimum subtree
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

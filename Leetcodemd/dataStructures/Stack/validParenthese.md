@@ -11,7 +11,18 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Valid ParenthesesGiven a string containing just the characters '(', ')', '{', '}', '[' and']',determine if the input string is valid.ExampleThe brackets must close in the correct order, "()" and "()[]{}" are allvalid but "(]" and "([)]" are not.*/    /**     * @param s A string     * @return whether the string is a valid parentheses     */</pre>
+/* Valid Parentheses
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', 
+determine if the input string is valid.
+
+Example
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+*/
+    /**
+     * @param s A string
+     * @return whether the string is a valid parentheses
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,7 +11,43 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*  Binary Tree Paths // DFS Traversal Mode, see Divide&Qonquer mode indivede and qonquerGiven a binary tree, return all root-to-leaf paths.ExampleGiven the following binary tree:   1 /   \2     3 \  5All root-to-leaf paths are:[  "1->2->5",  "1->3"]*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root the root of the binary tree     * @return all root-to-leaf paths     */    /**     * @param root the root of the binary tree     * @return all root-to-leaf paths     */</pre>
+/*  Binary Tree Paths // DFS Traversal Mode, see Divide&Qonquer mode in divede and qonquer
+Given a binary tree, return all root-to-leaf paths.
+Example
+Given the following binary tree:
+
+   1
+ /   \
+2     3
+ \
+  5
+All root-to-leaf paths are:
+
+[
+  "1->2->5",
+  "1->3"
+]
+*/
+/**
+ * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
+ */
+    /**
+     * @param root the root of the binary tree
+     * @return all root-to-leaf paths
+     */
+    /**
+     * @param root the root of the binary tree
+     * @return all root-to-leaf paths
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

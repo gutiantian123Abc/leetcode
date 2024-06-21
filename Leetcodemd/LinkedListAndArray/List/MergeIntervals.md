@@ -11,7 +11,29 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Given a collection of intervals, merge all overlapping intervals.[                     [  [1, 3],               [1, 6],  [2, 6],      =>       [8, 10],  [8, 10],              [15, 18]  [15, 18]            ]]*//** * Definition of Interval: * public class Interval { *     int start, end; *     Interval(int start, int end) { *         this.start = start; *         this.end = end; *     } */    /**     * @param intervals, a collection of intervals     * @return: A new sorted interval list.     */</pre>
+/*
+Given a collection of intervals, merge all overlapping intervals.
+[                     [
+  [1, 3],               [1, 6],
+  [2, 6],      =>       [8, 10],
+  [8, 10],              [15, 18]
+  [15, 18]            ]
+]
+*/
+/**
+ * Definition of Interval:
+ * public class Interval {
+ *     int start, end;
+ *     Interval(int start, int end) {
+ *         this.start = start;
+ *         this.end = end;
+ *     }
+ */
+    /**
+     * @param intervals, a collection of intervals
+     * @return: A new sorted interval list.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

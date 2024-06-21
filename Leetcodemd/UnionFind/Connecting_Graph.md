@@ -11,7 +11,57 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Connecting Graph IGiven n nodes in a graph labeled from 1 to n.There is no edges in the graph at beginning.You need to support the following method:1. connect(a, b), add an edge to connect node a and node b. 2.query(a, b)`,check if two nodes are connectedExample5 // n = 5query(1, 2) return falseconnect(1, 2)query(1, 3) return falseconnect(2, 4)query(1, 4) return true*//* Connecting Graph IIGiven n nodes in a graph labeled from 1 to n. There is no edges in thegraph at beginning.You need to support the following method:1. connect(a, b), an edge to connect node a and node b2. query(a), Returns the number of connected component nodes which includenode a.Example5 // n = 5query(1) return 1connect(1, 2)query(1) return 2connect(2, 4)query(1) return 3connect(1, 4)query(1) return 3*//*Connecting Graph IIIGiven n nodes in a graph labeled from 1 to n. There is no edges in thegraph at beginning.You need to support the following method:1. connect(a, b), an edge to connect node a and node b2. query(), Returns the number of connected component in the graphExample5 // n = 5query() return 5connect(1, 2)query() return 4connect(2, 4)query() return 3connect(1, 4)query() return 3*/</pre>
+/* Connecting Graph I
+Given n nodes in a graph labeled from 1 to n. 
+There is no edges in the graph at beginning.
+
+You need to support the following method:
+1. connect(a, b), add an edge to connect node a and node b. 2.query(a, b)`, 
+check if two nodes are connected
+
+Example
+5 // n = 5
+query(1, 2) return false
+connect(1, 2)
+query(1, 3) return false
+connect(2, 4)
+query(1, 4) return true
+*/
+/* Connecting Graph II
+Given n nodes in a graph labeled from 1 to n. There is no edges in the graph at beginning.
+
+You need to support the following method:
+1. connect(a, b), an edge to connect node a and node b
+2. query(a), Returns the number of connected component nodes which include node a.
+
+Example
+5 // n = 5
+query(1) return 1
+connect(1, 2)
+query(1) return 2
+connect(2, 4)
+query(1) return 3
+connect(1, 4)
+query(1) return 3
+*/
+/*Connecting Graph III 
+Given n nodes in a graph labeled from 1 to n. There is no edges in the graph at beginning.
+
+You need to support the following method:
+1. connect(a, b), an edge to connect node a and node b
+2. query(), Returns the number of connected component in the graph
+
+Example
+5 // n = 5
+query() return 5
+connect(1, 2)
+query() return 4
+connect(2, 4)
+query() return 3
+connect(1, 4)
+query() return 3
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

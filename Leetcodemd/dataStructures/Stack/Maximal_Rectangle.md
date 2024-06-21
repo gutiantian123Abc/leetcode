@@ -11,7 +11,31 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Maximal Rectanglehttps://www.lintcode.com/problem/maximal-rectangle/description?_from=ladder&&fromId=4DescriptionGiven a 2D boolean matrix filled with False and True,find the largest rectangle containing all True and return its area.Have you met this question in a real interview?ExampleGiven a matrix:[  [1, 1, 0, 0, 1],  [0, 1, 0, 0, 1],  [0, 0, 1, 1, 1],  [0, 0, 1, 1, 1],  [0, 0, 0, 0, 1]]return 6.*/    /**     * @param matrix: a boolean 2D matrix     * @return: an integer     */</pre>
+/* Maximal Rectangle
+https://www.lintcode.com/problem/maximal-rectangle/description?_from=ladder&&fromId=4
+
+Description
+Given a 2D boolean matrix filled with False and True, 
+find the largest rectangle containing all True and return its area.
+
+Have you met this question in a real interview?  
+Example
+Given a matrix:
+
+[
+  [1, 1, 0, 0, 1],
+  [0, 1, 0, 0, 1],
+  [0, 0, 1, 1, 1],
+  [0, 0, 1, 1, 1],
+  [0, 0, 0, 0, 1]
+]
+return 6.
+*/
+    /**
+     * @param matrix: a boolean 2D matrix
+     * @return: an integer
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

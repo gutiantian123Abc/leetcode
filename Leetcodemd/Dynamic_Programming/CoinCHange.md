@@ -11,7 +11,24 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Coin ChangeYou are given coins of different denominations and a total amount of moneyamount. Write a function to compute the fewest number of coins that youneed to make up that amount.If that amount of money cannot be made up by any combination of the coins,return -1.NoticeYou may assume that you have an infinite number of each kind of coin.ExampleGiven coins = [1, 2, 5], amount = 11return 3 (11 = 5 + 5 + 1)Given coins = [2], amount = 3return -1.*/    /**     * @param coins  a list of integer     * @param amount a total amount of money amount     * @return the fewest number of coins that you need to make up     */</pre>
+/* Coin Change
+You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. 
+If that amount of money cannot be made up by any combination of the coins, return -1.
+Notice
+You may assume that you have an infinite number of each kind of coin.
+Example
+Given coins = [1, 2, 5], amount = 11
+return 3 (11 = 5 + 5 + 1)
+
+Given coins = [2], amount = 3
+return -1.
+*/
+    /**
+     * @param coins  a list of integer
+     * @param amount a total amount of money amount
+     * @return the fewest number of coins that you need to make up
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

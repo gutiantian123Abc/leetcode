@@ -11,7 +11,20 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Compare StringsCompare two strings A and B, determine whether A contains all of thecharacters in B.The characters in string A and B are all Upper Case letters.ExampleFor A = "ABCD", B = "ACD", return true.For A = "ABCD", B = "AABC", return false.*/    /**     * @param A : A string includes Upper Case letters     * @param B : A string includes Upper Case letter     * @return :  if string A contains all of the characters in B returntrue else return false     */</pre>
+/* Compare Strings
+Compare two strings A and B, determine whether A contains all of the characters in B.
+The characters in string A and B are all Upper Case letters.
+
+Example
+For A = "ABCD", B = "ACD", return true.
+For A = "ABCD", B = "AABC", return false.
+*/
+    /**
+     * @param A : A string includes Upper Case letters
+     * @param B : A string includes Upper Case letter
+     * @return :  if string A contains all of the characters in B return true else return false
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

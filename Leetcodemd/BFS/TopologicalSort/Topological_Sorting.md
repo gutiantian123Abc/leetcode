@@ -11,7 +11,22 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Topological Sortinghttps://www.lintcode.com/problem/topological-sorting/description*//** * Definition for Directed graph. * class DirectedGraphNode { *     int label; *     ArrayList<DirectedGraphNode> neighbors; *     DirectedGraphNode(int x) { label = x; neighbors = newArrayList<DirectedGraphNode>(); } * }; */    /*     * @param graph: A list of Directed graph node     * @return: Any topological order for the given graph.     */</pre>
+/* Topological Sorting
+https://www.lintcode.com/problem/topological-sorting/description
+*/
+/**
+ * Definition for Directed graph.
+ * class DirectedGraphNode {
+ *     int label;
+ *     ArrayList<DirectedGraphNode> neighbors;
+ *     DirectedGraphNode(int x) { label = x; neighbors = new ArrayList<DirectedGraphNode>(); }
+ * };
+ */
+    /*
+     * @param graph: A list of Directed graph node
+     * @return: Any topological order for the given graph.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

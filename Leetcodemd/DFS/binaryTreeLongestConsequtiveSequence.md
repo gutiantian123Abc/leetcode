@@ -11,7 +11,47 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Binary Tree Longest Consecutive SequenceGiven a binary tree, find the length of the longest consecutive sequencepath.The path refers to any sequence of nodes from some starting node to anynode in the tree along the parent-child connections.The longest consecutive path need to be from parent to child (cannot be thereverse).ExampleFor example,   1    \     3    / \   2   4        \         5Longest consecutive sequence path is 3-4-5, so return 3.   2    \     3    /   2  / 1Longest consecutive sequence path is 2-3,not3-2-1, so return 2.*//** * Definition for a binary tree node. * public class TreeNode { *     int val; *     TreeNode left; *     TreeNode right; *     TreeNode(int x) { val = x; } * } */    /**     * @param root the root of binary tree     * @return the length of the longest consecutive sequence path     */</pre>
+/* Binary Tree Longest Consecutive Sequence
+Given a binary tree, find the length of the longest consecutive sequence path.
+
+The path refers to any sequence of nodes from some starting node to any node in the tree along the parent-child connections. 
+The longest consecutive path need to be from parent to child (cannot be the reverse).
+
+Example
+For example,
+
+   1
+    \
+     3
+    / \
+   2   4
+        \
+         5
+Longest consecutive sequence path is 3-4-5, so return 3.
+
+   2
+    \
+     3
+    / 
+   2    
+  / 
+ 1
+Longest consecutive sequence path is 2-3,not3-2-1, so return 2.
+*/
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+    /**
+     * @param root the root of binary tree
+     * @return the length of the longest consecutive sequence path
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>
