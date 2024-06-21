@@ -11,7 +11,18 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Common SubsequenceGiven two strings, find the longest common subsequence (LCS).Your code should return the length of LCS.ExampleFor "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.For "ABCD" and "EACB", the LCS is "AC", return 2.*/    /**     * @param A, B: Two strings.     * @return: The length of longest common subsequence of A and B.     */</pre>
+/* Longest Common Subsequence
+Given two strings, find the longest common subsequence (LCS).
+Your code should return the length of LCS.
+Example
+For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
+For "ABCD" and "EACB", the LCS is "AC", return 2.
+*/
+    /**
+     * @param A, B: Two strings.
+     * @return: The length of longest common subsequence of A and B.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

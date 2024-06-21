@@ -11,7 +11,30 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Part 1:Given an array and a value, remove all occurrences of that value in place and return the new length.The order of elements can be changed, and the elements after the new length don't matter.Given an array [0,4,4,0,0,2,4,4], value=4return 4 and front four elements of the array is [0,0,0,2]*/    /**     * @param A: a array of integers     * @return : return an integer     *//*Part 2:Follow up for "Remove Duplicates":What if duplicates are allowed at most twice?For example,Given sorted array A = [1,1,1,2,2,3],Your function should return length = 5, and A is now [1,1,2,2,3].*/    /**     * @param A: a array of integers     * @return : return an integer     */</pre>
+/*
+Part 1:
+Given an array and a value, remove all occurrences of that value in place and return the new length.
+The order of elements can be changed, and the elements after the new length don't matter.
+Given an array [0,4,4,0,0,2,4,4], value=4
+return 4 and front four elements of the array is [0,0,0,2]
+*/
+    /**
+     * @param A: a array of integers
+     * @return : return an integer
+     */
+/*
+Part 2:
+Follow up for "Remove Duplicates":
+What if duplicates are allowed at most twice?
+For example,
+Given sorted array A = [1,1,1,2,2,3],
+Your function should return length = 5, and A is now [1,1,2,2,3].
+*/
+    /**
+     * @param A: a array of integers
+     * @return : return an integer
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

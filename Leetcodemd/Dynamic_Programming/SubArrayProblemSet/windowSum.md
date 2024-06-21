@@ -11,7 +11,22 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Window SumGiven an array of n integer, and a moving window(size k), move the window at each iteration from thestart of the array,find the sum of the element inside the window at each moving.ExampleFor array [1,2,7,8,5], moving window size k = 3.1 + 2 + 7 = 102 + 7 + 8 = 177 + 8 + 5 = 20return [10,17,20]*/    /**     * @param nums a list of integers.     * @return the sum of the element inside the window at each moving.     */</pre>
+/* Window Sum
+Given an array of n integer, and a moving window(size k), move the window at each iteration from the
+start of the array,
+find the sum of the element inside the window at each moving.
+Example
+For array [1,2,7,8,5], moving window size k = 3.
+1 + 2 + 7 = 10
+2 + 7 + 8 = 17
+7 + 8 + 5 = 20
+return [10,17,20]
+*/
+    /**
+     * @param nums a list of integers.
+     * @return the sum of the element inside the window at each moving.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,7 +11,25 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Given a sorted array, remove the duplicates in place such that each element appear only onceand return the new length.Do not allocate extra space for another array, you must do this in place with constant memory.Given input array A = [1,1,2],Your function should return length = 2, and A is now [1,2].*/    /**     * @param A: a array of integers     * @return : return an integer     *//* Remove Duplicates from Sorted Array IIFollow up for "Remove Duplicates":What if duplicates are allowed at most twice?For example,Given sorted array nums = [1,1,1,2,2,3],Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3.It doesn't matter what you leave beyond the new length.*/</pre>
+/*Given a sorted array, remove the duplicates in place such that each element appear only once
+and return the new length.
+Do not allocate extra space for another array, you must do this in place with constant memory.
+Given input array A = [1,1,2],
+Your function should return length = 2, and A is now [1,2].
+*/
+    /**
+     * @param A: a array of integers
+     * @return : return an integer
+     */
+/* Remove Duplicates from Sorted Array II
+Follow up for "Remove Duplicates":
+What if duplicates are allowed at most twice?
+For example,
+Given sorted array nums = [1,1,1,2,2,3],
+Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3.
+It doesn't matter what you leave beyond the new length.
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

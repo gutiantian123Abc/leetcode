@@ -11,7 +11,40 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Identical Binary TreeCheck if two binary trees are identical.Identical means the two binary trees have the same structure and every identicalposition has the same value.Example    1             1   / \           / \  2   2   and   2   2 /             /4             4are identical.    1             1   / \           / \  2   3   and   2   3 /               \4                 4are not identical.*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param a, b, the root of binary trees.     * @return true if they are identical, or false.     */</pre>
+/* Identical Binary Tree
+Check if two binary trees are identical.
+Identical means the two binary trees have the same structure and every identical
+position has the same value.
+Example
+    1             1
+   / \           / \
+  2   2   and   2   2
+ /             /
+4             4
+are identical.
+    1             1
+   / \           / \
+  2   3   and   2   3
+ /               \
+4                 4
+are not identical.
+*/
+/**
+ * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
+ */
+    /**
+     * @param a, b, the root of binary trees.
+     * @return true if they are identical, or false.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

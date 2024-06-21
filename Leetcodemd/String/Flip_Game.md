@@ -11,7 +11,25 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 914. Flip GameYou are playing the following Flip Game with your friend: Given a string that contains only thesetwo characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". Thegame ends when a person can no longer make a move and therefore the other person will be the winner.Write a function to compute all possible states of the string after one valid move.ExampleGiven s = "++++", after one move, it may become one of the following states:[  "--++",  "+--+",  "++--"]If there is no valid move, return an empty list [].*/    /**     * @param s: the given string     * @return: all the possible states of the string after one valid move     */</pre>
+/* 914. Flip Game
+You are playing the following Flip Game with your friend: Given a string that contains only these
+two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The
+game ends when a person can no longer make a move and therefore the other person will be the winner.
+Write a function to compute all possible states of the string after one valid move.
+Example
+Given s = "++++", after one move, it may become one of the following states:
+[
+  "--++",
+  "+--+",
+  "++--"
+]
+If there is no valid move, return an empty list [].
+*/
+    /**
+     * @param s: the given string
+     * @return: all the possible states of the string after one valid move
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

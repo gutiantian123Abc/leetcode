@@ -11,7 +11,22 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Common SubstringGiven two strings, find the longest common substring.Return the length of it.NoticeThe characters in substring should occur continuously in original string.This is different with subsequence.ExampleGiven A = "ABCD", B = "CBCE", return 2.ChallengeO(n x m) time and memory.*/    /**     * @param A, B: Two string.     * @return: the length of the longest common substring.     */</pre>
+/* Longest Common Substring
+Given two strings, find the longest common substring.
+Return the length of it.
+Notice
+The characters in substring should occur continuously in original string.
+This is different with subsequence.
+Example
+Given A = "ABCD", B = "CBCE", return 2.
+Challenge
+O(n x m) time and memory.
+*/
+    /**
+     * @param A, B: Two string.
+     * @return: the length of the longest common substring.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

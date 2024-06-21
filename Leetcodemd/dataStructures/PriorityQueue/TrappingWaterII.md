@@ -11,7 +11,27 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Trapping Rain Water IIGiven n x m non-negative integers representing an elevation map 2d where the area of each cell is 1x 1,compute how much water it is able to trap after raining.ExampleGiven 5*4 matrix[12,13,0,12][13,4,13,12][13,8,10,12][12,13,12,12][13,13,13,13]return 14.*//* 注水问题， 从外向内， 从最短板往里灌水， BFS, 具体解释: http://www.cnblogs.com/grandyang/p/5928987.html题目比较困难， 理解即可*/    /**     * @param heights: a matrix of integers     * @return: an integer     */</pre>
+/* Trapping Rain Water II
+Given n x m non-negative integers representing an elevation map 2d where the area of each cell is 1
+x 1,
+compute how much water it is able to trap after raining.
+Example
+Given 5*4 matrix
+[12,13,0,12]
+[13,4,13,12]
+[13,8,10,12]
+[12,13,12,12]
+[13,13,13,13]
+return 14.
+*/
+/* 注水问题， 从外向内， 从最短板往里灌水， BFS, 具体解释: http://www.cnblogs.com/grandyang/p/5928987.html
+题目比较困难， 理解即可
+*/
+    /**
+     * @param heights: a matrix of integers
+     * @return: an integer
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

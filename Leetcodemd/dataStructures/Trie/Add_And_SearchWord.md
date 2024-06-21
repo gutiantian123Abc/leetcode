@@ -11,7 +11,24 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Add and Search WordDesign a data structure that supports the following two operations: addWord(word) and search(word)search(word) can search a literal word or a regular expression string containing only letters a-z or..A . means it can represent any one letter.ExampleaddWord("bad")addWord("dad")addWord("mad")search("pad")  // return falsesearch("bad")  // return truesearch(".ad")  // return truesearch("b..")  // return true*//*BFS + Tire*//* DFS version*/</pre>
+/* Add and Search Word
+Design a data structure that supports the following two operations: addWord(word) and search(word)
+search(word) can search a literal word or a regular expression string containing only letters a-z or
+..
+A . means it can represent any one letter.
+Example
+addWord("bad")
+addWord("dad")
+addWord("mad")
+search("pad")  // return false
+search("bad")  // return true
+search(".ad")  // return true
+search("b..")  // return true
+*/
+/*BFS + Tire*/
+/* DFS version
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,7 +11,40 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Rotate ImageYou are given an n x n 2D matrix representing an image.Rotate the image by 90 degrees (clockwise).ExampleGiven a matrix[    [1,2],    [3,4]]rotate it by 90 degrees (clockwise), return[    [3,1],    [4,2]]*/    /**     * @param matrix: A list of lists of integers     * @return: Void     *//*The idea was firstly transpose the matrix and then flip it symmetrically. For instance,1  2  34  5  67  8  9after transpose, it will be swap(matrix[i][j], matrix[j][i])1  4  72  5  83  6  9Then flip the matrix horizontally. (swap(matrix[i][j], matrix[i][matrix.length-1-j])7  4  18  5  29  6  3*/</pre>
+/* Rotate Image
+You are given an n x n 2D matrix representing an image.
+Rotate the image by 90 degrees (clockwise).
+Example
+Given a matrix
+[
+    [1,2],
+    [3,4]
+]
+rotate it by 90 degrees (clockwise), return
+[
+    [3,1],
+    [4,2]
+]
+*/
+    /**
+     * @param matrix: A list of lists of integers
+     * @return: Void
+     */
+/*
+The idea was firstly transpose the matrix and then flip it symmetrically. For instance,
+1  2  3
+4  5  6
+7  8  9
+after transpose, it will be swap(matrix[i][j], matrix[j][i])
+1  4  7
+2  5  8
+3  6  9
+Then flip the matrix horizontally. (swap(matrix[i][j], matrix[i][matrix.length-1-j])
+7  4  1
+8  5  2
+9  6  3
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

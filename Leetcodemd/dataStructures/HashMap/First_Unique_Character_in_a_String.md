@@ -11,7 +11,17 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* First Unique Character in a StringFind the first unique character in a given string.You can assume that there is at least one unique character in the string.ExampleFor "abaccdeff", return 'b'.*/    /**     * @param str: str: the given string     * @return: char: the first unique character in a given string     */</pre>
+/* First Unique Character in a String
+Find the first unique character in a given string.
+You can assume that there is at least one unique character in the string.
+Example
+For "abaccdeff", return 'b'.
+*/
+    /**
+     * @param str: str: the given string
+     * @return: char: the first unique character in a given string
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

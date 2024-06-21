@@ -11,7 +11,21 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Rotate StringGiven a string and an offset, rotate string by offset. (rotate from left to right)ExampleGiven "abcdefg".offset=0 => "abcdefg"offset=1 => "gabcdef"offset=2 => "fgabcde"offset=3 => "efgabcd"*/    /**     * @param str: an array of char     * @param offset: an integer     * @return: nothing     */</pre>
+/*Rotate String
+Given a string and an offset, rotate string by offset. (rotate from left to right)
+Example
+Given "abcdefg".
+offset=0 => "abcdefg"
+offset=1 => "gabcdef"
+offset=2 => "fgabcde"
+offset=3 => "efgabcd"
+*/
+    /**
+     * @param str: an array of char
+     * @param offset: an integer
+     * @return: nothing
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

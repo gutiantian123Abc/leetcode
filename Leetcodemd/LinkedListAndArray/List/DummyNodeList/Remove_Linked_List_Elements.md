@@ -11,7 +11,21 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Remove Linked List ElementsRemove all elements from a linked list of integers that have value val.ExampleGiven: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6Return: 1 --> 2 --> 3 --> 4 --> 5*//** * Definition for singly-linked list. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int x) { val = x; } * } */</pre>
+/*Remove Linked List Elements
+Remove all elements from a linked list of integers that have value val.
+Example
+Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
+Return: 1 --> 2 --> 3 --> 4 --> 5
+*/
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+</pre>
 </div>
 
 <h2>Solution</h2>

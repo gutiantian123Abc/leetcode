@@ -11,7 +11,49 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Partition Array IGiven an array nums of integers and an int k, partition the array(i.e move the elements in "nums") such that:All elements < k are moved to the leftAll elements >= k are moved to the rightReturn the partitioning index, i.e the first index i nums[i] >= k.NoticeYou should do really partition in array nums instead of just counting the numbers of integerssmaller than k.If all elements in nums are smaller than k, then return nums.lengthExampleIf nums = [3,2,2,1] and k=2, a valid answer is 1.ChallengeCan you partition the array in-place and in O(n)?中间爱咋排序咋哦排序 (in place)*/        /**     *@param nums: The integer array you should partition     *@param k: As description     *return: The index after partition     *//* Partition Array IIPartition an unsorted integer array into three parts:The front part < lowThe middle part >= low & <= highThe tail part > highReturn any of the possible solutions.ExampleGiven [4,3,4,1,2,3,1,2], and low = 2 and high = 3.Change to [1,1,2,3,2,3,4,4].([1,1,2,2,3,3,4,4] is also a correct answer, but [1,2,1,2,3,3,4,4] is not)中间爱咋排序咋哦排序 (in place)!!*//*解题思路： 经典的分区式分割排序， 跟上体思路一致， 只是在每个loop之后right 重置到 nums.length - 1*/    /**     * @param nums an integer array     * @param low an integer     * @param high an integer     * @return nothing     */</pre>
+/* Partition Array I
+Given an array nums of integers and an int k, partition the array
+(i.e move the elements in "nums") such that:
+All elements < k are moved to the left
+All elements >= k are moved to the right
+Return the partitioning index, i.e the first index i nums[i] >= k.
+Notice
+You should do really partition in array nums instead of just counting the numbers of integers
+smaller than k.
+If all elements in nums are smaller than k, then return nums.length
+Example
+If nums = [3,2,2,1] and k=2, a valid answer is 1.
+Challenge
+Can you partition the array in-place and in O(n)?
+中间爱咋排序咋哦排序 (in place)
+*/
+        /**
+     *@param nums: The integer array you should partition
+     *@param k: As description
+     *return: The index after partition
+     */
+/* Partition Array II
+Partition an unsorted integer array into three parts:
+The front part < low
+The middle part >= low & <= high
+The tail part > high
+Return any of the possible solutions.
+Example
+Given [4,3,4,1,2,3,1,2], and low = 2 and high = 3.
+Change to [1,1,2,3,2,3,4,4].
+([1,1,2,2,3,3,4,4] is also a correct answer, but [1,2,1,2,3,3,4,4] is not)
+中间爱咋排序咋哦排序 (in place)!!
+*/
+/*
+解题思路： 经典的分区式分割排序， 跟上体思路一致， 只是在每个loop之后right 重置到 nums.length - 1
+*/
+    /**
+     * @param nums an integer array
+     * @param low an integer
+     * @param high an integer
+     * @return nothing
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

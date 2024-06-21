@@ -11,7 +11,29 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* High FiveThere are two properties in the node student id and scores, to ensure that each student will have atleast 5 points,find the average of 5 highest scores for each person.Given results = [[1,91],[1,92],[2,93],[2,99],[2,98],[2,97],[1,60],[1,58],[2,100],[1,61]]Return*//** * Definition for a Record * class Record { *     public int id, score; *     public Record(int id, int score){ *         this.id = id; *         this.score = score; *     } * } */    /**     * @param results a list of <student_id, score>     * @return find the average of 5 highest scores for each person     * Map<Integer, Double> (student_id, average_score)     */</pre>
+/* High Five
+There are two properties in the node student id and scores, to ensure that each student will have at
+least 5 points,
+find the average of 5 highest scores for each person.
+Given results = [[1,91],[1,92],[2,93],[2,99],[2,98],[2,97],[1,60],[1,58],[2,100],[1,61]]
+Return
+*/
+/**
+ * Definition for a Record
+ * class Record {
+ *     public int id, score;
+ *     public Record(int id, int score){
+ *         this.id = id;
+ *         this.score = score;
+ *     }
+ * }
+ */
+    /**
+     * @param results a list of <student_id, score>
+     * @return find the average of 5 highest scores for each person
+     * Map<Integer, Double> (student_id, average_score)
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

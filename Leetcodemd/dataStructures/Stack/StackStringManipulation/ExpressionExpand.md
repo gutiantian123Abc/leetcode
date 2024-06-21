@@ -11,7 +11,22 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Expression ExpandGiven an expression s includes numbers, letters and brackets.Number represents the number of repetitions inside the brackets(can be a string or anotherexpression)．Please expand expression to be a string.Examples = abc3[a] return abcaaas = 3[abc] return abcabcabcs = 4[ac]dy, return acacacacdys = 3[2[ad]3[pf]]xyz, return adadpfpfpfadadpfpfpfadadpfpfpfxyz*/    /**     * @param s  an expression includes numbers, letters and brackets     * @return a string     */</pre>
+/* Expression Expand
+Given an expression s includes numbers, letters and brackets.
+Number represents the number of repetitions inside the brackets(can be a string or another
+expression)．
+Please expand expression to be a string.
+Example
+s = abc3[a] return abcaaa
+s = 3[abc] return abcabcabc
+s = 4[ac]dy, return acacacacdy
+s = 3[2[ad]3[pf]]xyz, return adadpfpfpfadadpfpfpfadadpfpfpfxyz
+*/
+    /**
+     * @param s  an expression includes numbers, letters and brackets
+     * @return a string
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

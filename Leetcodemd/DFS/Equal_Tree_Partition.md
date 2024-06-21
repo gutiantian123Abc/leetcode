@@ -11,7 +11,48 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Equal Tree PartitionGiven a binary tree with n nodes, your task is to check if it'spossible to partition the tree to two trees which have the equalsum of values after removing exactly one edge on the original tree.Example 1:Input:    5   / \  10 10    /  \   2   3Output: TrueExplanation:    5   /  10Sum: 15   10  /  \ 2    3Sum: 15Example 2:Input:    1   / \  2  10    /  \   2   20Output: FalseExplanation: You can't split the tree into two trees with equal sumafter removing exactly one edge on the tree.*//** * Definition for a binary tree node. * public class TreeNode { *     int val; *     TreeNode left; *     TreeNode right; *     TreeNode(int x) { val = x; } * } */</pre>
+/* Equal Tree Partition
+Given a binary tree with n nodes, your task is to check if it's
+possible to partition the tree to two trees which have the equal
+sum of values after removing exactly one edge on the original tree.
+Example 1:
+Input:
+    5
+   / \
+  10 10
+    /  \
+   2   3
+Output: True
+Explanation:
+    5
+   /
+  10
+Sum: 15
+   10
+  /  \
+ 2    3
+Sum: 15
+Example 2:
+Input:
+    1
+   / \
+  2  10
+    /  \
+   2   20
+Output: False
+Explanation: You can't split the tree into two trees with equal sum
+after removing exactly one edge on the tree.
+*/
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+</pre>
 </div>
 
 <h2>Solution</h2>

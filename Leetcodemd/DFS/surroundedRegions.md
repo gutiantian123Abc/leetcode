@@ -11,7 +11,25 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Surrounded RegionsGiven a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.A region is captured by flipping all 'O''s into 'X''s in that surrounded region.ExampleX X X XX O O XX X O XX O X XAfter capture all regions surrounded by 'X', the board should be:X X X XX X X XX X X XX O X X*/    /**     * @param board a 2D board containing 'X' and 'O'     * @return void     */</pre>
+/* Surrounded Regions
+Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
+A region is captured by flipping all 'O''s into 'X''s in that surrounded region.
+Example
+X X X X
+X O O X
+X X O X
+X O X X
+After capture all regions surrounded by 'X', the board should be:
+X X X X
+X X X X
+X X X X
+X O X X
+*/
+    /**
+     * @param board a 2D board containing 'X' and 'O'
+     * @return void
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

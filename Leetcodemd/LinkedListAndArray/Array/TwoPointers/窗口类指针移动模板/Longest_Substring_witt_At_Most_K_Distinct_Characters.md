@@ -11,7 +11,35 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Substring with At Most K Distinct CharactersGiven a string s, find the length of the longest substring T that contains at most k distinctcharacters.ExampleFor example, Given s = "eceba", k = 3,T is "eceb" which its length is 4.ChallengeO(n), n is the size of the string s.*/    /**     * @param s : A string     * @return : The length of the longest substring     *           that contains at most k distinct characters.     */        /* 窗口类指针移动模板        int j = 0;        for(int i = 0; i < nums.length; i++) {            while(j < nums.length) {                if(满足条件) {                    j++;                    更行j状态                }else{                    break;                }            }            更新i状态        }      */</pre>
+/* Longest Substring with At Most K Distinct Characters
+Given a string s, find the length of the longest substring T that contains at most k distinct
+characters.
+Example
+For example, Given s = "eceba", k = 3,
+T is "eceb" which its length is 4.
+Challenge
+O(n), n is the size of the string s.
+*/
+    /**
+     * @param s : A string
+     * @return : The length of the longest substring
+     *           that contains at most k distinct characters.
+     */
+        /* 窗口类指针移动模板
+        int j = 0;
+        for(int i = 0; i < nums.length; i++) {
+            while(j < nums.length) {
+                if(满足条件) {
+                    j++;
+                    更行j状态
+                }else{
+                    break;
+                }
+            }
+            更新i状态
+        }
+      */
+</pre>
 </div>
 
 <h2>Solution</h2>

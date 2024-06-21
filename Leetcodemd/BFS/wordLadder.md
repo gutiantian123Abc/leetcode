@@ -11,7 +11,29 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Word LadderGiven two words (start and end), and a dictionary,find the length of shortest transformation sequence from start to end, such that:Only one letter can be changed at a timeEach intermediate word must exist in the dictionaryReturn 0 if there is no such transformation sequence.All words have the same length.All words contain only lowercase alphabetic characters.ExampleGiven:start = "hit"end = "cog"dict = ["hot","dot","dog","lot","log"]As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",return its length 5.*/    /**      * @param start, a string      * @param end, a string      * @param dict, a set of string      * @return an integer      */</pre>
+/* Word Ladder
+Given two words (start and end), and a dictionary,
+find the length of shortest transformation sequence from start to end, such that:
+Only one letter can be changed at a time
+Each intermediate word must exist in the dictionary
+Return 0 if there is no such transformation sequence.
+All words have the same length.
+All words contain only lowercase alphabetic characters.
+Example
+Given:
+start = "hit"
+end = "cog"
+dict = ["hot","dot","dog","lot","log"]
+As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+return its length 5.
+*/
+    /**
+      * @param start, a string
+      * @param end, a string
+      * @param dict, a set of string
+      * @return an integer
+      */
+</pre>
 </div>
 
 <h2>Solution</h2>

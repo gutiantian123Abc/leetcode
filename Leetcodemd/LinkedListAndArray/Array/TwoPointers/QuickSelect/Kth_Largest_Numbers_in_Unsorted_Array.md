@@ -11,7 +11,20 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Kth Largest ElementExampleIn array [9,3,2,4,8], the 3rd largest element is 4.In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is3 and etc.ChallengeO(n) time, O(1) extra memory.*/    /*     * @param k : description of k     * @param nums : array of nums     * @return: description of return     */</pre>
+/* Kth Largest Element
+Example
+In array [9,3,2,4,8], the 3rd largest element is 4.
+In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is
+3 and etc.
+Challenge
+O(n) time, O(1) extra memory.
+*/
+    /*
+     * @param k : description of k
+     * @param nums : array of nums
+     * @return: description of return
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

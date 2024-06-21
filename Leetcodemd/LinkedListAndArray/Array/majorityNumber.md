@@ -11,7 +11,35 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Majority Number IGiven an array of integers,the majority number is the number that occurs more than half of the size of the array. Find it.ExampleGiven [1, 1, 1, 1, 2, 2, 2], return 1ChallengeO(n) time and O(1) extra space*/    /**     * @param nums: a list of integers     * @return: find a  majority number     *//* Majority Number IIGiven an array of integers, the majority number is the number that occurs more than 1/3 of the sizeof the array.Find it.ExampleGiven [1, 2, 1, 2, 1, 3, 3], return 1.ChallengeO(n) time and O(1) extra space.*/    /**     * @param nums: A list of integers     * @return: The majority number that occurs more than 1/3     *//* 总结：例如找出 1/k majority numbers 的问题， 可以设置 k-1 个candidate*/</pre>
+/* Majority Number I
+Given an array of integers,
+the majority number is the number that occurs more than half of the size of the array. Find it.
+Example
+Given [1, 1, 1, 1, 2, 2, 2], return 1
+Challenge
+O(n) time and O(1) extra space
+*/
+    /**
+     * @param nums: a list of integers
+     * @return: find a  majority number
+     */
+/* Majority Number II
+Given an array of integers, the majority number is the number that occurs more than 1/3 of the size
+of the array.
+Find it.
+Example
+Given [1, 2, 1, 2, 1, 3, 3], return 1.
+Challenge
+O(n) time and O(1) extra space.
+*/
+    /**
+     * @param nums: A list of integers
+     * @return: The majority number that occurs more than 1/3
+     */
+/* 总结：
+例如找出 1/k majority numbers 的问题， 可以设置 k-1 个candidate
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>
