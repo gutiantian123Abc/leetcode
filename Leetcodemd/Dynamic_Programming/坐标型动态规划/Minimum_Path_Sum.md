@@ -11,7 +11,21 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Minimum Path SumGiven a m x n grid filled with non-negative numbers,find a path from top left to bottom right which minimizes the sum of all numbers along its path.NoticeYou can only move either down or right at any point in time.*//* Time: O(mn)   Space: O(n)*/    /**     * @param grid: a list of lists of integers.     * @return: An integer, minimizes the sum of all numbers along its path     */</pre>
+/* Minimum Path Sum
+Given a m x n grid filled with non-negative numbers, 
+find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+
+Notice
+You can only move either down or right at any point in time.
+*/
+/* Time: O(mn)
+   Space: O(n)
+*/
+    /**
+     * @param grid: a list of lists of integers.
+     * @return: An integer, minimizes the sum of all numbers along its path
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

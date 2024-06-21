@@ -11,7 +11,31 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Implement TrieImplement a trie with insert, search, and startsWith methods.Exampleinsert("lintcode")search("code")>>> falsestartsWith("lint")>>> truestartsWith("linterror")>>> falseinsert("linterror")search("lintcode)>>> truestartsWith("linterror")>>> true*//** * Your Trie object will be instantiated and called as such: * Trie trie = new Trie(); * trie.insert("lintcode"); * trie.search("lint"); will return false * trie.startsWith("lint"); will return true */</pre>
+/* Implement Trie
+Implement a trie with insert, search, and startsWith methods.
+
+Example
+insert("lintcode")
+search("code")
+>>> false
+startsWith("lint")
+>>> true
+startsWith("linterror")
+>>> false
+insert("linterror")
+search("lintcode)
+>>> true
+startsWith("linterror")
+>>> true
+*/
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie trie = new Trie();
+ * trie.insert("lintcode");
+ * trie.search("lint"); will return false
+ * trie.startsWith("lint"); will return true
+ */
+</pre>
 </div>
 
 <h2>Solution</h2>

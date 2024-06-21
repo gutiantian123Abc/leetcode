@@ -11,7 +11,21 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Range Sum Query - ImmutableGiven an integer array nums, find the sum of the elements between indices i and j (i ≤ j),inclusive.Example:Given nums = [-2, 0, 3, -5, 2, -1]sumRange(0, 2) -> 1sumRange(2, 5) -> -1sumRange(0, 5) -> -3*//** * Your NumArray object will be instantiated and called as such: * NumArray obj = new NumArray(nums); * int param_1 = obj.sumRange(i,j); */</pre>
+/* Range Sum Query - Immutable
+Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+Example:
+Given nums = [-2, 0, 3, -5, 2, -1]
+
+sumRange(0, 2) -> 1
+sumRange(2, 5) -> -1
+sumRange(0, 5) -> -3
+*/
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray obj = new NumArray(nums);
+ * int param_1 = obj.sumRange(i,j);
+ */</pre>
 </div>
 
 <h2>Solution</h2>

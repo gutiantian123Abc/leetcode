@@ -11,7 +11,24 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*A linked list is given such that each node containsan additional random pointer which could point to any node in the list or null.Return a deep copy of the list.*//** * Definition for singly-linked list with a random pointer. * class RandomListNode { *     int label; *     RandomListNode next, random; *     RandomListNode(int x) { this.label = x; } * }; */    /**     * @param head: The head of linked list with a random pointer.     * @return: A new head of a deep copy of the list.     */</pre>
+/*
+A linked list is given such that each node contains 
+an additional random pointer which could point to any node in the list or null.
+Return a deep copy of the list.
+*/
+/**
+ * Definition for singly-linked list with a random pointer.
+ * class RandomListNode {
+ *     int label;
+ *     RandomListNode next, random;
+ *     RandomListNode(int x) { this.label = x; }
+ * };
+ */
+    /**
+     * @param head: The head of linked list with a random pointer.
+     * @return: A new head of a deep copy of the list.
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

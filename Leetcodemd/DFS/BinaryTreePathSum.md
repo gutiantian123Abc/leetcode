@@ -11,7 +11,43 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Binary Tree Path SumGiven a binary tree, find all paths that sum of the nodes in the path equals to a given numbertarget.A valid path is from root node to any of the leaf nodes.Have you met this question in a real interview? YesExampleGiven a binary tree, and target = 5:     1    / \   2   4  / \ 2   3return[  [1, 2, 2],  [1, 4]]*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root the root of binary tree     * @param target an integer     * @return all valid paths     */</pre>
+/* Binary Tree Path Sum
+
+Given a binary tree, find all paths that sum of the nodes in the path equals to a given number target.
+A valid path is from root node to any of the leaf nodes.
+Have you met this question in a real interview? Yes
+Example
+Given a binary tree, and target = 5:
+
+     1
+    / \
+   2   4
+  / \
+ 2   3
+return
+
+[
+  [1, 2, 2],
+  [1, 4]
+]
+*/
+/**
+ * Definition of TreeNode:
+ * public class TreeNode {
+ *     public int val;
+ *     public TreeNode left, right;
+ *     public TreeNode(int val) {
+ *         this.val = val;
+ *         this.left = this.right = null;
+ *     }
+ * }
+ */
+    /**
+     * @param root the root of binary tree
+     * @param target an integer
+     * @return all valid paths
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

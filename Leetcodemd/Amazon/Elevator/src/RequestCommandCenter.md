@@ -11,7 +11,10 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/** * Created by xiangtiangu on 4/25/17. */</pre>
+/**
+ * Created by xiangtiangu on 4/25/17.
+ */
+</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,7 +11,46 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Combination SumGiven a collection of candidate numbers (C) and a target number (T),Each number in C may only be used once in the combination.All numbers (including target) could be any positive or negative integers.Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).The solution set must not contain duplicate combinations.*//* 异常重要的题型，融合了DFS 与 DP 的双源变种， 异常强大 *//*All numbers (including target) could be any positive or negative integers.The solution set must not contain duplicate combinations.一. 变种1. 找寻任意加和等于target的combination*/    /**     * @param num: Given the candidate numbers     * @param target: Given the target number     * @return: All the combinations that sum to target     *//*All numbers (including target) could be any positive or negative integers.The solution set must not contain duplicate combinations.二. 变种2. 找寻任意加和小于target的combination*/    /**     * @param num: Given the candidate numbers     * @param target: Given the target number     * @return: All the combinations that sum to target     *//*All numbers (including target) could be any positive or negative integers.The solution set must not contain duplicate combinations.三. 变种3. 找寻任意加和小于等于target的combination*/    /**     * @param num: Given the candidate numbers     * @param target: Given the target number     * @return: All the combinations that sum to target     */</pre>
+/* Combination Sum
+Given a collection of candidate numbers (C) and a target number (T), 
+Each number in C may only be used once in the combination.
+All numbers (including target) could be any positive or negative integers.
+Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
+The solution set must not contain duplicate combinations.
+*/
+/* 异常重要的题型，融合了DFS 与 DP 的双源变种， 异常强大
+ */
+/* 
+All numbers (including target) could be any positive or negative integers.
+The solution set must not contain duplicate combinations.
+一. 变种1. 找寻任意加和等于target的combination
+*/
+    /**
+     * @param num: Given the candidate numbers
+     * @param target: Given the target number
+     * @return: All the combinations that sum to target
+     */
+/* 
+All numbers (including target) could be any positive or negative integers.
+The solution set must not contain duplicate combinations.
+二. 变种2. 找寻任意加和小于target的combination
+*/
+    /**
+     * @param num: Given the candidate numbers
+     * @param target: Given the target number
+     * @return: All the combinations that sum to target
+     */
+/* 
+All numbers (including target) could be any positive or negative integers.
+The solution set must not contain duplicate combinations.
+三. 变种3. 找寻任意加和小于等于target的combination
+*/
+    /**
+     * @param num: Given the candidate numbers
+     * @param target: Given the target number
+     * @return: All the combinations that sum to target
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

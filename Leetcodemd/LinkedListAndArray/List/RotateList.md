@@ -11,7 +11,51 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Rotate ListGiven a list, rotate the list to the right by k places, where k is non-negative.ExampleGiven 1->2->3->4->5 and k = 2, return 4->5->1->2->3.*//*  Definition for singly-linked list.*/        /**     * @param head: the List     * @param k: rotate to the right k places     * @return: the list after rotation     *//* 变形 Reverse Linked List IExampleFor linked list 1->2->3, the reversed linked list is 3->2->1*//** * Definition for ListNode. */    /**     * @param head: The head of linked list.     * @return: The new head of reversed linked list.     *//* 拓展  Reverse Linked List IIReverse a linked list from position m to n.Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.ExampleGiven 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.ChallengeReverse it in-place and in one-pass*//** * Definition for ListNode*/    /**     * @param ListNode head is the head of the linked list     * @oaram m and n     * @return: The head of the reversed ListNode     */</pre>
+/* Rotate List
+Given a list, rotate the list to the right by k places, where k is non-negative.
+Example
+Given 1->2->3->4->5 and k = 2, return 4->5->1->2->3.
+*/
+/*
+  Definition for singly-linked list.
+*/
+	/**
+     * @param head: the List
+     * @param k: rotate to the right k places
+     * @return: the list after rotation
+     */
+/* 变形 Reverse Linked List I
+
+Example
+For linked list 1->2->3, the reversed linked list is 3->2->1
+*/
+/**
+ * Definition for ListNode.
+ */
+    /**
+     * @param head: The head of linked list.
+     * @return: The new head of reversed linked list.
+     */
+/* 拓展  Reverse Linked List II
+
+Reverse a linked list from position m to n.
+Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
+
+Example
+Given 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.
+
+Challenge 
+Reverse it in-place and in one-pass
+*/
+/**
+ * Definition for ListNode
+*/
+    /**
+     * @param ListNode head is the head of the linked list 
+     * @oaram m and n
+     * @return: The head of the reversed ListNode
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

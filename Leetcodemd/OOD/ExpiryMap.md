@@ -11,7 +11,9 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 这只是一个简单的 Expiration HashMap*/</pre>
+/* 这只是一个简单的 Expiration HashMap
+*/
+</pre>
 </div>
 
 <h2>Solution</h2>

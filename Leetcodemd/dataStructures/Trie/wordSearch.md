@@ -11,7 +11,17 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*WordSearch IIGiven a matrix of lower alphabets and a dictionary.Find all words in the dictionary that can be found in the matrix.A word can start from any position in the matrix and go left/right/up/down to the adjacent position.*/    /**     * @param board: A list of lists of character     * @param words: A list of string     * @return: A list of string     */</pre>
+/*WordSearch II
+Given a matrix of lower alphabets and a dictionary.
+Find all words in the dictionary that can be found in the matrix. 
+A word can start from any position in the matrix and go left/right/up/down to the adjacent position. 
+*/
+    /**
+     * @param board: A list of lists of character
+     * @param words: A list of string
+     * @return: A list of string
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>

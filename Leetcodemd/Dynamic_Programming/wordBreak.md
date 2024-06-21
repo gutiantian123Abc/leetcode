@@ -11,7 +11,18 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Word BreakGiven a string s and a dictionary of words dict,determine if s can be break into a space-separated sequence of one or more dictionary words.ExampleGiven s = "lintcode", dict = ["lint", "code"].Return true because "lintcode" can be break as "lint code".*/    /**     * @param s: A string s     * @param dict: A dictionary of words dict     */</pre>
+/* Word Break
+Given a string s and a dictionary of words dict, 
+determine if s can be break into a space-separated sequence of one or more dictionary words.
+Example
+Given s = "lintcode", dict = ["lint", "code"].
+Return true because "lintcode" can be break as "lint code".
+*/
+    /**
+     * @param s: A string s
+     * @param dict: A dictionary of words dict
+     */
+</pre>
 </div>
 
 <h2>Solution</h2>
