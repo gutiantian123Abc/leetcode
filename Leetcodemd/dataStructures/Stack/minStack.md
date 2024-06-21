@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,23 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Min Stack
-Implement a stack with min() function, which will return the smallest number in the stack.
-It should support push, pop and min operation all in O(1) cost.
-
-Notice
-min operation will never be called if there is no number in the stack.
-
-Example
-push(1)
-pop()   // return 1
-push(2)
-push(3)
-min()   // return 2
-push(1)
-min()   // return 1
-*/
-</pre>
+/* Min StackImplement a stack with min() function, which will return the smallest number in the stack.It should support push, pop and min operation all in O(1) cost.Noticemin operation will never be called if there is no number in the stack.Examplepush(1)pop()   // return 1push(2)push(3)min()   // return 2push(1)min()   // return 1*/</pre>
 </div>
 
 <h2>Solution</h2>

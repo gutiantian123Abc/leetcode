@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,31 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Implement Trie
-Implement a trie with insert, search, and startsWith methods.
-
-Example
-insert("lintcode")
-search("code")
->>> false
-startsWith("lint")
->>> true
-startsWith("linterror")
->>> false
-insert("linterror")
-search("lintcode)
->>> true
-startsWith("linterror")
->>> true
-*/
-/**
- * Your Trie object will be instantiated and called as such:
- * Trie trie = new Trie();
- * trie.insert("lintcode");
- * trie.search("lint"); will return false
- * trie.startsWith("lint"); will return true
- */
-</pre>
+/* Implement TrieImplement a trie with insert, search, and startsWith methods.Exampleinsert("lintcode")search("code")>>> falsestartsWith("lint")>>> truestartsWith("linterror")>>> falseinsert("linterror")search("lintcode)>>> truestartsWith("linterror")>>> true*//** * Your Trie object will be instantiated and called as such: * Trie trie = new Trie(); * trie.insert("lintcode"); * trie.search("lint"); will return false * trie.startsWith("lint"); will return true */</pre>
 </div>
 
 <h2>Solution</h2>

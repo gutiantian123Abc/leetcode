@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,22 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Kth Largest Element
-
-Example
-In array [9,3,2,4,8], the 3rd largest element is 4.
-
-In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is 3 and etc.
-
-Challenge 
-O(n) time, O(1) extra memory.
-*/
-    /*
-     * @param k : description of k
-     * @param nums : array of nums
-     * @return: description of return
-     */
-</pre>
+/* Kth Largest ElementExampleIn array [9,3,2,4,8], the 3rd largest element is 4.In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is3 and etc.ChallengeO(n) time, O(1) extra memory.*/    /*     * @param k : description of k     * @param nums : array of nums     * @return: description of return     */</pre>
 </div>
 
 <h2>Solution</h2>

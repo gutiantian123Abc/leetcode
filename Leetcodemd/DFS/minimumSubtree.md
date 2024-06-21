@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,35 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Minimum Subtree (Related Problem: Subtree with Maximum Average)
-Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.
-
-Example
-Given a binary tree:
-
-     1
-   /   \
- -5     2
- / \   /  \
-0   2 -4  -5 
-return the node 1.
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root the root of binary tree
-     * @return the root of the minimum subtree
-     */
-</pre>
+/* Minimum Subtree (Related Problem: Subtree with Maximum Average)Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.ExampleGiven a binary tree:     1   /   \ -5     2 / \   /  \0   2 -4  -5return the node 1.*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root the root of binary tree     * @return the root of the minimum subtree     */</pre>
 </div>
 
 <h2>Solution</h2>

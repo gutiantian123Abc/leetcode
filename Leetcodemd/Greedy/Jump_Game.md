@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,36 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Jump Game
-Given an array of non-negative integers, you are initially positioned at the first index of the array.
-
-Each element in the array represents your maximum jump length at that position.
-
-Determine if you are able to reach the last index.
-
-Notice
-
-This problem have two method which is Greedy and Dynamic Programming.
-
-The time complexity of Greedy method is O(n).
-
-The time complexity of Dynamic Programming method is O(n^2).
-
-We manually set the small data set to allow you pass the test in both ways. This is just to let you learn how to use this problem in dynamic programming ways. 
-If you finish it in dynamic programming ways,
-you can try greedy method to make it accept again.
-
-
-Example
-A = [2,3,1,1,4], return true.
-
-A = [3,2,1,0,4], return false.
-*/
-    /**
-     * @param A: A list of integers
-     * @return: The boolean answer
-     */
-</pre>
+/* Jump GameGiven an array of non-negative integers, you are initially positioned at the first index of thearray.Each element in the array represents your maximum jump length at that position.Determine if you are able to reach the last index.NoticeThis problem have two method which is Greedy and Dynamic Programming.The time complexity of Greedy method is O(n).The time complexity of Dynamic Programming method is O(n^2).We manually set the small data set to allow you pass the test in both ways. This is just to let youlearn how to use this problem in dynamic programming ways.If you finish it in dynamic programming ways,you can try greedy method to make it accept again.ExampleA = [2,3,1,1,4], return true.A = [3,2,1,0,4], return false.*/    /**     * @param A: A list of integers     * @return: The boolean answer     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,24 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 354. Russian Doll Envelopes
-You have a number of envelopes with widths and heights given as a pair of integers (w, h). 
-One envelope can fit into another if and only if both the width and height of one envelope 
-is greater than the width and height of the other envelope.
-
-What is the maximum number of envelopes can you Russian doll? (put one inside other)
-
-Note:
-Rotation is not allowed.
-
-Example:
-
-Input: [[5,4],[6,4],[6,7],[2,3]]
-Output: 3 
-Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
-
-*/
-</pre>
+/* 354. Russian Doll EnvelopesYou have a number of envelopes with widths and heights given as a pair of integers (w, h).One envelope can fit into another if and only if both the width and height of one envelopeis greater than the width and height of the other envelope.What is the maximum number of envelopes can you Russian doll? (put one inside other)Note:Rotation is not allowed.Example:Input: [[5,4],[6,4],[6,7],[2,3]]Output: 3Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).*/</pre>
 </div>
 
 <h2>Solution</h2>

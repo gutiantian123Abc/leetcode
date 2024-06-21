@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,21 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Evaluate Reverse Polish Notation
-Evaluate the value of an arithmetic expression in Reverse Polish Notation.
-
-Valid operators are +, -, *, /. Each operand may be an integer or another expression.
-
-Have you met this question in a real interview? Yes
-Example
-["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
-["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
-*/
-    /**
-     * @param tokens The Reverse Polish Notation
-     * @return the value
-     */
-</pre>
+/* Evaluate Reverse Polish NotationEvaluate the value of an arithmetic expression in Reverse Polish Notation.Valid operators are +, -, *, /. Each operand may be an integer or another expression.Have you met this question in a real interview? YesExample["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6*/    /**     * @param tokens The Reverse Polish Notation     * @return the value     */</pre>
 </div>
 
 <h2>Solution</h2>

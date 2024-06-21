@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,30 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Isomorphic Strings
-Given two strings s and t, determine if they are isomorphic.
-
-Two strings are isomorphic if the characters in s can be replaced to get t.
-
-All occurrences of a character must be replaced with another character while preserving 
-the order of characters. No two characters may map to the same character but a character may map to itself.
-
-Example 1:
-
-Input: s = "egg", t = "add"
-Output: true
-Example 2:
-
-Input: s = "foo", t = "bar"
-Output: false
-Example 3:
-
-Input: s = "paper", t = "title"
-Output: true
-Note:
-You may assume both s and t have the same length.
-*/
-</pre>
+/* Isomorphic StringsGiven two strings s and t, determine if they are isomorphic.Two strings are isomorphic if the characters in s can be replaced to get t.All occurrences of a character must be replaced with another character while preservingthe order of characters. No two characters may map to the same character but a character may map toitself.Example 1:Input: s = "egg", t = "add"Output: trueExample 2:Input: s = "foo", t = "bar"Output: falseExample 3:Input: s = "paper", t = "title"Output: trueNote:You may assume both s and t have the same length.*/</pre>
 </div>
 
 <h2>Solution</h2>

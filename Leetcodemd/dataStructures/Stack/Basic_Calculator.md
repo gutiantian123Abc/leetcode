@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,29 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 224. Basic Calculator
-Implement a basic calculator to evaluate a simple expression string.
-
-The expression string may contain open ( and closing parentheses ), 
-the plus + or minus sign -, non-negative integers and empty spaces .
-
-Example 1:
-
-Input: "1 + 1"
-Output: 2
-Example 2:
-
-Input: " 2-1 + 2 "
-Output: 3
-Example 3:
-
-Input: "(1+(4+5+2)-3)+(6+8)"
-Output: 23
-Note:
-You may assume that the given expression is always valid.
-Do not use the eval built-in library function.
-*/
-</pre>
+/* 224. Basic CalculatorImplement a basic calculator to evaluate a simple expression string.The expression string may contain open ( and closing parentheses ),the plus + or minus sign -, non-negative integers and empty spaces .Example 1:Input: "1 + 1"Output: 2Example 2:Input: " 2-1 + 2 "Output: 3Example 3:Input: "(1+(4+5+2)-3)+(6+8)"Output: 23Note:You may assume that the given expression is always valid.Do not use the eval built-in library function.*/</pre>
 </div>
 
 <h2>Solution</h2>

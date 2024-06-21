@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,24 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Total Occurrence of Target
-Given a target number and an integer array sorted in ascending order. 
-Find the total number of occurrences of target in the array.
-Have you met this question in a real interview? Yes
-Example
-Given [1, 3, 3, 4, 5] and target = 3, return 2.
-Given [2, 2, 3, 4, 6] and target = 4, return 1.
-Given [1, 2, 3, 4, 5] and target = 6, return 0.
-
-Challenge 
-Time complexity in O(logn)
-*/
-    /**
-     * @param A an integer array sorted in ascending order
-     * @param target an integer
-     * @return an integer
-     */
-</pre>
+/* Total Occurrence of TargetGiven a target number and an integer array sorted in ascending order.Find the total number of occurrences of target in the array.Have you met this question in a real interview? YesExampleGiven [1, 3, 3, 4, 5] and target = 3, return 2.Given [2, 2, 3, 4, 6] and target = 4, return 1.Given [1, 2, 3, 4, 5] and target = 6, return 0.ChallengeTime complexity in O(logn)*/    /**     * @param A an integer array sorted in ascending order     * @param target an integer     * @return an integer     */</pre>
 </div>
 
 <h2>Solution</h2>

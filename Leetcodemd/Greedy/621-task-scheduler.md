@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,116 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 621. Task Scheduler
-https://leetcode.com/problems/task-scheduler/description/
-
-Given a characters array tasks, representing the tasks a CPU needs to do, 
-where each letter represents a different task. Tasks could be done in any order. 
-Each task is done in one unit of time. For each unit of time, 
-the CPU could complete either one task or just be idle.
-
-However, there is a non-negative integer n that represents the cooldown period 
-between two same tasks (the same letter in the array), that is that there 
-must be at least n units of time between any two same tasks.
-
-Return the least number of units of times that the CPU will take to finish all the given tasks.
-
- 
-
-Example 1:
-
-Input: tasks = ["A","A","A","B","B","B"], n = 2
-Output: 8
-Explanation: 
-A -> B -> idle -> A -> B -> idle -> A -> B
-There is at least 2 units of time between any two same tasks.
-Example 2:
-
-Input: tasks = ["A","A","A","B","B","B"], n = 0
-Output: 6
-Explanation: On this case any permutation of size 6 would work since n = 0.
-["A","A","A","B","B","B"]
-["A","B","A","B","A","B"]
-["B","B","B","A","A","A"]
-...
-And so on.
-Example 3:
-
-Input: tasks = ["A","A","A","A","A","A","B","C","D","E","F","G"], n = 2
-Output: 16
-Explanation: 
-One possible solution is
-A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle -> idle -> A
- 
-
-Constraints:
-
-1 <= task.length <= 104
-tasks[i] is upper-case English letter.
-The integer n is in the range [0, 100].
-*/
-/* 2365. Task Scheduler II
-
-https://leetcode.com/problems/task-scheduler-ii/
-
-You are given a 0-indexed array of positive integers tasks, 
-representing tasks that need to be completed in order, 
-where tasks[i] represents the type of the ith task.
-
-You are also given a positive integer space, which represents 
-the minimum number of days that must pass after the completion 
-of a task before another task of the same type can be performed.
-
-Each day, until all tasks have been completed, you must either:
-
-Complete the next task from tasks, or
-Take a break.
-Return the minimum number of days needed to complete all tasks.
-
- 
-
-Example 1:
-
-Input: tasks = [1,2,1,2,3,1], space = 3
-Output: 9
-Explanation:
-One way to complete all tasks in 9 days is as follows:
-Day 1: Complete the 0th task.
-Day 2: Complete the 1st task.
-Day 3: Take a break.
-Day 4: Take a break.
-Day 5: Complete the 2nd task.
-Day 6: Complete the 3rd task.
-Day 7: Take a break.
-Day 8: Complete the 4th task.
-Day 9: Complete the 5th task.
-It can be shown that the tasks cannot be completed in less than 9 days.
-
-
-
-Example 2:
-
-Input: tasks = [5,8,8,5], space = 2
-Output: 6
-Explanation:
-One way to complete all tasks in 6 days is as follows:
-Day 1: Complete the 0th task.
-Day 2: Complete the 1st task.
-Day 3: Take a break.
-Day 4: Take a break.
-Day 5: Complete the 2nd task.
-Day 6: Complete the 3rd task.
-It can be shown that the tasks cannot be completed in less than 6 days.
- 
-
-Constraints:
-
-1 <= tasks.length <= 105
-1 <= tasks[i] <= 109
-1 <= space <= tasks.length
-
-*/
-</pre>
+/* 621. Task Schedulerhttps://leetcode.com/problems/task-scheduler/description/Given a characters array tasks, representing the tasks a CPU needs to do,where each letter represents a different task. Tasks could be done in any order.Each task is done in one unit of time. For each unit of time,the CPU could complete either one task or just be idle.However, there is a non-negative integer n that represents the cooldown periodbetween two same tasks (the same letter in the array), that is that theremust be at least n units of time between any two same tasks.Return the least number of units of times that the CPU will take to finish all the given tasks.Example 1:Input: tasks = ["A","A","A","B","B","B"], n = 2Output: 8Explanation:A -> B -> idle -> A -> B -> idle -> A -> BThere is at least 2 units of time between any two same tasks.Example 2:Input: tasks = ["A","A","A","B","B","B"], n = 0Output: 6Explanation: On this case any permutation of size 6 would work since n = 0.["A","A","A","B","B","B"]["A","B","A","B","A","B"]["B","B","B","A","A","A"]...And so on.Example 3:Input: tasks = ["A","A","A","A","A","A","B","C","D","E","F","G"], n = 2Output: 16Explanation:One possible solution isA -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle -> idle -> AConstraints:1 <= task.length <= 104tasks[i] is upper-case English letter.The integer n is in the range [0, 100].*//* 2365. Task Scheduler IIhttps://leetcode.com/problems/task-scheduler-ii/You are given a 0-indexed array of positive integers tasks,representing tasks that need to be completed in order,where tasks[i] represents the type of the ith task.You are also given a positive integer space, which representsthe minimum number of days that must pass after the completionof a task before another task of the same type can be performed.Each day, until all tasks have been completed, you must either:Complete the next task from tasks, orTake a break.Return the minimum number of days needed to complete all tasks.Example 1:Input: tasks = [1,2,1,2,3,1], space = 3Output: 9Explanation:One way to complete all tasks in 9 days is as follows:Day 1: Complete the 0th task.Day 2: Complete the 1st task.Day 3: Take a break.Day 4: Take a break.Day 5: Complete the 2nd task.Day 6: Complete the 3rd task.Day 7: Take a break.Day 8: Complete the 4th task.Day 9: Complete the 5th task.It can be shown that the tasks cannot be completed in less than 9 days.Example 2:Input: tasks = [5,8,8,5], space = 2Output: 6Explanation:One way to complete all tasks in 6 days is as follows:Day 1: Complete the 0th task.Day 2: Complete the 1st task.Day 3: Take a break.Day 4: Take a break.Day 5: Complete the 2nd task.Day 6: Complete the 3rd task.It can be shown that the tasks cannot be completed in less than 6 days.Constraints:1 <= tasks.length <= 1051 <= tasks[i] <= 1091 <= space <= tasks.length*/</pre>
 </div>
 
 <h2>Solution</h2>

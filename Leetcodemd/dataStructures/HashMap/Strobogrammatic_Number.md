@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,25 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Strobogrammatic Number
-A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
-
-Write a function to determine if a number is strobogrammatic. The number is represented as a string.
-
-Example 1:
-
-Input:  "69"
-Output: true
-Example 2:
-
-Input:  "88"
-Output: true
-Example 3:
-
-Input:  "962"
-Output: false
-*/
-</pre>
+/* Strobogrammatic NumberA strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upsidedown).Write a function to determine if a number is strobogrammatic. The number is represented as a string.Example 1:Input:  "69"Output: trueExample 2:Input:  "88"Output: trueExample 3:Input:  "962"Output: false*/</pre>
 </div>
 
 <h2>Solution</h2>

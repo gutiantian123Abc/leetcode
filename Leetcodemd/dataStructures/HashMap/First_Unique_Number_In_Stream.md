@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,24 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* First Unique Number In Stream
-Given a continuous stream of numbers, write a function that returns 
-the first unique number whenever terminating number is reached(include terminating number). 
-If there no unique number before terminating number or you can't find this terminating number, return -1.
-
-Example
-Given a stream [1, 2, 2, 1, 3, 4, 4, 5, 6] and a number 5
-return 3
-
-Given a stream [1, 2, 2, 1, 3, 4, 4, 5, 6] and a number 7
-return -1
-*/
-    /**
-     * @param nums: a continuous stream of numbers
-     * @param number: a number
-     * @return: returns the first unique number
-     */
-</pre>
+/* First Unique Number In StreamGiven a continuous stream of numbers, write a function that returnsthe first unique number whenever terminating number is reached(include terminating number).If there no unique number before terminating number or you can't find this terminating number,return -1.ExampleGiven a stream [1, 2, 2, 1, 3, 4, 4, 5, 6] and a number 5return 3Given a stream [1, 2, 2, 1, 3, 4, 4, 5, 6] and a number 7return -1*/    /**     * @param nums: a continuous stream of numbers     * @param number: a number     * @return: returns the first unique number     */</pre>
 </div>
 
 <h2>Solution</h2>

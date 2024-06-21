@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,20 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Valid Palindrome
-Given a string, determine if it is a palindrome, 
-considering only alphanumeric characters and ignoring cases.
-Example
-"A man, a plan, a canal: Panama" is a palindrome.
-"race a car" is not a palindrome.
-
-O(n) time without extra memory.
-*/
-    /**
-     * @param s A string
-     * @return Whether the string is a valid palindrome
-     */
-</pre>
+/* Valid PalindromeGiven a string, determine if it is a palindrome,considering only alphanumeric characters and ignoring cases.Example"A man, a plan, a canal: Panama" is a palindrome."race a car" is not a palindrome.O(n) time without extra memory.*/    /**     * @param s A string     * @return Whether the string is a valid palindrome     */</pre>
 </div>
 
 <h2>Solution</h2>

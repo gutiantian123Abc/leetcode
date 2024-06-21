@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,17 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Generate Parentheses
-Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
-Example
-Given n = 3, a solution set is:
-"((()))", "(()())", "(())()", "()(())", "()()()"
-*/
-    /**
-     * @param n n pairs
-     * @return All combinations of well-formed parentheses
-     */
-</pre>
+/* Generate ParenthesesGiven n pairs of parentheses, write a function to generate all combinations of well-formedparentheses.ExampleGiven n = 3, a solution set is:"((()))", "(()())", "(())()", "()(())", "()()()"*/    /**     * @param n n pairs     * @return All combinations of well-formed parentheses     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,39 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Populating Next Right Pointers in Each Node II
-Follow up for problem "Populating Next Right Pointers in Each Node".
-
-What if the given tree could be any binary tree? Would your previous solution 
-still work?
-
-Note:
-
-You may only use constant extra space.
-For example,
-Given the following binary tree,
-         1
-       /  \
-      2    3
-     / \    \
-    4   5    7
-After calling your function, the tree should look like:
-         1 -> NULL
-       /  \
-      2 -> 3 -> NULL
-     / \    \
-    4-> 5 -> 7 -> NULL
-
-*/
-    /**
- * Definition for binary tree with next pointer.
- * public class TreeLinkNode {
- *     int val;
- *     TreeLinkNode left, right, next;
- *     TreeLinkNode(int x) { val = x; }
- * }
- */
-</pre>
+/* Populating Next Right Pointers in Each Node IIFollow up for problem "Populating Next Right Pointers in Each Node".What if the given tree could be any binary tree? Would your previous solutionstill work?Note:You may only use constant extra space.For example,Given the following binary tree,         1       /  \      2    3     / \    \    4   5    7After calling your function, the tree should look like:         1 -> NULL       /  \      2 -> 3 -> NULL     / \    \    4-> 5 -> 7 -> NULL*/    /** * Definition for binary tree with next pointer. * public class TreeLinkNode { *     int val; *     TreeLinkNode left, right, next; *     TreeLinkNode(int x) { val = x; } * } */</pre>
 </div>
 
 <h2>Solution</h2>

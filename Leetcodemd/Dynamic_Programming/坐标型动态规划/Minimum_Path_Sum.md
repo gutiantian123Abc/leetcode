@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,21 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Minimum Path Sum
-Given a m x n grid filled with non-negative numbers, 
-find a path from top left to bottom right which minimizes the sum of all numbers along its path.
-
-Notice
-You can only move either down or right at any point in time.
-*/
-/* Time: O(mn)
-   Space: O(n)
-*/
-    /**
-     * @param grid: a list of lists of integers.
-     * @return: An integer, minimizes the sum of all numbers along its path
-     */
-</pre>
+/* Minimum Path SumGiven a m x n grid filled with non-negative numbers,find a path from top left to bottom right which minimizes the sum of all numbers along its path.NoticeYou can only move either down or right at any point in time.*//* Time: O(mn)   Space: O(n)*/    /**     * @param grid: a list of lists of integers.     * @return: An integer, minimizes the sum of all numbers along its path     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,19 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*  Split String
-Give a string, you can choose to split the string after one character or two adjacent characters,
-and make the string to be composed of only one character or two characters. Output all possible results.
-
-Example
-Given the string "123"
-return [["1","2","3"],["12","3"],["1","23"]]
-*/
-    /*
-     * @param : a string to be split
-     * @return: all possible split string array
-     */
-</pre>
+/*  Split StringGive a string, you can choose to split the string after one character or two adjacent characters,and make the string to be composed of only one character or two characters. Output all possibleresults.ExampleGiven the string "123"return [["1","2","3"],["12","3"],["1","23"]]*/    /*     * @param : a string to be split     * @return: all possible split string array     */</pre>
 </div>
 
 <h2>Solution</h2>

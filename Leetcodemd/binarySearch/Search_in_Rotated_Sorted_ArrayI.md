@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,19 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Search in Rotated Sorted Array I*/
-/*
-Suppose an array sorted in ascending order is rotated at 
-some pivot unknown to you beforehand.
-
-(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
-
-You are given a target value to search. If found in the array return its index, 
-otherwise return -1.
-
-You may assume no duplicate exists in the array.
-*/
-</pre>
+/* Search in Rotated Sorted Array I*//*Suppose an array sorted in ascending order is rotated atsome pivot unknown to you beforehand.(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).You are given a target value to search. If found in the array return its index,otherwise return -1.You may assume no duplicate exists in the array.*/</pre>
 </div>
 
 <h2>Solution</h2>

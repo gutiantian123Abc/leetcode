@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,26 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Summary Ranges: https://www.lintcode.com/problem/summary-ranges/description
-Given a sorted integer array without duplicates, return the summary of its ranges.
-
-Example
-Example 1:
-
-Input: [0,1,2,4,5,7]
-Output: ["0->2","4->5","7"]
-Example 2:
-
-Input: [0,2,3,4,6,8,9]
-Output: ["0","2->4","6","8->9"]
-Notice
-The result is in ascending order
-*/
-    /**
-     * @param nums:  a sorted integer array without duplicates
-     * @return: the summary of its ranges
-     */
-</pre>
+/* Summary Ranges: https://www.lintcode.com/problem/summary-ranges/descriptionGiven a sorted integer array without duplicates, return the summary of its ranges.ExampleExample 1:Input: [0,1,2,4,5,7]Output: ["0->2","4->5","7"]Example 2:Input: [0,2,3,4,6,8,9]Output: ["0","2->4","6","8->9"]NoticeThe result is in ascending order*/    /**     * @param nums:  a sorted integer array without duplicates     * @return: the summary of its ranges     */</pre>
 </div>
 
 <h2>Solution</h2>

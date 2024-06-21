@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,40 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Subsets
-Given a set of distinct integers, return all possible subsets.
-
-Notice::
-Elements in a subset must be in non-descending order.
-The solution set must not contain duplicate subsets.
-
-Example
-If S = [1,2,3], a solution is:
-[
-  [3],
-  [1],
-  [2],
-  [1,2,3],
-  [1,3],
-  [2,3],
-  [1,2],
-  []
-]
-*/
-    /**
-     * @param S: A set of numbers.
-     * @return: A list of lists. All valid subsets.
-     */
-/* Subset II
-Given a collection of integers that might contain duplicates, S, return all possible subsets.
-Note: Elements in a subset must be in non-descending order. The solution set must not contain duplicate subsets. For example, If S = [1,2,2], a solution is:
-[ [2], [1], [1,2,2], [2,2], [1,2], [] ]
-*/
-    /**
-     * @param nums: A set of numbers.
-     * @return: A list of lists. All valid subsets.
-     */
-</pre>
+/* SubsetsGiven a set of distinct integers, return all possible subsets.Notice::Elements in a subset must be in non-descending order.The solution set must not contain duplicate subsets.ExampleIf S = [1,2,3], a solution is:[  [3],  [1],  [2],  [1,2,3],  [1,3],  [2,3],  [1,2],  []]*/    /**     * @param S: A set of numbers.     * @return: A list of lists. All valid subsets.     *//* Subset IIGiven a collection of integers that might contain duplicates, S, return all possible subsets.Note: Elements in a subset must be in non-descending order. The solution set must not containduplicate subsets. For example, If S = [1,2,2], a solution is:[ [2], [1], [1,2,2], [2,2], [1,2], [] ]*/    /**     * @param nums: A set of numbers.     * @return: A list of lists. All valid subsets.     */</pre>
 </div>
 
 <h2>Solution</h2>

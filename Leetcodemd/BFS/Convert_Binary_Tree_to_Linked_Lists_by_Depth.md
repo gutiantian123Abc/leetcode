@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,50 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Convert Binary Tree to Linked Lists by Depth
-
-Given a binary tree, design an algorithm which creates a linked list of all the nodes at each depth 
-(e.g., if you have a tree with depth D, you'll have D linked lists).
-
-Example
-Given binary tree:
-
-    1
-   / \
-  2   3
- /
-4
-return
-
-[
-  1->null,
-  2->3->null,
-  4->null
-]
-
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-    /**
-     * @param root the root of binary tree
-     * @return a lists of linked list
-     */
-</pre>
+/*Convert Binary Tree to Linked Lists by DepthGiven a binary tree, design an algorithm which creates a linked list of all the nodes at each depth(e.g., if you have a tree with depth D, you'll have D linked lists).ExampleGiven binary tree:    1   / \  2   3 /4return[  1->null,  2->3->null,  4->null]*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } * Definition for singly-linked list. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int x) { val = x; } * } */    /**     * @param root the root of binary tree     * @return a lists of linked list     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,19 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Generalized Abbreviation
-Write a function to generate the generalized abbreviations of a word.
-
-Example:
-Given word = "word", return the following list (order does not matter):
-["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", 
-"1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
-*/
-/*
-思路： 1. When keeping char,append num(>0) and add char to solution, keep backtracking
-      2. When abbreviating char, increase num and keep backtracking
-*/
-</pre>
+/* Generalized AbbreviationWrite a function to generate the generalized abbreviations of a word.Example:Given word = "word", return the following list (order does not matter):["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d","1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]*//*思路： 1. When keeping char,append num(>0) and add char to solution, keep backtracking      2. When abbreviating char, increase num and keep backtracking*/</pre>
 </div>
 
 <h2>Solution</h2>

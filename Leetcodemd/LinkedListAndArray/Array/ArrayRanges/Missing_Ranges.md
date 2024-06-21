@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,29 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Missing Ranges
-Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
-
-Example 1
-Given nums = [0, 1, 3, 50, 75], lower = 0 and upper = 99
-return ["2", "4->49", "51->74", "76->99"].
-
-Example 2
-Given nums = [0, 1, 3, 50, 75], lower = -1 and upper = 99
-return ["-1", "2", "4->49", "51->74", "76->99"].
-
-Example 3
-Given nums = [0, 1, 3, 50, 75], lower = -10 and upper = 100
-return ["-10 -> -1", "2", "4->49", "51->74", "76->100"].
-记住， upper and lower must includes the given nums!!!
-*/
-    /*
-     * @param nums: a sorted integer array
-     * @param lower: An integer
-     * @param upper: An integer
-     * @return: a list of its missing ranges
-     */
-</pre>
+/* Missing RangesGiven a sorted integer array where the range of elements are in the inclusive range [lower, upper],return its missing ranges.Example 1Given nums = [0, 1, 3, 50, 75], lower = 0 and upper = 99return ["2", "4->49", "51->74", "76->99"].Example 2Given nums = [0, 1, 3, 50, 75], lower = -1 and upper = 99return ["-1", "2", "4->49", "51->74", "76->99"].Example 3Given nums = [0, 1, 3, 50, 75], lower = -10 and upper = 100return ["-10 -> -1", "2", "4->49", "51->74", "76->100"].记住， upper and lower must includes the given nums!!!*/    /*     * @param nums: a sorted integer array     * @param lower: An integer     * @param upper: An integer     * @return: a list of its missing ranges     */</pre>
 </div>
 
 <h2>Solution</h2>

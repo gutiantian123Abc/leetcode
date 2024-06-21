@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,26 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Substring with At Most K Distinct Characters
-Given a string, find the length of the longest substring T that contains at most k distinct characters.
-
-Example 1:
-
-Input: s = "eceba", k = 2
-Output: 3
-Explanation: T is "ece" which its length is 3.
-Example 2:
-
-Input: s = "aa", k = 1
-Output: 2
-Explanation: T is "aa" which its length is 2.
-*/
-    /**
-     * @param s: A string
-     * @param k: An integer
-     * @return: An integer
-     */
-</pre>
+/* Longest Substring with At Most K Distinct CharactersGiven a string, find the length of the longest substring T that contains at most k distinctcharacters.Example 1:Input: s = "eceba", k = 2Output: 3Explanation: T is "ece" which its length is 3.Example 2:Input: s = "aa", k = 1Output: 2Explanation: T is "aa" which its length is 2.*/    /**     * @param s: A string     * @param k: An integer     * @return: An integer     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,48 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 
-https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
-You are given a 0-indexed integer array nums and 
-an integer p. Find p pairs of indices of nums 
-such that the maximum difference amongst all the 
-pairs is minimized. Also, ensure no index appears 
-more than once amongst the p pairs.
-
-Note that for a pair of elements at the index i and j, 
-the difference of this pair is |nums[i] - nums[j]|,
-where |x| represents the absolute value of x.
-
-Return the minimum maximum difference among all p pairs. 
-We define the maximum of an empty set to be zero.
-
- 
-
-Example 1:
-
-Input: nums = [10,1,2,7,1,3], p = 2
-Output: 1
-Explanation: The first pair is formed from the indices 1 and 4, 
-and the second pair is formed from the indices 2 and 5. 
-The maximum difference is 
-max(|nums[1] - nums[4]|, |nums[2] - nums[5]|) = max(0, 1) = 1. 
-Therefore, we return 1.
-
-Example 2:
-
-Input: nums = [4,2,1,2], p = 1
-Output: 0
-Explanation: Let the indices 1 and 3 form a pair. 
-The difference of that pair is |2 - 2| = 0, which is the minimum we can attain.
- 
-
-Constraints:
-
-1 <= nums.length <= 105
-0 <= nums[i] <= 109
-0 <= p <= (nums.length)/2
-*/
-</pre>
+/*https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/You are given a 0-indexed integer array nums andan integer p. Find p pairs of indices of numssuch that the maximum difference amongst all thepairs is minimized. Also, ensure no index appearsmore than once amongst the p pairs.Note that for a pair of elements at the index i and j,the difference of this pair is |nums[i] - nums[j]|,where |x| represents the absolute value of x.Return the minimum maximum difference among all p pairs.We define the maximum of an empty set to be zero.Example 1:Input: nums = [10,1,2,7,1,3], p = 2Output: 1Explanation: The first pair is formed from the indices 1 and 4,and the second pair is formed from the indices 2 and 5.The maximum difference ismax(|nums[1] - nums[4]|, |nums[2] - nums[5]|) = max(0, 1) = 1.Therefore, we return 1.Example 2:Input: nums = [4,2,1,2], p = 1Output: 0Explanation: Let the indices 1 and 3 form a pair.The difference of that pair is |2 - 2| = 0, which is the minimum we can attain.Constraints:1 <= nums.length <= 1050 <= nums[i] <= 1090 <= p <= (nums.length)/2*/</pre>
 </div>
 
 <h2>Solution</h2>

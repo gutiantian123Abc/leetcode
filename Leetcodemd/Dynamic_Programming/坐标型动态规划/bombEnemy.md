@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,26 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Bomb Enemy
-
-Given a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' (the number zero), return the maximum enemies you can kill using one bomb.
-The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed.
-
-You can only put the bomb at an empty cell.
-
-Example
-Given a grid:
-
-0 E 0 0
-E 0 W E
-0 E 0 0
-return 3. (Placing a bomb at (1,1) kills 3 enemies)
-*/
-    /**
-     * @param grid Given a 2D grid, each cell is either 'W', 'E' or '0'
-     * @return an integer, the maximum enemies you can kill using one bomb
-     */
-</pre>
+/* Bomb EnemyGiven a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' (the number zero), returnthe maximum enemies you can kill using one bomb.The bomb kills all the enemies in the same row and column from the planted point until it hits thewall since the wall is too strong to be destroyed.You can only put the bomb at an empty cell.ExampleGiven a grid:0 E 0 0E 0 W E0 E 0 0return 3. (Placing a bomb at (1,1) kills 3 enemies)*/    /**     * @param grid Given a 2D grid, each cell is either 'W', 'E' or '0'     * @return an integer, the maximum enemies you can kill using one bomb     */</pre>
 </div>
 
 <h2>Solution</h2>

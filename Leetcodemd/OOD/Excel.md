@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,20 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 这是一道模拟Excel 的题目， 需要implement 
-1. get(x, y)
-2. set(x, y, value)
-3. addRow()
-4. addRow(index)
-5. removeRow(index)
-6. addColumn()
-7. addColumn(index)
-8. removeColume(index)
-*/
-/**
- * Created by xiangtiangu on 12/17/18.
- */
-</pre>
+/* 这是一道模拟Excel 的题目， 需要implement1. get(x, y)2. set(x, y, value)3. addRow()4. addRow(index)5. removeRow(index)6. addColumn()7. addColumn(index)8. removeColume(index)*//** * Created by xiangtiangu on 12/17/18. */</pre>
 </div>
 
 <h2>Solution</h2>

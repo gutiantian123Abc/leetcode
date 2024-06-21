@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,18 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Dices Sum
-Throw n dices, the sum of the dices' faces is S. Given n, 
-find the all possible value of S along with its probability.
-
-Example
-Given n = 1, return [ [1, 0.17], [2, 0.17], [3, 0.17], [4, 0.17], [5, 0.17], [6, 0.17]].
-*/
-    /**
-     * @param n an integer
-     * @return a list of Map.Entry<sum, probability>
-     */
-</pre>
+/* Dices SumThrow n dices, the sum of the dices' faces is S. Given n,find the all possible value of S along with its probability.ExampleGiven n = 1, return [ [1, 0.17], [2, 0.17], [3, 0.17], [4, 0.17], [5, 0.17], [6, 0.17]].*/    /**     * @param n an integer     * @return a list of Map.Entry<sum, probability>     */</pre>
 </div>
 
 <h2>Solution</h2>

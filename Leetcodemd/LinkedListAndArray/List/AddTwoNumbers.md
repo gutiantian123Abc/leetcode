@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,48 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Add Two Numbers I
-You have two numbers represented by a linked list, where each node contains a single digit. 
-The digits are stored in reverse order, such that the 1's digit is at the head of the list. 
-Write a function that adds the two numbers and returns the sum as a linked list.
-
-Example
-Given 7->1->6 + 5->9->2. That is, 617 + 295.
-
-Return 2->1->9. That is 912.
-
-Given 3->1->5 and 5->9->2, return 8->0->8.
-*/
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;      
- *     }
- * }
- */
-    /**
-     * @param l1: the first list
-     * @param l2: the second list
-     * @return: the sum list of l1 and l2 
-     */
-/* Similar Question: Add Binary
-Given two binary strings, return their sum (also a binary string).
-
-Example
-a = 11
-b = 1
-Return 100
-*/
-    /**
-     * @param a a number
-     * @param b a number
-     * @return the result
-     */
-</pre>
+/* Add Two Numbers IYou have two numbers represented by a linked list, where each node contains a single digit.The digits are stored in reverse order, such that the 1's digit is at the head of the list.Write a function that adds the two numbers and returns the sum as a linked list.ExampleGiven 7->1->6 + 5->9->2. That is, 617 + 295.Return 2->1->9. That is 912.Given 3->1->5 and 5->9->2, return 8->0->8.*//** * Definition for singly-linked list. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int x) { *         val = x; *         next = null; *     } * } */    /**     * @param l1: the first list     * @param l2: the second list     * @return: the sum list of l1 and l2     *//* Similar Question: Add BinaryGiven two binary strings, return their sum (also a binary string).Examplea = 11b = 1Return 100*/    /**     * @param a a number     * @param b a number     * @return the result     */</pre>
 </div>
 
 <h2>Solution</h2>

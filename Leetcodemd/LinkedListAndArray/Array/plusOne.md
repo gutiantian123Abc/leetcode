@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,20 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*
-Given a non-negative number represented as an array of digits, plus one to the number.
-
-The digits are stored such that the most significant digit is at the head of the list.
-
-Example
-Given [1,2,3] which represents 123, return [1,2,4].
-Given [9,9,9] which represents 999, return [1,0,0,0].
-*/
-    /**
-     * @param digits a number represented as an array of digits
-     * @return the result
-     */
-</pre>
+/*Given a non-negative number represented as an array of digits, plus one to the number.The digits are stored such that the most significant digit is at the head of the list.ExampleGiven [1,2,3] which represents 123, return [1,2,4].Given [9,9,9] which represents 999, return [1,0,0,0].*/    /**     * @param digits a number represented as an array of digits     * @return the result     */</pre>
 </div>
 
 <h2>Solution</h2>

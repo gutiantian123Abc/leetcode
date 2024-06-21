@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,22 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* strStr
-For a given source string and a target string, 
-you should output the first index(from 0) of target string in source string.
-If target does not exist in source, just return -1.
-
-Example
-If source = "source" and target = "target", return -1.
-If source = "abcdabcdefg" and target = "bcd", return 1.
-*/
-    /**
-     * Returns a index to the first occurrence of target in source,
-     * or -1  if target is not part of source.
-     * @param source string to be scanned.
-     * @param target string containing the sequence of characters to match.
-     */
-</pre>
+/* strStrFor a given source string and a target string,you should output the first index(from 0) of target string in source string.If target does not exist in source, just return -1.ExampleIf source = "source" and target = "target", return -1.If source = "abcdabcdefg" and target = "bcd", return 1.*/    /**     * Returns a index to the first occurrence of target in source,     * or -1  if target is not part of source.     * @param source string to be scanned.     * @param target string containing the sequence of characters to match.     */</pre>
 </div>
 
 <h2>Solution</h2>

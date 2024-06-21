@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,41 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 934 shortest-bridge
-https://leetcode.com/problems/shortest-bridge
-
-You are given an n x n binary matrix grid where 1 represents land and 0 represents water.
-
-An island is a 4-directionally connected group of 1's not connected to any other 1's. 
-There are exactly two islands in grid.
-
-You may change 0's to 1's to connect the two islands to form one island.
-
-Return the smallest number of 0's you must flip to connect the two islands.
-
-
-Example 1:
-
-Input: grid = [[0,1],[1,0]]
-Output: 1
-Example 2:
-
-Input: grid = [[0,1,0],[0,0,0],[0,0,1]]
-Output: 2
-Example 3:
-
-Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]
-Output: 1
- 
-
-Constraints:
-
-n == grid.length == grid[i].length
-2 <= n <= 100
-grid[i][j] is either 0 or 1.
-There are exactly two islands in grid.
-*/
-</pre>
+/* 934 shortest-bridgehttps://leetcode.com/problems/shortest-bridgeYou are given an n x n binary matrix grid where 1 represents land and 0 represents water.An island is a 4-directionally connected group of 1's not connected to any other 1's.There are exactly two islands in grid.You may change 0's to 1's to connect the two islands to form one island.Return the smallest number of 0's you must flip to connect the two islands.Example 1:Input: grid = [[0,1],[1,0]]Output: 1Example 2:Input: grid = [[0,1,0],[0,0,0],[0,0,1]]Output: 2Example 3:Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]Output: 1Constraints:n == grid.length == grid[i].length2 <= n <= 100grid[i][j] is either 0 or 1.There are exactly two islands in grid.*/</pre>
 </div>
 
 <h2>Solution</h2>

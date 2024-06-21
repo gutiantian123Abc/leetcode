@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,28 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 514. Paint Fence
-There is a fence with n posts, each post can be painted with one of the k colors.
-You have to paint all the posts such that no more than two adjacent fence posts have the same color.
-Return the total number of ways you can paint the fence.
-
-Example
-Given n=3, k=2 return 6
-
-      post 1,   post 2, post 3
-way1    0         0       1 
-way2    0         1       0
-way3    0         1       1
-way4    1         0       0
-way5    1         0       1
-way6    1         1       0
-*/
-    /**
-     * @param n: non-negative integer, n posts
-     * @param k: non-negative integer, k colors
-     * @return: an integer, the total number of ways
-     */
-</pre>
+/* 514. Paint FenceThere is a fence with n posts, each post can be painted with one of the k colors.You have to paint all the posts such that no more than two adjacent fence posts have the same color.Return the total number of ways you can paint the fence.ExampleGiven n=3, k=2 return 6      post 1,   post 2, post 3way1    0         0       1way2    0         1       0way3    0         1       1way4    1         0       0way5    1         0       1way6    1         1       0*/    /**     * @param n: non-negative integer, n posts     * @param k: non-negative integer, k colors     * @return: an integer, the total number of ways     */</pre>
 </div>
 
 <h2>Solution</h2>

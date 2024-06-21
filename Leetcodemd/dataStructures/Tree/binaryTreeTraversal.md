@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,94 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Binary Tree Preorder Traversal
-Given a binary tree, return the preorder traversal of its nodes' values.
-
-Example
-Given:
-
-    1
-   / \
-  2   3
- / \
-4   5
-return [1,2,4,5,3].
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root: The root of binary tree.
-     * @return: Preorder in ArrayList which contains node values.
-     */
-/* Binary Tree Postorder Traversal
-Given a binary tree, return the postorder traversal of its nodes' values.
-Example
-Given binary tree {1,#,2,3},
-
-   1
-    \
-     2
-    /
-   3
- 
-
-return [3,2,1].
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root: The root of binary tree.
-     * @return: Postorder in ArrayList which contains node values.
-     */
-/* Binary Tree Inorder Traversal
-Given a binary tree, return the inorder traversal of its nodes' values.
-
-Example
-Given binary tree {1,#,2,3},
-
-   1
-    \
-     2
-    /
-   3
- 
-
-return [1,3,2].
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root: The root of binary tree.
-     * @return: Inorder in ArrayList which contains node values.
-     */
-</pre>
+/* Binary Tree Preorder TraversalGiven a binary tree, return the preorder traversal of its nodes' values.ExampleGiven:    1   / \  2   3 / \4   5return [1,2,4,5,3].*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root: The root of binary tree.     * @return: Preorder in ArrayList which contains node values.     *//* Binary Tree Postorder TraversalGiven a binary tree, return the postorder traversal of its nodes' values.ExampleGiven binary tree {1,#,2,3},   1    \     2    /   3return [3,2,1].*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root: The root of binary tree.     * @return: Postorder in ArrayList which contains node values.     *//* Binary Tree Inorder TraversalGiven a binary tree, return the inorder traversal of its nodes' values.ExampleGiven binary tree {1,#,2,3},   1    \     2    /   3return [1,3,2].*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root: The root of binary tree.     * @return: Inorder in ArrayList which contains node values.     */</pre>
 </div>
 
 <h2>Solution</h2>

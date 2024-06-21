@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,29 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Merge k Sorted Arrays 
-Given k sorted integer arrays, merge them into one sorted array.
-Example
-Given 3 sorted arrays:
-
-[
-  [1, 3, 5, 7],
-  [2, 4, 6],
-  [0, 8, 9, 10, 11]
-]
-return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].
-
-Challenge 
-Do it in O(N log k).
-
-N is the total number of integers.
-k is the number of arrays.
-*/
-    /**
-     * @param arrays k sorted integer arrays
-     * @return a sorted array
-     */
-</pre>
+/* Merge k Sorted ArraysGiven k sorted integer arrays, merge them into one sorted array.ExampleGiven 3 sorted arrays:[  [1, 3, 5, 7],  [2, 4, 6],  [0, 8, 9, 10, 11]]return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].ChallengeDo it in O(N log k).N is the total number of integers.k is the number of arrays.*/    /**     * @param arrays k sorted integer arrays     * @return a sorted array     */</pre>
 </div>
 
 <h2>Solution</h2>

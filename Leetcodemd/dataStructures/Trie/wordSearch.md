@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,17 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*WordSearch II
-Given a matrix of lower alphabets and a dictionary.
-Find all words in the dictionary that can be found in the matrix. 
-A word can start from any position in the matrix and go left/right/up/down to the adjacent position. 
-*/
-    /**
-     * @param board: A list of lists of character
-     * @param words: A list of string
-     * @return: A list of string
-     */
-</pre>
+/*WordSearch IIGiven a matrix of lower alphabets and a dictionary.Find all words in the dictionary that can be found in the matrix.A word can start from any position in the matrix and go left/right/up/down to the adjacent position.*/    /**     * @param board: A list of lists of character     * @param words: A list of string     * @return: A list of string     */</pre>
 </div>
 
 <h2>Solution</h2>

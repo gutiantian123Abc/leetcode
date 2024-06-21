@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,37 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Convert Sorted Array to Binary Search Tree
-Given a sorted (increasing order) array, 
-Convert it to create a binary tree with minimal height(Balanced Height BST).
-Notice
-There may exist multiple valid solutions, return any of them.
-
-Example
-Given [1,2,3,4,5,6,7], return
-
-     4
-   /   \
-  2     6
- / \    / \
-1   3  5   7
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */ 
-    /**
-     * @param A: an integer array
-     * @return: a tree node
-     */
-</pre>
+/* Convert Sorted Array to Binary Search TreeGiven a sorted (increasing order) array,Convert it to create a binary tree with minimal height(Balanced Height BST).NoticeThere may exist multiple valid solutions, return any of them.ExampleGiven [1,2,3,4,5,6,7], return     4   /   \  2     6 / \    / \1   3  5   7*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param A: an integer array     * @return: a tree node     */</pre>
 </div>
 
 <h2>Solution</h2>

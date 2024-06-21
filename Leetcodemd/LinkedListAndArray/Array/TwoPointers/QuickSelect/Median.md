@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,26 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Median
-Given a unsorted array with integers, find the median of it.
-
-A median is the middle number of the array after it is sorted.
-
-If there are even numbers in the array, return the N/2-th number after sorted.
-
-Example
-Given [4, 5, 1, 2, 3], return 3.
-
-Given [7, 9, 4, 5], return 5.
-
-Challenge 
-O(n) time.
-*/
-    /**
-     * @param nums: A list of integers.
-     * @return: An integer denotes the middle number of the array.
-     */
-</pre>
+/* MedianGiven a unsorted array with integers, find the median of it.A median is the middle number of the array after it is sorted.If there are even numbers in the array, return the N/2-th number after sorted.ExampleGiven [4, 5, 1, 2, 3], return 3.Given [7, 9, 4, 5], return 5.ChallengeO(n) time.*/    /**     * @param nums: A list of integers.     * @return: An integer denotes the middle number of the array.     */</pre>
 </div>
 
 <h2>Solution</h2>

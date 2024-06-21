@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,44 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 234. Palindrome Linked List
-https://leetcode.com/problems/palindrome-linked-list/
-
-Given the head of a singly linked list, return true if it is a palindrome.
-
-
-Example 1:
-
-
-Input: head = [1,2,2,1]
-Output: true
-Example 2:
-
-
-Input: head = [1,2]
-Output: false
- 
-
-Constraints:
-
-The number of nodes in the list is in the range [1, 105].
-0 <= Node.val <= 9
- 
-
-Follow up: Could you do it in O(n) time and O(1) space?
-
-*/
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-</pre>
+/* 234. Palindrome Linked Listhttps://leetcode.com/problems/palindrome-linked-list/Given the head of a singly linked list, return true if it is a palindrome.Example 1:Input: head = [1,2,2,1]Output: trueExample 2:Input: head = [1,2]Output: falseConstraints:The number of nodes in the list is in the range [1, 105].0 <= Node.val <= 9Follow up: Could you do it in O(n) time and O(1) space?*//** * Definition for singly-linked list. * public class ListNode { *     int val; *     ListNode next; *     ListNode() {} *     ListNode(int val) { this.val = val; } *     ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */</pre>
 </div>
 
 <h2>Solution</h2>

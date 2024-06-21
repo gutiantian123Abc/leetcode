@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,32 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Max Area of Island
-Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's 
-(representing land) connected 4-directionally (horizontal or vertical.) 
-You may assume all four edges of the grid are surrounded by water.
-
-Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.)
-
-Example 1:
-
-[[0,0,1,0,0,0,0,1,0,0,0,0,0],
- [0,0,0,0,0,0,0,1,1,1,0,0,0],
- [0,1,1,0,1,0,0,0,0,0,0,0,0],
- [0,1,0,0,1,1,0,0,1,0,1,0,0],
- [0,1,0,0,1,1,0,0,1,1,1,0,0],
- [0,0,0,0,0,0,0,0,0,0,1,0,0],
- [0,0,0,0,0,0,0,1,1,1,0,0,0],
- [0,0,0,0,0,0,0,1,1,0,0,0,0]]
-
-Given the above grid, return 6. Note the answer is not 11, because the island must be connected 4-directionally.
-Example 2:
-
-[[0,0,0,0,0,0,0,0]]
-Given the above grid, return 0.
-Note: The length of each dimension in the given grid does not exceed 50.
-*/
-</pre>
+/* Max Area of IslandGiven a non-empty 2D array grid of 0's and 1's, an island is a group of 1's(representing land) connected 4-directionally (horizontal or vertical.)You may assume all four edges of the grid are surrounded by water.Find the maximum area of an island in the given 2D array. (If there is no island, the maximum areais 0.)Example 1:[[0,0,1,0,0,0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,1,1,0,1,0,0,0,0,0,0,0,0], [0,1,0,0,1,1,0,0,1,0,1,0,0], [0,1,0,0,1,1,0,0,1,1,1,0,0], [0,0,0,0,0,0,0,0,0,0,1,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,0,0,0,0,0,0,1,1,0,0,0,0]]Given the above grid, return 6. Note the answer is not 11, because the island must be connected4-directionally.Example 2:[[0,0,0,0,0,0,0,0]]Given the above grid, return 0.Note: The length of each dimension in the given grid does not exceed 50.*/</pre>
 </div>
 
 <h2>Solution</h2>

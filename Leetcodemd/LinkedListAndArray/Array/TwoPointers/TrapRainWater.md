@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,22 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Trapping Rain Water： http://www.lintcode.com/en/problem/trapping-rain-water/
-Given n non-negative integers representing an elevation map where the width of each bar is 1, 
-compute how much water it is able to trap after raining.
-
-Example
-Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
-
-Challenge 
-O(n) time and O(1) memory
-O(n) time and O(n) memory is also acceptable.
-*/
-    /**
-     * @param heights: an array of integers
-     * @return: a integer
-     */
-</pre>
+/* Trapping Rain Water： http://www.lintcode.com/en/problem/trapping-rain-water/Given n non-negative integers representing an elevation map where the width of each bar is 1,compute how much water it is able to trap after raining.ExampleGiven [0,1,0,2,1,0,1,3,2,1,2,1], return 6.ChallengeO(n) time and O(1) memoryO(n) time and O(n) memory is also acceptable.*/    /**     * @param heights: an array of integers     * @return: a integer     */</pre>
 </div>
 
 <h2>Solution</h2>

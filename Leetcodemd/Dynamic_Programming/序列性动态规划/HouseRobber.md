@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,82 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* House Robber I
-You are a professional robber planning to rob houses along a street. 
-Each house has a certain amount of money stashed, 
-the only constraint stopping you from robbing each of them is that adjacent houses 
-have security system connected and it will automatically contact the police if two adjacent houses
-were broken into on the same night.
-
-Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
-
-Example
-Given [3, 8, 4], return 8.
-
-Challenge 
-O(n) time and O(1) memory.
-*/
-    /*
-     * @param : An array of non-negative integers
-     * @return: The maximum amount of money you can rob tonight
-     */
-/* House Robber II 
-After robbing those houses on that street, 
-the thief has found himself a new place for his thievery so that he will not get too much attention. 
-This time, all houses at this place are arranged in a circle. 
-That means the first house is the neighbor of the last one. Meanwhile, 
-the security system for these houses remain the same as for those in the previous street.
-
-Given a list of non-negative integers representing the amount of money of each house, 
-determine the maximum amount of money you can rob tonight without alerting the police.
-
-Notice
-This is an extension of House Robber.
-Example
-nums = [3,6,4], return 6
-*/
-    /**
-     * @param nums: An array of non-negative integers.
-     * return: The maximum amount of money you can rob tonight
-     */
-/* House Robber III
-The thief has found himself a new place for his thievery again. 
-There is only one entrance to this area, called the "root." 
-Besides the root, each house has one and only one parent house. 
-After a tour, the smart thief realized that "all houses in this place forms a binary tree". 
-It will automatically contact the police if two directly-linked houses were broken into on the same night.
-
-Determine the maximum amount of money the thief can rob tonight without alerting the police.
-Example
-  3
- / \
-2   3
- \   \ 
-  3   1
-Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
-
-    3
-   / \
-  4   5
- / \   \ 
-1   3   1
-Maximum amount of money the thief can rob = 4 + 5 = 9.
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int x) { val = x; }
- * }
- */
-/* 典型的DFS divide conquer, 不是DP， 参见DFS
-*/
-    /**
-     * @param root: The root of binary tree.
-     * @return: The maximum amount of money you can rob tonight
-     */
-</pre>
+/* House Robber IYou are a professional robber planning to rob houses along a street.Each house has a certain amount of money stashed,the only constraint stopping you from robbing each of them is that adjacent houseshave security system connected and it will automatically contact the police if two adjacent houseswere broken into on the same night.Given a list of non-negative integers representing the amount of money of each house, determine themaximum amount of money you can rob tonight without alerting the police.ExampleGiven [3, 8, 4], return 8.ChallengeO(n) time and O(1) memory.*/    /*     * @param : An array of non-negative integers     * @return: The maximum amount of money you can rob tonight     *//* House Robber IIAfter robbing those houses on that street,the thief has found himself a new place for his thievery so that he will not get too much attention.This time, all houses at this place are arranged in a circle.That means the first house is the neighbor of the last one. Meanwhile,the security system for these houses remain the same as for those in the previous street.Given a list of non-negative integers representing the amount of money of each house,determine the maximum amount of money you can rob tonight without alerting the police.NoticeThis is an extension of House Robber.Examplenums = [3,6,4], return 6*/    /**     * @param nums: An array of non-negative integers.     * return: The maximum amount of money you can rob tonight     *//* House Robber IIIThe thief has found himself a new place for his thievery again.There is only one entrance to this area, called the "root."Besides the root, each house has one and only one parent house.After a tour, the smart thief realized that "all houses in this place forms a binary tree".It will automatically contact the police if two directly-linked houses were broken into on the samenight.Determine the maximum amount of money the thief can rob tonight without alerting the police.Example  3 / \2   3 \   \  3   1Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.    3   / \  4   5 / \   \1   3   1Maximum amount of money the thief can rob = 4 + 5 = 9.*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int x) { val = x; } * } *//* 典型的DFS divide conquer, 不是DP， 参见DFS*/    /**     * @param root: The root of binary tree.     * @return: The maximum amount of money you can rob tonight     */</pre>
 </div>
 
 <h2>Solution</h2>

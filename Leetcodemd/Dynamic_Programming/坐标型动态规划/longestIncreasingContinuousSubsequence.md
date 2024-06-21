@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,24 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Increasing Continuous Subsequence
-Give an integer array，find the longest increasing continuous subsequence in this array.
-
-An increasing continuous subsequence:
-
-Can be from right to left or from left to right.
-Indices of the integers in the subsequence should be continuous.
-
-Example
-For [5, 4, 2, 1, 3], the LICS is [5, 4, 2, 1], return 4.
-
-For [5, 1, 2, 3, 4], the LICS is [1, 2, 3, 4], return 4.
-*/
-    /*
-     * @param : An array of Integer
-     * @return: an integer
-     */
-</pre>
+/* Longest Increasing Continuous SubsequenceGive an integer array，find the longest increasing continuous subsequence in this array.An increasing continuous subsequence:Can be from right to left or from left to right.Indices of the integers in the subsequence should be continuous.ExampleFor [5, 4, 2, 1, 3], the LICS is [5, 4, 2, 1], return 4.For [5, 1, 2, 3, 4], the LICS is [1, 2, 3, 4], return 4.*/    /*     * @param : An array of Integer     * @return: an integer     */</pre>
 </div>
 
 <h2>Solution</h2>

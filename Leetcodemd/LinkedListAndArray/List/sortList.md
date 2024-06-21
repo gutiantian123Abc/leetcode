@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,50 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Insertion Sort List
-Sort a linked list using insertion sort.
-
-Example
-Given 1->3->2->0->null, return 0->1->2->3->null.
-*/
-/**
- * Definition for ListNode.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
- * }
- */ 
-    /**
-     * @param head: The first node of linked list.
-     * @return: The head of linked list.
-     */
-/* Merge sort a list
-*/
-/**
- * Definition for ListNode.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
- * }
- */ 
-    /**
-     * @param head: The head of linked list.
-     * @return: You should return the head of the sorted linked list,
-     */
-    /**
-     * @param head: The head of linked list.
-     * @return: You should return the head of the sorted linked list,
-     *             using constant space complexity.
-     */
-</pre>
+/* Insertion Sort ListSort a linked list using insertion sort.ExampleGiven 1->3->2->0->null, return 0->1->2->3->null.*//** * Definition for ListNode. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int val) { *         this.val = val; *         this.next = null; *     } * } */    /**     * @param head: The first node of linked list.     * @return: The head of linked list.     *//* Merge sort a list*//** * Definition for ListNode. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int val) { *         this.val = val; *         this.next = null; *     } * } */    /**     * @param head: The head of linked list.     * @return: You should return the head of the sorted linked list,     */    /**     * @param head: The head of linked list.     * @return: You should return the head of the sorted linked list,     *             using constant space complexity.     */</pre>
 </div>
 
 <h2>Solution</h2>

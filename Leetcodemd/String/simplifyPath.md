@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,31 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*  Simplify Path
-Given an absolute path for a file (Unix-style), simplify it.
-
-Example
-"/home/", => "/home"
-"/a/./b/../../c/", => "/c"
-Challenge 
-Did you consider the case where path = "/../"?
-In this case, you should return "/".
-Another corner case is the path might contain multiple slashes '/' together, such as "/home//foo/".
-In this case, you should ignore redundant slashes and return "/home/foo".
-*/
-/* BackGround Knowledge:
-/a/./ -> still in /a
-/a/./b -> in /a/b
-.. -> go "up" one level
-/a/./b/.. -> /a/b/.. -> /a
-/a/./b/../.. -> /a/.. -> /
-/a/./b/../../c -> /c
-*/
-    /**
-     * @param path the original path
-     * @return the simplified path
-     */
-</pre>
+/*  Simplify PathGiven an absolute path for a file (Unix-style), simplify it.Example"/home/", => "/home""/a/./b/../../c/", => "/c"ChallengeDid you consider the case where path = "/../"?In this case, you should return "/".Another corner case is the path might contain multiple slashes '/' together, such as "/home//foo/".In this case, you should ignore redundant slashes and return "/home/foo".*//* BackGround Knowledge:/a/./ -> still in /a/a/./b -> in /a/b.. -> go "up" one level/a/./b/.. -> /a/b/.. -> /a/a/./b/../.. -> /a/.. -> //a/./b/../../c -> /c*/    /**     * @param path the original path     * @return the simplified path     */</pre>
 </div>
 
 <h2>Solution</h2>

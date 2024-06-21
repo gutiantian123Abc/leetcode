@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,33 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 316. Remove Duplicate Letters
-https://leetcode.com/problems/remove-duplicate-letters/description/
-
-Given a string s, remove duplicate letters so that every 
-letter appears once and only once. You must make sure your result is 
-the smallest in lexicographical order
- among all possible results.
-
- 
-
-Example 1:
-
-Input: s = "bcabc"
-Output: "abc"
-Example 2:
-
-Input: s = "cbacdcbc"
-Output: "acdb"
- 
-
-Constraints:
-
-1 <= s.length <= 104
-s consists of lowercase English letters.
-
-*/
-</pre>
+/* 316. Remove Duplicate Lettershttps://leetcode.com/problems/remove-duplicate-letters/description/Given a string s, remove duplicate letters so that everyletter appears once and only once. You must make sure your result isthe smallest in lexicographical order among all possible results.Example 1:Input: s = "bcabc"Output: "abc"Example 2:Input: s = "cbacdcbc"Output: "acdb"Constraints:1 <= s.length <= 104s consists of lowercase English letters.*/</pre>
 </div>
 
 <h2>Solution</h2>

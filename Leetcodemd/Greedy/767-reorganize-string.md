@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,31 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 767. Reorganize String
-https://leetcode.com/problems/reorganize-string/description/
-
-Given a string s, rearrange the characters of s so that any two adjacent 
-characters are not the same.
-
-Return any possible rearrangement of s or return "" if not possible.
- 
-
-Example 1:
-
-Input: s = "aab"
-Output: "aba"
-Example 2:
-
-Input: s = "aaab"
-Output: ""
- 
-
-Constraints:
-
-1 <= s.length <= 500
-s consists of lowercase English letters.
-*/
-</pre>
+/* 767. Reorganize Stringhttps://leetcode.com/problems/reorganize-string/description/Given a string s, rearrange the characters of s so that any two adjacentcharacters are not the same.Return any possible rearrangement of s or return "" if not possible.Example 1:Input: s = "aab"Output: "aba"Example 2:Input: s = "aaab"Output: ""Constraints:1 <= s.length <= 500s consists of lowercase English letters.*/</pre>
 </div>
 
 <h2>Solution</h2>

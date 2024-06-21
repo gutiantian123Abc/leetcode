@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,28 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Is Subsequence
-Given a string s and a string t, check if s is subsequence of t.
-
-You may assume that there is only lower case English letters in both s and t. 
-t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).
-
-A subsequence of a string is a new string which is formed from the original string 
-by deleting some (can be none) of the characters without disturbing the relative 
-positions of the remaining characters. 
-(ie, "ace" is a subsequence of "abcde" while "aec" is not).
-
-Example 1:
-s = "abc", t = "ahbgdc"
-
-Return true.
-
-Example 2:
-s = "axc", t = "ahbgdc"
-
-Return false.
-*/
-</pre>
+/* Is SubsequenceGiven a string s and a string t, check if s is subsequence of t.You may assume that there is only lower case English letters in both s and t.t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).A subsequence of a string is a new string which is formed from the original stringby deleting some (can be none) of the characters without disturbing the relativepositions of the remaining characters.(ie, "ace" is a subsequence of "abcde" while "aec" is not).Example 1:s = "abc", t = "ahbgdc"Return true.Example 2:s = "axc", t = "ahbgdc"Return false.*/</pre>
 </div>
 
 <h2>Solution</h2>

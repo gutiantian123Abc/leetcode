@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,20 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Maximum Product Subarray
-Find the contiguous subarray within an array (containing at least one number) which has the largest product.
-Example
-For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6.
-*/
-    /**
-     * @param nums: an array of integers
-     * @return: an integer
-     */
-    /**
-     * @param nums: an array of integers
-     * @return: an integer
-     */
-</pre>
+/* Maximum Product SubarrayFind the contiguous subarray within an array (containing at least one number) which has the largestproduct.ExampleFor example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6.*/    /**     * @param nums: an array of integers     * @return: an integer     */    /**     * @param nums: an array of integers     * @return: an integer     */</pre>
 </div>
 
 <h2>Solution</h2>

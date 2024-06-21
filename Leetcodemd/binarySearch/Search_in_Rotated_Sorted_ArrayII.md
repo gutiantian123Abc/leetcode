@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,22 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Search in Rotated Sorted Array II
-Follow up for "Search in Rotated Sorted Array":
-What if duplicates are allowed?
-
-Would this affect the run-time complexity? How and why?
-
-Suppose an array sorted in ascending order is rotated at some pivot 
-unknown to you beforehand.
-
-(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
-
-Write a function to determine if a given target is in the array.
-
-The array may contain duplicates.
-*/
-</pre>
+/* Search in Rotated Sorted Array IIFollow up for "Search in Rotated Sorted Array":What if duplicates are allowed?Would this affect the run-time complexity? How and why?Suppose an array sorted in ascending order is rotated at some pivotunknown to you beforehand.(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).Write a function to determine if a given target is in the array.The array may contain duplicates.*/</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,42 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Convert Sorted List to Balanced BST
-Given a singly linked list where elements are sorted in ascending order, 
-convert it to a height balanced BST.
-
-Have you met this question in a real interview? Yes
-Example
-               2
-1->2->3  =>   / \
-             1   3
-
-*/
-/**
- * Definition for ListNode.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
- * }
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */ 
-    /**
-     * @param head: The first node of linked list.
-     * @return: a tree node
-     */
-</pre>
+/* Convert Sorted List to Balanced BSTGiven a singly linked list where elements are sorted in ascending order,convert it to a height balanced BST.Have you met this question in a real interview? YesExample               21->2->3  =>   / \             1   3*//** * Definition for ListNode. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int val) { *         this.val = val; *         this.next = null; *     } * } * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param head: The first node of linked list.     * @return: a tree node     */</pre>
 </div>
 
 <h2>Solution</h2>

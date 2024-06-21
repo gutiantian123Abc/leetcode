@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,44 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Two Sum IV - Input is a BST
-Given a Binary Search Tree and a target number, 
-return true if there exist two elements in the BST such that their sum is 
-equal to the given target.
-
-Example 1:
-Input: 
-    5
-   / \
-  3   6
- / \   \
-2   4   7
-
-Target = 9
-
-Output: True
-Example 2:
-Input: 
-    5
-   / \
-  3   6
- / \   \
-2   4   7
-
-Target = 28
-
-Output: False
-*/
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
-</pre>
+/* Two Sum IV - Input is a BSTGiven a Binary Search Tree and a target number,return true if there exist two elements in the BST such that their sum isequal to the given target.Example 1:Input:    5   / \  3   6 / \   \2   4   7Target = 9Output: TrueExample 2:Input:    5   / \  3   6 / \   \2   4   7Target = 28Output: False*//** * Definition for a binary tree node. * public class TreeNode { *     int val; *     TreeNode left; *     TreeNode right; *     TreeNode(int x) { val = x; } * } */</pre>
 </div>
 
 <h2>Solution</h2>

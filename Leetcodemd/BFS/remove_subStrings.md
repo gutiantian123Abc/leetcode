@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,24 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Remove Substrings
-Given a string s and a set of n substrings. 
-You are supposed to remove every instance of those n substrings from s so that s is of 
-the minimum length and output this minimum length.
-
-Example
-Given s = ccdaabcdbb, substrs = ["ab", "cd"]
-Return 2
-
-Explanation: 
-ccdaabcdbb -> ccdacdbb -> cabb -> cb (length = 2)
-*/
-    /**
-     * @param s a string
-     * @param dict a set of n substrings
-     * @return the minimum length
-     */
-</pre>
+/* Remove SubstringsGiven a string s and a set of n substrings.You are supposed to remove every instance of those n substrings from s so that s is ofthe minimum length and output this minimum length.ExampleGiven s = ccdaabcdbb, substrs = ["ab", "cd"]Return 2Explanation:ccdaabcdbb -> ccdacdbb -> cabb -> cb (length = 2)*/    /**     * @param s a string     * @param dict a set of n substrings     * @return the minimum length     */</pre>
 </div>
 
 <h2>Solution</h2>

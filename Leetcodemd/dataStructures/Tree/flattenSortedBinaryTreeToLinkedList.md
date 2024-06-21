@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,40 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Flatten Binary Tree to Linked List 
-Flatten a binary tree to a fake "linked list" in pre-order traversal.
-Here we use the right pointer in TreeNode as the next pointer in ListNode.
-Example
-              1
-               \
-     1          2
-    / \          \
-   2   5    =>    3
-  / \   \          \
- 3   4   6          4
-                     \
-                      5
-                       \
-                        6
-Challenge 
-Do it in-place without any extra memory.
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root: a TreeNode, the root of the binary tree
-     * @return: nothing
-     */
-</pre>
+/* Flatten Binary Tree to Linked ListFlatten a binary tree to a fake "linked list" in pre-order traversal.Here we use the right pointer in TreeNode as the next pointer in ListNode.Example              1               \     1          2    / \          \   2   5    =>    3  / \   \          \ 3   4   6          4                     \                      5                       \                        6ChallengeDo it in-place without any extra memory.*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root: a TreeNode, the root of the binary tree     * @return: nothing     */</pre>
 </div>
 
 <h2>Solution</h2>

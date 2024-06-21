@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,20 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Maximum Average Subarray I
-Given an array consisting of n integers, 
-find the contiguous subarray of given length k that has the maximum average value. 
-And you need to output the maximum average value.
-
-Example 1:
-Input: [1,12,-5,-6,50,3], k = 4
-Output: 12.75
-Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
-Note:
-1 <= k <= n <= 30,000.
-Elements of the given array will be in the range [-10,000, 10,000].
-*/
-</pre>
+/* Maximum Average Subarray IGiven an array consisting of n integers,find the contiguous subarray of given length k that has the maximum average value.And you need to output the maximum average value.Example 1:Input: [1,12,-5,-6,50,3], k = 4Output: 12.75Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75Note:1 <= k <= n <= 30,000.Elements of the given array will be in the range [-10,000, 10,000].*/</pre>
 </div>
 
 <h2>Solution</h2>

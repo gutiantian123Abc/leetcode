@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,35 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* First Bad Version
-The code base version is an integer start from 1 to n. One day, someone committed a bad version in the code case, 
-so it caused this version and the following versions are all failed in the unit tests. Find the first bad version.
-You can call isBadVersion to help you determine which version is the first bad one. 
-The details interface can be found in the code's annotation part.
-
-Notice
-Please read the annotation in code area to get the correct way to call isBadVersion in different language. 
-For example, Java is SVNRepo.isBadVersion(v)
-
-Example
-Given n = 5:
-
-isBadVersion(3) -> false
-isBadVersion(5) -> true
-isBadVersion(4) -> true
-*/
-/**
- * public class SVNRepo {
- *     public static boolean isBadVersion(int k);
- * }
- * you can use SVNRepo.isBadVersion(k) to judge whether 
- * the kth code version is bad or not.
-*/
-    /**
-     * @param n: An integers.
-     * @return: An integer which is the first bad version.
-     */
-</pre>
+/* First Bad VersionThe code base version is an integer start from 1 to n. One day, someone committed a bad version inthe code case,so it caused this version and the following versions are all failed in the unit tests. Find thefirst bad version.You can call isBadVersion to help you determine which version is the first bad one.The details interface can be found in the code's annotation part.NoticePlease read the annotation in code area to get the correct way to call isBadVersion in differentlanguage.For example, Java is SVNRepo.isBadVersion(v)ExampleGiven n = 5:isBadVersion(3) -> falseisBadVersion(5) -> trueisBadVersion(4) -> true*//** * public class SVNRepo { *     public static boolean isBadVersion(int k); * } * you can use SVNRepo.isBadVersion(k) to judge whether * the kth code version is bad or not.*/    /**     * @param n: An integers.     * @return: An integer which is the first bad version.     */</pre>
 </div>
 
 <h2>Solution</h2>

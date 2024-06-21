@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,27 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Surrounded Regions
-Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
-A region is captured by flipping all 'O''s into 'X''s in that surrounded region.
-
-Example
-X X X X
-X O O X
-X X O X
-X O X X
-After capture all regions surrounded by 'X', the board should be:
-
-X X X X
-X X X X
-X X X X
-X O X X
-*/
-    /**
-     * @param board a 2D board containing 'X' and 'O'
-     * @return void
-     */
-</pre>
+/* Surrounded RegionsGiven a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.A region is captured by flipping all 'O''s into 'X''s in that surrounded region.ExampleX X X XX O O XX X O XX O X XAfter capture all regions surrounded by 'X', the board should be:X X X XX X X XX X X XX O X X*/    /**     * @param board a 2D board containing 'X' and 'O'     * @return void     */</pre>
 </div>
 
 <h2>Solution</h2>

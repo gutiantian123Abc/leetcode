@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,23 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Decode Ways 
-A message containing letters from A-Z is being encoded to numbers using the following mapping:
-
-'A' -> 1
-'B' -> 2
-...
-'Z' -> 26
-Given an encoded message containing digits, determine the total number of ways to decode it.
-Example
-Given encoded message 12, it could be decoded as AB (1 2) or L (12).
-The number of ways decoding 12 is 2.
-*/
-    /**
-     * @param s a string,  encoded message
-     * @return an integer, the number of ways decoding
-     */
-</pre>
+/* Decode WaysA message containing letters from A-Z is being encoded to numbers using the following mapping:'A' -> 1'B' -> 2...'Z' -> 26Given an encoded message containing digits, determine the total number of ways to decode it.ExampleGiven encoded message 12, it could be decoded as AB (1 2) or L (12).The number of ways decoding 12 is 2.*/    /**     * @param s a string,  encoded message     * @return an integer, the number of ways decoding     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,39 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Paint House I & II
-
-There are a row of n houses, each house can be painted with one of the three colors: red, blue or green. 
-The cost of painting each house with a certain color is different. 
-You have to paint all the houses such that no two adjacent houses have the same color.
-The cost of painting each house with a certain color is represented by a n x 3 cost matrix. 
-For example, costs[0][0] is the cost of painting house 0 with color red; costs[1][2] is the cost of painting house 1 with color green, and so on... 
-Find the minimum cost to paint all houses.
-
-All costs are positive integers.
-
-Example
-Given costs = [[14,2,11],[11,14,5],[14,3,10]] return 10
-house 0 is blue, house 1 is green, house 2 is blue, 2 + 5 + 3 = 10
-*/
-    /**
-     * @param costs n x 3 cost matrix
-     * @return an integer, the minimum cost to paint all houses
-     */
-/*
-更好的方法: 原理：
-f[i][j] = mink≠j {f[i-1][k]} + cost[i-1][j]
-如果最小值是第i个元素，次小值是第j个元素
-1. 只要除掉的元素不是第i个，剩下的最小值就是第i个元素
-2. 如果除掉的元素是第i个，剩下的最小值就是第j个元素
-Time: O(NK)
-Space: O(N)
-*/
-    /**
-     * @param costs n x 3 cost matrix
-     * @return an integer, the minimum cost to paint all houses
-     */
-</pre>
+/* Paint House I & IIThere are a row of n houses, each house can be painted with one of the three colors: red, blue orgreen.The cost of painting each house with a certain color is different.You have to paint all the houses such that no two adjacent houses have the same color.The cost of painting each house with a certain color is represented by a n x 3 cost matrix.For example, costs[0][0] is the cost of painting house 0 with color red; costs[1][2] is the cost ofpainting house 1 with color green, and so on...Find the minimum cost to paint all houses.All costs are positive integers.ExampleGiven costs = [[14,2,11],[11,14,5],[14,3,10]] return 10house 0 is blue, house 1 is green, house 2 is blue, 2 + 5 + 3 = 10*/    /**     * @param costs n x 3 cost matrix     * @return an integer, the minimum cost to paint all houses     *//*更好的方法: 原理：f[i][j] = mink≠j {f[i-1][k]} + cost[i-1][j]如果最小值是第i个元素，次小值是第j个元素1. 只要除掉的元素不是第i个，剩下的最小值就是第i个元素2. 如果除掉的元素是第i个，剩下的最小值就是第j个元素Time: O(NK)Space: O(N)*/    /**     * @param costs n x 3 cost matrix     * @return an integer, the minimum cost to paint all houses     */</pre>
 </div>
 
 <h2>Solution</h2>

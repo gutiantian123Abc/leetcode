@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,23 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Rotate String
-Given a string and an offset, rotate string by offset. (rotate from left to right)
-
-Example
-Given "abcdefg".
-
-offset=0 => "abcdefg"
-offset=1 => "gabcdef"
-offset=2 => "fgabcde"
-offset=3 => "efgabcd"
-*/
-    /**
-     * @param str: an array of char
-     * @param offset: an integer
-     * @return: nothing
-     */
-</pre>
+/*Rotate StringGiven a string and an offset, rotate string by offset. (rotate from left to right)ExampleGiven "abcdefg".offset=0 => "abcdefg"offset=1 => "gabcdef"offset=2 => "fgabcde"offset=3 => "efgabcd"*/    /**     * @param str: an array of char     * @param offset: an integer     * @return: nothing     */</pre>
 </div>
 
 <h2>Solution</h2>

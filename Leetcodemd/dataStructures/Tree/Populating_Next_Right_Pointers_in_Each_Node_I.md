@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,47 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Populating Next Right Pointers in Each Node I
-Given a binary tree
-
-    struct TreeLinkNode {
-      TreeLinkNode *left;
-      TreeLinkNode *right;
-      TreeLinkNode *next;
-    }
-Populate each next pointer to point to its next right node. 
-If there is no next right node, the next pointer should be set to NULL.
-
-Initially, all next pointers are set to NULL.
-
-Note:
-
-You may only use constant extra space.
-You may assume that it is a perfect binary tree 
-(ie, all leaves are at the same level, and every parent has two children).
-For example,
-Given the following perfect binary tree,
-         1
-       /  \
-      2    3
-     / \  / \
-    4  5  6  7
-After calling your function, the tree should look like:
-         1 -> NULL
-       /  \
-      2 -> 3 -> NULL
-     / \  / \
-    4->5->6->7 -> NULL
-*/
-    /**
- * Definition for binary tree with next pointer.
- * public class TreeLinkNode {
- *     int val;
- *     TreeLinkNode left, right, next;
- *     TreeLinkNode(int x) { val = x; }
- * }
- */
-</pre>
+/* Populating Next Right Pointers in Each Node IGiven a binary tree    struct TreeLinkNode {      TreeLinkNode *left;      TreeLinkNode *right;      TreeLinkNode *next;    }Populate each next pointer to point to its next right node.If there is no next right node, the next pointer should be set to NULL.Initially, all next pointers are set to NULL.Note:You may only use constant extra space.You may assume that it is a perfect binary tree(ie, all leaves are at the same level, and every parent has two children).For example,Given the following perfect binary tree,         1       /  \      2    3     / \  / \    4  5  6  7After calling your function, the tree should look like:         1 -> NULL       /  \      2 -> 3 -> NULL     / \  / \    4->5->6->7 -> NULL*/    /** * Definition for binary tree with next pointer. * public class TreeLinkNode { *     int val; *     TreeLinkNode left, right, next; *     TreeLinkNode(int x) { val = x; } * } */</pre>
 </div>
 
 <h2>Solution</h2>

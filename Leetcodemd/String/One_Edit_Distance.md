@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,34 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* One Edit Distance
-Given two strings s and t, determine if they are both one edit distance apart.
-
-Note: 
-
-There are 3 possiblities to satisify one edit distance apart:
-
-Insert a character into s to get t
-Delete a character from s to get t
-Replace a character of s to get t
-Example 1:
-
-Input: s = "ab", t = "acb"
-Output: true
-Explanation: We can insert 'c' into s to get t.
-Example 2:
-
-Input: s = "cab", t = "ad"
-Output: false
-Explanation: We cannot get t from s by only one step.
-Example 3:
-
-Input: s = "1203", t = "1213"
-Output: true
-Explanation: We can replace '0' with '1' to get t.
-
-*/
-</pre>
+/* One Edit DistanceGiven two strings s and t, determine if they are both one edit distance apart.Note:There are 3 possiblities to satisify one edit distance apart:Insert a character into s to get tDelete a character from s to get tReplace a character of s to get tExample 1:Input: s = "ab", t = "acb"Output: trueExplanation: We can insert 'c' into s to get t.Example 2:Input: s = "cab", t = "ad"Output: falseExplanation: We cannot get t from s by only one step.Example 3:Input: s = "1203", t = "1213"Output: trueExplanation: We can replace '0' with '1' to get t.*/</pre>
 </div>
 
 <h2>Solution</h2>

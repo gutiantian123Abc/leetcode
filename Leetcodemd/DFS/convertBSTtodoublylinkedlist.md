@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,43 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Convert Binary Search Tree to Doubly Linked List
-Convert a binary search tree to doubly linked list with in-order traversal.
-Example
-Given a binary search tree:
-
-    4
-   / \
-  2   5
- / \
-1   3
-return 1<->2<->3<->4<->5
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- * Definition for Doubly-ListNode.
- * public class DoublyListNode {
- *     int val;
- *     DoublyListNode next, prev;
- *     DoublyListNode(int val) {
- *         this.val = val;
- *         this.next = this.prev = null;
- *     }
- * }
- */ 
-    /**
-     * @param root: The root of tree
-     * @return: the head of doubly list node
-     */
-</pre>
+/* Convert Binary Search Tree to Doubly Linked ListConvert a binary search tree to doubly linked list with in-order traversal.ExampleGiven a binary search tree:    4   / \  2   5 / \1   3return 1<->2<->3<->4<->5*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } * Definition for Doubly-ListNode. * public class DoublyListNode { *     int val; *     DoublyListNode next, prev; *     DoublyListNode(int val) { *         this.val = val; *         this.next = this.prev = null; *     } * } */    /**     * @param root: The root of tree     * @return: the head of doubly list node     */</pre>
 </div>
 
 <h2>Solution</h2>

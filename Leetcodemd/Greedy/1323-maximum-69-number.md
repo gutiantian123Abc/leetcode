@@ -1,7 +1,7 @@
 <!--
 <style>
   body { font-family: Arial, sans-serif; }
-  .container {{ max-width: 100%; margin: 0 auto; padding: 10px; }}
+  .container { max-width: 100%; margin: 0 auto; padding: 10px; }
   .comment-block { max-width: 30%; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; overflow-wrap: break-word; white-space: pre-wrap; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; overflow-wrap: break-word; white-space: pre-wrap; }
 </style>
@@ -11,44 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 1323. Maximum 69 Number
-https://leetcode.com/problems/maximum-69-number/description/
-
-You are given a positive integer num consisting only of digits 6 and 9.
-
-Return the maximum number you can get by changing at most one digit 
-(6 becomes 9, and 9 becomes 6).
-
- 
-
-Example 1:
-
-Input: num = 9669
-Output: 9969
-Explanation: 
-Changing the first digit results in 6669.
-Changing the second digit results in 9969.
-Changing the third digit results in 9699.
-Changing the fourth digit results in 9666.
-The maximum number is 9969.
-Example 2:
-
-Input: num = 9996
-Output: 9999
-Explanation: Changing the last digit 6 to 9 results in the maximum number.
-Example 3:
-
-Input: num = 9999
-Output: 9999
-Explanation: It is better not to apply any change.
- 
-
-Constraints:
-
-1 <= num <= 104
-num consists of only 6 and 9 digits.
-*/
-</pre>
+/* 1323. Maximum 69 Numberhttps://leetcode.com/problems/maximum-69-number/description/You are given a positive integer num consisting only of digits 6 and 9.Return the maximum number you can get by changing at most one digit(6 becomes 9, and 9 becomes 6).Example 1:Input: num = 9669Output: 9969Explanation:Changing the first digit results in 6669.Changing the second digit results in 9969.Changing the third digit results in 9699.Changing the fourth digit results in 9666.The maximum number is 9969.Example 2:Input: num = 9996Output: 9999Explanation: Changing the last digit 6 to 9 results in the maximum number.Example 3:Input: num = 9999Output: 9999Explanation: It is better not to apply any change.Constraints:1 <= num <= 104num consists of only 6 and 9 digits.*/</pre>
 </div>
 
 <h2>Solution</h2>
