@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* String Permutation
-Given two strings, write a method to decide if one is a permutation of the other.
+Given two strings, write a method to decide if one is a permutation of the
+other.
 Example
 abcd is a permutation of bcad, but abbe is not a permutation of abe
 */

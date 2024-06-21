@@ -13,11 +13,12 @@
 <pre>
 /* Insert Delete GetRandom O(1)
 Description
-Design a data structure that supports all following operations in average O(1) time.
+Design a data structure that supports all following operations in average O(1)
+time.
 insert(val): Inserts an item val to the set if not already present.
 remove(val): Removes an item val from the set if present.
-getRandom: Returns a random element from current set of elements. Each element must have the same
-probability of being returned.
+getRandom: Returns a random element from current set of elements. Each element
+must have the same probability of being returned.
 Have you met this question in a real interview?
 Example
 // Init an empty set.
@@ -39,7 +40,8 @@ randomSet.getRandom();
 */
     /*
      * @param val: a value to the set
-     * @return: true if the set did not already contain the specified element or false
+     * @return: true if the set did not already contain the specified element or
+false
      */
     /*
      * @param val: a value from the set

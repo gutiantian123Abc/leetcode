@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Min Stack
-Implement a stack with min() function, which will return the smallest number in the stack.
+Implement a stack with min() function, which will return the smallest number in
+the stack.
 It should support push, pop and min operation all in O(1) cost.
 Notice
 min operation will never be called if there is no number in the stack.

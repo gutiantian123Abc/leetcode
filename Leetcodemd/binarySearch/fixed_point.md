@@ -19,8 +19,8 @@ If there is no such index, return -1.
 Example 1:
 Input: arr = [-10,-5,0,3,7]
 Output: 3
-Explanation: For the given array, arr[0] = -10, arr[1] = -5, arr[2] = 0, arr[3] = 3, thus the output
-is 3.
+Explanation: For the given array, arr[0] = -10, arr[1] = -5, arr[2] = 0, arr[3]
+= 3, thus the output is 3.
 Example 2:
 Input: arr = [0,2,5,8,17]
 Output: 0

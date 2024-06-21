@@ -32,7 +32,8 @@ Example 2:
 Input: seats = [1,0,0,0]
 Output: 3
 Explanation:
-If Alex sits in the last seat (i.e. seats[3]), the closest person is 3 seats away.
+If Alex sits in the last seat (i.e. seats[3]), the closest person is 3 seats
+away.
 This is the maximum distance possible, so the answer is 3.
 Example 3:
 Input: seats = [0,1]

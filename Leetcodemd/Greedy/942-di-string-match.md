@@ -46,8 +46,10 @@ This is to maximize the chances that future characters in the string
 can be satisfied. Choosing extreme values (smallest or largest) keeps
  the middle range open for subsequent characters.
 Example:
-Let's work through the first 10 characters of the string "IIDDDDDDDI" assuming n = 100.
-We'll follow the logic of the algorithm, incrementing low for 'I' and decrementing high
+Let's work through the first 10 characters of the string "IIDDDDDDDI" assuming n
+= 100.
+We'll follow the logic of the algorithm, incrementing low for 'I' and
+decrementing high
 for 'D'.
 Initially, low = 0 and high = 100 (since n = 100).
 First Character ('I'):

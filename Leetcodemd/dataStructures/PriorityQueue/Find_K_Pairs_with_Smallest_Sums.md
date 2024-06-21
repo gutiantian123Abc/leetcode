@@ -12,9 +12,10 @@
 <div class='comment-block'>
 <pre>
 /* Find K Pairs with Smallest Sums
-You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
-Define a pair (u,v) which consists of one element from the first array and one element from the
-second array.
+You are given two integer arrays nums1 and nums2 sorted in ascending order and
+an integer k.
+Define a pair (u,v) which consists of one element from the first array and one
+element from the second array.
 Find the k pairs (u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.
 Example 1:
 Input: nums1 = [1,7,11], nums2 = [2,4,6], k = 3
@@ -30,9 +31,10 @@ Example 3:
 Input: nums1 = [1,2], nums2 = [3], k = 3
 Output: [1,3],[2,3]
 Explanation: All possible pairs are returned from the sequence: [1,3],[2,3]
-Original Question: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/
-Solution: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/discuss/84551/simple-
-Java-O(KlogK)-solution-with-explanation
+Original Question: https://leetcode.com/problems/find-k-pairs-with-smallest-
+sums/description/
+Solution: https://leetcode.com/problems/find-k-pairs-with-smallest-
+sums/discuss/84551/simple-Java-O(KlogK)-solution-with-explanation
 */
 </pre>
 </div>

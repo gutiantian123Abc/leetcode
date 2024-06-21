@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Minimum Subtree (Related Problem: Subtree with Maximum Average)
-Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.
+Given a binary tree, find the subtree with minimum sum. Return the root of the
+subtree.
 Example
 Given a binary tree:
      1

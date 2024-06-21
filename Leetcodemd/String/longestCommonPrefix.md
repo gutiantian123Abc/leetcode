@@ -20,7 +20,8 @@ For strings "ABCDEFG", "ABCEFG" and "ABCEFA", the LCP is "ABC"
 /*
 重要知识点 ： public String substring(int beginIndex, int endIndex)
 Returns a new string that is a substring of this string.
-The substring begins at the specified beginIndex and extends to the character at index endIndex - 1.
+The substring begins at the specified beginIndex and extends to the character at
+index endIndex - 1.
 Thus the length of the substring is endIndex - beginIndex.
 Examples:
 "hamburger".substring(4, 8) returns "urge"

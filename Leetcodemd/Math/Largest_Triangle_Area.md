@@ -13,7 +13,8 @@
 <pre>
 /* Largest Triangle Area
 You have a list of points in the plane.
-Return the area of the largest triangle that can be formed by any 3 of the points.
+Return the area of the largest triangle that can be formed by any 3 of the
+points.
 Example:
 Input: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
 Output: 2

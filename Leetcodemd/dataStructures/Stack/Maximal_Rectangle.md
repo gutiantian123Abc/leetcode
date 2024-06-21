@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Maximal Rectangle
-https://www.lintcode.com/problem/maximal-rectangle/description?_from=ladder&&fromId=4
+https://www.lintcode.com/problem/maximal-
+rectangle/description?_from=ladder&&fromId=4
 Description
 Given a 2D boolean matrix filled with False and True,
 find the largest rectangle containing all True and return its area.

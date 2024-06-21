@@ -13,7 +13,8 @@
 <pre>
 /* Subarray Sum
 Given an integer array, find a subarray where the sum of numbers is zero.
-Your code should return the index of the first number and the index of the last number.
+Your code should return the index of the first number and the index of the last
+number.
 Notice
 There is at least one subarray that it's sum equals to zero.
 Example
@@ -69,9 +70,10 @@ public class Solution {
 */
 /* Minimum Size Subarray Sum
 Given an array of n positive integers and a positive integer s,
-find the minimal length of a subarray of which the sum ≥ s. If there isn't one, return -1 instead.
-Given the array [2,3,1,2,4,3] and s = 7, the subarray [4,3] has the minimal length under the problem
-constraint.
+find the minimal length of a subarray of which the sum ≥ s. If there isn't one,
+return -1 instead.
+Given the array [2,3,1,2,4,3] and s = 7, the subarray [4,3] has the minimal
+length under the problem constraint.
 */
 /* 知识点总结：
 子数组 Subarray

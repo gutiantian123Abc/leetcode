@@ -11,7 +11,8 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/description/
+/* https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-
+array/description/
 You are given three positive integers: n, index, and maxSum.
 You want to construct an array nums (0-indexed) that satisfies
 the following conditions:
@@ -39,7 +40,8 @@ Constraints:
 */
         /*
         Forming two arithmetic sequences.
-        One sequence increases towards index, and the other decreases away from it.
+        One sequence increases towards index, and the other decreases away from
+it.
                 （首项 加 末项）乘以 项数 除以2
         */
 </pre>

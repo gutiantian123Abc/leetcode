@@ -11,8 +11,10 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Sentence Screen Fitting: https://www.lintcode.com/problem/sentence-screen-fitting/description
-Given a rows x cols screen and a sentence represented by a list of non-empty words,
+/* Sentence Screen Fitting: https://www.lintcode.com/problem/sentence-screen-
+fitting/description
+Given a rows x cols screen and a sentence represented by a list of non-empty
+words,
 find how many times the given sentence can be fitted on the screen.
 Example
 Given rows = 2, cols = 8, sentence = ["hello", "world"], retrun 1.

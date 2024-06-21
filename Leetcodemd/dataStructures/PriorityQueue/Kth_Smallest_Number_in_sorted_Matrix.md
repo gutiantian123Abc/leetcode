@@ -22,7 +22,8 @@ Given k = 4 and a matrix:
 ]
 return 5
 Challenge
-Solve it in O(k log n) time where n is the bigger one between row size and column size.
+Solve it in O(k log n) time where n is the bigger one between row size and
+column size.
 */
     /**
      * @param matrix: a matrix of integers
@@ -30,9 +31,9 @@ Solve it in O(k log n) time where n is the bigger one between row size and colum
      * @return: the kth smallest number in the matrix
      */
 /* Kth Smallest Sum In Two Sorted Arrays 解题思路： 寻找下面所有最可能
-Given two integer arrays sorted in ascending order and an integer k. Define sum = a + b, where a is
-an element from the first array and b is an element from the second one. Find the kth smallest sum
-out of all possible sums.
+Given two integer arrays sorted in ascending order and an integer k. Define sum
+= a + b, where a is an element from the first array and b is an element from the
+second one. Find the kth smallest sum out of all possible sums.
 Have you met this question in a real interview? Yes
 Example
 Given [1, 7, 11] and [2, 4, 6].

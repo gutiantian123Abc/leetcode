@@ -13,8 +13,8 @@
 <pre>
 /* Expression Expand
 Given an expression s includes numbers, letters and brackets.
-Number represents the number of repetitions inside the brackets(can be a string or another
-expression)．
+Number represents the number of repetitions inside the brackets(can be a string
+or another expression)．
 Please expand expression to be a string.
 Example
 s = abc3[a] return abcaaa

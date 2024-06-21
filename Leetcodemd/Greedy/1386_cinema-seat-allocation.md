@@ -22,13 +22,15 @@ Return the maximum number of four-person groups you can assign on the
 cinema seats. A four-person group occupies four adjacent seats in one
 single row. Seats across an aisle (such as [3,3] and [3,4]) are not considered
 to be adjacent, but there is an exceptional case on which an aisle split a
-four-person group, in that case, the aisle split a four-person group in the middle,
+four-person group, in that case, the aisle split a four-person group in the
+middle,
  which means to have two people on each side.
 Example 1:
 Input: n = 3, reservedSeats = [[1,2],[1,3],[1,8],[2,6],[3,1],[3,10]]
 Output: 4
 Explanation: The figure above shows the optimal allocation for four groups,
-where seats mark with blue are already reserved and contiguous seats mark with orange are
+where seats mark with blue are already reserved and contiguous seats mark with
+orange are
 for one group.
 Example 2:
 Input: n = 2, reservedSeats = [[2,1],[1,8],[2,6]]

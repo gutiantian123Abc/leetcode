@@ -13,7 +13,8 @@
 <pre>
 /* 1213. Intersection of Three Sorted Arrays
 https://leetcode.com/problems/intersection-of-three-sorted-arrays/
-Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order,
+Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing
+order,
 return a sorted array of only the integers that appeared in all three arrays.
 Example 1:
 Input: arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8]

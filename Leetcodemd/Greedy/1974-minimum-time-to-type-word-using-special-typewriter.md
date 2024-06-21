@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* 1974. Minimum Time to Type Word Using Special Typewriter
-https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/description/
+https://leetcode.com/problems/minimum-time-to-type-word-using-special-
+typewriter/description/
 There is a special typewriter with lowercase English letters 'a' to 'z'
 arranged in a circle with a pointer. A character can only be typed if
 the pointer is pointing to that character. The pointer is initially pointing

@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Subtree with Maximum Average (Related Problem: Minimum Subtree)
-Given a binary tree, find the subtree with maximum average. Return the root of the subtree.
+Given a binary tree, find the subtree with maximum average. Return the root of
+the subtree.
 Example
 Given a binary tree:
      1

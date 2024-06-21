@@ -16,10 +16,11 @@
 遇到sorted array, 一般用Two Pointers
 */
 /* Two Sum (unsorted)
-Given an array of integers, find two numbers such that they add up to a specific target number.
-The function twoSum should return indices of the two numbers such that they add up to the target,
-where index1 must be less than index2. Please note that your returned answers (both index1 and
-index2) are NOT zero-based.
+Given an array of integers, find two numbers such that they add up to a specific
+target number.
+The function twoSum should return indices of the two numbers such that they add
+up to the target, where index1 must be less than index2. Please note that your
+returned answers (both index1 and index2) are NOT zero-based.
 Notice
 You may assume that each input would have exactly one solution
 Example
@@ -32,7 +33,8 @@ return [1, 2]
      * @return : [index1 + 1, index2 + 1] (index1 < index2)
      */
 /* Two Sum - Data structure design
-Design and implement a TwoSum class. It should support the following operations: add and find.
+Design and implement a TwoSum class. It should support the following operations:
+add and find.
 add - Add the number to an internal data structure.
 find - Find if there exists any pair of numbers which sum is equal to the value.
 Example
@@ -47,9 +49,11 @@ find(7) // return false
 /*
 Given an array of integers that is already sorted in ascending order,
 find two numbers such that they add up to a specific target number.
-The function twoSum should return indices of the two numbers such that they add up to the target,
+The function twoSum should return indices of the two numbers such that they add
+up to the target,
 where index1 must be less than index2.
-lease note that your returned answers (both index1 and index2) are not zero-based.
+lease note that your returned answers (both index1 and index2) are not zero-
+based.
 You may assume that each input would have exactly one solution.
 Example
 Given nums = [2, 7, 11, 15], target = 9
@@ -68,8 +72,8 @@ return [1, 2]
      */
 /*
 Given an array of integers,
-find how many pairs in the array such that their sum is less than or equal to a specific target
-number.
+find how many pairs in the array such that their sum is less than or equal to a
+specific target number.
 Please return the number of pairs.
 Example
 Given nums = [2, 7, 11, 15], target = 24.
@@ -87,8 +91,8 @@ Return 5.
      * @return an integer
      */
 /*
-Given an array of integers, find how many unique pairs in the array such that their sum is equal to
-a specific target number.
+Given an array of integers, find how many unique pairs in the array such that
+their sum is equal to a specific target number.
 Please return the number of pairs.
 Have you met this question in a real interview? Yes
 Example
@@ -103,8 +107,8 @@ return 2
      * @return an integer
      */
 /* Two Sum - Closest to target
-Given an array nums of n integers, find two integers in nums such that the sum is closest to a given
-number, target.
+Given an array nums of n integers, find two integers in nums such that the sum
+is closest to a given number, target.
 Return the difference between the sum of the two integers and the target.
 Example
 Given array nums = [-1, 2, 1, -4], and target = 4.

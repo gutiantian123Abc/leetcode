@@ -25,12 +25,13 @@ Explanation: t is "aabbb" which its length is 5.
 */
 /* Solution:
 The main idea is to maintain a sliding window with 2 unique characters.
-The key is to store the last occurrence of each character as the value in the hashmap.
+The key is to store the last occurrence of each character as the value in the
+hashmap.
 This way, whenever the size of the hashmap exceeds 2,
 we can traverse through the map to find the character with the left most index,
 and remove 1 character from our map.
-Since the range of characters is constrained, we should be able to find the left most index in
-constant time.
+Since the range of characters is constrained, we should be able to find the left
+most index in constant time.
 */
 </pre>
 </div>

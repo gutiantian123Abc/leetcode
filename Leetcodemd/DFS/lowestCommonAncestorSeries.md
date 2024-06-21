@@ -12,9 +12,10 @@
 <div class='comment-block'>
 <pre>
 /*  Lowest Common Ancestor I
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two
-nodes.
-The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
+Given the root and two nodes in a Binary Tree. Find the lowest common
+ancestor(LCA) of the two nodes.
+The lowest common ancestor is the node with largest depth which is the ancestor
+of both nodes.
 Example
 For the following binary tree:
   4
@@ -43,9 +44,10 @@ LCA(6, 7) = 7
      * @return: Return the least common ancestor(LCA) of the two nodes.
      */
 /* Lowest Common Ancestor III
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two
-nodes.
-The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
+Given the root and two nodes in a Binary Tree. Find the lowest common
+ancestor(LCA) of the two nodes.
+The lowest common ancestor is the node with largest depth which is the ancestor
+of both nodes.
 Return null if LCA does not exist.
 Notice
 node A or node B may not exist in tree.

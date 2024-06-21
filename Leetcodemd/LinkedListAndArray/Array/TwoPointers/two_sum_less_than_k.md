@@ -14,7 +14,8 @@
 /* 1099. Two Sum Less Than K
 https://leetcode.com/problems/two-sum-less-than-k/
 Given an array nums of integers and integer k,
-return the maximum sum such that there exists i < j with nums[i] + nums[j] = sum and sum < k.
+return the maximum sum such that there exists i < j with nums[i] + nums[j] = sum
+and sum < k.
 If no i, j exist satisfying this equation, return -1.
 Example 1:
 Input: nums = [34,23,1,24,75,33,54,8], k = 60

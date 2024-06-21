@@ -14,7 +14,8 @@
 /*WordSearch II
 Given a matrix of lower alphabets and a dictionary.
 Find all words in the dictionary that can be found in the matrix.
-A word can start from any position in the matrix and go left/right/up/down to the adjacent position.
+A word can start from any position in the matrix and go left/right/up/down to
+the adjacent position.
 */
     /**
      * @param board: A list of lists of character

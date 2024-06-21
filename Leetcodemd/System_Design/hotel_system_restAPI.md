@@ -42,7 +42,8 @@ Solution:
         Operations
         Room
             get -- /rooms/{id}
-            put -- /rooms/{id} (body- RoomType type) -- update a room like updating room type
+            put -- /rooms/{id} (body- RoomType type) -- update a room like
+updating room type
             post -- /rooms (body - Room room) -- create a new room.
             delete -- /rooms/{id} -- remove a room from the system.
         sub-resource queries --
@@ -54,16 +55,18 @@ Solution:
             get -- rooms/roomType/2/status/0
         Booking
             get -- /bookings/{id} -- retrieve a booking given an Id
-            put -- /bookings/{id} (body -- booking) -- update a booking given a booking Id
+            put -- /bookings/{id} (body -- booking) -- update a booking given a
+booking Id
             post -- /bookings (body -- booking) -- create a new booking
             delete -- /bookings/{Id} -- remove a booking given a booking id
         //Filtering
         Give me all bookings for Presidential suites between Jul 1 to Jul 5
         get -- /bookings/roomType/3?start>=startDate&end<=endDate
         on top of this you could provide fields, paging, sorting and so on
-        fields -- For mobile clients, they dont need all the attributes of your resource,
-        so you can specify in the URI, which fields you want to return. (This could reduce the
-bandwidth)
+        fields -- For mobile clients, they dont need all the attributes of your
+resource,
+        so you can specify in the URI, which fields you want to return. (This
+could reduce the bandwidth)
         /customers/{id}?fields=firstname,lastname
         paging allows your to limit the amount of data returned for the request
         /bookings?offset=5&limit=50

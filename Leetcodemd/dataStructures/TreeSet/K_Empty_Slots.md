@@ -29,7 +29,8 @@ Input:
 flowers: [1,3,2]
 k: 1
 Output: 2
-Explanation: In the second day, the first and the third flower have become blooming.
+Explanation: In the second day, the first and the third flower have become
+blooming.
 Example 2:
 Input:
 flowers: [1,2,3]

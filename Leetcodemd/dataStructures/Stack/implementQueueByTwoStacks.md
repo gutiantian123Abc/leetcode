@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Implement Queue by Two Stacks
-As the title described, you should only use two stacks to implement a queue's actions.
+As the title described, you should only use two stacks to implement a queue's
+actions.
 The queue should support push(element), pop() and top()
 where pop is pop the first(a.k.a front) element in the queue.
 Both pop and top methods should return the value of first element.

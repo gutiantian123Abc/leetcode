@@ -11,7 +11,8 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*  Binary Tree Paths // DFS Traversal Mode, see Divide&Qonquer mode in divede and qonquer
+/*  Binary Tree Paths // DFS Traversal Mode, see Divide&Qonquer mode in divede
+and qonquer
 Given a binary tree, return all root-to-leaf paths.
 Example
 Given the following binary tree:

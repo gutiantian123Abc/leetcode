@@ -12,10 +12,11 @@
 <div class='comment-block'>
 <pre>
 /* Largest Rectangle in Histogram
-https://www.lintcode.com/problem/largest-rectangle-in-histogram/description?_from=ladder&&fromId=4
+https://www.lintcode.com/problem/largest-rectangle-in-
+histogram/description?_from=ladder&&fromId=4
 Description
-Given n non-negative integers representing the histogram's bar height where the width of each bar is
-1,
+Given n non-negative integers representing the histogram's bar height where the
+width of each bar is 1,
 find the area of largest rectangle in the histogram.
 */
 /* 讲解：

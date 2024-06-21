@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /*Load Balancer
-Implement a load balancer for web servers. It provide the following functionality:
+Implement a load balancer for web servers. It provide the following
+functionality:
 Add a new server to the cluster => add(server_id).
 Remove a bad server from the cluster => remove(server_id).
 Pick a server in the cluster randomly with equal probability => pick().

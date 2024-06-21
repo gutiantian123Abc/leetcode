@@ -39,7 +39,8 @@ We need at least 3 flip operations to form target.
 Example 3:
 Input: target = "00000"
 Output: 0
-Explanation: We do not need any operations since the initial s already equals target.
+Explanation: We do not need any operations since the initial s already equals
+target.
 Constraints:
 n == target.length
 1 <= n <= 105

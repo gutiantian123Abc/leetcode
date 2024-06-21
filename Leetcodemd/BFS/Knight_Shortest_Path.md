@@ -12,9 +12,10 @@
 <div class='comment-block'>
 <pre>
 /*  Knight Shortest Path
-Given a knight in a chessboard (a binary matrix with 0 as empty and 1 as barrier) with a source
-position,
-find the shortest path to a destination position, return the length of the route.
+Given a knight in a chessboard (a binary matrix with 0 as empty and 1 as
+barrier) with a source position,
+find the shortest path to a destination position, return the length of the
+route.
 Return -1 if knight can not reached.
 Clarification
 If the knight is at (x, y), he can get to the following positions in one step:

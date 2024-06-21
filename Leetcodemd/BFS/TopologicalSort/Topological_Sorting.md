@@ -19,7 +19,8 @@ https://www.lintcode.com/problem/topological-sorting/description
  * class DirectedGraphNode {
  *     int label;
  *     ArrayList<DirectedGraphNode> neighbors;
- *     DirectedGraphNode(int x) { label = x; neighbors = new ArrayList<DirectedGraphNode>(); }
+ *     DirectedGraphNode(int x) { label = x; neighbors = new
+ArrayList<DirectedGraphNode>(); }
  * };
  */
     /*

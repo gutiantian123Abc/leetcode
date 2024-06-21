@@ -15,7 +15,8 @@
 Given a collection of candidate numbers (C) and a target number (T),
 Each number in C may only be used once in the combination.
 All numbers (including target) could be any positive or negative integers.
-Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
+Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie,
+a1 ≤ a2 ≤ … ≤ ak).
 The solution set must not contain duplicate combinations.
 */
 /* 异常重要的题型，融合了DFS 与 DP 的双源变种， 异常强大

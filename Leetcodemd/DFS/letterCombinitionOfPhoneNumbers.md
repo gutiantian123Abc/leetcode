@@ -17,7 +17,8 @@ EX: 小明有5个不同编号的苹果， 小红有8个， 小兰有9个， 问�
 会有集中可能呀？
 Given a digit string excluded 01,
 return all possible letter combinations that the number could represent.
-A mapping of digit to letters (just like on the telephone buttons) is given below.
+A mapping of digit to letters (just like on the telephone buttons) is given
+below.
 Example
 Given "23"
 Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]

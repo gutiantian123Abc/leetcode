@@ -27,7 +27,8 @@ Example 2:
 Input: s = "aaabbbcc"
 Output: 2
 Explanation: You can delete two 'b's resulting in the good string "aaabcc".
-Another way it to delete one 'b' and one 'c' resulting in the good string "aaabbc".
+Another way it to delete one 'b' and one 'c' resulting in the good string
+"aaabbc".
 Example 3:
 Input: s = "ceabaacb"
 Output: 2

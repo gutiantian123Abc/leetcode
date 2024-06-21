@@ -12,11 +12,13 @@
 <div class='comment-block'>
 <pre>
 /* 1150. Check If a Number Is Majority Element in a Sorted Array
-https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
-Given an integer array nums sorted in non-decreasing order and an integer target,
+https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-
+array/
+Given an integer array nums sorted in non-decreasing order and an integer
+target,
 return true if target is a majority element, or false otherwise.
-A majority element in an array nums is an element that appears more than nums.length / 2 times in
-the array.
+A majority element in an array nums is an element that appears more than
+nums.length / 2 times in the array.
 Example 1:
 Input: nums = [2,4,5,5,5,5,5,6,6], target = 5
 Output: true

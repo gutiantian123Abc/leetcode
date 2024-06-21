@@ -14,16 +14,20 @@
 /* Longest Repeating Subsequence
 Given a string, find length of the longest repeating subsequence
 such that the two subsequence don’t have same string character at same position,
-i.e., any ith character in the two subsequences shouldn’t have the same index in the original
-string.
+i.e., any ith character in the two subsequences shouldn’t have the same index in
+the original string.
 Example
 str = abc, return 0, There is no repeating subsequence
 str = aab, return 1, The two subsequence are a(first) and a(second).
-Note that b cannot be considered as part of subsequence as it would be at same index in both.
+Note that b cannot be considered as part of subsequence as it would be at same
+index in both.
 str = aabb, return 2
-Key: This problem is just the modification of Longest Common Subsequence problem.
-The idea is to find the LCS(str, str) where str is the input string with the restriction
-that when both the characters are same, they shouldn’t be on the same index in the two strings.
+Key: This problem is just the modification of Longest Common Subsequence
+problem.
+The idea is to find the LCS(str, str) where str is the input string with the
+restriction
+that when both the characters are same, they shouldn’t be on the same index in
+the two strings.
 */
     /**
      * @param str a string

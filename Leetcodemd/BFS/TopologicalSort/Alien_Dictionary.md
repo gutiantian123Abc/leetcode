@@ -45,7 +45,8 @@ Output: ""
 Explanation: The order is invalid, so return "".
 Note:
 You may assume all letters are in lowercase.
-You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
+You may assume that if a is a prefix of b, then a must appear before b in the
+given dictionary.
 If the order is invalid, return an empty string.
 There may be multiple valid order of letters, return any one of them is fine.
 */

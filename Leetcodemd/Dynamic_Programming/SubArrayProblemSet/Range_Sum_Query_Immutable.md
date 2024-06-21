@@ -12,8 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Range Sum Query - Immutable
-Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j),
-inclusive.
+Given an integer array nums, find the sum of the elements between indices i and
+j (i ≤ j), inclusive.
 Example:
 Given nums = [-2, 0, 3, -5, 2, -1]
 sumRange(0, 2) -> 1

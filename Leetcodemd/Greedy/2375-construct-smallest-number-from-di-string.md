@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* 2375. Construct Smallest Number From DI String
-https://leetcode.com/problems/construct-smallest-number-from-di-string/description/
+https://leetcode.com/problems/construct-smallest-number-from-di-
+string/description/
 You are given a 0-indexed string pattern of length n
 consisting of the characters 'I' meaning increasing
 and 'D' meaning decreasing.

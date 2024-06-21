@@ -16,7 +16,8 @@
 find the value in the BST that is closest to the target.
 Note:
 Given target value is a floating point.
-You are guaranteed to have only one unique value in the BST that is closest to the target.
+You are guaranteed to have only one unique value in the BST that is closest to
+the target.
 */
 /**
  * Definition for a binary tree node.

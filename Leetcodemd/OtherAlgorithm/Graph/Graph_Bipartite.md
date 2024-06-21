@@ -44,7 +44,8 @@ Note:
 graph will have length in range [1, 100].
 graph[i] will contain integers in range [0, graph.length - 1].
 graph[i] will not contain i or duplicate values.
-The graph is undirected: if any element j is in graph[i], then i will be in graph[j].
+The graph is undirected: if any element j is in graph[i], then i will be in
+graph[j].
 */
 </pre>
 </div>

@@ -13,8 +13,8 @@
 <pre>
 /*888. Valid Word Square
 Given a sequence of words, check whether it forms a valid word square.
-A sequence of words forms a valid word square if the k^th row and column read the exact same string,
-where 0 ≤ k < max(numRows, numColumns).
+A sequence of words forms a valid word square if the k^th row and column read
+the exact same string, where 0 ≤ k < max(numRows, numColumns).
 Example
 Given
 [

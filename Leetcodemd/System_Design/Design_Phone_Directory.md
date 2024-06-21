@@ -38,7 +38,8 @@ directory.check(2);
           rd.nextInt(n): return int 0 ~ n - 1
 */
     /** Initialize your data structure here
-        @param maxNumbers - The maximum numbers that can be stored in the phone directory. */
+        @param maxNumbers - The maximum numbers that can be stored in the phone
+directory. */
     /** Provide a number which is not assigned to anyone.
         @return - Return an available number. Return -1 if none is available. */
     /** Check if a number is available or not. */

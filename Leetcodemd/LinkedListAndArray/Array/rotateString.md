@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /*Rotate String
-Given a string and an offset, rotate string by offset. (rotate from left to right)
+Given a string and an offset, rotate string by offset. (rotate from left to
+right)
 Example
 Given "abcdefg".
 offset=0 => "abcdefg"
