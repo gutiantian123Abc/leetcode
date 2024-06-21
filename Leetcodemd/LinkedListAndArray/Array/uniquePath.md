@@ -11,16 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*
-A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
-The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
-How many possible unique paths are there?
-*/
-    /**
-     * @param n, m: positive integer (1 <= n ,m <= 100)
-     * @return an integer
-     */
-</pre>
+/*A robot is located at the top-left corner of a m x n grid (marked 'Start'in the diagram below).The robot can only move either down or right at any point in time. Therobot is trying to reach the bottom-right corner of the grid (marked'Finish' in the diagram below).How many possible unique paths are there?*/    /**     * @param n, m: positive integer (1 <= n ,m <= 100)     * @return an integer     */</pre>
 </div>
 
 <h2>Solution</h2>

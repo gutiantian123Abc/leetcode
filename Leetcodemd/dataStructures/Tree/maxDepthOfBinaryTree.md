@@ -11,15 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Maximum Depth of Binary Tree
-Given a binary tree, find its maximum depth.
-The maximum depth is the number of nodes along the longest path from 
-the root node down to the farthest leaf node.
-*/
-/**
- * Definition for a binary tree node.
-*/
-</pre>
+/* Maximum Depth of Binary TreeGiven a binary tree, find its maximum depth.The maximum depth is the number of nodes along the longest path fromthe root node down to the farthest leaf node.*//** * Definition for a binary tree node.*/</pre>
 </div>
 
 <h2>Solution</h2>

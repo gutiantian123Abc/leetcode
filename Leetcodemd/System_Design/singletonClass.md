@@ -11,29 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 204. Singleton
-Singleton is a most widely used design pattern. 
-If a class has and only has one instance at every moment,
-we call this design as singleton. For example, for class Mouse (not a animal mouse), 
-we should design it in singleton.
-
-You job is to implement a getInstance method for given class, return the same instance of this 
-class every time you call this method.
-
-Example
-In Java:
-
-A a = A.getInstance();
-A b = A.getInstance();
-a should equal to b.
-
-Challenge
-If we call getInstance concurrently, can you make sure your code could run correctly?
-*/
-    /**
-     * @return: The same instance of this class every time
-     */
-</pre>
+/* 204. SingletonSingleton is a most widely used design pattern.If a class has and only has one instance at every moment,we call this design as singleton. For example, for class Mouse (not aanimal mouse),we should design it in singleton.You job is to implement a getInstance method for given class, return thesame instance of thisclass every time you call this method.ExampleIn Java:A a = A.getInstance();A b = A.getInstance();a should equal to b.ChallengeIf we call getInstance concurrently, can you make sure your code could runcorrectly?*/    /**     * @return: The same instance of this class every time     */</pre>
 </div>
 
 <h2>Solution</h2>

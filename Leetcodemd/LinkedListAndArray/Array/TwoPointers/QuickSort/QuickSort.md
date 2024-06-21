@@ -11,13 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Quick Sort
-*/
-    /**
-     * @param A an integer array
-     * @return void
-     */
-</pre>
+/* Quick Sort*/    /**     * @param A an integer array     * @return void     */</pre>
 </div>
 
 <h2>Solution</h2>

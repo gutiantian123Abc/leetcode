@@ -11,34 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Binary Tree Preorder Traversal
-Given a binary tree, return the preorder traversal of its nodes' values.
-Example
-Given:
-
-    1
-   / \
-  2   3
- / \
-4   5
-return [1,2,4,5,3].
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root: The root of binary tree.
-     * @return: Preorder in ArrayList which contains node values.
-     */
-</pre>
+/* Binary Tree Preorder TraversalGiven a binary tree, return the preorder traversal of its nodes' values.ExampleGiven:    1   / \  2   3 / \4   5return [1,2,4,5,3].*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root: The root of binary tree.     * @return: Preorder in ArrayList which contains node values.     */</pre>
 </div>
 
 <h2>Solution</h2>

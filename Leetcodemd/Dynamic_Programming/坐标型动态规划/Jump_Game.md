@@ -11,31 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Jump Game I
-Given an array of non-negative integers, you are initially positioned at the first index of the array.
-
-Each element in the array represents your maximum jump length at that position.
-
-Determine if you are able to reach the last index.
-
-Notice
-
-This problem have two method which is Greedy and Dynamic Programming.
-
-The time complexity of Greedy method is O(n).
-
-The time complexity of Dynamic Programming method is O(n^2)
-
-Example
-A = [2,3,1,1,4], return true.
-
-A = [3,2,1,0,4], return false.
-*/
-    /**
-     * @param A: A list of integers
-     * @return: The boolean answer
-     */
-</pre>
+/* Jump Game IGiven an array of non-negative integers, you are initially positioned atthe first index of the array.Each element in the array represents your maximum jump length at thatposition.Determine if you are able to reach the last index.NoticeThis problem have two method which is Greedy and Dynamic Programming.The time complexity of Greedy method is O(n).The time complexity of Dynamic Programming method is O(n^2)ExampleA = [2,3,1,1,4], return true.A = [3,2,1,0,4], return false.*/    /**     * @param A: A list of integers     * @return: The boolean answer     */</pre>
 </div>
 
 <h2>Solution</h2>

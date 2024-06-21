@@ -11,35 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Number of 1 Bits
-Write a function that takes an unsigned integer and returns the number of ’1' bits it has 
-(also known as the Hamming weight).
-
-For example, the 32-bit integer ’11' has binary 
-representation 00000000000000000000000000001011, so the function should return 3.
-
-Credits:
-Special thanks to @ts for adding this problem and creating all test cases.
-*/
-/* 讲解：
-Algorithm
-
-The solution is straight-forward. We check each of the 3232 bits of the number. 
-If the bit is 11, we add one to the number of 11-bits.
-
-We can check the i^{th}ith bit of a number using a bit mask. 
-We start with a mask m=1, because the binary representation of 1 is,
-
-0000 0000 0000 0000 0000 0000 0000 0001
-
-Clearly, a logical AND between any number and the mask 1 gives us the least significant bit of this number. 
-To check the next bit, we shift the mask to the left by one.
-
-0000 0000 0000 0000 0000 0000 0000 0010
-
-And so on.
-*/
-</pre>
+/* Number of 1 BitsWrite a function that takes an unsigned integer and returns the number of’1' bits it has(also known as the Hamming weight).For example, the 32-bit integer ’11' has binaryrepresentation 00000000000000000000000000001011, so the function shouldreturn 3.Credits:Special thanks to @ts for adding this problem and creating all test cases.*//* 讲解：AlgorithmThe solution is straight-forward. We check each of the 3232 bits of thenumber.If the bit is 11, we add one to the number of 11-bits.We can check the i^{th}ith bit of a number using a bit mask.We start with a mask m=1, because the binary representation of 1 is,0000 0000 0000 0000 0000 0000 0000 0001Clearly, a logical AND between any number and the mask 1 gives us the leastsignificant bit of this number.To check the next bit, we shift the mask to the left by one.0000 0000 0000 0000 0000 0000 0000 0010And so on.*/</pre>
 </div>
 
 <h2>Solution</h2>

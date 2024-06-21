@@ -11,30 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Merge Two Sorted Lists
-Merge two sorted (ascending) linked lists and return it as a new sorted list. 
-The new sorted list should be made by splicing together the nodes of the two lists and sorted in ascending order.
-
-Example
-Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null.
-*/
-/**
- * Definition for ListNode.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
- * }
- */ 
-    /**
-     * @param ListNode l1 is the head of the linked list
-     * @param ListNode l2 is the head of the linked list
-     * @return: ListNode head of linked list
-     */
-</pre>
+/* Merge Two Sorted ListsMerge two sorted (ascending) linked lists and return it as a new sortedlist.The new sorted list should be made by splicing together the nodes of thetwo lists and sorted in ascending order.ExampleGiven 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null.*//** * Definition for ListNode. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int val) { *         this.val = val; *         this.next = null; *     } * } */    /**     * @param ListNode l1 is the head of the linked list     * @param ListNode l2 is the head of the linked list     * @return: ListNode head of linked list     */</pre>
 </div>
 
 <h2>Solution</h2>

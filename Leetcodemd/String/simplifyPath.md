@@ -11,31 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*  Simplify Path
-Given an absolute path for a file (Unix-style), simplify it.
-
-Example
-"/home/", => "/home"
-"/a/./b/../../c/", => "/c"
-Challenge 
-Did you consider the case where path = "/../"?
-In this case, you should return "/".
-Another corner case is the path might contain multiple slashes '/' together, such as "/home//foo/".
-In this case, you should ignore redundant slashes and return "/home/foo".
-*/
-/* BackGround Knowledge:
-/a/./ -> still in /a
-/a/./b -> in /a/b
-.. -> go "up" one level
-/a/./b/.. -> /a/b/.. -> /a
-/a/./b/../.. -> /a/.. -> /
-/a/./b/../../c -> /c
-*/
-    /**
-     * @param path the original path
-     * @return the simplified path
-     */
-</pre>
+/*  Simplify PathGiven an absolute path for a file (Unix-style), simplify it.Example"/home/", => "/home""/a/./b/../../c/", => "/c"ChallengeDid you consider the case where path = "/../"?In this case, you should return "/".Another corner case is the path might contain multiple slashes '/'together, such as "/home//foo/".In this case, you should ignore redundant slashes and return "/home/foo".*//* BackGround Knowledge:/a/./ -> still in /a/a/./b -> in /a/b.. -> go "up" one level/a/./b/.. -> /a/b/.. -> /a/a/./b/../.. -> /a/.. -> //a/./b/../../c -> /c*/    /**     * @param path the original path     * @return the simplified path     */</pre>
 </div>
 
 <h2>Solution</h2>

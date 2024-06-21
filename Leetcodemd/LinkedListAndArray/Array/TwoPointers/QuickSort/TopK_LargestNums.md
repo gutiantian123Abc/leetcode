@@ -11,21 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Top k Largest Numbers 
-Given an integer array, find the top k largest numbers in it.
-
-Example
-Given [3,10,1000,-99,4,100] and k = 3.
-Return [1000, 100, 10].
-
-这里用quicksort 而 不用quickselect 的原因是 quicksort: nlogn, quickselect 尽管一次是n, 但要执行k次， 而k最坏可能是n, 所以最坏可能是n^2, 所以不用
-*/
-    /*
-     * @param nums an integer array
-     * @param k an integer
-     * @return the top k largest numbers in array
-     */
-</pre>
+/* Top k Largest NumbersGiven an integer array, find the top k largest numbers in it.ExampleGiven [3,10,1000,-99,4,100] and k = 3.Return [1000, 100, 10].这里用quicksort 而 不用quickselect 的原因是 quicksort: nlogn, quickselect 尽管一次是n,但要执行k次， 而k最坏可能是n, 所以最坏可能是n^2, 所以不用*/    /*     * @param nums an integer array     * @param k an integer     * @return the top k largest numbers in array     */</pre>
 </div>
 
 <h2>Solution</h2>

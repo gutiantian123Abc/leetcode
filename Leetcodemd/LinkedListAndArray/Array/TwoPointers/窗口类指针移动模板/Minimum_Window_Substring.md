@@ -11,59 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Minimum Window Substring
-Given a string source and a string target, find the minimum window in source which will contain all the characters in target.
-
-Notice
-
-If there is no such window in source that covers all characters in target, return the emtpy string "".
-
-If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in source.
-
-Clarification
-Should the characters in minimum window has the same order in target?
-
-Not necessary.
-Example
-For source = "ADOBECODEBANC", target = "ABC", the minimum window is "BANC"
-
-Challenge 
-Complexity O(n)
-*/
-    /**
-     * @param source: A string
-     * @param target: A string
-     * @return: A string denote the minimum window
-     *          Return "" if there is no such a string
-     */
-     /* 窗口类指针移动模板
-        int j = 0;
-
-        for(int i = 0; i < nums.length; i++) {
-
-            while(j < nums.length) {
-                if(满足条件) {
-                    j++;
-                    更行j状态
-                }else{
-                    break;
-                }
-            }
-
-            更新i状态
-        }
-      */
-/* 额外知识点: Heating Map int[256], 
-用以查看source String 是否包含 target String, 这里不考虑顺序！！！
-    private boolean contains(int[] sourceHeatingMap, int[] targetHeatingMap) {
-        for(int i = 0; i < 256; i++) {
-            if(sourceHeatingMap[i] < targetHeatingMap[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
-*/</pre>
+/* Minimum Window SubstringGiven a string source and a string target, find the minimum window insource which will contain all the characters in target.NoticeIf there is no such window in source that covers all characters in target,return the emtpy string "".If there are multiple such windows, you are guaranteed that there willalways be only one unique minimum window in source.ClarificationShould the characters in minimum window has the same order in target?Not necessary.ExampleFor source = "ADOBECODEBANC", target = "ABC", the minimum window is "BANC"ChallengeComplexity O(n)*/    /**     * @param source: A string     * @param target: A string     * @return: A string denote the minimum window     *          Return "" if there is no such a string     */     /* 窗口类指针移动模板        int j = 0;        for(int i = 0; i < nums.length; i++) {            while(j < nums.length) {                if(满足条件) {                    j++;                    更行j状态                }else{                    break;                }            }            更新i状态        }      *//* 额外知识点: Heating Map int[256],用以查看source String 是否包含 target String, 这里不考虑顺序！！！    private boolean contains(int[] sourceHeatingMap, int[]targetHeatingMap) {        for(int i = 0; i < 256; i++) {            if(sourceHeatingMap[i] < targetHeatingMap[i]) {                return false;            }        }        return true;    }*/</pre>
 </div>
 
 <h2>Solution</h2>

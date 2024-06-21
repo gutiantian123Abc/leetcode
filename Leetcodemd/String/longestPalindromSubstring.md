@@ -11,19 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Palindromic Substring
-Given a string S, find the longest palindromic substring in S.
-You may assume that the maximum length of S is 1000, 
-and there exists one unique longest palindromic substring.
-
-Example
-Given the string = "abcdzdcab", return "cdzdc".
-*/
-    /**
-     * @param s input string
-     * @return the longest palindromic substring
-     */
-</pre>
+/* Longest Palindromic SubstringGiven a string S, find the longest palindromic substring in S.You may assume that the maximum length of S is 1000,and there exists one unique longest palindromic substring.ExampleGiven the string = "abcdzdcab", return "cdzdc".*/    /**     * @param s input string     * @return the longest palindromic substring     */</pre>
 </div>
 
 <h2>Solution</h2>

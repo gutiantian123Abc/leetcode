@@ -11,25 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Move Ks  不理解， 待解决！！！！！！！！
-Given an array nums, write a function to move all k's to the end of it while maintaining the relative order of the non-zero elements.
-
-Notice
-
-You must do this in-place without making a copy of the array.
-Minimize the total number of operations.
-Example
-Given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
-*/
-/* 解题思路： 
-经典模板： 把某个数移到Array的一端， in place, no extra space
-较难理解，好好理解！！！
-*/
-    /**
-     * @param nums an integer array
-     * @return nothing, do this in-place
-     */
-</pre>
+/* Move Ks  不理解， 待解决！！！！！！！！Given an array nums, write a function to move all k's to the end of itwhile maintaining the relative order of the non-zero elements.NoticeYou must do this in-place without making a copy of the array.Minimize the total number of operations.ExampleGiven nums = [0, 1, 0, 3, 12], after calling your function, nums should be[1, 3, 12, 0, 0].*//* 解题思路：经典模板： 把某个数移到Array的一端， in place, no extra space较难理解，好好理解！！！*/    /**     * @param nums an integer array     * @return nothing, do this in-place     */</pre>
 </div>
 
 <h2>Solution</h2>

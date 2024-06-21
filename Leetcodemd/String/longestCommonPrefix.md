@@ -11,27 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Common Prefix
-
-Given k strings, find the longest common prefix (LCP).
-Example
-For strings "ABCD", "ABEF" and "ACEF", the LCP is "A"
-For strings "ABCDEFG", "ABCEFG" and "ABCEFA", the LCP is "ABC"
-*/
-/*
-重要知识点 ： public String substring(int beginIndex, int endIndex)
-Returns a new string that is a substring of this string. 
-The substring begins at the specified beginIndex and extends to the character at index endIndex - 1. 
-Thus the length of the substring is endIndex - beginIndex.
-Examples:
-"hamburger".substring(4, 8) returns "urge"
-"smiles".substring(1, 5) returns "mile"
-*/
-    /**
-     * @param strs: A list of strings
-     * @return: The longest common prefix
-     */
-</pre>
+/* Longest Common PrefixGiven k strings, find the longest common prefix (LCP).ExampleFor strings "ABCD", "ABEF" and "ACEF", the LCP is "A"For strings "ABCDEFG", "ABCEFG" and "ABCEFA", the LCP is "ABC"*//*重要知识点 ： public String substring(int beginIndex, int endIndex)Returns a new string that is a substring of this string.The substring begins at the specified beginIndex and extends to thecharacter at index endIndex - 1.Thus the length of the substring is endIndex - beginIndex.Examples:"hamburger".substring(4, 8) returns "urge""smiles".substring(1, 5) returns "mile"*/    /**     * @param strs: A list of strings     * @return: The longest common prefix     */</pre>
 </div>
 
 <h2>Solution</h2>
