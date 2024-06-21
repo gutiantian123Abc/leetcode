@@ -11,56 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Reverse Linked List
-Example
-For linked list 1->2->3, the reversed linked list is 3->2->1
-
-Challenge 
-Reverse it in-place and in one-pass
-*/
-/**
- * Definition for ListNode.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
- * }
- */ 
-    /**
-     * @param head: The head of linked list.
-     * @return: The new head of reversed linked list.
-     */
-/* Reverse Linked List II
-Reverse a linked list from position m to n.
-
-Notice
-Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
-Example
-Given 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.
-
-Challenge 
-Reverse it in-place and in one-pass
-*/
-/**
- * Definition for ListNode
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
-    /**
-     * @param ListNode head is the head of the linked list 
-     * @oaram m and n
-     * @return: The head of the reversed ListNode
-     */
-</pre>
+/* Reverse Linked ListExampleFor linked list 1->2->3, the reversed linked list is 3->2->1ChallengeReverse it in-place and in one-pass*//** * Definition for ListNode. * public class ListNode { *     int val; *     ListNode next; *     ListNode(int val) { *         this.val = val; *         this.next = null; *     } * } */    /**     * @param head: The head of linked list.     * @return: The new head of reversed linked list.     *//* Reverse Linked List IIReverse a linked list from position m to n.NoticeGiven m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.ExampleGiven 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.ChallengeReverse it in-place and in one-pass*//** * Definition for ListNode * public class ListNode { *     int val; *     ListNode next; *     ListNode(int x) { *         val = x; *         next = null; *     } * } */    /**     * @param ListNode head is the head of the linked list     * @oaram m and n     * @return: The head of the reversed ListNode     */</pre>
 </div>
 
 <h2>Solution</h2>

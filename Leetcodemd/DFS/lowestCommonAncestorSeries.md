@@ -11,78 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*  Lowest Common Ancestor I
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
-The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
-Example
-For the following binary tree:
-
-  4
- / \
-3   7
-   / \
-  5   6
-LCA(3, 5) = 4
-
-LCA(5, 6) = 7
-
-LCA(6, 7) = 7
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root: The root of the binary search tree.
-     * @param A and B: two nodes in a Binary.
-     * @return: Return the least common ancestor(LCA) of the two nodes.
-     */
-/* Lowest Common Ancestor III
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
-The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
-Return null if LCA does not exist.
-
-Notice
-node A or node B may not exist in tree.
-
-Example
-For the following binary tree:
-
-  4
- / \
-3   7
-   / \
-  5   6
-LCA(3, 5) = 4
-
-LCA(5, 6) = 7
-
-LCA(6, 7) = 7
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root The root of the binary tree.
-     * @param A and B two nodes
-     * @return: Return the LCA of the two nodes.
-     */
-</pre>
+/*  Lowest Common Ancestor IGiven the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the twonodes.The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.ExampleFor the following binary tree:  4 / \3   7   / \  5   6LCA(3, 5) = 4LCA(5, 6) = 7LCA(6, 7) = 7*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root: The root of the binary search tree.     * @param A and B: two nodes in a Binary.     * @return: Return the least common ancestor(LCA) of the two nodes.     *//* Lowest Common Ancestor IIIGiven the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the twonodes.The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.Return null if LCA does not exist.Noticenode A or node B may not exist in tree.ExampleFor the following binary tree:  4 / \3   7   / \  5   6LCA(3, 5) = 4LCA(5, 6) = 7LCA(6, 7) = 7*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root The root of the binary tree.     * @param A and B two nodes     * @return: Return the LCA of the two nodes.     */</pre>
 </div>
 
 <h2>Solution</h2>

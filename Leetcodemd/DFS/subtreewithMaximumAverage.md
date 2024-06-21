@@ -11,34 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Subtree with Maximum Average (Related Problem: Minimum Subtree)
-Given a binary tree, find the subtree with maximum average. Return the root of the subtree.
-Example
-Given a binary tree:
-
-     1
-   /   \
- -5     11
- / \   /  \
-1   2 4    -2 
-return the node 11.
-*/
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
-    /**
-     * @param root the root of binary tree
-     * @return the root of the maximum average of subtree
-     */
-</pre>
+/* Subtree with Maximum Average (Related Problem: Minimum Subtree)Given a binary tree, find the subtree with maximum average. Return the root of the subtree.ExampleGiven a binary tree:     1   /   \ -5     11 / \   /  \1   2 4    -2return the node 11.*//** * Definition of TreeNode: * public class TreeNode { *     public int val; *     public TreeNode left, right; *     public TreeNode(int val) { *         this.val = val; *         this.left = this.right = null; *     } * } */    /**     * @param root the root of binary tree     * @return the root of the maximum average of subtree     */</pre>
 </div>
 
 <h2>Solution</h2>

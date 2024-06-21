@@ -11,17 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Find the kth smallest numbers in an unsorted integer array.
-Example
-Given [3, 4, 1, 2, 5], k = 3, the 3rd smallest numbers are [1, 2, 3].
-Complexity O(n)!!!
-*/
-    /*
-     * @param k an integer
-     * @param nums an integer array
-     * @return kth smallest element
-     */
-</pre>
+/* Find the kth smallest numbers in an unsorted integer array.ExampleGiven [3, 4, 1, 2, 5], k = 3, the 3rd smallest numbers are [1, 2, 3].Complexity O(n)!!!*/    /*     * @param k an integer     * @param nums an integer array     * @return kth smallest element     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,38 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Sqrt(x)
-Implement int sqrt(int x).
-Compute and return the square root of x.
-Example
-sqrt(3) = 1
-sqrt(4) = 2
-sqrt(5) = 2
-sqrt(10) = 3
-
-Challenge 
-O(log(x))
-*/
-    /**
-     * @param x: An integer
-     * @return: The sqrt of x
-     */
-/* Sqrt II
-Implement double sqrt(double x) and x >= 0.
-
-Compute and return the square root of x.
-
-You do not care about the accuracy of the result, we will help you to output results.
-
-Have you met this question in a real interview? Yes
-Example
-Given n = 2 return 1.41421356
-*/
-    /**
-     * @param x a double
-     * @return the square root of x
-     */
-</pre>
+/* Sqrt(x)Implement int sqrt(int x).Compute and return the square root of x.Examplesqrt(3) = 1sqrt(4) = 2sqrt(5) = 2sqrt(10) = 3ChallengeO(log(x))*/    /**     * @param x: An integer     * @return: The sqrt of x     *//* Sqrt IIImplement double sqrt(double x) and x >= 0.Compute and return the square root of x.You do not care about the accuracy of the result, we will help you to output results.Have you met this question in a real interview? YesExampleGiven n = 2 return 1.41421356*/    /**     * @param x a double     * @return the square root of x     */</pre>
 </div>
 
 <h2>Solution</h2>

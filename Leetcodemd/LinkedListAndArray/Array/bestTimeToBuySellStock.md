@@ -11,46 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Best Time to Buy and Sell Stock
-Say you have an array for which the ith element is the price of a given stock on day i.
-If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
-
-Example
-Given array [3,2,3,1,2], return 1.
-*/
-    /**
-     * @param prices: Given an integer array
-     * @return: Maximum profit
-     */
-/* Best Time to Buy and Sell Stock II
-Say you have an array for which the ith element is the price of a given stock on day i.
-Design an algorithm to find the maximum profit. 
-You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). 
-However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
-
-Example
-Given an example [2,1,2,0,1], return 2
-*/
-    /**
-     * @param prices: Given an integer array
-     * @return: Maximum profit
-     */
-/*Best Time to Buy and Sell Stock III
-Say you have an array for which the ith element is the price of a given stock on day i.
-Design an algorithm to find the maximum profit. You may complete at most two transactions.
-
-Notice
-You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
-
-Example
-Given an example [4,4,6,1,1,4,2,5], return 6.
-*/
-/*DP !!!!*/
-    /**
-     * @param prices: Given an integer array
-     * @return: Maximum profit
-     */
-</pre>
+/* Best Time to Buy and Sell StockSay you have an array for which the ith element is the price of a given stock on day i.If you were only permitted to complete at most one transaction (ie, buy one and sell one share ofthe stock), design an algorithm to find the maximum profit.ExampleGiven array [3,2,3,1,2], return 1.*/    /**     * @param prices: Given an integer array     * @return: Maximum profit     *//* Best Time to Buy and Sell Stock IISay you have an array for which the ith element is the price of a given stock on day i.Design an algorithm to find the maximum profit.You may complete as many transactions as you like (ie, buy one and sell one share of the stockmultiple times).However, you may not engage in multiple transactions at the same time (ie, you must sell the stockbefore you buy again).ExampleGiven an example [2,1,2,0,1], return 2*/    /**     * @param prices: Given an integer array     * @return: Maximum profit     *//*Best Time to Buy and Sell Stock IIISay you have an array for which the ith element is the price of a given stock on day i.Design an algorithm to find the maximum profit. You may complete at most two transactions.NoticeYou may not engage in multiple transactions at the same time (ie, you must sell the stock before youbuy again).ExampleGiven an example [4,4,6,1,1,4,2,5], return 6.*//*DP !!!!*/    /**     * @param prices: Given an integer array     * @return: Maximum profit     */</pre>
 </div>
 
 <h2>Solution</h2>

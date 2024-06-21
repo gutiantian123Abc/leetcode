@@ -11,30 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Graph Valid Tree
-Given n nodes labeled from 0 to n - 1 and a list of undirected edges 
-(each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
-
-Notice
-You can assume that no duplicate edges will appear in edges. Since all edges are undirected, 
-[0, 1] is the same as [1, 0] and thus will not appear together in edges.
-
-Example
-Given n = 5 and edges = [[0, 1], [0, 2], [0, 3], [1, 4]], return true.
-Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]], return false.
-
-Knowledge:
-For a graph to be a tree: 符合两个条件：
-1、 边的数必须等于点数 - 1 (判断是否有环)
-(2). 从一个点做BFS 或DFS可以碰到所有点 （判断是否都联通）， 参考BFS类
-3. 本体用UnionFind, 看最后是否只剩下一个component
-*/
-    /**
-     * @param n an integer
-     * @param edges a list of undirected edges
-     * @return true if it's a valid tree, or false
-     */
-</pre>
+/* Graph Valid TreeGiven n nodes labeled from 0 to n - 1 and a list of undirected edges(each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.NoticeYou can assume that no duplicate edges will appear in edges. Since all edges are undirected,[0, 1] is the same as [1, 0] and thus will not appear together in edges.ExampleGiven n = 5 and edges = [[0, 1], [0, 2], [0, 3], [1, 4]], return true.Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]], return false.Knowledge:For a graph to be a tree: 符合两个条件：1、 边的数必须等于点数 - 1 (判断是否有环)(2). 从一个点做BFS 或DFS可以碰到所有点 （判断是否都联通）， 参考BFS类3. 本体用UnionFind, 看最后是否只剩下一个component*/    /**     * @param n an integer     * @param edges a list of undirected edges     * @return true if it's a valid tree, or false     */</pre>
 </div>
 
 <h2>Solution</h2>

@@ -11,31 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*Palindrome Partitioning II 
-Given a string s, cut s into some substrings such that every substring is a palindrome.
-
-Return the minimum cuts needed for a palindrome partitioning of s.
-
-Have you met this question in a real interview? Yes
-Example
-Given s = "aab",
-
-Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1 cut.
-
-
-
-*/
-/* 思路：
-设f[i]为S前i个字符S[0..i-1]最少可以划分成几个回文串
-• f[i] = min【j=0,…,i-1】{f[j] + 1| S[j..i-1]是回文串}
-• 初始条件：空串可以被分成0个回文串
-– f[0] = 0
-*/
-    /**
-     * @param s a string
-     * @return an integer
-     */
-</pre>
+/*Palindrome Partitioning IIGiven a string s, cut s into some substrings such that every substring is a palindrome.Return the minimum cuts needed for a palindrome partitioning of s.Have you met this question in a real interview? YesExampleGiven s = "aab",Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1 cut.*//* 思路：设f[i]为S前i个字符S[0..i-1]最少可以划分成几个回文串• f[i] = min【j=0,…,i-1】{f[j] + 1| S[j..i-1]是回文串}• 初始条件：空串可以被分成0个回文串– f[0] = 0*/    /**     * @param s a string     * @return an integer     */</pre>
 </div>
 
 <h2>Solution</h2>

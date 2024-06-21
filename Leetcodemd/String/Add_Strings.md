@@ -11,25 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* 655. Add Strings
-Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.
-
-Example
-Given num1 = "123", num2 = "45"
-return "168"
-
-Notice
-The length of both num1 and num2 is < 5100.
-Both num1 and num2 contains only digits 0-9.
-Both num1 and num2 does not contain any leading zero.
-You must not use any built-in BigInteger library or convert the inputs to integer directly.
-*/
-    /**
-     * @param num1: a non-negative integers
-     * @param num2: a non-negative integers
-     * @return: return sum of num1 and num2
-     */
-</pre>
+/* 655. Add StringsGiven two non-negative integers num1 and num2 represented as string, return the sum of num1 andnum2.ExampleGiven num1 = "123", num2 = "45"return "168"NoticeThe length of both num1 and num2 is < 5100.Both num1 and num2 contains only digits 0-9.Both num1 and num2 does not contain any leading zero.You must not use any built-in BigInteger library or convert the inputs to integer directly.*/    /**     * @param num1: a non-negative integers     * @param num2: a non-negative integers     * @return: return sum of num1 and num2     */</pre>
 </div>
 
 <h2>Solution</h2>

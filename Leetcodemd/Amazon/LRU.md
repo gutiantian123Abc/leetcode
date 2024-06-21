@@ -11,16 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*
-Design and implement a data structure for Least Recently Used (LRU) cache. 
-It should support the following operations: get and set.
-get(key) - Get the value of the key if the key exists in the cache, 
-otherwise return -1.
-set(key, value) - Set or insert the value if the key is not already present. 
-When the cache reached its capacity, it should invalidate 
-the least recently used item before inserting a new item.
-*/
-</pre>
+/*Design and implement a data structure for Least Recently Used (LRU) cache.It should support the following operations: get and set.get(key) - Get the value of the key if the key exists in the cache,otherwise return -1.set(key, value) - Set or insert the value if the key is not already present.When the cache reached its capacity, it should invalidatethe least recently used item before inserting a new item.*/</pre>
 </div>
 
 <h2>Solution</h2>

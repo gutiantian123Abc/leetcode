@@ -11,10 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/*
-Design Q&A application as in Amazon has it for each product
-*/
-</pre>
+/*Design Q&A application as in Amazon has it for each product*/</pre>
 </div>
 
 <h2>Solution</h2>

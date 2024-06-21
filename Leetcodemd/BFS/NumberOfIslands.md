@@ -11,28 +11,7 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Number of Islands
-Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. 
-If two 1 is adjacent, we consider them in the same island. 
-We only consider up/down/left/right adjacent.
-Find the number of islands.
-Example
-Given graph:
-
-[
-  [1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1],
-  [0, 0, 0, 1, 1],
-  [0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1]
-]
-return 3.
-*/
-    /**
-     * @param grid a boolean 2D matrix
-     * @return an integer
-     */
-</pre>
+/* Number of IslandsGiven a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island.If two 1 is adjacent, we consider them in the same island.We only consider up/down/left/right adjacent.Find the number of islands.ExampleGiven graph:[  [1, 1, 0, 0, 0],  [0, 1, 0, 0, 1],  [0, 0, 0, 1, 1],  [0, 0, 0, 0, 0],  [0, 0, 0, 0, 1]]return 3.*/    /**     * @param grid a boolean 2D matrix     * @return an integer     */</pre>
 </div>
 
 <h2>Solution</h2>
