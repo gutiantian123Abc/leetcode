@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Shopping Offers
 In LeetCode Store, there are some kinds of items to sell. Each item has a price.
 
@@ -37,8 +43,12 @@ You are not allowed to buy more items than you want, even if that would lower th
 /* 
 这道题很像combination sum, combine 不同的special offer 达到不同价位， 最差解是原价购买， 好好体会
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -82,4 +92,5 @@ class Solution {
         return sum;
     }
     
-}
+}</code></pre>
+</div>

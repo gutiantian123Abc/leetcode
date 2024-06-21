@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1647. Minimum Deletions to Make Character Frequencies Unique
 
 A string s is called good if there are no two different characters 
@@ -39,8 +45,12 @@ Constraints:
 1 <= s.length <= 105
 s contains only lowercase English letters.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 class Solution {
     public int minDeletions(String s) {
         int deletions = 0;
@@ -80,3 +90,5 @@ class Solution {
         
     }
 }
+</code></pre>
+</div>

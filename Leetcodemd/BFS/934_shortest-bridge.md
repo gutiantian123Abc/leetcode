@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 934 shortest-bridge
 https://leetcode.com/problems/shortest-bridge
 
@@ -34,8 +40,12 @@ n == grid.length == grid[i].length
 grid[i][j] is either 0 or 1.
 There are exactly two islands in grid.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int[] dx = {0, 1, 0, -1};
@@ -119,3 +129,5 @@ class Solution {
 
 
 
+</code></pre>
+</div>

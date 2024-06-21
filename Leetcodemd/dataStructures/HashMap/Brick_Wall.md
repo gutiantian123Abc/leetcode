@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Brick Wall:  https://leetcode.com/problems/brick-wall/description/
 There is a brick wall in front of you. The wall is rectangular 
 and has several rows of bricks. The bricks have the same height 
@@ -33,8 +39,12 @@ The width sum of bricks in different rows are the same and won't exceed INT_MAX.
 The number of bricks in each row is in range [1,10,000]. The height of wall is 
 in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int leastBricks(List<List<Integer>> wall) {
@@ -67,4 +77,5 @@ class Solution {
         
         return wall.size() - maxFreq;
     }
-}
+}</code></pre>
+</div>

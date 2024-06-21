@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/description/
 
 You are given three positive integers: n, index, and maxSum. 
@@ -43,8 +49,12 @@ Constraints:
     	One sequence increases towards index, and the other decreases away from it.
 		（首项 加 末项）乘以 项数 除以2
     	*/
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxValue(int n, int index, int maxSum) {
@@ -86,4 +96,5 @@ class Solution {
 
         return leftSum + rightSum - val;
     }
-}
+}</code></pre>
+</div>

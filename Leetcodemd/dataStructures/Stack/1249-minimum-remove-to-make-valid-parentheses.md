@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1249. Minimum Remove to Make Valid Parentheses
 
 https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
@@ -38,8 +44,12 @@ Constraints:
 1 <= s.length <= 105
 s[i] is either'(' , ')', or lowercase English letter.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String minRemoveToMakeValid(String s) {
@@ -73,4 +83,5 @@ class Solution {
 
         return sb.toString();
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Surrounded Regions
 Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
 A region is captured by flipping all 'O''s into 'X''s in that surrounded region.
@@ -20,8 +26,12 @@ X O X X
      * @param board a 2D board containing 'X' and 'O'
      * @return void
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public void surroundedRegions(char[][] board) {
@@ -70,4 +80,5 @@ public class Solution {
             dfsHighlight(board, i, j - 1);
         }
     }    
-}
+}</code></pre>
+</div>

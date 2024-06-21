@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Container With Most Water : https://leetcode.com/problems/container-with-most-water/
 Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). 
 n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). 
@@ -32,8 +38,12 @@ since it is limited by the shorter line. But moving the shorter line's pointer c
 as per the same argument, despite the reduction in the width. This is done since a relatively longer 
 line obtained by moving the shorter line's pointer might overcome the reduction in area caused by the width reduction.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxArea(int[] height) {
@@ -52,4 +62,5 @@ class Solution {
         
         return maxArea;
     }
-}
+}</code></pre>
+</div>

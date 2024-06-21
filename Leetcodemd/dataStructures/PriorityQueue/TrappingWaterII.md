@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Trapping Rain Water II
 Given n x m non-negative integers representing an elevation map 2d where the area of each cell is 1 x 1, 
 compute how much water it is able to trap after raining.
@@ -21,8 +27,12 @@ return 14.
      * @param heights: a matrix of integers
      * @return: an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 public class Solution {
@@ -112,4 +122,5 @@ public class Solution {
         
         return ans;
     }
-};
+};</code></pre>
+</div>

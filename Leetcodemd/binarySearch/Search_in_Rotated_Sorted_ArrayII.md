@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Search in Rotated Sorted Array II
 Follow up for "Search in Rotated Sorted Array":
 What if duplicates are allowed?
@@ -15,8 +21,12 @@ Write a function to determine if a given target is in the array.
 
 The array may contain duplicates.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //大忌： 二分法只能用在 1. sorted + (duplicates) array 或者 2. rotated sorted non-duplicates array!
 //      决不能用在duplicated rotated sorted array(那样的话只能用一遍遍历O(n))
@@ -36,4 +46,5 @@ public class Solution {
         }
         return false;
     }
-}
+}</code></pre>
+</div>

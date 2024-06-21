@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 37. Sudoku Solver
 https://leetcode.com/problems/sudoku-solver/
 
@@ -30,8 +36,12 @@ board[i][j] is a digit or '.'.
 It is guaranteed that the input board has only one solution.
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public void solveSudoku(char[][] board) {
@@ -89,4 +99,5 @@ private boolean isValid(char[][] board, int i, int j)
     return true;
 }
     
-}
+}</code></pre>
+</div>

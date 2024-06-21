@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*Convert Sorted List to Balanced BST 
 Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 Example:
@@ -31,8 +37,12 @@ Example:
      * @param head: The first node of linked list.
      * @return: a tree node
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public TreeNode sortedListToBST(ListNode head) {  
@@ -76,4 +86,5 @@ public class Solution {
         }
         return size;
     }
-}
+}</code></pre>
+</div>

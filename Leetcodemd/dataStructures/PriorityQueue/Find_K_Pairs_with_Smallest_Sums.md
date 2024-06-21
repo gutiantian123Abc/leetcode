@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Find K Pairs with Smallest Sums
 You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
 
@@ -28,8 +34,12 @@ Explanation: All possible pairs are returned from the sequence: [1,3],[2,3]
 Original Question: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/
 Solution: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/discuss/84551/simple-Java-O(KlogK)-solution-with-explanation
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public class Pair {
@@ -79,3 +89,5 @@ class Solution {
 
     }
 }
+</code></pre>
+</div>

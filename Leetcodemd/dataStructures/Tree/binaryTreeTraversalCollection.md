@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Binary Tree Preorder Traversal
 Given a binary tree, return the preorder traversal of its nodes' values.
 Example
@@ -27,8 +33,12 @@ return [1,2,4,5,3].
      * @param root: The root of binary tree.
      * @return: Preorder in ArrayList which contains node values.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
@@ -52,4 +62,5 @@ public class Solution {
         helper(result, root.left);
         helper(result, root.right);
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*  Add Two Numbers II
 You are given two non-empty linked lists representing two non-negative integers. 
 The digits are stored in reverse order and each of their nodes contain a single digit.
@@ -22,8 +28,12 @@ Explanation: 342 + 465 = 807.
  *     ListNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -87,4 +97,5 @@ class Solution {
         
         return prev;
     }
-}
+}</code></pre>
+</div>

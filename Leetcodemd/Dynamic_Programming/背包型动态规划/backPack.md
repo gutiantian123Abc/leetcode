@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Backpack I
 
 Given n items with size Ai, an integer m denotes the size of a backpack. How full you can fill this backpack?
@@ -34,8 +40,12 @@ f[i][w]    =        f[i-1][w]          OR         f[i-1][w-A[i-1]]
      * @param A: Given n items with size A[i]
      * @return: The maximum size
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int backPack(int m, int[] A) {
@@ -69,4 +79,5 @@ public class Solution {
         
         return 0;
     }
-}
+}</code></pre>
+</div>

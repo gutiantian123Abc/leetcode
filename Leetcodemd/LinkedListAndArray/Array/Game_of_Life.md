@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Game of Life
 According to the Wikipedia's article: "The Game of Life, also known simply as Life, 
 is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
@@ -14,8 +20,12 @@ Any live cell with more than three live neighbors dies, as if by over-population
 Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 Write a function to compute the next state (after one update) of the board given its current state.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     private class Pair {
@@ -87,4 +97,5 @@ class Solution {
             }
         }    
     }
-}
+}</code></pre>
+</div>

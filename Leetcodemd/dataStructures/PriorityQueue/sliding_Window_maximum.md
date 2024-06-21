@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Sliding Window Maximum
 Given an array of n integer with duplicate number, 
 and a moving window(size k), 
@@ -24,8 +30,12 @@ then the window move one step forward again.
      * @param nums: A list of integers.
      * @return: The maximum number inside the window at each moving.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //nlog(n): TreeSet remove(), add() logn
 public class Solution {
@@ -69,4 +79,5 @@ public class Solution {
         return ans;
 
     }
-}
+}</code></pre>
+</div>

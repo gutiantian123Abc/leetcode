@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 938. range-sum-of-bst
 https://leetcode.com/problems/range-sum-of-bst
@@ -45,8 +51,12 @@ All Node.val are unique.
  *     }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
@@ -66,4 +76,5 @@ class Solution {
             return node.val + dfs(node.left, low, high, sum) + dfs(node.right, low, high, sum);
         }
     }
-}
+}</code></pre>
+</div>

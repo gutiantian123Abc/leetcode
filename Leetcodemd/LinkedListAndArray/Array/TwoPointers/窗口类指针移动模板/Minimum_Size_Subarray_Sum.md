@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Minimum Size Subarray Sum 
 Given an array of n positive integers and a positive integer s, 
 find the minimal length of a subarray of which the sum ≥ s. 
@@ -32,8 +38,12 @@ O(2n)
         	更新i状态
         }
         */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int minimumSize(int[] nums, int s) {
@@ -66,4 +76,5 @@ public class Solution {
            
         return ans;
     }
-}
+}</code></pre>
+</div>

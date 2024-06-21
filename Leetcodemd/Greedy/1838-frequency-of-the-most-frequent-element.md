@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*1838. Frequency of the Most Frequent Element
 https://leetcode.com/problems/frequency-of-the-most-frequent-element/
 
@@ -41,8 +47,12 @@ Constraints:
 1 <= nums[i] <= 105
 1 <= k <= 105
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxFrequency(int[] nums, int k) {
@@ -67,4 +77,5 @@ class Solution {
         return maxFreq;
     
     }
-}
+}</code></pre>
+</div>

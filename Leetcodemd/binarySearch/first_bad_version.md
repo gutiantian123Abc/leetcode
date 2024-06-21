@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* First Bad Version
 The code base version is an integer start from 1 to n. One day, someone committed a bad version in the code case, 
 so it caused this version and the following versions are all failed in the unit tests. Find the first bad version.
@@ -28,8 +34,12 @@ isBadVersion(4) -> true
      * @param n: An integers.
      * @return: An integer which is the first bad version.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int findFirstBadVersion(int n) {
@@ -62,3 +72,5 @@ class Solution {
         return end;
     }
 }
+</code></pre>
+</div>

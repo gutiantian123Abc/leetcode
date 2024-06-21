@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1323. Maximum 69 Number
 https://leetcode.com/problems/maximum-69-number/description/
 
@@ -37,8 +43,12 @@ Constraints:
 1 <= num <= 104
 num consists of only 6 and 9 digits.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maximum69Number (int num) {
@@ -72,4 +82,5 @@ class Solution {
         return res;
         
     }
-}
+}</code></pre>
+</div>

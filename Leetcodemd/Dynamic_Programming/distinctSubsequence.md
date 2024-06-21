@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Distinct Subsequences
 Given a string S and a string T, count the number of distinct subsequences of T in S.
 
@@ -63,8 +69,12 @@ dp[i][j] = dp[i][j - 1] + (T[i - 1] == S[j - 1] ? dp[i - 1][j - 1] : 0).1 <= i <
      * @param S, T: Two string.
      * @return: Count the number of distinct subsequences
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -91,4 +101,5 @@ public class Solution {
         
         return nums[T.length()][S.length()];
     }
-}
+}</code></pre>
+</div>

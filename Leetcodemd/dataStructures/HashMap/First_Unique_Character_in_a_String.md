@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* First Unique Character in a String
 Find the first unique character in a given string. 
 You can assume that there is at least one unique character in the string.
@@ -11,8 +17,12 @@ For "abaccdeff", return 'b'.
      * @param str: str: the given string
      * @return: char: the first unique character in a given string
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //这道题更好的方法是 First_Unique_Number_In_Stream， HashMap + LinkedList 
 
@@ -52,4 +62,5 @@ public class Solution {
         return ans;
         
     }
-}
+}</code></pre>
+</div>

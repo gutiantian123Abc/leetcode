@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Nested List Weight Sum I
 Given a nested list of integers, return the sum of all integers in the list weighted by their depth.
 
@@ -45,8 +51,12 @@ Explanation: One 1 at depth 1, one 4 at depth 2, and one 6 at depth 3; 1 + 4*2 +
  *     public List<NestedInteger> getList();
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int depthSum(List<NestedInteger> nestedList) {
@@ -65,4 +75,5 @@ class Solution {
         
         return sum;
     }
-}
+}</code></pre>
+</div>

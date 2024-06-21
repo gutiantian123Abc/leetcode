@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1351. Count Negative Numbers in a Sorted Matrix
 https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
 Given a m x n matrix grid which is sorted in non-increasing order both row-wise and column-wise, return the number of negative numbers in grid.
@@ -33,8 +39,12 @@ n == grid[i].length
 
 Follow up: Could you find an O(n + m) solution?
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int countNegatives(int[][] grid) {
@@ -65,4 +75,5 @@ class Solution {
         
         return 0;
     }
-}
+}</code></pre>
+</div>

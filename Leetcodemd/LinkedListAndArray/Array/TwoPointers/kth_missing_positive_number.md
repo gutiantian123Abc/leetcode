@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1539. Kth Missing Positive Number
 https://leetcode.com/problems/kth-missing-positive-number/
 
@@ -23,8 +29,12 @@ Explanation: The missing positive integers are [5,6,7,...].
 The 2nd missing positive integer is 6.
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int findKthPositive(int[] arr, int k) {
@@ -49,4 +59,5 @@ class Solution {
         return 0;
         
     }
-}
+}</code></pre>
+</div>

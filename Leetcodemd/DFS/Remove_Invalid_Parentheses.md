@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 301. Remove Invalid Parentheses
 https://leetcode.com/problems/remove-invalid-parentheses/
 
@@ -24,8 +30,12 @@ Input: s = ")("
 Output: [""]
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxLen = Integer.MIN_VALUE;
@@ -106,4 +116,5 @@ class Solution {
         
         return stack.isEmpty();
     }
-}
+}</code></pre>
+</div>

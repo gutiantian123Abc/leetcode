@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Meeting Rooms I
 Given an array of meeting time intervals consisting of start and end times 
 [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
@@ -36,8 +42,12 @@ return 2.
  *     Interval(int s, int e) { start = s; end = e; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     private Comparator<Interval> com = new Comparator<Interval>() {
@@ -100,4 +110,5 @@ class Solution {
         
         return pq.size();
     }
-}
+}</code></pre>
+</div>

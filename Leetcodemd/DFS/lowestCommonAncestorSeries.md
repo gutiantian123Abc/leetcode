@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*  Lowest Common Ancestor I
 Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
 The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
@@ -71,8 +77,12 @@ LCA(6, 7) = 7
      * @param A and B two nodes
      * @return: Return the LCA of the two nodes.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution { 
     public class ResultType {
@@ -163,3 +173,5 @@ public class Solution {
         return new ResultType(null, containsA, containsB);
     }
 }
+</code></pre>
+</div>

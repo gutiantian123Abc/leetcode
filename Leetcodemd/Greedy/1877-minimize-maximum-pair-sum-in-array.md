@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1877. Minimize Maximum Pair Sum in Array
 https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/
 
@@ -38,8 +44,12 @@ n is even.
 1 <= nums[i] <= 105
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int minPairSum(int[] nums) {
@@ -55,4 +65,5 @@ class Solution {
 
         return minMaxSum;
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Range Sum Query - Immutable
 Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
 
@@ -14,8 +20,12 @@ sumRange(0, 5) -> -3
  * Your NumArray object will be instantiated and called as such:
  * NumArray obj = new NumArray(nums);
  * int param_1 = obj.sumRange(i,j);
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class NumArray {
     //Mutable 看 Segment Tree
@@ -33,3 +43,5 @@ class NumArray {
     }
 }
 
+</code></pre>
+</div>

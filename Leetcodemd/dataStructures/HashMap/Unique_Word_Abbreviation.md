@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Unique Word Abbreviation
 An abbreviation of a word follows the form <first letter><number><last letter>.
  Below are some examples of word abbreviations:
@@ -32,8 +38,12 @@ Your ValidWordAbbr object will be instantiated and called as such:
 ValidWordAbbr obj = new ValidWordAbbr(dictionary);
 boolean param_1 = obj.isUnique(word); 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class ValidWordAbbr {
     private HashMap<String, HashSet<String>> map = new HashMap<>();
@@ -73,3 +83,5 @@ class ValidWordAbbr {
     }
 }
 
+</code></pre>
+</div>

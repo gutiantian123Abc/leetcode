@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Longest Common Subsequence
 Given two strings, find the longest common subsequence (LCS).
 Your code should return the length of LCS.
@@ -11,8 +17,12 @@ For "ABCD" and "EACB", the LCS is "AC", return 2.
      * @param A, B: Two strings.
      * @return: The length of longest common subsequence of A and B.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int longestCommonSubsequence(String A, String B) {
@@ -35,4 +45,5 @@ public class Solution {
 }
 
 
-//See longestCommonSubString.java Related
+//See longestCommonSubString.java Related</code></pre>
+</div>

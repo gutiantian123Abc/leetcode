@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Convert Sorted List to Balanced BST
 Given a singly linked list where elements are sorted in ascending order, 
 convert it to a height balanced BST.
@@ -35,8 +41,12 @@ Example
      * @param head: The first node of linked list.
      * @return: a tree node
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Solution1 (参考 convert sorted array to BST), 目前只会这一种方法）
 public class Solution {
@@ -125,4 +135,5 @@ public class Solution {
 
         return root;
     }
-}
+}</code></pre>
+</div>

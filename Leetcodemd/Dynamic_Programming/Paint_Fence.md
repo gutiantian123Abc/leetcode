@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 514. Paint Fence
 There is a fence with n posts, each post can be painted with one of the k colors.
 You have to paint all the posts such that no more than two adjacent fence posts have the same color.
@@ -21,8 +27,12 @@ way6    1         1       0
      * @param k: non-negative integer, k colors
      * @return: an integer, the total number of ways
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int numWays(int n, int k) {
@@ -50,4 +60,5 @@ public class Solution {
         
         return diff[n - 1] + same[n - 1];
     }
-}
+}</code></pre>
+</div>

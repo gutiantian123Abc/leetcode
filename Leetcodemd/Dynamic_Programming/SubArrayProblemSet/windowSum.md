@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Window Sum
 Given an array of n integer, and a moving window(size k), move the window at each iteration from the start of the array, 
 find the sum of the element inside the window at each moving.
@@ -15,8 +21,12 @@ return [10,17,20]
      * @param nums a list of integers.
      * @return the sum of the element inside the window at each moving.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
 
@@ -46,3 +56,5 @@ public class Solution {
         return ans;
     }
 }
+</code></pre>
+</div>

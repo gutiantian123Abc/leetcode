@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Connecting Graph I
 Given n nodes in a graph labeled from 1 to n. 
 There is no edges in the graph at beginning.
@@ -50,8 +56,12 @@ query() return 3
 connect(1, 4)
 query() return 3
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class ConnectingGraph { 
     private int[] father = null;
@@ -204,3 +214,5 @@ public class ConnectingGraph3 {
 
 
 
+</code></pre>
+</div>

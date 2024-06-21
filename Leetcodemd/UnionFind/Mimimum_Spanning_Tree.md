@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Minimum Spanning Tree
 Given a list of Connections, which is the Connection class 
 (the city name at both ends of the edge and a cost between them),
@@ -31,8 +37,12 @@ or sorted city1 name if their cost is same, or sorted city2 if their city1 name 
      * @param connections given a list of connections include two cities and cost
      * @return a list of connections from results
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Totorial: https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
 //Union FInd 是为了防止把已经连起来的两点再相连出现Cycle
@@ -136,4 +146,5 @@ public class Solution {
         
         return result;
     }
-}
+}</code></pre>
+</div>

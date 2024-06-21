@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 A linked list is given such that each node contains 
 an additional random pointer which could point to any node in the list or null.
@@ -17,8 +23,12 @@ Return a deep copy of the list.
      * @param head: The head of linked list with a random pointer.
      * @return: A new head of a deep copy of the list.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 public class Solution {
     public RandomListNode copyRandomList(RandomListNode head) {
         // write your code here
@@ -45,3 +55,5 @@ public class Solution {
     }
 }
 
+</code></pre>
+</div>

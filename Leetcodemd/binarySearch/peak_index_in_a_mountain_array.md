@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 852. Peak Index in a Mountain Array
 https://leetcode.com/problems/peak-index-in-a-mountain-array/
 
@@ -45,8 +51,12 @@ arr is guaranteed to be a mountain array.
 Follow up: Finding the O(n) is straightforward, could you find an O(log(n)) solution?
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
@@ -66,4 +76,5 @@ class Solution {
         return 0;
         
     }
-}
+}</code></pre>
+</div>

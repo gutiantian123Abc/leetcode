@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*  Binary Tree Paths // DFS Traversal Mode, see Divide&Qonquer mode in divede and qonquer
 Given a binary tree, return all root-to-leaf paths.
 Example
@@ -36,8 +42,12 @@ All root-to-leaf paths are:
      * @param root the root of the binary tree
      * @return all root-to-leaf paths
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //VI: Traditional Version 重复利用ArrayList, 不断加，减， 返回， Backtracking
 public class Solution {
@@ -127,3 +137,5 @@ public class Solution {
 }
 
 
+</code></pre>
+</div>

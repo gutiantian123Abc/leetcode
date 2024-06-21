@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 2101. Detonate the Maximum Bombs
 https://leetcode.com/problems/detonate-the-maximum-bombs/description/
 
@@ -57,8 +63,12 @@ bombs[i].length == 3
 1 <= xi, yi, ri <= 105
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maximumDetonation(int[][] bombs) {
@@ -122,4 +132,5 @@ class Solution {
         long diffx = x1 - x2, diffy = y1 - y2;
         return diffx * diffx + diffy * diffy <= r * r;
     }
-}
+}</code></pre>
+</div>

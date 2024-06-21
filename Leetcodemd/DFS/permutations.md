@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Permutations
 Given a list of numbers, return all possible permutations.
 Notice
@@ -41,8 +47,12 @@ For numbers [1,2,2] the unique permutations are:
             当中也应该排在前面，这样就保证了唯一性。所以当前面的2还没有使用的时候，就
             不应该让后面的2使用。
             */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 // 对比 subsets, combinations, catlan combinations
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
@@ -121,3 +131,5 @@ class Solution {
         }
      } 
 }
+</code></pre>
+</div>

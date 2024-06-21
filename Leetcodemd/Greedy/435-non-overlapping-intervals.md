@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 435. Non-overlapping Intervals
 https://leetcode.com/problems/non-overlapping-intervals/description/
 
@@ -46,8 +52,12 @@ maintain a consistent and predictable ordering of intervals that
 share the same end time. This can be helpful in certain edge cases, 
 but for the majority of scenarios in this particular problem, 
 it won't make a difference in the outcome.
-*/## Solution
-```java
+*/</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class Solution {
@@ -94,3 +104,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

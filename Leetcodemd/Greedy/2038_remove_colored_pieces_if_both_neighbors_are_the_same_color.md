@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 2038. Remove Colored Pieces if Both Neighbors are the Same Color
 https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/
 
@@ -63,8 +69,12 @@ Constraints:
 1 <= colors.length <= 105
 colors consists of only the letters 'A' and 'B'
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public boolean winnerOfGame(String colors) {
@@ -92,4 +102,5 @@ class Solution {
             return true;
         }
     }
-}
+}</code></pre>
+</div>

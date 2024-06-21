@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Populating Next Right Pointers in Each Node II
 Follow up for problem "Populating Next Right Pointers in Each Node".
 
@@ -32,8 +38,12 @@ After calling your function, the tree should look like:
  *     TreeLinkNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
     //本题是一道 根据已给Tree层级遍历的题目， 不需要BFS, 不需要额外空间， 很好!!!O(n), Space(1)
@@ -115,4 +125,5 @@ public class Solution {
 
         return ans;
     }
-}
+}</code></pre>
+</div>

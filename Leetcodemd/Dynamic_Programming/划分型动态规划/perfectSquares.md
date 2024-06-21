@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*Perfect Squares 
 Given a positive integer n, 
 find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
@@ -11,8 +17,12 @@ Given n = 13, return 2 because 13 = 4 + 9
      * @param n a positive integer
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int numSquares(int n) {
@@ -36,4 +46,5 @@ public class Solution {
         
         return f[n];
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Coins in a Line I
 
 There are n coins in a line. Two players take turns to take one or two coins from right side until there are no more coins left. The player who take the last coin wins.
@@ -25,8 +31,12 @@ O(n) time and O(1) memory
      * @param n: an integer
      * @return: a boolean which equals to true if the first player will win
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public boolean firstWillWin(int n) {
@@ -60,4 +70,5 @@ public class Solution {
         return dp[newLine];
        
     }
-}
+}</code></pre>
+</div>

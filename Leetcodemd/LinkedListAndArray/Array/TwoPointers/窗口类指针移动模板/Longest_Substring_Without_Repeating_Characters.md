@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Longest Substring Without Repeating Characters 
 Given a string, find the length of the longest substring without repeating characters.
 Example
@@ -29,8 +35,12 @@ O(n) time
             更新i状态
         }
         */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
@@ -54,4 +64,5 @@ public class Solution {
         
         return ans;
     }
-}
+}</code></pre>
+</div>

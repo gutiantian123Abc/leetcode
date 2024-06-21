@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/description/
 1217. Minimum Cost to Move Chips to The Same Position
 
@@ -55,8 +61,12 @@ and move all chips at the odd positions to position 1.
 
 Then, we only have many chips at position 0 and other chips at position 1. 
 Next, we only need to move those two piles together.
-*/## Solution
-```java
+*/</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int minCostToMoveChips(int[] position) {
@@ -75,3 +85,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 686. Repeated String Match
 Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. 
 If no such solution, return -1.
@@ -17,8 +23,12 @@ The length of A and B will be between 1 and 10000.
 解法： 因为A是循环(period)的， 如果把StringBuilder 不断叠加A知道长度大于A + B 长度 && 长度是A的倍数时，
 足以涵盖B中的所有循环节点， 若再不涵盖B, 就彻底没有B了
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class Solution {
@@ -37,4 +47,5 @@ class Solution {
         
         return count;
     }
-}
+}</code></pre>
+</div>

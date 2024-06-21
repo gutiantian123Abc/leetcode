@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1099. Two Sum Less Than K
 https://leetcode.com/problems/two-sum-less-than-k/
 
@@ -25,8 +31,12 @@ Constraints:
 1 <= nums[i] <= 1000
 1 <= k <= 2000
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int twoSumLessThanK(int[] nums, int k) {
@@ -45,4 +55,5 @@ class Solution {
         
         return ans;
     }
-}
+}</code></pre>
+</div>

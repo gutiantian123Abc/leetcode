@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 Notice
@@ -15,8 +21,12 @@ For example, given array S = {-1 0 1 2 -1 -4}, A solution set is:
      * @param numbers : Give an array numbers of n integer
      * @return : Find all unique triplets in the array which gives the sum of zero.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 public class Solution {
     public ArrayList<ArrayList<Integer>> threeSum(int[] numbers) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
@@ -50,4 +60,5 @@ public class Solution {
             prev = numbers[i];// repetation
         }
     }
-}
+}</code></pre>
+</div>

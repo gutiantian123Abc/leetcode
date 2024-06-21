@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Valid Palindrome
 Given a string, determine if it is a palindrome, 
 considering only alphanumeric characters and ignoring cases.
@@ -13,8 +19,12 @@ O(n) time without extra memory.
      * @param s A string
      * @return Whether the string is a valid palindrome
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public boolean isPalindrome(String s) {
@@ -58,4 +68,5 @@ public class Solution {
         }
         return c;
     }
-}
+}</code></pre>
+</div>

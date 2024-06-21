@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Largest Plus Sign
 In a 2D grid from (0, 0) to (N-1, N-1), every cell contains a 1, 
 except those cells in the given list mines which are 0. 
@@ -66,8 +72,12 @@ mines[i] will be length 2 and consist of integers in the range [0, N-1].
 (Additionally, programs submitted in C, C++, or C# will be judged with a 
 slightly smaller time limit.)
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int orderOfLargestPlusSign(int N, int[][] mines) {
@@ -179,4 +189,5 @@ class Solution {
         }
         return bottom;
     }
-}
+}</code></pre>
+</div>

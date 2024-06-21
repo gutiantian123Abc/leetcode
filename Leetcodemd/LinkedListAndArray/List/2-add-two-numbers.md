@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 
 https://leetcode.com/problems/add-two-numbers
 
@@ -45,8 +51,12 @@ It is guaranteed that the list represents a number that does not have leading ze
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class Solution {
@@ -107,4 +117,5 @@ class Solution {
 
         return l4;
     }
-}
+}</code></pre>
+</div>

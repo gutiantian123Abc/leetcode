@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Encode and Decode TinyURL
 Note: This is a companion problem to the System Design problem: Design TinyURL.
 TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl 
@@ -132,8 +138,12 @@ More Optimization
 Put Chinese DB in China, American DB in the United States. Use geographical information as the sharding key, 
 e.g. 0 for Chinese websites, 1 for American websites.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -170,4 +180,5 @@ public class Codec {
 
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
-// codec.decode(codec.encode(url));
+// codec.decode(codec.encode(url));</code></pre>
+</div>

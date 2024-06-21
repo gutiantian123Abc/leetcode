@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Edit Distance
 Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2. 
 (each operation is counted as 1 step.)
@@ -16,8 +22,12 @@ Given word1 = "mart" and word2 = "karma", return 3.
      * @param word1 & word2: Two string.
      * @return: The minimum number of steps.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int minDistance(String word1, String word2) {
@@ -45,4 +55,5 @@ public class Solution {
         }
         return dp[n][m];
     }
-}
+}</code></pre>
+</div>

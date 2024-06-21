@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Find Duplicate Subtrees 
 Given a binary tree, return all duplicate subtrees. For each kind of duplicate subtrees, 
 you only need to return the root node of any one of them.
@@ -34,8 +40,12 @@ Therefore, you need to return above trees' root in the form of a list.
  *     TreeNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     HashMap<Integer, Integer> map = new HashMap<>();
@@ -62,4 +72,5 @@ class Solution {
         }
         return str;
     }
-}
+}</code></pre>
+</div>

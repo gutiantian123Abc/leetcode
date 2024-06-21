@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 482. License Key Formatting
 You are given a license key represented as a string S which consists only alphanumeric character and dashes. 
 The string is separated into N+1 groups by N dashes.
@@ -29,8 +35,12 @@ The length of string S will not exceed 12,000, and K is a positive integer.
 String S consists only of alphanumerical characters (a-z and/or A-Z and/or 0-9) and dashes(-).
 String S is non-empty.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String licenseKeyFormatting(String S, int K) {
@@ -62,4 +72,5 @@ class Solution {
         return sb.toString();
         
     }
-}
+}</code></pre>
+</div>

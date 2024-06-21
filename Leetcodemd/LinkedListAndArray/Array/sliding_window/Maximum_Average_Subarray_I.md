@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Maximum Average Subarray I
 Given an array consisting of n integers, 
 find the contiguous subarray of given length k that has the maximum average value. 
@@ -13,8 +19,12 @@ Note:
 1 <= k <= n <= 30,000.
 Elements of the given array will be in the range [-10,000, 10,000].
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
@@ -42,4 +52,5 @@ class Solution {
         
         return max;   
     }
-}
+}</code></pre>
+</div>

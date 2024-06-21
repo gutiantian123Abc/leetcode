@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Alien Dictionary
 
 There is a new alien language which uses the latin alphabet.
@@ -48,8 +54,12 @@ You may assume that if a is a prefix of b, then a must appear before b in the gi
 If the order is invalid, return an empty string.
 There may be multiple valid order of letters, return any one of them is fine.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {    
     public String alienOrder(String[] words) {
@@ -131,3 +141,5 @@ class Solution {
 
 
 
+</code></pre>
+</div>

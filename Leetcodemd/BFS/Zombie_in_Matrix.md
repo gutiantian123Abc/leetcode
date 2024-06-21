@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Zombie in Matrix
 Given a 2D grid, each cell is either a wall 2, a zombie 1 or people 0 (the number zero, one, two).
 Zombies can turn the nearest people(up/down/left/right) into zombies every day, but can not through wall. 
@@ -17,8 +23,12 @@ return 2
      * @param grid  a 2D integer grid
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     private class Point { //巧用 Point Class
@@ -76,4 +86,5 @@ public class Solution {
         
         return days - 1; //早晚有一天， zanmbie 传染不动了， 最后一天 Queue 要把最后一层zonmbie 吐出来, days 不能增加的
    }
-}
+}</code></pre>
+</div>

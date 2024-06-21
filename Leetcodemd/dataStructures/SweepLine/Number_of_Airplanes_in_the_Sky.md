@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Number of Airplanes in the Sky
 Given an interval list which are flying and landing time of the flight. How many airplanes are on the sky at most?
 
@@ -44,8 +50,12 @@ Sweep Line
      * @param airplanes: An interval array
      * @return: Count of airplanes are in the sky.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -90,4 +100,5 @@ public class Solution {
         
         return ans;
     }
-}
+}</code></pre>
+</div>

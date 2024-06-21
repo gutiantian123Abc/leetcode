@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Kth Smallest Number in Sorted Matrix 解题思路： 寻找下面所有最可能
 Find the kth smallest number in at row and column sorted matrix.
 
@@ -46,8 +52,12 @@ O( (m + n) log maxValue). where maxValue is the max number in A and B.
      * @param k an integer
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //题型规律: 遇见求Top K ... in a matrix 或者是 arrays ..., 一般用这类 Priority Queue BFS Method
 public class Solution {
@@ -166,3 +176,5 @@ public class Solution {
         return minheap.peek().sum;
     }
 }
+</code></pre>
+</div>

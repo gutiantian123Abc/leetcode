@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Add Two Numbers I
 You have two numbers represented by a linked list, where each node contains a single digit. 
 The digits are stored in reverse order, such that the 1's digit is at the head of the list. 
@@ -41,8 +47,12 @@ Return 100
      * @param b a number
      * @return the result
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public ListNode addLists(ListNode l1, ListNode l2) {
@@ -122,3 +132,5 @@ public class Solution {
 }
 
 
+</code></pre>
+</div>

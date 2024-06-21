@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Hit Counter
 Design a hit counter which counts the number of hits received in the past 5 minutes.
 
@@ -44,8 +50,12 @@ counter.getHits(301);
  * HitCounter obj = new HitCounter();
  * obj.hit(timestamp);
  * int param_2 = obj.getHits(timestamp);
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class HitCounter {
     private Queue<Integer> q;
@@ -75,3 +85,5 @@ class HitCounter {
     }
 }
 
+</code></pre>
+</div>

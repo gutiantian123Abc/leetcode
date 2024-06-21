@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Maximal Rectangle
 https://www.lintcode.com/problem/maximal-rectangle/description?_from=ladder&&fromId=4
 
@@ -24,8 +30,12 @@ return 6.
      * @param matrix: a boolean 2D matrix
      * @return: an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int maximalRectangle(boolean[][] matrix) {
@@ -80,4 +90,5 @@ public class Solution {
         
         return max;
     }
-}
+}</code></pre>
+</div>

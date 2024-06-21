@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Russian Doll Envelopes
 You have a number of envelopes with widths and heights given as a pair of integers (w, h). 
 One envelope can fit into another if and only if both the width and height of one envelope is greater than the width and height of the other envelope.
@@ -14,8 +20,12 @@ O(n^2) 这道题很像 longest increasing subsequence,参见
      * @param envelopes a number of envelopes with widths and heights
      * @return the maximum number of envelopes
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 public class Solution {
     public int maxEnvelopes(int[][] envelopes) {
         // Write your code here
@@ -62,4 +72,5 @@ public class Solution {
     private boolean bigger(int aW, int aH, int bW, int bH) {
         return aW > bW && aH > bH;
     }
-}
+}</code></pre>
+</div>

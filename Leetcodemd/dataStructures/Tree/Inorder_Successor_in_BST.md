@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Inorder Successor in BST
 Given a binary search tree and a node in it, find the in-order 
 successor of that node in the BST.
@@ -33,8 +39,12 @@ inorder successor of 10 is 12 and inorder successor of 14 is 20.
  *     TreeNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
@@ -50,4 +60,5 @@ class Solution {
         
         return succ;
     }
-}
+}</code></pre>
+</div>

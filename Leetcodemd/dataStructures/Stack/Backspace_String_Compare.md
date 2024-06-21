@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Backspace String Compare
 Given two strings S and T, return if they are equal when both are 
 typed into empty text editors. # means a backspace character.
@@ -33,8 +39,12 @@ Follow up:
 
 Can you solve it in O(N) time and O(1) space?
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Solution 1: O(M + N), Space(M + N)
 
@@ -65,4 +75,5 @@ class Solution {
         
         return sb.toString();
     }
-}
+}</code></pre>
+</div>

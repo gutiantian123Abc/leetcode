@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Longest Increasing Continuous Subsequence
 Give an integer array，find the longest increasing continuous subsequence in this array.
 
@@ -17,8 +23,12 @@ For [5, 1, 2, 3, 4], the LICS is [1, 2, 3, 4], return 4.
      * @param : An array of Integer
      * @return: an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 //Time: O(n), Space:O(1)
@@ -56,4 +66,5 @@ public class Solution {
         
         return res;
     }
-};
+};</code></pre>
+</div>

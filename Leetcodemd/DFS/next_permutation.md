@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* next permutation
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
@@ -36,8 +42,12 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 然而最后一步将后面的8 7 4 1做一个递增。
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class Solution {
@@ -86,3 +96,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

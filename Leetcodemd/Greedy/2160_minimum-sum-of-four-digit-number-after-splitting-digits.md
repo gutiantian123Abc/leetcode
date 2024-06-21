@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*2160. Minimum Sum of Four Digit Number After Splitting Digits
 https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/description/
 
@@ -31,8 +37,12 @@ Constraints:
 
 1000 <= num <= 9999
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int minimumSum(int num) {
@@ -48,4 +58,5 @@ class Solution {
         int first = A[0], second = A[1], third = A[2], fourth = A[3];
         return first * 10 + third + second * 10 + fourth;
     }
-}
+}</code></pre>
+</div>

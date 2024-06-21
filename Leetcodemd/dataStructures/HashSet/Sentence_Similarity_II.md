@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Sentence Similarity II
 Given two sentences words1, words2 (each represented as an array of strings), 
 and a list of similar word pairs pairs, determine if two sentences are similar.
@@ -27,8 +33,12 @@ The length of pairs will not exceed 2000.
 The length of each pairs[i] will be 2.
 The length of each words[i] and pairs[i][j] will be in the range [1, 20].
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     //Union Find HasshMap Method
@@ -139,4 +149,5 @@ class Solution {
         
         return true;  
     }
-}
+}</code></pre>
+</div>

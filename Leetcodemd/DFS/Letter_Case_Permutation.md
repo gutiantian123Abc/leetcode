@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Letter Case Permutation
 Given a string S, we can transform every letter individually 
 to be lowercase or uppercase to create another string.  
@@ -19,8 +25,12 @@ Note:
 S will be a string with length at most 12.
 S will consist only of letters or digits.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public List<String> letterCasePermutation(String S) {
@@ -70,4 +80,5 @@ class Solution {
         }
     }
     
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* House Robber I
 You are a professional robber planning to rob houses along a street. 
 Each house has a certain amount of money stashed, 
@@ -75,8 +81,12 @@ Maximum amount of money the thief can rob = 4 + 5 = 9.
      * @param root: The root of binary tree.
      * @return: The maximum amount of money you can rob tonight
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public long houseRobber(int[] A) {
@@ -210,3 +220,5 @@ public class Solution {
     }
 }
 
+</code></pre>
+</div>

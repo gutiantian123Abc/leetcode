@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*  Split String
 Give a string, you can choose to split the string after one character or two adjacent characters,
 and make the string to be composed of only one character or two characters. Output all possible results.
@@ -12,8 +18,12 @@ return [["1","2","3"],["12","3"],["1","23"]]
      * @param : a string to be split
      * @return: all possible split string array
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public List<List<String>> splitString(String s) {
@@ -47,4 +57,5 @@ public class Solution {
         }
         
     }
-}
+}</code></pre>
+</div>

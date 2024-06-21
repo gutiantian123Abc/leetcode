@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1017. Similar RGB Color
 In the following, every capital letter represents some hexadecimal digit from 0 to f.
 
@@ -23,8 +29,12 @@ color is a valid RGB color: for i > 0, color[i] is a hexadecimal digit from 0 to
 Any answer which has the same (highest) similarity as the best answer will be accepted.
 All inputs and outputs should use lowercase letters, and the output is 7 characters.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String similarRGB(String color) {
@@ -78,4 +88,5 @@ class Solution {
         map.put(Integer.parseInt("ff", 16), "ff");
         return map;
     }
-}
+}</code></pre>
+</div>

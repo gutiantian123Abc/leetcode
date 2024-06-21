@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Linked List Cycle
 Given a linked list, determine if it has a cycle in it.
 */
@@ -18,8 +24,12 @@ Given a linked list, determine if it has a cycle in it.
      * @param head: The first node of linked list.
      * @return: True if it has a cycle, or false
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 public class Solution {
     public boolean hasCycle(ListNode head) {  
         // write your code here
@@ -42,3 +52,5 @@ public class Solution {
         
     }
 }
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Top K Frequent Words
 Given a list of words and an integer k, return the top k frequent words in the list.
 
@@ -31,8 +37,12 @@ Extra points if you can do it in O(n) time with O(k) extra space approximation a
      * @param k an integer
      * @return an array of string
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     private class Pair {
@@ -95,4 +105,5 @@ public class Solution {
         
         return answer;
     }
-}
+}</code></pre>
+</div>

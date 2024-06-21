@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Design Tic-Tac-Toe
 Design a Tic-tac-toe game that is played between two players on a n x n grid.
 
@@ -64,8 +70,12 @@ Could you do better than O(n2) per move() operation?
  * Your TicTacToe object will be instantiated and called as such:
  * TicTacToe obj = new TicTacToe(n);
  * int param_1 = obj.move(row,col,player);
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class TicTacToe {
@@ -104,3 +114,5 @@ class TicTacToe {
     }
 }
 
+</code></pre>
+</div>

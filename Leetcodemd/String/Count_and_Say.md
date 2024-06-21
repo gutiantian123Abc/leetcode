@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Count and Say
 The count-and-say sequence is the sequence of integers with the 
 first five terms as following:
@@ -25,8 +31,12 @@ Example 2:
 Input: 4
 Output: "1211"
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String countAndSay(int n) {
@@ -57,4 +67,5 @@ class Solution {
         }
         return ans;
     }
-}
+}</code></pre>
+</div>

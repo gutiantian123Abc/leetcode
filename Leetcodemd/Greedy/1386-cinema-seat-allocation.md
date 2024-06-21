@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1386. Cinema Seat Allocation
 
 https://leetcode.com/problems/cinema-seat-allocation/description/
@@ -45,8 +51,12 @@ reservedSeats[i].length == 2
 1 <= reservedSeats[i][1] <= 10
 All reservedSeats[i] are distinct.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {
@@ -83,4 +93,5 @@ class Solution {
         return groups;
         
     }
-}
+}</code></pre>
+</div>

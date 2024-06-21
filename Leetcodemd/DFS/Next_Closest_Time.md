@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Next Closest Time
 Given a time represented in the format "HH:MM", form the next closest time by reusing the current digits. 
 There is no limit on how many times a digit can be reused.
@@ -20,8 +26,12 @@ Output: "22:22"
 Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. 
 It may be assumed that the returned time is next day's time since it is smaller than the input time numerically.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 class Solution {
     public String nextClosestTime(String time) {
         String Hr = time.substring(0, 2);
@@ -78,4 +88,5 @@ class Solution {
             }
         }
     }
-}
+}</code></pre>
+</div>

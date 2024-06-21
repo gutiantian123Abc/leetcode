@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Valid Parentheses
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', 
 determine if the input string is valid.
@@ -11,8 +17,12 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
      * @param s A string
      * @return whether the string is a valid parentheses
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public boolean isValidParentheses(String s) {
@@ -37,4 +47,5 @@ public class Solution {
         }
         return stack.isEmpty();
     }
-}
+}</code></pre>
+</div>

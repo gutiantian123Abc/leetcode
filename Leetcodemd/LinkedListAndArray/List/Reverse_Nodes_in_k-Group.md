@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Reverse Nodes in k-Group 
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 
@@ -37,8 +43,12 @@ For k = 3, you should return: 3->2->1->4->5
 
     	返回： n1 (注意： head 只是dummy node, 借用一下)
     	*/
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
@@ -95,3 +105,5 @@ public class Solution {
         return n1;
     }
 }
+</code></pre>
+</div>

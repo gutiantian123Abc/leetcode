@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Rotate List
 Given a list, rotate the list to the right by k places, where k is non-negative.
 Example
@@ -44,8 +50,12 @@ Reverse it in-place and in one-pass
      * @oaram m and n
      * @return: The head of the reversed ListNode
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
   public class ListNode {
@@ -182,3 +192,5 @@ public class Solution {
 
 
 
+</code></pre>
+</div>

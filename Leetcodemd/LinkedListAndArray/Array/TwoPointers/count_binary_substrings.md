@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 696. Count Binary Substrings
 https://leetcode.com/problems/count-binary-substrings/
 Give a binary string s, return the number of non-empty substrings that have the same number of 0's and 1's, 
@@ -28,8 +34,12 @@ Constraints:
 1 <= s.length <= 105
 s[i] is either '0' or '1'.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int countBinarySubstrings(String s) {
@@ -54,3 +64,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

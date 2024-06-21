@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Serialize and Deserialize Binary Tree
 Design an algorithm and write code to serialize and deserialize a binary tree.
  Writing the tree to a file is called 'serialization' and reading back from 
@@ -47,8 +53,12 @@ it won't check the result of serialize.
      * designed by yourself, and deserialize it here as you serialize it in 
      * "serialize" method.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -125,4 +135,5 @@ public class Solution {
         
         return root;
     }
-}
+}</code></pre>
+</div>

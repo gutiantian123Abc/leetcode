@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Longest Increasing Continuous subsequence II 
 Give you an integer matrix (with row size n, column size m)，find the longest increasing continuous subsequence in this matrix. 
 (The definition of the longest increasing continuous subsequence here can start at any row or column and go up/down/right/left any direction).
@@ -27,8 +33,12 @@ DFS 的本质是用recursion遍历每一种可能找到答案，
      * @param : An integer matrix
      * @return: an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -88,4 +98,5 @@ public class Solution {
         
         return res;
     }
-};
+};</code></pre>
+</div>

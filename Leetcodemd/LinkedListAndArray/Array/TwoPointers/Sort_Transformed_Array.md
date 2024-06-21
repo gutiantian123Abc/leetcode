@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*   Sort Transformed Array
 Given a sorted array of integers nums and integer values a, b and c. 
 Apply a quadratic function of the form f(x) = ax2 + bx + c to each element x in the array.
@@ -17,8 +23,12 @@ nums = [-4, -2, 2, 4], a = -1, b = 3, c = 5
 
 Result: [-23, -5, 1, 7]
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int[] sortTransformedArray(int[] nums, int a, int b, int c) {
@@ -167,4 +177,5 @@ class Solution {
     private int getNum(int a, int b, int c, int x) {
         return a * x * x + b * x + c;
     }
-}
+}</code></pre>
+</div>

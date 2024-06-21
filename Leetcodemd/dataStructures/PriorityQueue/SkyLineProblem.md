@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* The Skyline Problem
 A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance. 
 Now suppose you are given the locations and height of all the buildings as shown on a cityscape photo (Figure A), 
@@ -29,8 +35,12 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged 
 into one in the final output as such: [...[2 3], [4 5], [12 7], ...]
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //讲解： https://blog.csdn.net/whdAlive/article/details/81152670   
 // https://www.youtube.com/watch?v=11dq8ux25oE&feature=youtu.be
@@ -80,4 +90,5 @@ class Solution {
         
         return result;   
     }
-}
+}</code></pre>
+</div>

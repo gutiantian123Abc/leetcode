@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Summary Ranges: https://www.lintcode.com/problem/summary-ranges/description
 Given a sorted integer array without duplicates, return the summary of its ranges.
 
@@ -19,8 +25,12 @@ The result is in ascending order
      * @param nums:  a sorted integer array without duplicates
      * @return: the summary of its ranges
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 s
 
 public class Solution {
@@ -64,4 +74,5 @@ public class Solution {
 
         ans.add(sb.toString());
     }
-}
+}</code></pre>
+</div>

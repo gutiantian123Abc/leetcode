@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Generate Parentheses
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 Example
@@ -10,8 +16,12 @@ Given n = 3, a solution set is:
      * @param n n pairs
      * @return All combinations of well-formed parentheses
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 public class Solution {
     public ArrayList<String> generateParenthesis(int n) {
         // Write your code here
@@ -40,3 +50,5 @@ public class Solution {
         }
     }
 }
+</code></pre>
+</div>

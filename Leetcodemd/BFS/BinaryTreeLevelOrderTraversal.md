@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Binary Tree Level Order Traversal // 典型的BFS题目， 铭记！！！
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 Example
@@ -35,8 +41,12 @@ return its level order traversal as:
      * @param root: The root of binary tree.
      * @return: Level order a list of lists of integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
  
  
@@ -70,4 +80,5 @@ public class Solution {
         
         return result;
     }
-}
+}</code></pre>
+</div>

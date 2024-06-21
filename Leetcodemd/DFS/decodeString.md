@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Decode String
 Given an encoded string, return it's decoded string.
 
@@ -20,8 +26,12 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 */
 /* 这道题既可以用dfs(recursion), 也可以用stack
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 //DFS(Recursion)
@@ -120,4 +130,5 @@ class Solution {
 
         return stack.pop().sb.toString();
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1302 deepest-leaves-sum
 
 https://leetcode.com/problems/deepest-leaves-sum/description/
@@ -39,8 +45,12 @@ The number of nodes in the tree is in the range [1, 104].
  *     }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
@@ -89,4 +99,5 @@ class Solution {
         int maxDepth;
         int maxSum;
     }
-}
+}</code></pre>
+</div>

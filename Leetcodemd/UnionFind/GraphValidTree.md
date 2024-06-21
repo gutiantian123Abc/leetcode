@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Graph Valid Tree
 Given n nodes labeled from 0 to n - 1 and a list of undirected edges 
 (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
@@ -23,8 +29,12 @@ For a graph to be a tree: 符合两个条件：
      * @param edges a list of undirected edges
      * @return true if it's a valid tree, or false
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 public class Solution {
     public class UnionFind {
         private int count;
@@ -90,4 +100,5 @@ public class Solution {
         
         return uf.getCount() == 1;
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Accounts Merge
 Given a list accounts, each element accounts[i] is a list of strings, 
 where the first element accounts[i][0] is a name, and the rest of the 
@@ -42,8 +48,12 @@ The length of accounts will be in the range [1, 1000].
 The length of accounts[i] will be in the range [1, 10].
 The length of accounts[i][j] will be in the range [1, 30].
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 //Unions Find 经典好题！ 记住，就算Path Compress 了之后，也不一定只有两层
@@ -177,4 +187,5 @@ class Solution {
         un.initialize(accounts);
         return un.accountsMerge(); 
     }
-}
+}</code></pre>
+</div>

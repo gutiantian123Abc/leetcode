@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Min Stack
 Implement a stack with min() function, which will return the smallest number in the stack.
 It should support push, pop and min operation all in O(1) cost.
@@ -16,8 +22,12 @@ min()   // return 2
 push(1)
 min()   // return 1
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //非常重要的题目，如何测量一串数add, remove, min都是O(1), Space(n)
 
@@ -52,3 +62,5 @@ public class MinStack {
     }
 }
 
+</code></pre>
+</div>

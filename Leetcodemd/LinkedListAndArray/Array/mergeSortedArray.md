@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 V1:
 Given two sorted integer arrays A and B, merge B into A as one sorted array.
@@ -33,8 +39,12 @@ return [1,2,2,3,4,4,5,6]
      * @param A and B: sorted integer array A and B.
      * @return: A new sorted integer array
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public void mergeSortedArray(int[] A, int m, int[] B, int n) {
@@ -94,3 +104,5 @@ class Solution {
 
 
 
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Implement Trie
 Implement a trie with insert, search, and startsWith methods.
 
@@ -24,8 +30,12 @@ startsWith("linterror")
  * trie.search("lint"); will return false
  * trie.startsWith("lint"); will return true
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class TrieNode {
     // Initialize your data structure here.
@@ -100,4 +110,5 @@ public class Trie {
          
          return true;
     }
-}
+}</code></pre>
+</div>

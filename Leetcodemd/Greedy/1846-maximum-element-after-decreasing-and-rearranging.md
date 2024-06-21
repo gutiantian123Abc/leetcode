@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/
 
 1846. Maximum Element After Decreasing and Rearranging
@@ -50,8 +56,12 @@ Constraints:
 1 <= arr.length <= 105
 1 <= arr[i] <= 109
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maximumElementAfterDecrementingAndRearranging(int[] arr) {
@@ -68,4 +78,5 @@ class Solution {
         return arr[n - 1];
         
     }
-}
+}</code></pre>
+</div>

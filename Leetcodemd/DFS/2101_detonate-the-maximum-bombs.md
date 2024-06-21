@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 You are given a list of bombs. The range of a bomb is defined as the area where its effect can be felt. 
 This area is in the shape of a circle with the center as the location of the bomb.
@@ -51,8 +57,12 @@ Constraints:
 bombs[i].length == 3
 1 <= xi, yi, ri <= 105
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maximumDetonation(int[][] bombs) {
@@ -87,4 +97,5 @@ class Solution {
         return Math.pow(r, 2) >= Math.pow(x2-x1, 2) + Math.pow(y2 - y1, 2);
 
     }
-}
+}</code></pre>
+</div>

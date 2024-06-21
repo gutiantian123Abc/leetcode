@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Subsets
 Given a set of distinct integers, return all possible subsets.
 
@@ -33,8 +39,12 @@ Note: Elements in a subset must be in non-descending order. The solution set mus
      * @param nums: A set of numbers.
      * @return: A list of lists. All valid subsets.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 // 对比 permutations, combinations, catlan combinations
 //SPace and Time: O(2^n)
@@ -93,3 +103,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

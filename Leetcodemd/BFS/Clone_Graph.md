@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 
 Clone Graph
 Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
@@ -35,8 +41,12 @@ return a deep copied graph.
      * @param node: A undirected graph node
      * @return: A undirected graph node
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
@@ -87,4 +97,5 @@ public class Solution {
         }
         return result;
     }
-}
+}</code></pre>
+</div>

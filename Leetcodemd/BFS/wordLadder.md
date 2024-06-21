@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Word Ladder
 Given two words (start and end), and a dictionary, 
 find the length of shortest transformation sequence from start to end, such that:
@@ -23,8 +29,12 @@ return its length 5.
       * @param dict, a set of string
       * @return an integer
       */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int ladderLength(String start, String end, Set<String> dict) {
@@ -89,4 +99,5 @@ public class Solution {
         wordArray[index] = c;
         return new String(wordArray); //注意char 转 String
     }
-}
+}</code></pre>
+</div>

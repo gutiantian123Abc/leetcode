@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Dices Sum
 Throw n dices, the sum of the dices' faces is S. Given n, 
 find the all possible value of S along with its probability.
@@ -11,8 +17,12 @@ Given n = 1, return [ [1, 0.17], [2, 0.17], [3, 0.17], [4, 0.17], [5, 0.17], [6,
      * @param n an integer
      * @return a list of Map.Entry<sum, probability>
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public List<Map.Entry<Integer, Double>> dicesSum(int n) {
@@ -44,4 +54,5 @@ public class Solution {
         return res;
         
     }
-}
+}</code></pre>
+</div>

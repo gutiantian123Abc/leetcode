@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Android Unlock Patterns
 
 Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, 
@@ -33,8 +39,12 @@ Given m = 1, n = 1, return 9.
 
 注意， 1， 8 中间算没有点，1， 6 也一样 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int numberOfPatterns(int m, int n) {
@@ -76,4 +86,5 @@ class Solution {
         v[start] = false;
         return count;
     }
-}
+}</code></pre>
+</div>

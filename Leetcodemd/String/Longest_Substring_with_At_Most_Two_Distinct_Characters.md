@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 159. Longest Substring with At Most Two Distinct Characters
 Given a string s , find the length of the longest substring t  
 that contains at most 2 distinct characters.
@@ -23,8 +29,12 @@ we can traverse through the map to find the character with the left most index,
 and remove 1 character from our map. 
 Since the range of characters is constrained, we should be able to find the left most index in constant time.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class Solution {
@@ -59,3 +69,5 @@ class Solution {
     
     }
 }
+</code></pre>
+</div>

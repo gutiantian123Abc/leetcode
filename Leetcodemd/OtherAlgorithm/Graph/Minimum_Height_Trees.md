@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Minimum Height Trees
 For a undirected graph with tree characteristics, we can choose any node as the root. The result graph is then a rooted tree. 
 Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs). Given such a graph,
@@ -77,8 +83,12 @@ The time complexity and space complexity are both O(n).
 
 Note that for a tree we always have V = n, E = n-1.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -133,3 +143,5 @@ class Solution {
 
 
 
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Daily Temperatures
 Given a list of daily temperatures T, return a list such that, 
 for each day in the input, tells you how many days you would have to wait until 
@@ -52,8 +58,12 @@ When i = 0, stack = [0 (73), 1 (74), 2 (75), 6 (76)]. ans[i] = 1.
 Time Complexity: O(N), where N is the length of T and W is the number of allowed values for T[i]. 
 Each index gets pushed and popped at most once from the stack.
 Space Complexity: O(W)O(W). The size of the stack is bounded as it represents strictly increasing temperatures.
-*/## Solution
-```java
+*/</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int[] dailyTemperatures(int[] T) {
@@ -76,3 +86,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

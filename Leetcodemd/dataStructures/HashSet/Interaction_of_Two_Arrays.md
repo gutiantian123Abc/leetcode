@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Intersection of Two Arrays I
 Given two arrays, write a function to compute their intersection.
 
@@ -30,8 +36,12 @@ cannot load all elements into the memory at once?
      * @param nums2 an integer array
      * @return an integer array
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
@@ -143,3 +153,5 @@ public class Solution {
         return result;
     }
 }
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 299. Bulls and Cows
 You are playing the following Bulls and Cows game with your friend: 
 You write down a number and ask your friend to guess what the number is. 
@@ -31,8 +37,12 @@ Explanation: The 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow.
 Note: You may assume that the secret number and your friend's guess only contain digits, 
 and their lengths are always equal.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String getHint(String secret, String guess) {
@@ -62,4 +72,5 @@ class Solution {
         return A + "A" + B + "B";
         
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 https://leetcode.com/problems/boats-to-save-people
 
@@ -36,8 +42,12 @@ Constraints:
 1 <= people.length <= 5 * 104
 1 <= people[i] <= limit <= 3 * 104
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int numRescueBoats(int[] people, int limit) {
@@ -72,4 +82,5 @@ class Solution {
         }
 
     }
-}
+}</code></pre>
+</div>

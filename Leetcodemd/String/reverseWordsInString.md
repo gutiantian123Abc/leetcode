@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Reverse Words in a String
 Given an input string, reverse the string word by word.
 
@@ -19,8 +25,12 @@ Reduce them to a single space in the reversed string.
      * @param s : A string
      * @return : A string
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public String reverseWords(String s) {
@@ -41,3 +51,5 @@ public class Solution {
         return sb.length() == 0 ? "" : sb.substring(0, sb.length() - 1); //sb substring 用法
     }
 }
+</code></pre>
+</div>

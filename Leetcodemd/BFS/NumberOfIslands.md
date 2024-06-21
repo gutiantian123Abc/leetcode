@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Number of Islands
 Given a boolean 2D matrix, 0 is represented as the sea, 1 is represented as the island. 
 If two 1 is adjacent, we consider them in the same island. 
@@ -21,8 +27,12 @@ return 3.
      * @param grid a boolean 2D matrix
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution { // 注意， BFS 不是 recursion !!!
     private class Coordinate{
@@ -80,4 +90,5 @@ public class Solution { // 注意， BFS 不是 recursion !!!
         }
         return true;
     }
-}
+}</code></pre>
+</div>

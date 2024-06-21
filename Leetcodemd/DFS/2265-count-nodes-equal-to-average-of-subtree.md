@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 2265. Count Nodes Equal to Average of Subtree
 
 https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/description/
@@ -53,8 +59,12 @@ The number of nodes in the tree is in the range [1, 1000].
  *     }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     class Node {
@@ -98,4 +108,5 @@ class Solution {
             return new Node(root.val + totalSubSum, totalSubNum + 1, totalSubEqual);
         }
     }
-}
+}</code></pre>
+</div>

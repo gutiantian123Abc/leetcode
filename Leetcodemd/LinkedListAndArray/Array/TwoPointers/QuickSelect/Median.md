@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Median
 Given a unsorted array with integers, find the median of it.
 
@@ -19,8 +25,12 @@ O(n) time.
      * @param nums: A list of integers.
      * @return: An integer denotes the middle number of the array.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Quick Select : Complexity O(n)!!! 包含重复情况
 //经典模板！！！！！
@@ -78,4 +88,5 @@ public class Solution {
         nums[j] = tmp;
     }
 
-}
+}</code></pre>
+</div>

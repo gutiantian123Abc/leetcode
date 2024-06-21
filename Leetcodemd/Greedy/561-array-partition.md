@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 561. Array Partition
 
 https://leetcode.com/problems/array-partition/description/
@@ -34,8 +40,12 @@ nums.length == 2 * n
 -104 <= nums[i] <= 104
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int arrayPairSum(int[] nums) {
@@ -50,4 +60,5 @@ class Solution {
 
         return sum;
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Move Ks  不理解， 待解决！！！！！！！！
 Given an array nums, write a function to move all k's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -18,8 +24,12 @@ Given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3
      * @param nums an integer array
      * @return nothing, do this in-place
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -47,4 +57,5 @@ public class Solution {
         nums[a] = nums[b];
         nums[b] = tmp;
     }
-}
+}</code></pre>
+</div>

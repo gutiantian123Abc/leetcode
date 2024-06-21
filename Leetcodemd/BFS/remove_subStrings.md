@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Remove Substrings
 Given a string s and a set of n substrings. 
 You are supposed to remove every instance of those n substrings from s so that s is of 
@@ -17,8 +23,12 @@ ccdaabcdbb -> ccdacdbb -> cabb -> cb (length = 2)
      * @param dict a set of n substrings
      * @return the minimum length
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int minLength(String s, Set<String> dict) {
@@ -58,3 +68,5 @@ public class Solution {
         return new_word;
     }
 }
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Reverse Integer
 Reverse digits of an integer. Returns 0 when the reversed integer overflows (signed 32-bit integer).
 
@@ -19,8 +25,12 @@ then the reverse of 1000000003 overflows. How should you handle such cases? Retu
      * @param n the integer to be reversed
      * @return the reversed integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int reverseInteger(int n) {
@@ -40,4 +50,5 @@ public class Solution {
 
         return result;
     }
-}
+}</code></pre>
+</div>

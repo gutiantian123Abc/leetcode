@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1464. Maximum Product of Two Elements in an Array
 
 Given the array of integers nums, you will choose two different indices i and j of that array. 
@@ -24,8 +30,12 @@ Input: nums = [3,7]
 Output: 12
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxProduct(int[] nums) {
@@ -50,4 +60,5 @@ class Solution {
         return (a - 1) * (b - 1);
         
     }
-}
+}</code></pre>
+</div>

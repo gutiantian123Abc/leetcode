@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Subtree with Maximum Average (Related Problem: Minimum Subtree)
 Given a binary tree, find the subtree with maximum average. Return the root of the subtree.
 Example
@@ -27,8 +33,12 @@ return the node 11.
      * @param root the root of binary tree
      * @return the root of the maximum average of subtree
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     private class ResultType {  // 当要返回多个value的时候，巧用 ResultType!!!!
@@ -73,4 +83,5 @@ public class Solution {
             }
         }
     }
-}
+}</code></pre>
+</div>

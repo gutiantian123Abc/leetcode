@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 204. Singleton
 Singleton is a most widely used design pattern. 
 If a class has and only has one instance at every moment,
@@ -22,8 +28,12 @@ If we call getInstance concurrently, can you make sure your code could run corre
     /**
      * @return: The same instance of this class every time
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public static Solution instance = null;
@@ -35,4 +45,5 @@ class Solution {
         //else, means it has been used
         return instance;
     }
-};
+};</code></pre>
+</div>

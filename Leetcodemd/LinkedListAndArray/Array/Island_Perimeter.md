@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*  Island Perimeter: 
 https://leetcode.com/problems/island-perimeter/
 
@@ -22,8 +28,12 @@ Input:
 
 Output: 16
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //和道题可以用dfs, 但太慢， 一下方法一个或多个岛屿都可以
 class Solution {
@@ -57,4 +67,5 @@ class Solution {
         boolean outBound = i < 0 || i >= m || j < 0 || j >= n;
         return inBound && grid[i][j] == 0 || outBound;
     }
-}
+}</code></pre>
+</div>

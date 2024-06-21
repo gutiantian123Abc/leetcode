@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* https://leetcode.com/problems/number-of-closed-islands/description/
 
 Given a 2D grid consists of 0s (land) and 1s (water).  
@@ -41,8 +47,12 @@ Constraints:
 1 <= grid.length, grid[0].length <= 100
 0 <= grid[i][j] <=1
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int[] dx = {0, 1, -1, 0};
@@ -105,3 +115,5 @@ class Solution {
 
 }
 
+</code></pre>
+</div>

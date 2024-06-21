@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Number Of Corner Rectangles
 Given a grid where each entry is only 0 or 1, find the number of corner rectangles.
 
@@ -41,8 +47,12 @@ The number of rows and columns of grid will each be in the range [1, 200].
 Each grid[i][j] will be either 0 or 1.
 The number of 1s in the grid will be at most 6000.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 class Solution {
     public int countCornerRectangles(int[][] grid) {
         int m = grid.length, n = grid[0].length;
@@ -70,3 +80,5 @@ class Solution {
 }
 
 
+</code></pre>
+</div>

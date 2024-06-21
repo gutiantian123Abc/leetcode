@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 51. N-Queens I
 https://leetcode.com/problems/n-queens/
 
@@ -28,8 +34,12 @@ Constraints:
 
 1 <= n <= 9
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public List<List<String>> solution = new ArrayList<>();
@@ -98,4 +108,5 @@ class Solution {
         
         solution.add(new ArrayList(list));
     }
-}
+}</code></pre>
+</div>

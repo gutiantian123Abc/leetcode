@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 683. K Empty Slots
 There is a garden with N slots. In each slot, there is a flower. 
 The N flowers will bloom one by one in N days. 
@@ -47,8 +53,12 @@ https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html
 9. size()
 10. isEmpty()
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int kEmptySlots(int[] flowers, int k) {
@@ -66,3 +76,5 @@ class Solution {
         return -1;
     }
 }
+</code></pre>
+</div>

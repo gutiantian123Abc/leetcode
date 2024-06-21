@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 160. Intersection of Two Linked Lists
 https://leetcode.com/problems/intersection-of-two-linked-lists/
 
@@ -80,8 +86,12 @@ Follow up: Could you write a solution that runs in O(n) time and use only O(1) m
  *     }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -119,4 +129,5 @@ public class Solution {
         return null;
        
     }
-}
+}</code></pre>
+</div>

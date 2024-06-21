@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Add Binary
 Given two binary strings, 
 return their sum (also a binary string).
@@ -9,8 +15,12 @@ a = "11"
 b = "1"
 Return "100".
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String addBinary(String a, String b) {
@@ -57,4 +67,5 @@ class Solution {
         
         return res;
     }
-}
+}</code></pre>
+</div>

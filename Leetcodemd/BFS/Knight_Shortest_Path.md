@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*  Knight Shortest Path
 
 Given a knight in a chessboard (a binary matrix with 0 as empty and 1 as barrier) with a source position, 
@@ -47,8 +53,12 @@ source = [2, 0] destination = [2, 2] return -1
      * @param source, destination a point
      * @return the shortest path 
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution { //经典的BFS
     int[] deltaX = {1, 1, 2, 2, -1, -1, -2, -2}; //注意deltaX, Y 的用法
@@ -91,4 +101,5 @@ public class Solution { //经典的BFS
         }
         return true;
     }
-}
+}</code></pre>
+</div>

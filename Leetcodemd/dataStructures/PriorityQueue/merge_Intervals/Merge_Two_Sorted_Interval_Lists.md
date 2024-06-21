@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Merge Two Sorted Interval Lists
 Merge two sorted (ascending) lists of interval and return it as a new sorted list. 
 The new sorted list should be made by splicing together the intervals of the two lists and sorted in ascending order.
@@ -26,8 +32,12 @@ The intervals in different lists may overlap.
      * @param list2: another list
      * @return: the new sorted list of interval
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 //这道题的本质也是 Merge Overlapped Intervials
@@ -120,4 +130,5 @@ public class Solution {
         
         return res;
     }
-}
+}</code></pre>
+</div>

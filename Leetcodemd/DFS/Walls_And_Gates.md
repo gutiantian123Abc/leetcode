@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Walls and Gates 
 You are given a m x n 2D grid initialized with these three possible values.
 
@@ -21,8 +27,12 @@ After running your function, the 2D grid should be:
   1  -1   2  -1
   0  -1   3   4
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 //切记： 浸染法！！！, DFS 步数优化的问题！！！
 class Solution {
     public void wallsAndGates(int[][] rooms) {
@@ -60,4 +70,5 @@ class Solution {
         int m = rooms.length, n = rooms[0].length;
         return i >= 0 && i < m && j >= 0 && j < n;
     }
-}
+}</code></pre>
+</div>

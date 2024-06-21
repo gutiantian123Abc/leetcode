@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Search a 2D Matrix
 Write an efficient algorithm that searches for a value in an m x n matrix.
 
@@ -26,8 +32,12 @@ O(log(n) + log(m)) time
      * @param target, an integer
      * @return a boolean, indicate whether matrix contains target
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
@@ -82,4 +92,5 @@ public class Solution {
         
         return false;
     }
-}
+}</code></pre>
+</div>

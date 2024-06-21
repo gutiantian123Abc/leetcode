@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Average of Levels in Binary Tree
 Given a non-empty binary tree, return the average value of the nodes 
 on each level in the form of an array.
@@ -26,8 +32,12 @@ The range of node's value is in the range of 32-bit signed integer.
  *     TreeNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
@@ -56,4 +66,5 @@ class Solution {
         
         return res;
     }
-}
+}</code></pre>
+</div>

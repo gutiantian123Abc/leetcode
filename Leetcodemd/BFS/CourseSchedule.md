@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 There are a total of n courses you have to take, 
 labeled from 0 to n - 1.
@@ -22,8 +28,12 @@ Return [0,1,2,3] or [0,2,1,3]
      * @param prerequisites a list of prerequisite pairs
      * @return the course order
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 //Course Schedule II
 
 public class Solution {
@@ -71,4 +81,5 @@ public class Solution {
         
         return new int[0];
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Maximum Subarray I
 Given an array of integers, 
 find a contiguous subarray which has the largest sum.
@@ -75,8 +81,12 @@ O(nlogn) time
      * @return: A list of integers includes the index of the first number 
      *          and the index of the last number
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -223,3 +233,5 @@ public class Solution {
 
 
 
+</code></pre>
+</div>

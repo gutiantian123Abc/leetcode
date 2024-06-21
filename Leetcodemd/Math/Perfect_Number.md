@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Perfect Number
 We define the Perfect Number is a positive integer that is equal to the sum of all its positive divisors except itself.
 
@@ -12,8 +18,12 @@ Explanation: 28 = 1 + 2 + 4 + 7 + 14
 /*
 Complexity Analysis
 Time complexity : O(sqrt(n))
-*/## Solution
-```java
+*/</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public boolean checkPerfectNumber(int num) {
@@ -36,3 +46,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

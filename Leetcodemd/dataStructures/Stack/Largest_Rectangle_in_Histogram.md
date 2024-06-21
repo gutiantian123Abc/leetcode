@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Largest Rectangle in Histogram
 https://www.lintcode.com/problem/largest-rectangle-in-histogram/description?_from=ladder&&fromId=4
 Description
@@ -21,8 +27,12 @@ find the area of largest rectangle in the histogram.
      * @param height: A list of integer
      * @return: The area of largest rectangle in the histogram
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 public class Solution {
@@ -49,4 +59,5 @@ public class Solution {
         
         return max;
     }
-}
+}</code></pre>
+</div>

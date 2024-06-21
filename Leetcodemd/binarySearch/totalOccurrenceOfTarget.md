@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Total Occurrence of Target
 Given a target number and an integer array sorted in ascending order. 
 Find the total number of occurrences of target in the array.
@@ -17,8 +23,12 @@ Time complexity in O(logn)
      * @param target an integer
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {  // 二分法固定模板的套用: firstPosition & lastPosition
     public int totalOccurrence(int[] A, int target) {
@@ -94,3 +104,5 @@ public class Solution {  // 二分法固定模板的套用: firstPosition & last
 
 
 
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 283. Move Zeroes
 Given an integer array nums, move all 0's to the end of it 
 while maintaining the relative order of the non-zero elements.
@@ -18,8 +24,12 @@ Input: nums = [0]
 Output: [0]
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 class Solution {
     public void moveZeroes(int[] nums) {
         int lastNonZeroIndex = 0;
@@ -36,3 +46,5 @@ class Solution {
         
     }
 }
+</code></pre>
+</div>

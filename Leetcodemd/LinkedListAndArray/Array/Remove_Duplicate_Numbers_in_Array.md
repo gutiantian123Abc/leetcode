@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Remove Duplicate Numbers in Array
 Given an array of integers, remove the duplicate numbers in it.
 
@@ -32,8 +38,12 @@ Do it in O(nlogn) time without extra space.
      * @param nums an array of integers
      * @return the number of unique integers
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 //1. O(n) time complexity
@@ -73,4 +83,5 @@ public class Solution {
         }
         return index + 1;
     }
-}
+}</code></pre>
+</div>

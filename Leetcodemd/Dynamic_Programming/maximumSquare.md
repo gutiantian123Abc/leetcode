@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Maximal Square
 Given a 2D binary matrix filled with 0's and 1's, find the largest square containing all 1's and return its area.
 
@@ -44,8 +50,12 @@ For i > 0 and j > 0: if matrix[i][j] = 0, res[i][j] = 0; if matrix[i][j] = 1, re
      * @param matrix: a matrix of 0 and 1
      * @return: an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -86,3 +96,5 @@ public class Solution {
 
 
 
+</code></pre>
+</div>

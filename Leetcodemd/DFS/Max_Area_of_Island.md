@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Max Area of Island
 Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's 
 (representing land) connected 4-directionally (horizontal or vertical.) 
@@ -25,8 +31,12 @@ Example 2:
 Given the above grid, return 0.
 Note: The length of each dimension in the given grid does not exceed 50.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     int[] dx = {0, 0, 1, -1};
@@ -68,4 +78,5 @@ class Solution {
         int m = grid.length, n = grid[0].length;
         return x >= 0 && x < m && y >= 0 && y < n;
     }
-}
+}</code></pre>
+</div>

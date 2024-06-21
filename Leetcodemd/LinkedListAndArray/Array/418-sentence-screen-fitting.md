@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 418. Sentence Screen Fitting
 
 https://leetcode.com/problems/sentence-screen-fitting/
@@ -52,8 +58,12 @@ Constraints:
 sentence[i] consists of lowercase English letters.
 1 <= rows, cols <= 2 * 104
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int wordsTyping(String[] sentence, int rows, int cols) {
@@ -80,3 +90,5 @@ class Solution {
         
     }
 }
+</code></pre>
+</div>

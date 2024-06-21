@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Rectangle Area
 https://leetcode.com/problems/rectangle-area/
 
@@ -10,8 +16,12 @@ Each rectangle is defined by its bottom left corner and top right corner as show
 Rectangle Area
 Assume that the total area is never beyond the maximum possible value of int.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 //https://leetcode.com/problems/rectangle-area/description/
 class Solution {
     public int computeArea(int ax1, int ay1, int ax2, int ay2, int bx1, int by1, int bx2, int by2) {
@@ -30,4 +40,5 @@ class Solution {
         
         return areaRec1 + areaRec2 - overlapArea;
     }
-}
+}</code></pre>
+</div>

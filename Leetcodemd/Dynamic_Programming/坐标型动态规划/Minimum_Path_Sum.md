@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Minimum Path Sum
 Given a m x n grid filled with non-negative numbers, 
 find a path from top left to bottom right which minimizes the sum of all numbers along its path.
@@ -14,8 +20,12 @@ You can only move either down or right at any point in time.
      * @param grid: a list of lists of integers.
      * @return: An integer, minimizes the sum of all numbers along its path
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int minPathSum(int[][] grid) {
@@ -60,4 +70,5 @@ public class Solution {
         
         return f[now][n - 1];
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 990. Beautiful Arrangement
 Suppose you have N integers from 1 to N. We define a beautiful arrangement as an array 
 that is constructed by these N numbers successfully if one of the following is true for
@@ -28,8 +34,12 @@ N is a positive integer and will not exceed 15.
      * @param N: The number of integers
      * @return: The number of beautiful arrangements you can construct
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int countArrangement(int N) {
@@ -58,4 +68,5 @@ public class Solution {
         }
     }
     
-}
+}</code></pre>
+</div>

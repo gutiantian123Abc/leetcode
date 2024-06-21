@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Maximum Product Subarray
 Find the contiguous subarray within an array (containing at least one number) which has the largest product.
 Example
@@ -13,8 +19,12 @@ For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the l
      * @param nums: an array of integers
      * @return: an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Space: O(n), Time: O(n)
 public class Solution {
@@ -74,4 +84,5 @@ public class Solution {
         
         return res;
     }
-}
+}</code></pre>
+</div>

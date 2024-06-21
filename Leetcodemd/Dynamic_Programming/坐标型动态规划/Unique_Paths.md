@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Unique Paths
 A robot is located at the top-left corner of a m x n grid.
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid.
@@ -45,8 +51,12 @@ The total number of unique paths is 2.
      * @param obstacleGrid: A list of lists of integers
      * @return: An integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Normal method: Time: O(mn), Space: O(mn)
 public class Solution {
@@ -217,3 +227,5 @@ public class Solution {
 }
 
 
+</code></pre>
+</div>

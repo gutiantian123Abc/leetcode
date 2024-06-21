@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Kth Largest Element
 
 Example
@@ -15,8 +21,12 @@ O(n) time, O(1) extra memory.
      * @param nums : array of nums
      * @return: description of return
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int kthLargestElement(int k, int[] nums) {
@@ -69,4 +79,5 @@ class Solution {
         nums[a] = nums[b];
         nums[b] = tmp;
     }
-};
+};</code></pre>
+</div>

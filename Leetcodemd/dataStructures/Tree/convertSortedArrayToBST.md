@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Convert Sorted Array to Binary Search Tree
 Given a sorted (increasing order) array, 
 Convert it to create a binary tree with minimal height(Balanced Height BST).
@@ -30,8 +36,12 @@ Given [1,2,3,4,5,6,7], return
      * @param A: an integer array
      * @return: a tree node
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public TreeNode sortedArrayToBST(int[] A) {  
@@ -51,3 +61,5 @@ public class Solution {
         return root;
     }
 }
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 Your algorithm should run in O(n) complexity.
@@ -12,8 +18,12 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
      * @param nums: A list of integers
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int longestConsecutive(int[] num) {
@@ -39,4 +49,5 @@ public class Solution {
         } 
         return longest;
     }
-}
+}</code></pre>
+</div>

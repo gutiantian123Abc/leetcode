@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* K-diff Pairs in an Array
 Given an array of integers and an integer k, you need to find the number of unique 
 k-diff pairs in the array. Here a k-diff pair is defined as an integer pair (i, j), 
@@ -24,8 +30,12 @@ Explanation: There is one 0-diff pair in the array, (1, 1).
                     count++;
                 }     
                 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int findPairs(int[] nums, int k) {
@@ -60,4 +70,5 @@ class Solution {
         
            return count;
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 Given a collection of intervals, merge all overlapping intervals.
 [                     [
@@ -22,8 +28,12 @@ Given a collection of intervals, merge all overlapping intervals.
      * @param intervals, a collection of intervals
      * @return: A new sorted interval list.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public List<Interval> merge(List<Interval> intervals) {
@@ -52,4 +62,5 @@ class Solution {
                 return a.start - b.start;
         }
     }
-}
+}</code></pre>
+</div>

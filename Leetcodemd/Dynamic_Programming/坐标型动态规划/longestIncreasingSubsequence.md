@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*Longest Increasing Subsequence
 Given a sequence of integers, find the longest increasing subsequence (LIS).
 
@@ -26,8 +32,12 @@ Time complexity O(n^2) or O(nlogn)
      * @param nums: The integer array
      * @return: The length of LIS (longest increasing subsequence)
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int longestIncreasingSubsequence(int[] nums) {
@@ -55,3 +65,5 @@ public class Solution {
         return ans;
     }
 }
+</code></pre>
+</div>

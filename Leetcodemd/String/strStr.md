@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* strStr
 For a given source string and a target string, 
 you should output the first index(from 0) of target string in source string.
@@ -15,8 +21,12 @@ If source = "abcdabcdefg" and target = "bcd", return 1.
      * @param source string to be scanned.
      * @param target string containing the sequence of characters to match.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int strStr(String source, String target) {
@@ -38,4 +48,5 @@ class Solution {
         }
         return -1;
     }
-}
+}</code></pre>
+</div>

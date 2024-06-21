@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 954. Insert Delete GetRandom O(1) - Duplicates allowed
 Design a data structure that supports all following operations in average O(1) time.
 
@@ -91,8 +97,12 @@ $java -Xmx128M -Xms16M HelloWorld
  * boolean param_1 = obj.insert(val);
  * boolean param_2 = obj.remove(val);
  * int param_3 = obj.getRandom();
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class RandomizedCollection {
     class NumberandRanking {
@@ -161,3 +171,5 @@ class RandomizedCollection {
     }
 }
 
+</code></pre>
+</div>

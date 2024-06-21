@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Letter Combinations of a Phone Number
 Super important, this is Cataline Combination problem：
 EX: 小明有5个不同编号的苹果， 小红有8个， 小兰有9个， 问他们每人出一个苹果
@@ -18,8 +24,12 @@ Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
      * @param digits A digital string
      * @return all posible letter combinations
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public ArrayList<String> letterCombinations(String digits) {
@@ -58,4 +68,5 @@ public class Solution {
             sb.deleteCharAt(sb.length() - 1);
         }
     }
-}
+}</code></pre>
+</div>

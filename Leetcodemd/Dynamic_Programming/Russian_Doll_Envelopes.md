@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 354. Russian Doll Envelopes
 You have a number of envelopes with widths and heights given as a pair of integers (w, h). 
 One envelope can fit into another if and only if both the width and height of one envelope 
@@ -17,8 +23,12 @@ Output: 3
 Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maxEnvelopes(int[][] envelopes) {   
@@ -59,4 +69,5 @@ class Solution {
         return max;
         
     }
-}
+}</code></pre>
+</div>

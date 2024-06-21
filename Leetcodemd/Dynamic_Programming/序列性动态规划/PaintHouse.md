@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Paint House I & II
 
 There are a row of n houses, each house can be painted with one of the three colors: red, blue or green. 
@@ -32,8 +38,12 @@ Space: O(N)
      * @param costs n x 3 cost matrix
      * @return an integer, the minimum cost to paint all houses
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int minCost(int[][] costs) {
@@ -131,3 +141,5 @@ public class Solution {
         return res;
     }
 }
+</code></pre>
+</div>

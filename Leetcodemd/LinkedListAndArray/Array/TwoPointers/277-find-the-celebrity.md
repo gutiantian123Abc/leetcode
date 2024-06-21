@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 277. Find the Celebrity
 
 https://leetcode.com/problems/find-the-celebrity/
@@ -55,8 +61,12 @@ could you find a solution without exceeding the maximum number of calls?
 */
 /* The knows API is defined in the parent class Relation.
       boolean knows(int a, int b); */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -94,3 +104,5 @@ public class Solution extends Relation {
         
     }
 }
+</code></pre>
+</div>

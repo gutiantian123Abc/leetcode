@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Add and Search Word
 Design a data structure that supports the following two operations: addWord(word) and search(word)
 
@@ -16,8 +22,12 @@ search("bad")  // return true
 search(".ad")  // return true
 search("b..")  // return true
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class WordDictionary {
     public class TrieNode {
@@ -123,4 +133,5 @@ public class WordDictionary {
         // Write your code here
         return find(word.toCharArray(), 0, root);
     }
-}
+}</code></pre>
+</div>

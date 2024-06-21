@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Rotate Image
 You are given an n x n 2D matrix representing an image.
 Rotate the image by 90 degrees (clockwise).
@@ -43,8 +49,12 @@ Then flip the matrix horizontally. (swap(matrix[i][j], matrix[i][matrix.length-1
 8  5  2
 9  6  3
 
-*/## Solution
-```java
+*/</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public void rotate(int[][] matrix) {
@@ -73,3 +83,5 @@ public class Solution {
          }
     }
 }
+</code></pre>
+</div>

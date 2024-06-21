@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* https://leetcode.com/problems/network-delay-time/
 You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi), where ui is the source node, 
 vi is the target node, and wi is the time it takes for a signal to travel from source to target.
@@ -35,8 +41,12 @@ All the pairs (ui, vi) are unique. (i.e., no multiple edges.)
 /*
  Dijkstra's Algorithm Time complexity: O(N+Elog⁡N)
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 class Solution {
     public Map<Integer, List<Pair<Integer, Integer>>> neighborMap = new HashMap<>();
     public int networkDelayTime(int[][] times, int n, int k) {
@@ -123,4 +133,5 @@ class Solution {
 
         return map;
     }
-}
+}</code></pre>
+</div>

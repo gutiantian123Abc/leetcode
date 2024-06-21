@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1064. Fixed Point
 https://leetcode.com/problems/fixed-point/
 
@@ -23,8 +29,12 @@ Input: arr = [-10,-5,3,4,7,9]
 Output: -1
 Explanation: There is no such i that arr[i] == i, thus the output is -1.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int fixedPoint(int[] arr) {
@@ -49,4 +59,5 @@ class Solution {
         return -1;
         
     }
-}
+}</code></pre>
+</div>

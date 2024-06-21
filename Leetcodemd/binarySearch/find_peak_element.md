@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Find Peak Element
 There is an integer array which has the following features:
 
@@ -69,8 +75,12 @@ T(m,n) = T(m/2,n/2)+c(m+n)
      * @param A: An integer matrix
      * @return: The index of the peak
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int findPeak(int[] A) {
@@ -146,3 +156,5 @@ class Solution {
         }
     }
 }
+</code></pre>
+</div>

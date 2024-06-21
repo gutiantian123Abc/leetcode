@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Number of Islands II
 Given a n,m which means the row and column of the 2D matrix and an array of pair A( size k). 
 Originally, the 2D matrix is all 0 which means there is only sea in the matrix. 
@@ -44,8 +50,12 @@ return [1,1,2,2].
      * @param operators an array of point
      * @return an integer array
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Method1: Array 并查集的应用
 
@@ -270,3 +280,5 @@ public class Solution {
 
 
 
+</code></pre>
+</div>

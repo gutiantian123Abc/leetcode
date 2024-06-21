@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Generalized Abbreviation
 Write a function to generate the generalized abbreviations of a word.
 
@@ -12,8 +18,12 @@ Given word = "word", return the following list (order does not matter):
 思路： 1. When keeping char,append num(>0) and add char to solution, keep backtracking
       2. When abbreviating char, increase num and keep backtracking
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 class Solution {
@@ -53,3 +63,5 @@ class Solution {
 
 
 
+</code></pre>
+</div>

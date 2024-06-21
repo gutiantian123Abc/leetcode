@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 题型总结：
 遇到TwoSum题型， 凡是遇到unsorted array, 一般用HashMap；
 遇到sorted array, 一般用Two Pointers
@@ -107,8 +113,12 @@ The minimum difference is 1. (4 - (2 + 1) = 1).
      * @param target an integer
      * @return the difference between the sum and the target
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -298,3 +308,5 @@ public class Solution {
 
 
 
+</code></pre>
+</div>

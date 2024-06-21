@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*
 https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/
 
@@ -26,8 +32,12 @@ Constraints:
 1 <= arr[i] <= 10^9
 0 <= k <= arr.length
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int findLeastNumOfUniqueInts(int[] arr, int k) {
@@ -80,4 +90,5 @@ class Solution {
         return ret;
         
     }
-}
+}</code></pre>
+</div>

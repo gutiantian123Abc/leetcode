@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Implement an iterator over a binary search tree (BST). 
 Your iterator will be initialized with the root node of a BST.
 
@@ -26,8 +32,12 @@ Special thanks to @ts for adding this problem and creating all test cases.
  * Your BSTIterator will be called like this:
  * BSTIterator i = new BSTIterator(root);
  * while (i.hasNext()) v[f()] = i.next();
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 public class BSTIterator {
@@ -57,3 +67,5 @@ public class BSTIterator {
     }
 }
 
+</code></pre>
+</div>

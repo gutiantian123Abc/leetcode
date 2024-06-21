@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Equal Tree Partition
 Given a binary tree with n nodes, your task is to check if it's 
 possible to partition the tree to two trees which have the equal 
@@ -47,8 +53,12 @@ after removing exactly one edge on the tree.
  *     TreeNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     private TreeNode realroot;
@@ -105,4 +115,5 @@ class Solution {
         ResultType1 right = getTotalSum(root.right);
         return new ResultType1(left.sum + right.sum + root.val);
     }
-}
+}</code></pre>
+</div>

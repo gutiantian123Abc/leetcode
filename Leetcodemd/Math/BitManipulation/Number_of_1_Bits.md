@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Number of 1 Bits
 Write a function that takes an unsigned integer and returns the number of ’1' bits it has 
 (also known as the Hamming weight).
@@ -28,8 +34,12 @@ To check the next bit, we shift the mask to the left by one.
 
 And so on.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 public class Solution {
@@ -52,4 +62,5 @@ public class Solution {
         return bits;
     
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*WordSearch II
 Given a matrix of lower alphabets and a dictionary.
 Find all words in the dictionary that can be found in the matrix. 
@@ -10,8 +16,12 @@ A word can start from any position in the matrix and go left/right/up/down to th
      * @param words: A list of string
      * @return: A list of string
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 //http://www.lintcode.com/en/problem/word-search-ii/
 
 //ONly solution！！！！！！:  Tire + DFS 搜索矩阵类字符串
@@ -121,4 +131,5 @@ public class Solution {
     
         return ans;
     }
-}
+}</code></pre>
+</div>

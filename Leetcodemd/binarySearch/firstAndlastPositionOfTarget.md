@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* First Position of Target
 For a given sorted array (ascending order) and a target number, 
 find the first index of this number in O(log n) time complexity.
@@ -26,8 +32,12 @@ For target = 6, return -1.
      * @param target: An integer
      * @return an integer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int binarySearch(int[] nums, int target) {
@@ -94,4 +104,5 @@ public class Solution {
         
         return -1;
     }
-}
+}</code></pre>
+</div>

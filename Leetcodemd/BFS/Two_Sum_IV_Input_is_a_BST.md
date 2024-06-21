@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Two Sum IV - Input is a BST
 Given a Binary Search Tree and a target number, 
 return true if there exist two elements in the BST such that their sum is 
@@ -37,8 +43,12 @@ Output: False
  *     TreeNode(int x) { val = x; }
  * }
  */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //本体只是一个不少的traverse 一遍 Tree, 然后用 TWO SUM 惯用的 HashMap 或 HashSet 记录就好
 class Solution {
@@ -74,3 +84,5 @@ class Solution {
     }
 }
 
+</code></pre>
+</div>

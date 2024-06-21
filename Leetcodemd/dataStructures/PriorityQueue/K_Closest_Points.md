@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* K Closest Points
 Given some points and a point origin in two dimensional space, find k points out of the some points which are nearest to origin.
 Return these points sorted by distance, if they are same with distance, sorted by x-axis, otherwise sorted by y-axis.
@@ -23,8 +29,12 @@ return [[1,1],[2,5],[4,4]]
      * @param k an integer
      * @return the k closest points
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public Point global_origin = null;
@@ -75,4 +85,5 @@ public class Solution {
         return answer;
         
     }
-}
+}</code></pre>
+</div>

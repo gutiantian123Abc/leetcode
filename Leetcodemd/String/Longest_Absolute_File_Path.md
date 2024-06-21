@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 643. Longest Absolute File Path
 https://www.lintcode.com/problem/longest-absolute-file-path
 Suppose we abstract our file system by a string in the following manner:
@@ -48,8 +54,12 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
      * @param input: an abstract file system
      * @return: return the length of the longest absolute path to file
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int lengthLongestPath(String input) {
@@ -74,4 +84,5 @@ public class Solution {
         
         return ans;
     }
-}
+}</code></pre>
+</div>

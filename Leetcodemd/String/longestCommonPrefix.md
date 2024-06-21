@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Longest Common Prefix
 
 Given k strings, find the longest common prefix (LCP).
@@ -20,8 +26,12 @@ Examples:
      * @param strs: A list of strings
      * @return: The longest common prefix
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 public class Solution {
@@ -46,4 +56,5 @@ public class Solution {
         
         return prefix;
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Insert Delete GetRandom O(1)
 
 Description
@@ -52,8 +58,12 @@ randomSet.getRandom();
  * boolean param = obj.insert(val);
  * boolean param = obj.remove(val);
  * int param = obj.getRandom();
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class RandomizedSet {
     private ArrayList<Integer> list;
@@ -113,3 +123,5 @@ public class RandomizedSet {
     }
 }
 
+</code></pre>
+</div>

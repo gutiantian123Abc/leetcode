@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Bomb Enemy
 
 Given a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' (the number zero), return the maximum enemies you can kill using one bomb.
@@ -19,8 +25,12 @@ return 3. (Placing a bomb at (1,1) kills 3 enemies)
      * @param grid Given a 2D grid, each cell is either 'W', 'E' or '0'
      * @return an integer, the maximum enemies you can kill using one bomb
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Space: mn, Time: mn
 public class Solution {
@@ -137,4 +147,5 @@ public class Solution {
         
         return res;
     }
-}
+}</code></pre>
+</div>

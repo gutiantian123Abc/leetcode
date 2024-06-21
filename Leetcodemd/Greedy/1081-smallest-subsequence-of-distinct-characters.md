@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1081. Smallest Subsequence of Distinct Characters
 https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/description/
 
@@ -27,8 +33,12 @@ s consists of lowercase English letters.
 
 Note: This question is the same as 316: https://leetcode.com/problems/remove-duplicate-letters/
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 class Solution {
     public String smallestSubsequence(String s) {
         Stack<Character> stack = new Stack<>();
@@ -64,4 +74,5 @@ class Solution {
         return res;
         
     }
-}
+}</code></pre>
+</div>

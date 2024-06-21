@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Minimize Max Distance to Gas Station
 On a horizontal number line, we have gas stations at positions stations[0], stations[1], ..., stations[N-1], 
 where N = stations.length.
@@ -21,8 +27,12 @@ Answers within 10^-6 of the true value will be accepted as correct.
 
 Solution: https://leetcode.com/problems/minimize-max-distance-to-gas-station/solution/
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public double minmaxGasDist(int[] stations, int K) {
@@ -48,3 +58,5 @@ class Solution {
         return count <= K;
     }
 }
+</code></pre>
+</div>

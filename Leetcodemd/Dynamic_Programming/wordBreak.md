@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Word Break
 Given a string s and a dictionary of words dict, 
 determine if s can be break into a space-separated sequence of one or more dictionary words.
@@ -11,8 +17,12 @@ Return true because "lintcode" can be break as "lint code".
      * @param s: A string s
      * @param dict: A dictionary of words dict
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //经典的DP， 好好读！！！
 public class Solution {
@@ -53,4 +63,5 @@ public class Solution {
         }
         return len;
     }
-}
+}</code></pre>
+</div>

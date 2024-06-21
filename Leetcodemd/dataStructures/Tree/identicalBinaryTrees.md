@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Identical Binary Tree
 Check if two binary trees are identical. 
 Identical means the two binary trees have the same structure and every identical 
@@ -34,8 +40,12 @@ are not identical.
      * @param a, b, the root of binary trees.
      * @return true if they are identical, or false.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public boolean isIdentical(TreeNode a, TreeNode b) {
@@ -50,4 +60,5 @@ public class Solution {
             return a.val == b.val && isIdentical(a.left , b.left) && isIdentical(a.right , b.right);
         }
     }
-}
+}</code></pre>
+</div>

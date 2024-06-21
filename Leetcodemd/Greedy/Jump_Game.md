@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Jump Game
 Given an array of non-negative integers, you are initially positioned at the first index of the array.
 
@@ -29,8 +35,12 @@ A = [3,2,1,0,4], return false.
      * @param A: A list of integers
      * @return: The boolean answer
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public boolean canJump(int[] A) {
@@ -47,3 +57,5 @@ public class Solution {
     }
 }
 
+</code></pre>
+</div>

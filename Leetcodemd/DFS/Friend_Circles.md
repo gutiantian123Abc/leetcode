@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Friend Circles
 
 There are N students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. 
@@ -46,8 +52,12 @@ To undergo DFS, we pick up a node and visit all its directly connected nodes. Bu
 we recursively apply the same process to them as well. Thus, we try to go as deeper into the levels of the graph as possible 
 starting from a current node first, leaving the other direct neighbour nodes to be visited later on.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 
 
@@ -79,4 +89,5 @@ class Solution {
             }
         }
     }
-}
+}</code></pre>
+</div>

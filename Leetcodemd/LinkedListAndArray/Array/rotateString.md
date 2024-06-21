@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*Rotate String
 Given a string and an offset, rotate string by offset. (rotate from left to right)
 
@@ -16,8 +22,12 @@ offset=3 => "efgabcd"
      * @param offset: an integer
      * @return: nothing
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public void rotateString(char[] str, int offset) {
@@ -40,4 +50,5 @@ public class Solution {
             end--;
         }
     }
-}
+}</code></pre>
+</div>

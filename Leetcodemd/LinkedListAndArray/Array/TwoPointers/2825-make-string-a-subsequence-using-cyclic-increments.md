@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 2825. Make String a Subsequence Using Cyclic Increments
 
 https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/
@@ -54,8 +60,12 @@ Constraints:
 str1 and str2 consist of only lowercase English letters.
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public boolean canMakeSubsequence(String str1, String str2) {
@@ -86,4 +96,5 @@ class Solution {
         return false;
         
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Implement Queue by Two Stacks
 As the title described, you should only use two stacks to implement a queue's actions.
 The queue should support push(element), pop() and top() 
@@ -15,8 +21,12 @@ top()     // return 2
 pop()     // return 2
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Queue {
     private Stack<Integer> stack1;
@@ -55,4 +65,5 @@ public class Queue {
         // write your code here
         return stack2.peek();
     }
-}
+}</code></pre>
+</div>

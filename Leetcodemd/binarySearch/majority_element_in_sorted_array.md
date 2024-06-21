@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1150. Check If a Number Is Majority Element in a Sorted Array
 https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/
 
@@ -22,8 +28,12 @@ Output: false
 Explanation: The value 101 appears 2 times and the length of the array is 4.
 Thus, 101 is not a majority element because 2 > 4/2 is false.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public boolean isMajorityElement(int[] nums, int target) {
@@ -71,4 +81,5 @@ class Solution {
         return (lastIndex - firstIndex + 1) > N/2;
         
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Palindrome Partitioning
 Given a string s, partition s such that every substring of the partition is a palindrome.
 Return all possible palindrome partitioning of s.
@@ -17,8 +23,12 @@ Given s = "aab", return:
      * @param s: A string
      * @return: A list of lists of string
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public List<List<String>> partition(String s) {
@@ -67,4 +77,5 @@ public class Solution {
         }
         return true;
     }
-}
+}</code></pre>
+</div>

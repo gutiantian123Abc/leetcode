@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Missing Ranges
 Given a sorted integer array where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
 
@@ -22,8 +28,12 @@ return ["-10 -> -1", "2", "4->49", "51->74", "76->100"].
      * @param upper: An integer
      * @return: a list of its missing ranges
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
@@ -71,4 +81,5 @@ public class Solution {
         ans.add(sb.toString());
         
     }
-}
+}</code></pre>
+</div>

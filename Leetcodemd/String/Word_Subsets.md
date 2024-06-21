@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Word Subsets
 https://leetcode.com/problems/word-subsets/
 
@@ -45,8 +51,12 @@ All words in A[i] are unique: there isn't i != j with A[i] == A[j].
 
 */
 /*If b is a subset of a, then say a is a superset of b. */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //Approach 1: Reduce to Single Word in B
 
@@ -88,4 +98,5 @@ class Solution {
         return res;
     }
     
-}
+}</code></pre>
+</div>

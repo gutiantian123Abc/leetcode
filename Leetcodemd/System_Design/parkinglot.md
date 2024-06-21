@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /*Parking Lot Design Using OO Design*/
 /* 2.Event listener infrastructure : 
 The next question is who will forward events to the controller. 
@@ -20,8 +26,12 @@ This enables a vehicle to enter through a different level(floor) and park at a c
 Validators are strategy objects to ensure flexibility around different parking policies that might 
 arise. Spot assignment is again based on strategy objects which decide which spot goes to which vehicle based on parameters.
 Additionally, it would be easy to add timekeeping as shown. This would aid billing.*/
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 // 1.Application controller : First object that will receive calls on application events.
 public enum ParkingLotController { //singleton facade controller
@@ -221,3 +231,5 @@ public interface ParkingSpotAssignmentStrategy {
 public interface VehicleValidationStrategy {
 	public void validate(Vehicle vehicle) throws IllegitimateVehicleException;
 }
+</code></pre>
+</div>

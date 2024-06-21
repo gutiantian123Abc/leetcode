@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* High Five
 There are two properties in the node student id and scores, to ensure that each student will have at least 5 points, 
 find the average of 5 highest scores for each person.
@@ -22,8 +28,12 @@ Return
      * @return find the average of 5 highest scores for each person
      * Map<Integer, Double> (student_id, average_score)
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public Map<Integer, Double> highFive(Record[] results) {
@@ -68,4 +78,5 @@ public class Solution {
         return answer;        
 
     }
-}
+}</code></pre>
+</div>

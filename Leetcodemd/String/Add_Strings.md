@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 655. Add Strings
 Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.
 
@@ -18,8 +24,12 @@ You must not use any built-in BigInteger library or convert the inputs to intege
      * @param num2: a non-negative integers
      * @return: return sum of num1 and num2
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public String addStrings(String num1, String num2) {
@@ -50,3 +60,5 @@ public class Solution {
         
     }
 }
+</code></pre>
+</div>

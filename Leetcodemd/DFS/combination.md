@@ -1,12 +1,22 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 题目描述
 Given an array A and k, return all possible combinations of k numbers out of the array A.
 For example, If A = [1,2,3,4] and k = 2, a solution is:
 [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ]
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public List<List<Integer>> combine(int[] A, int k) {
@@ -33,4 +43,5 @@ public class Solution {
             
         }
     }
-}
+}</code></pre>
+</div>

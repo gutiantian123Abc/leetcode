@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Continuous Subarray Sum
 Given a list of non-negative numbers and a target integer k, write a function to check if 
 the array has a continuous subarray of size at least 2 that sums up to the multiple of k, that is, 
@@ -17,8 +23,12 @@ Note:
 The length of the array won't exceed 10,000.
 You may assume the sum of all the numbers is in the range of a signed 32-bit integer.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 //1.简单方法， subarray sum 模板， Time O(n^2), Space O(n)
 class Solution {
@@ -59,4 +69,5 @@ class Solution {
         
         return false;
     }
-}
+}</code></pre>
+</div>

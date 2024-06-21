@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 1615. Maximal Network Rank
 
 https://leetcode.com/problems/maximal-network-rank/
@@ -55,8 +61,12 @@ roads[i].length == 2
 ai != bi
 Each pair of cities has at most one road connecting them.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {
@@ -94,4 +104,5 @@ class Solution {
         return max;
         
     }
-}
+}</code></pre>
+</div>

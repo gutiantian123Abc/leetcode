@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Sentence Screen Fitting: https://www.lintcode.com/problem/sentence-screen-fitting/description
 Given a rows x cols screen and a sentence represented by a list of non-empty words, 
 find how many times the given sentence can be fitted on the screen.
@@ -37,8 +43,12 @@ Total words in the sentence won't exceed 100.
 Length of each word is greater than 0 and won't exceed 10.
 1 ≤ rows, cols ≤ 20,000
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int wordsTyping(String[] sentence, int rows, int cols) {
@@ -69,3 +79,5 @@ class Solution {
         return times;
     }
 }
+</code></pre>
+</div>

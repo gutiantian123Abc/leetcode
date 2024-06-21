@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Top k Largest Numbers 
 Given an integer array, find the top k largest numbers in it.
 
@@ -14,8 +20,12 @@ Return [1000, 100, 10].
      * @param k an integer
      * @return the top k largest numbers in array
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int[] topk(int[] nums, int k) {
@@ -64,3 +74,5 @@ class Solution {
     	nums[b] = tmp;
     }
 };
+</code></pre>
+</div>

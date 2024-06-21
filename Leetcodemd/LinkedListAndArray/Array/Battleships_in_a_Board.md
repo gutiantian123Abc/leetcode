@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Battleships in a Board
 Given an 2D board, count how many battleships are in it. 
 The battleships are represented with 'X's, empty slots are represented with '.'s. 
@@ -26,8 +32,12 @@ Follow up:
 Could you do it in one-pass, using only O(1) extra memory and without modifying the 
 value of the board?
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public int countBattleships(char[][] board) {
@@ -56,4 +66,5 @@ class Solution {
         
         return count;
     }
-}
+}</code></pre>
+</div>

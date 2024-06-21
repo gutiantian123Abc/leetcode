@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Merge Two Sorted Lists
 Merge two sorted (ascending) linked lists and return it as a new sorted list. The new sorted list should be made by splicing together the nodes of the two lists and sorted in ascending order.
 Example
@@ -50,8 +56,12 @@ return -1->2->4->null.
      * @param lists: a list of ListNode
      * @return: The head of one sorted list.
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -125,3 +135,5 @@ public class Solution {
     }
 }
 
+</code></pre>
+</div>

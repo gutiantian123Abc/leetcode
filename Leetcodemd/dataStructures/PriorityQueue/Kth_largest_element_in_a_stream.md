@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 703. Kth Largest Element in a Stream
 https://leetcode.com/problems/kth-largest-element-in-a-stream/
 
@@ -32,8 +38,12 @@ kthLargest.add(4);   // return 8
  * Your KthLargest object will be instantiated and called as such:
  * KthLargest obj = new KthLargest(k, nums);
  * int param_1 = obj.add(val);
- */## Solution
-```java
+ */</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class KthLargest {
     public int K = 0;
@@ -73,3 +83,5 @@ class KthLargest {
     }
 }
 
+</code></pre>
+</div>

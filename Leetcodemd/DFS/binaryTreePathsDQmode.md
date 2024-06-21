@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Binary Tree Paths DQ mode (注意看 traverse mode)
 Given a binary tree, return all root-to-leaf paths.
 
@@ -33,8 +39,12 @@ All root-to-leaf paths are:
      * @param root the root of the binary tree
      * @return all root-to-leaf paths
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution { //记住， DQ 方法一定是返回 Result!!!!!!!!!!!!
      
@@ -81,4 +91,5 @@ public class Solution { //记住， DQ 方法一定是返回 Result!!!!!!!!!!!!
         }
         return new ResultType(paths);
     }
-}
+}</code></pre>
+</div>

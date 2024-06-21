@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Decode Ways 
 A message containing letters from A-Z is being encoded to numbers using the following mapping:
 
@@ -16,8 +22,12 @@ The number of ways decoding 12 is 2.
      * @param s a string,  encoded message
      * @return an integer, the number of ways decoding
      */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class Solution {
     public int numDecodings(String s) {
@@ -49,4 +59,5 @@ public class Solution {
         return f[len];
         
     }
-}
+}</code></pre>
+</div>

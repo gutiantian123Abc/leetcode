@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 271. Encode and Decode String
 
 Design an algorithm to encode a list of strings to a string. 
@@ -37,8 +43,12 @@ Do not rely on any library method such as eval or serialize methods.
 You should implement your own encode/decode algorithm.
 
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
@@ -73,3 +83,5 @@ public class Codec {
     }
 }
 
+</code></pre>
+</div>

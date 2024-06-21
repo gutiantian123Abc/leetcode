@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Largest Triangle Area
 You have a list of points in the plane. 
 Return the area of the largest triangle that can be formed by any 3 of the points.
@@ -18,8 +24,12 @@ No points will be duplicated.
  -50 <= points[i][j] <= 50.
 Answers within 10^-6 of the true value will be accepted as correct.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 //讲解： 
 // https://leetcode.com/problems/largest-triangle-area/discuss/122711/C++JavaPython-Solution-with-Explanation-and-Prove
 class Solution {
@@ -35,4 +45,5 @@ class Solution {
         }
         return res;       
     }
-}
+}</code></pre>
+</div>

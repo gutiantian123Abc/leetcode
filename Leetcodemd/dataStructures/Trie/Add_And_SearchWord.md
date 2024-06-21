@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* Add and Search Word
 Design a data structure that supports the following two operations: addWord(word) and search(word)
 
@@ -19,8 +25,12 @@ search("b..")  // return true
 /*BFS + Tire*/
 /* DFS version
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 //知识要点： 这里因为是在遍历Trie找词， 所以BFS和在DFS都可以应用， 但WordSearch题目里则只能用DFS！！！
 public class WordDictionary {
     
@@ -225,3 +235,5 @@ public class WordDictionary {
     }
 }
 
+</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 2375. Construct Smallest Number From DI String
 https://leetcode.com/problems/construct-smallest-number-from-di-string/description/
 
@@ -48,8 +54,12 @@ Constraints:
 1 <= pattern.length <= 8
 pattern consists of only the letters 'I' and 'D'.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public String smallestNumber(String pattern) {
@@ -80,4 +90,5 @@ class Solution {
         
         return sb.toString();
     }
-}
+}</code></pre>
+</div>

@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* 836. Rectangle Overlap
 https://leetcode.com/problems/rectangle-overlap/
 
@@ -31,8 +37,12 @@ Example 3:
 Input: rec1 = [0,0,1,1], rec2 = [2,2,3,3]
 Output: false
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 class Solution {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
@@ -46,4 +56,5 @@ class Solution {
         
         return left < right && bottom < top;
     }
-}
+}</code></pre>
+</div>

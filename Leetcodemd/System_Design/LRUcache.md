@@ -1,5 +1,11 @@
-## Problem Description
-```
+<style>
+  .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
+  .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
+</style>
+
+<h2>Problem Description</h2>
+<div class='comment-block'>
+<pre>
 /* LRU Cache
 Design and implement a data structure for Least Recently Used (LRU) cache. 
 It should support the following operations: get and set.
@@ -10,8 +16,12 @@ set(key, value) - Set or insert the value if the key is not already present.
 When the cache reached its capacity, 
 it should invalidate the least recently used item before inserting a new item.
 */
-## Solution
-```java
+</pre>
+</div>
+
+<h2>Solution</h2>
+<div class='code-block'>
+<pre><code class='language-java'>
 
 public class LRU {  // Idea: head -> (LRU) -> ... -> (MRU) -> tail
 
@@ -77,4 +87,5 @@ public class LRU {  // Idea: head -> (LRU) -> ... -> (MRU) -> tail
         tail.prev = current;
         current.prev.next = current;
         current.next = tail;
-    }
+    }</code></pre>
+</div>
