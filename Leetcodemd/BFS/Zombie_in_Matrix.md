@@ -1,8 +1,11 @@
 <style>
+  body { font-family: Arial, sans-serif; }
+  .container { max-width: 600px; margin: auto; padding: 20px; }
   .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
 </style>
 
+<div class='container'>
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
@@ -87,4 +90,5 @@ public class Solution {
         return days - 1; //早晚有一天， zanmbie 传染不动了， 最后一天 Queue 要把最后一层zonmbie 吐出来, days 不能增加的
    }
 }</code></pre>
+</div>
 </div>

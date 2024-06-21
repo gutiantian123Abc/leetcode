@@ -1,8 +1,11 @@
 <style>
+  body { font-family: Arial, sans-serif; }
+  .container { max-width: 600px; margin: auto; padding: 20px; }
   .comment-block { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #ccc; }
   .code-block { background-color: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
 </style>
 
+<div class='container'>
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
@@ -103,4 +106,5 @@ class Solution {
         }
     }
 }</code></pre>
+</div>
 </div>
