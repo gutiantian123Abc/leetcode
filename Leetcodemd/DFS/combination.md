@@ -12,8 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* 题目描述
-Given an array A and k, return all possible combinations of k numbers out of the
-array A.
+Given an array A and k, return all possible combinations of
+k numbers out of the array A.
 For example, If A = [1,2,3,4] and k = 2, a solution is:
 [ [2,4], [3,4], [2,3], [1,2], [1,3], [1,4], ]
 */

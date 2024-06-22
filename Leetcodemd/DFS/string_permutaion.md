@@ -12,10 +12,11 @@
 <div class='comment-block'>
 <pre>
 /* String Permutation
-Given two strings, write a method to decide if one is a permutation of the
-other.
+Given two strings, write a method to decide if one is a
+permutation of the other.
 Example
-abcd is a permutation of bcad, but abbe is not a permutation of abe
+abcd is a permutation of bcad, but abbe is not a permutation
+of abe
 */
     /*
      * @param A: a string
@@ -23,10 +24,12 @@ abcd is a permutation of bcad, but abbe is not a permutation of abe
      * @return: a boolean
      */
 /* String Permutation II
-Given a string, find all permutations of it without duplicates.
+Given a string, find all permutations of it without
+duplicates.
 Example
 Given "abb", return ["abb", "bab", "bba"].
-Given "aabb", return ["aabb", "abab", "baba", "bbaa", "abba", "baab"].
+Given "aabb", return ["aabb", "abab", "baba", "bbaa",
+"abba", "baab"].
 这道题就是permutaions II
 */
     /*

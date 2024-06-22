@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Convert Binary Search Tree to Doubly Linked List
-Convert a binary search tree to doubly linked list with in-order traversal.
+Convert a binary search tree to doubly linked list with in-
+order traversal.
 Example
 Given a binary search tree:
     4

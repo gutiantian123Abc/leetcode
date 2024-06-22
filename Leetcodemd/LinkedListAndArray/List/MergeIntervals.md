@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /*
-Given a collection of intervals, merge all overlapping intervals.
+Given a collection of intervals, merge all overlapping
+intervals.
 [                     [
   [1, 3],               [1, 6],
   [2, 6],      =>       [8, 10],

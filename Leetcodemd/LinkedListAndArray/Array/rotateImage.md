@@ -31,8 +31,8 @@ rotate it by 90 degrees (clockwise), return
      * @return: Void
      */
 /*
-The idea was firstly transpose the matrix and then flip it symmetrically. For
-instance,
+The idea was firstly transpose the matrix and then flip it
+symmetrically. For instance,
 1  2  3
 4  5  6
 7  8  9

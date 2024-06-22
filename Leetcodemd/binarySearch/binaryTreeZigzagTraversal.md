@@ -12,10 +12,10 @@
 <div class='comment-block'>
 <pre>
 /* Binary Tree Zigzag Level Order Traversal
-Given a binary tree, return the zigzag level order traversal of its nodes'
-values.
-(ie, from left to right, then right to left for the next level and alternate
-between).
+Given a binary tree, return the zigzag level order traversal
+of its nodes' values.
+(ie, from left to right, then right to left for the next
+level and alternate between).
 Example
 Given binary tree {3,9,20,#,#,15,7},
     3
@@ -44,7 +44,8 @@ return its zigzag level order traversal as:
     /**
      * @param root: The root of binary tree.
      * @return: A list of lists of integer include
-     *          the zigzag level order traversal of its nodes' values
+     *          the zigzag level order traversal of its
+nodes' values
      */
 </pre>
 </div>

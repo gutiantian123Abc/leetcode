@@ -13,8 +13,9 @@
 <pre>
 /* Unique Paths
 A robot is located at the top-left corner of a m x n grid.
-The robot can only move either down or right at any point in time. The robot is
-trying to reach the bottom-right corner of the grid.
+The robot can only move either down or right at any point in
+time. The robot is trying to reach the bottom-right corner
+of the grid.
 How many possible unique paths are there?
 Notice
 m and n will be at most 100.
@@ -31,13 +32,15 @@ Given m = 4 and n = 5, return 35.
      * @return an integer
      */
 /* Unique Paths II
-Now consider if some obstacles are added to the grids. How many unique paths
-would there be?
-An obstacle and empty space is marked as 1 and 0 respectively in the grid.
+Now consider if some obstacles are added to the grids. How
+many unique paths would there be?
+An obstacle and empty space is marked as 1 and 0
+respectively in the grid.
 m and n will be at most 100.
 Example
 For example,
-There is one obstacle in the middle of a 3x3 grid as illustrated below.
+There is one obstacle in the middle of a 3x3 grid as
+illustrated below.
 [
   [0,0,0],
   [0,1,0],

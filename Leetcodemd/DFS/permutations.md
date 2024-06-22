@@ -14,7 +14,8 @@
 /* Permutations
 Given a list of numbers, return all possible permutations.
 Notice
-You can assume that there is no duplicate numbers in the list.
+You can assume that there is no duplicate numbers in the
+list.
 Example:
 For nums = [1,2,3], the permutations are:
 [
@@ -31,8 +32,8 @@ For nums = [1,2,3], the permutations are:
      * @return: A list of permutations.
      */
 /* Permutations II
-Given a list of numbers with duplicate number in it. Find all unique
-permutations.
+Given a list of numbers with duplicate number in it. Find
+all unique permutations.
 Example
 For numbers [1,2,2] the unique permutations are:
 [

@@ -12,16 +12,20 @@
 <div class='comment-block'>
 <pre>
 /* Generalized Abbreviation
-Write a function to generate the generalized abbreviations of a word.
+Write a function to generate the generalized abbreviations
+of a word.
 Example:
-Given word = "word", return the following list (order does not matter):
-["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d",
+Given word = "word", return the following list (order does
+not matter):
+["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d",
+"wo2", "1o1d",
 "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
 */
 /*
-思路： 1. When keeping char,append num(>0) and add char to solution, keep
+思路： 1. When keeping char,append num(>0) and add char to
+solution, keep backtracking
+      2. When abbreviating char, increase num and keep
 backtracking
-      2. When abbreviating char, increase num and keep backtracking
 */
 </pre>
 </div>

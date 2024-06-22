@@ -13,7 +13,8 @@
 <pre>
 /*
 A linked list is given such that each node contains
-an additional random pointer which could point to any node in the list or null.
+an additional random pointer which could point to any node
+in the list or null.
 Return a deep copy of the list.
 */
 /**
@@ -25,7 +26,8 @@ Return a deep copy of the list.
  * };
  */
     /**
-     * @param head: The head of linked list with a random pointer.
+     * @param head: The head of linked list with a random
+pointer.
      * @return: A new head of a deep copy of the list.
      */
 </pre>

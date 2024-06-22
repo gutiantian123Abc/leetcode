@@ -12,8 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Number of Airplanes in the Sky
-Given an interval list which are flying and landing time of the flight. How many
-airplanes are on the sky at most?
+Given an interval list which are flying and landing time of
+the flight. How many airplanes are on the sky at most?
 Example
 For interval list
 [
@@ -24,8 +24,8 @@ For interval list
 ]
 Return 3
 Notice
-If landing and flying happens at the same time, we consider landing should
-happen at first.
+If landing and flying happens at the same time, we consider
+landing should happen at first.
 */
 /* 知识要点：
 Sweep Line

@@ -12,11 +12,11 @@
 <div class='comment-block'>
 <pre>
 /* Sort Colors I
-Given an array with n objects colored red, white or blue, sort them so that
-objects of the same color are adjacent,
+Given an array with n objects colored red, white or blue,
+sort them so that objects of the same color are adjacent,
 with the colors in the order red, white and blue.
-Here, we will use the integers 0, 1, and 2 to represent the color red, white,
-and blue respectively.
+Here, we will use the integers 0, 1, and 2 to represent the
+color red, white, and blue respectively.
 Example
 Given [1, 0, 1, 2], sort it in-place to [0, 1, 1, 2].
 */
@@ -29,18 +29,22 @@ O(nlogk, k 是数值最大跨度), no extra memory!!!
      * @return: nothing
      */
 /* Sort Colors II
-Given an array of n objects with k different colors (numbered from 1 to k), sort
-them so that objects of the same color are adjacent,
+Given an array of n objects with k different colors
+(numbered from 1 to k), sort them so that objects of the
+same color are adjacent,
 with the colors in the order 1, 2, ... k.
 Notice
-You are not suppose to use the library's sort function for this problem.
+You are not suppose to use the library's sort function for
+this problem.
 k <= n
 Example
-Given colors=[3, 2, 2, 1, 4], k=4, your code should sort colors in-place to [1,
-2, 2, 3, 4].
+Given colors=[3, 2, 2, 1, 4], k=4, your code should sort
+colors in-place to [1, 2, 2, 3, 4].
 Challenge
-A rather straight forward solution is a two-pass algorithm using counting sort.
-That will cost O(k) extra memory. Can you do it without using extra memory?
+A rather straight forward solution is a two-pass algorithm
+using counting sort.
+That will cost O(k) extra memory. Can you do it without
+using extra memory?
 Same thing !!!
 O(nlogk, k 是数值最大跨度), no extra memory!!!
 */

@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Kth Smallest Number in Sorted Matrix 解题思路： 寻找下面所有最可能
-Find the kth smallest number in at row and column sorted matrix.
+Find the kth smallest number in at row and column sorted
+matrix.
 Example
 Given k = 4 and a matrix:
 [
@@ -22,8 +23,8 @@ Given k = 4 and a matrix:
 ]
 return 5
 Challenge
-Solve it in O(k log n) time where n is the bigger one between row size and
-column size.
+Solve it in O(k log n) time where n is the bigger one
+between row size and column size.
 */
     /**
      * @param matrix: a matrix of integers
@@ -31,9 +32,10 @@ column size.
      * @return: the kth smallest number in the matrix
      */
 /* Kth Smallest Sum In Two Sorted Arrays 解题思路： 寻找下面所有最可能
-Given two integer arrays sorted in ascending order and an integer k. Define sum
-= a + b, where a is an element from the first array and b is an element from the
-second one. Find the kth smallest sum out of all possible sums.
+Given two integer arrays sorted in ascending order and an
+integer k. Define sum = a + b, where a is an element from
+the first array and b is an element from the second one.
+Find the kth smallest sum out of all possible sums.
 Have you met this question in a real interview? Yes
 Example
 Given [1, 7, 11] and [2, 4, 6].
@@ -42,8 +44,10 @@ For k = 4, return 9.
 For k = 8, return 15.
 Challenge
 Do it in either of the following time complexity:
-O(k log min(n, m, k)). where n is the size of A, and m is the size of B.
-O( (m + n) log maxValue). where maxValue is the max number in A and B.
+O(k log min(n, m, k)). where n is the size of A, and m is
+the size of B.
+O( (m + n) log maxValue). where maxValue is the max number
+in A and B.
 */
     /**
      * @param A an integer arrays sorted in ascending order

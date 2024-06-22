@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Merge k Sorted Arrays
-Given k sorted integer arrays, merge them into one sorted array.
+Given k sorted integer arrays, merge them into one sorted
+array.
 Example
 Given 3 sorted arrays:
 [

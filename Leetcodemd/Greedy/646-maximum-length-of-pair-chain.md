@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* 646. Maximum Length of Pair Chain
-https://leetcode.com/problems/maximum-length-of-pair-chain/description/
+https://leetcode.com/problems/maximum-length-of-pair-
+chain/description/
 You are given an array of n pairs pairs
 where pairs[i] = [lefti, righti] and lefti < righti.
 A pair p2 = [c, d] follows a pair p1 = [a, b] if b < c.

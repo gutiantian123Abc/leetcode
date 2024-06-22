@@ -12,18 +12,22 @@
 <div class='comment-block'>
 <pre>
 /* Minimum Window Substring
-Given a string source and a string target, find the minimum window in source
-which will contain all the characters in target.
+Given a string source and a string target, find the minimum
+window in source which will contain all the characters in
+target.
 Notice
-If there is no such window in source that covers all characters in target,
-return the emtpy string "".
-If there are multiple such windows, you are guaranteed that there will always be
-only one unique minimum window in source.
+If there is no such window in source that covers all
+characters in target, return the emtpy string "".
+If there are multiple such windows, you are guaranteed that
+there will always be only one unique minimum window in
+source.
 Clarification
-Should the characters in minimum window has the same order in target?
+Should the characters in minimum window has the same order
+in target?
 Not necessary.
 Example
-For source = "ADOBECODEBANC", target = "ABC", the minimum window is "BANC"
+For source = "ADOBECODEBANC", target = "ABC", the minimum
+window is "BANC"
 Challenge
 Complexity O(n)
 */
@@ -49,7 +53,8 @@ Complexity O(n)
       */
 /* 额外知识点: Heating Map int[256],
 用以查看source String 是否包含 target String, 这里不考虑顺序！！！
-    private boolean contains(int[] sourceHeatingMap, int[] targetHeatingMap) {
+    private boolean contains(int[] sourceHeatingMap, int[]
+targetHeatingMap) {
         for(int i = 0; i < 256; i++) {
             if(sourceHeatingMap[i] < targetHeatingMap[i]) {
                 return false;

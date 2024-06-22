@@ -12,9 +12,11 @@
 <div class='comment-block'>
 <pre>
 /* One Edit Distance
-Given two strings s and t, determine if they are both one edit distance apart.
+Given two strings s and t, determine if they are both one
+edit distance apart.
 Note:
-There are 3 possiblities to satisify one edit distance apart:
+There are 3 possiblities to satisify one edit distance
+apart:
 Insert a character into s to get t
 Delete a character from s to get t
 Replace a character of s to get t

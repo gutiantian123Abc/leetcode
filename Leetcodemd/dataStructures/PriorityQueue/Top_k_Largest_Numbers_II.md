@@ -14,8 +14,8 @@
 /* Top k Largest Numbers II
 Implement a data structure, provide two interfaces:
 add(number). Add a new number in the data structure.
-topk(). Return the top k largest numbers in this data structure. k is given when
-we create the data structure.
+topk(). Return the top k largest numbers in this data
+structure. k is given when we create the data structure.
 Example
 s = new Solution(3);
 >> create a new data structure.

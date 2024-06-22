@@ -12,13 +12,14 @@
 <div class='comment-block'>
 <pre>
 /*  Knight Shortest Path
-Given a knight in a chessboard (a binary matrix with 0 as empty and 1 as
-barrier) with a source position,
-find the shortest path to a destination position, return the length of the
-route.
+Given a knight in a chessboard (a binary matrix with 0 as
+empty and 1 as barrier) with a source position,
+find the shortest path to a destination position, return the
+length of the route.
 Return -1 if knight can not reached.
 Clarification
-If the knight is at (x, y), he can get to the following positions in one step:
+If the knight is at (x, y), he can get to the following
+positions in one step:
 (x + 1, y + 2)
 (x + 1, y - 2)
 (x - 1, y + 2)
@@ -50,7 +51,8 @@ source = [2, 0] destination = [2, 2] return -1
  * }
  */
     /**
-     * @param grid a chessboard included 0 (false) and 1 (true)
+     * @param grid a chessboard included 0 (false) and 1
+(true)
      * @param source, destination a point
      * @return the shortest path
      */

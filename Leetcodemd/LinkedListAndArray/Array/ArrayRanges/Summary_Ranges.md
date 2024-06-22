@@ -11,9 +11,10 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Summary Ranges: https://www.lintcode.com/problem/summary-ranges/description
-Given a sorted integer array without duplicates, return the summary of its
-ranges.
+/* Summary Ranges: https://www.lintcode.com/problem/summary-
+ranges/description
+Given a sorted integer array without duplicates, return the
+summary of its ranges.
 Example
 Example 1:
 Input: [0,1,2,4,5,7]
@@ -25,7 +26,8 @@ Notice
 The result is in ascending order
 */
     /**
-     * @param nums:  a sorted integer array without duplicates
+     * @param nums:  a sorted integer array without
+duplicates
      * @return: the summary of its ranges
      */
 </pre>

@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Binary Tree Preorder Traversal
-Given a binary tree, return the preorder traversal of its nodes' values.
+Given a binary tree, return the preorder traversal of its
+nodes' values.
 Example
 Given:
     1
@@ -35,7 +36,8 @@ return [1,2,4,5,3].
  */
     /**
      * @param root: The root of binary tree.
-     * @return: Preorder in ArrayList which contains node values.
+     * @return: Preorder in ArrayList which contains node
+values.
      */
 </pre>
 </div>

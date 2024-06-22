@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Implement Trie
-Implement a trie with insert, search, and startsWith methods.
+Implement a trie with insert, search, and startsWith
+methods.
 Example
 insert("lintcode")
 search("code")

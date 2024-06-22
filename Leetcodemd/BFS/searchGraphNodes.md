@@ -13,9 +13,11 @@
 <pre>
 /* Search Graph Nodes
 Given a undirected graph, a node and a target,
-return the nearest node to given node which value of it is target,
+return the nearest node to given node which value of it is
+target,
 return NULL if you can't find.
-There is a mapping store the nodes' values in the given parameters.
+There is a mapping store the nodes' values in the given
+parameters.
 Example
 2------3  5
  \     |  |
@@ -24,7 +26,8 @@ Example
     \  |  |
       1 --4
 Give a node 1, target is 50
-there a hash named values which is [3,4,10,50,50], represent:
+there a hash named values which is [3,4,10,50,50],
+represent:
 Value of node 1 is 3
 Value of node 2 is 4
 Value of node 3 is 10
@@ -38,13 +41,15 @@ Return node 4
  *     int label;
  *     ArrayList<UndirectedGraphNode> neighbors;
  *     UndirectedGraphNode(int x) {
- *         label = x; neighbors = new ArrayList<UndirectedGraphNode>();
+ *         label = x; neighbors = new
+ArrayList<UndirectedGraphNode>();
  *     }
  * };
  */
     /**
      * @param graph a list of Undirected graph node
-     * @param values a hash mapping, <UndirectedGraphNode, (int)value>
+     * @param values a hash mapping, <UndirectedGraphNode,
+(int)value>
      * @param node an Undirected graph node
      * @param target an integer
      * @return the a node

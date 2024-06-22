@@ -12,9 +12,9 @@
 <div class='comment-block'>
 <pre>
 /* Coins in a Line I
-There are n coins in a line. Two players take turns to take one or two coins
-from right side until there are no more coins left. The player who take the last
-coin wins.
+There are n coins in a line. Two players take turns to take
+one or two coins from right side until there are no more
+coins left. The player who take the last coin wins.
 Could you please decide the first play will win or lose?
 Have you met this question in a real interview? Yes
 Example
@@ -28,7 +28,8 @@ O(n) time and O(1) memory
 */
     /**
      * @param n: an integer
-     * @return: a boolean which equals to true if the first player will win
+     * @return: a boolean which equals to true if the first
+player will win
      */
 </pre>
 </div>

@@ -12,15 +12,18 @@
 <div class='comment-block'>
 <pre>
 /* Partition Array I
-Given an array nums of integers and an int k, partition the array
+Given an array nums of integers and an int k, partition the
+array
 (i.e move the elements in "nums") such that:
 All elements < k are moved to the left
 All elements >= k are moved to the right
-Return the partitioning index, i.e the first index i nums[i] >= k.
+Return the partitioning index, i.e the first index i nums[i]
+>= k.
 Notice
-You should do really partition in array nums instead of just counting the
-numbers of integers smaller than k.
-If all elements in nums are smaller than k, then return nums.length
+You should do really partition in array nums instead of just
+counting the numbers of integers smaller than k.
+If all elements in nums are smaller than k, then return
+nums.length
 Example
 If nums = [3,2,2,1] and k=2, a valid answer is 1.
 Challenge
@@ -41,11 +44,13 @@ Return any of the possible solutions.
 Example
 Given [4,3,4,1,2,3,1,2], and low = 2 and high = 3.
 Change to [1,1,2,3,2,3,4,4].
-([1,1,2,2,3,3,4,4] is also a correct answer, but [1,2,1,2,3,3,4,4] is not)
+([1,1,2,2,3,3,4,4] is also a correct answer, but
+[1,2,1,2,3,3,4,4] is not)
 中间爱咋排序咋哦排序 (in place)!!
 */
 /*
-解题思路： 经典的分区式分割排序， 跟上体思路一致， 只是在每个loop之后right 重置到 nums.length - 1
+解题思路： 经典的分区式分割排序， 跟上体思路一致， 只是在每个loop之后right 重置到 nums.length
+- 1
 */
     /**
      * @param nums an integer array

@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Rotate List
-Given a list, rotate the list to the right by k places, where k is non-negative.
+Given a list, rotate the list to the right by k places,
+where k is non-negative.
 Example
 Given 1->2->3->4->5 and k = 2, return 4->5->1->2->3.
 */
@@ -37,9 +38,11 @@ For linked list 1->2->3, the reversed linked list is 3->2->1
      */
 /* 拓展  Reverse Linked List II
 Reverse a linked list from position m to n.
-Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
+Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤
+length of list.
 Example
-Given 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.
+Given 1->2->3->4->5->NULL, m = 2 and n = 4, return
+1->4->3->2->5->NULL.
 Challenge
 Reverse it in-place and in one-pass
 */

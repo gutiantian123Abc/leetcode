@@ -16,12 +16,14 @@ Super important, this is Cataline Combination problem：
 EX: 小明有5个不同编号的苹果， 小红有8个， 小兰有9个， 问他们每人出一个苹果
 会有集中可能呀？
 Given a digit string excluded 01,
-return all possible letter combinations that the number could represent.
-A mapping of digit to letters (just like on the telephone buttons) is given
-below.
+return all possible letter combinations that the number
+could represent.
+A mapping of digit to letters (just like on the telephone
+buttons) is given below.
 Example
 Given "23"
-Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+Return ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce",
+"cf"]
 */
     /**
      * @param digits A digital string

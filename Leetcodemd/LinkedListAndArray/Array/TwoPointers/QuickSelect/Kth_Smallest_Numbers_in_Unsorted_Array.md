@@ -11,9 +11,11 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Find the kth smallest numbers in an unsorted integer array.
+/* Find the kth smallest numbers in an unsorted integer
+array.
 Example
-Given [3, 4, 1, 2, 5], k = 3, the 3rd smallest numbers are [1, 2, 3].
+Given [3, 4, 1, 2, 5], k = 3, the 3rd smallest numbers are
+[1, 2, 3].
 Complexity O(n)!!!
 */
     /*

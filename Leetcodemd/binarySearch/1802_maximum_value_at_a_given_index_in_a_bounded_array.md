@@ -11,10 +11,11 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-
-array/description/
+/* https://leetcode.com/problems/maximum-value-at-a-given-
+index-in-a-bounded-array/description/
 You are given three positive integers: n, index, and maxSum.
-You want to construct an array nums (0-indexed) that satisfies
+You want to construct an array nums (0-indexed) that
+satisfies
 the following conditions:
 nums.length == n
 nums[i] is a positive integer where 0 <= i < n.
@@ -26,7 +27,8 @@ Note that abs(x) equals x if x >= 0, and -x otherwise.
 Example 1:
 Input: n = 4, index = 2,  maxSum = 6
 Output: 2
-Explanation: nums = [1,2,2,1] is one array that satisfies all
+Explanation: nums = [1,2,2,1] is one array that satisfies
+all
 the conditions.
 There are no arrays that satisfy all the conditions
 and have nums[2] == 3,
@@ -40,8 +42,8 @@ Constraints:
 */
         /*
         Forming two arithmetic sequences.
-        One sequence increases towards index, and the other decreases away from
-it.
+        One sequence increases towards index, and the other
+decreases away from it.
                 （首项 加 末项）乘以 项数 除以2
         */
 </pre>

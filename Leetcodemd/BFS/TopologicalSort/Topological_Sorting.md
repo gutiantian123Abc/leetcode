@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Topological Sorting
-https://www.lintcode.com/problem/topological-sorting/description
+https://www.lintcode.com/problem/topological-
+sorting/description
 */
 /**
  * Definition for Directed graph.

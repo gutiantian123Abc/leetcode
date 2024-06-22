@@ -13,37 +13,45 @@
 <pre>
 /* 621. Task Scheduler
 https://leetcode.com/problems/task-scheduler/description/
-Given a characters array tasks, representing the tasks a CPU needs to do,
-where each letter represents a different task. Tasks could be done in any order.
-Each task is done in one unit of time. For each unit of time,
+Given a characters array tasks, representing the tasks a CPU
+needs to do,
+where each letter represents a different task. Tasks could
+be done in any order.
+Each task is done in one unit of time. For each unit of
+time,
 the CPU could complete either one task or just be idle.
-However, there is a non-negative integer n that represents the cooldown period
-between two same tasks (the same letter in the array), that is that there
+However, there is a non-negative integer n that represents
+the cooldown period
+between two same tasks (the same letter in the array), that
+is that there
 must be at least n units of time between any two same tasks.
-Return the least number of units of times that the CPU will take to finish all
-the given tasks.
+Return the least number of units of times that the CPU will
+take to finish all the given tasks.
 Example 1:
 Input: tasks = ["A","A","A","B","B","B"], n = 2
 Output: 8
 Explanation:
 A -> B -> idle -> A -> B -> idle -> A -> B
-There is at least 2 units of time between any two same tasks.
+There is at least 2 units of time between any two same
+tasks.
 Example 2:
 Input: tasks = ["A","A","A","B","B","B"], n = 0
 Output: 6
-Explanation: On this case any permutation of size 6 would work since n = 0.
+Explanation: On this case any permutation of size 6 would
+work since n = 0.
 ["A","A","A","B","B","B"]
 ["A","B","A","B","A","B"]
 ["B","B","B","A","A","A"]
 ...
 And so on.
 Example 3:
-Input: tasks = ["A","A","A","A","A","A","B","C","D","E","F","G"], n = 2
+Input: tasks =
+["A","A","A","A","A","A","B","C","D","E","F","G"], n = 2
 Output: 16
 Explanation:
 One possible solution is
-A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle ->
-idle -> A
+A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle ->
+idle -> A -> idle -> idle -> A
 Constraints:
 1 <= task.length <= 104
 tasks[i] is upper-case English letter.
@@ -54,13 +62,18 @@ https://leetcode.com/problems/task-scheduler-ii/
 You are given a 0-indexed array of positive integers tasks,
 representing tasks that need to be completed in order,
 where tasks[i] represents the type of the ith task.
-You are also given a positive integer space, which represents
-the minimum number of days that must pass after the completion
-of a task before another task of the same type can be performed.
-Each day, until all tasks have been completed, you must either:
+You are also given a positive integer space, which
+represents
+the minimum number of days that must pass after the
+completion
+of a task before another task of the same type can be
+performed.
+Each day, until all tasks have been completed, you must
+either:
 Complete the next task from tasks, or
 Take a break.
-Return the minimum number of days needed to complete all tasks.
+Return the minimum number of days needed to complete all
+tasks.
 Example 1:
 Input: tasks = [1,2,1,2,3,1], space = 3
 Output: 9
@@ -75,7 +88,8 @@ Day 6: Complete the 3rd task.
 Day 7: Take a break.
 Day 8: Complete the 4th task.
 Day 9: Complete the 5th task.
-It can be shown that the tasks cannot be completed in less than 9 days.
+It can be shown that the tasks cannot be completed in less
+than 9 days.
 Example 2:
 Input: tasks = [5,8,8,5], space = 2
 Output: 6
@@ -87,7 +101,8 @@ Day 3: Take a break.
 Day 4: Take a break.
 Day 5: Complete the 2nd task.
 Day 6: Complete the 3rd task.
-It can be shown that the tasks cannot be completed in less than 6 days.
+It can be shown that the tasks cannot be completed in less
+than 6 days.
 Constraints:
 1 <= tasks.length <= 105
 1 <= tasks[i] <= 109

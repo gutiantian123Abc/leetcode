@@ -13,7 +13,8 @@
 <pre>
 /* 234. Palindrome Linked List
 https://leetcode.com/problems/palindrome-linked-list/
-Given the head of a singly linked list, return true if it is a palindrome.
+Given the head of a singly linked list, return true if it is
+a palindrome.
 Example 1:
 Input: head = [1,2,2,1]
 Output: true
@@ -32,7 +33,8 @@ Follow up: Could you do it in O(n) time and O(1) space?
  *     ListNode next;
  *     ListNode() {}
  *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     ListNode(int val, ListNode next) { this.val = val;
+this.next = next; }
  * }
  */
 </pre>

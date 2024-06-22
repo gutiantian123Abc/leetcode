@@ -12,9 +12,11 @@
 <div class='comment-block'>
 <pre>
 /* Window Sum
-Given an array of n integer, and a moving window(size k), move the window at
-each iteration from the start of the array,
-find the sum of the element inside the window at each moving.
+Given an array of n integer, and a moving window(size k),
+move the window at each iteration from the start of the
+array,
+find the sum of the element inside the window at each
+moving.
 Example
 For array [1,2,7,8,5], moving window size k = 3.
 1 + 2 + 7 = 10
@@ -24,7 +26,8 @@ return [10,17,20]
 */
     /**
      * @param nums a list of integers.
-     * @return the sum of the element inside the window at each moving.
+     * @return the sum of the element inside the window at
+each moving.
      */
 </pre>
 </div>

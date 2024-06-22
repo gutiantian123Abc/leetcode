@@ -12,12 +12,14 @@
 <div class='comment-block'>
 <pre>
 /* Jump Game I
-Given an array of non-negative integers, you are initially positioned at the
-first index of the array.
-Each element in the array represents your maximum jump length at that position.
+Given an array of non-negative integers, you are initially
+positioned at the first index of the array.
+Each element in the array represents your maximum jump
+length at that position.
 Determine if you are able to reach the last index.
 Notice
-This problem have two method which is Greedy and Dynamic Programming.
+This problem have two method which is Greedy and Dynamic
+Programming.
 The time complexity of Greedy method is O(n).
 The time complexity of Dynamic Programming method is O(n^2)
 Example

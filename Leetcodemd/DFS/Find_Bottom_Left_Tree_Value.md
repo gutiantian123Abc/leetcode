@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Find Bottom Left Tree Value
-Given a binary tree, find the leftmost value in the last row of the tree.
+Given a binary tree, find the leftmost value in the last row
+of the tree.
 Example 1:
 Input:
     2
@@ -31,7 +32,8 @@ Input:
       7
 Output:
 7
-Note: You may assume the tree (i.e., the given root node) is not NULL.
+Note: You may assume the tree (i.e., the given root node) is
+not NULL.
 */
 /**
  * Definition for a binary tree node.

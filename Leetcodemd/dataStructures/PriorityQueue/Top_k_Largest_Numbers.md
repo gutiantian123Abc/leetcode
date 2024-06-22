@@ -12,11 +12,13 @@
 <div class='comment-block'>
 <pre>
 /* Top k Largest Numbers
-Given an integer array, find the top k largest numbers in it.
+Given an integer array, find the top k largest numbers in
+it.
 Have you met this question in a real interview? Yes
 Example
 Given [3,10,1000,-99,4,100] and k = 3.
-Return [1000, 100, 10].这道题的另一种方法是QuickSort(nlogn), 但显然没有PQ好(O(n). S(k))
+Return [1000, 100, 10].这道题的另一种方法是QuickSort(nlogn),
+但显然没有PQ好(O(n). S(k))
 */
     /*
      * @param nums an integer array

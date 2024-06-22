@@ -12,14 +12,17 @@
 <div class='comment-block'>
 <pre>
 /* Design Phone Directory
-Design a Phone Directory which supports the following operations:
+Design a Phone Directory which supports the following
+operations:
 get: Provide a number which is not assigned to anyone.
 check: Check if a number is available or not.
 release: Recycle or release a number.
 Example:
-// Init a phone directory containing a total of 3 numbers: 0, 1, and 2.
+// Init a phone directory containing a total of 3 numbers:
+0, 1, and 2.
 PhoneDirectory directory = new PhoneDirectory(3);
-// It can return any available phone number. Here we assume it returns 0.
+// It can return any available phone number. Here we assume
+it returns 0.
 directory.get();
 // Assume it returns 1.
 directory.get();
@@ -38,14 +41,16 @@ directory.check(2);
           rd.nextInt(n): return int 0 ~ n - 1
 */
     /** Initialize your data structure here
-        @param maxNumbers - The maximum numbers that can be stored in the phone
-directory. */
+        @param maxNumbers - The maximum numbers that can be
+stored in the phone directory. */
     /** Provide a number which is not assigned to anyone.
-        @return - Return an available number. Return -1 if none is available. */
+        @return - Return an available number. Return -1 if
+none is available. */
     /** Check if a number is available or not. */
     /** Recycle or release a number. */
 /**
- * Your PhoneDirectory object will be instantiated and called as such:
+ * Your PhoneDirectory object will be instantiated and
+called as such:
  * PhoneDirectory obj = new PhoneDirectory(maxNumbers);
  * int param_1 = obj.get();
  * boolean param_2 = obj.check(number);

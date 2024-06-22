@@ -46,11 +46,13 @@ Given 1->3->2->0->null, return 0->1->2->3->null.
  */
     /**
      * @param head: The head of linked list.
-     * @return: You should return the head of the sorted linked list,
+     * @return: You should return the head of the sorted
+linked list,
      */
     /**
      * @param head: The head of linked list.
-     * @return: You should return the head of the sorted linked list,
+     * @return: You should return the head of the sorted
+linked list,
      *             using constant space complexity.
      */
 </pre>
