@@ -20,13 +20,14 @@ sorting/description
  * class DirectedGraphNode {
  *     int label;
  *     ArrayList<DirectedGraphNode> neighbors;
- *     DirectedGraphNode(int x) { label = x; neighbors = new
-ArrayList<DirectedGraphNode>(); }
+ *     DirectedGraphNode(int x) { label = x;
+neighbors = new ArrayList<DirectedGraphNode>(); }
  * };
  */
     /*
      * @param graph: A list of Directed graph node
-     * @return: Any topological order for the given graph.
+     * @return: Any topological order for the
+given graph.
      */
 </pre>
 </div>

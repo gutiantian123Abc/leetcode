@@ -11,9 +11,11 @@
 <h2>Problem Description</h2>
 <div class='comment-block'>
 <pre>
-/* Longest Substring with At Most K Distinct Characters
-Given a string s, find the length of the longest substring T
-that contains at most k distinct characters.
+/* Longest Substring with At Most K Distinct
+Characters
+Given a string s, find the length of the longest
+substring T that contains at most k distinct
+characters.
 Example
 For example, Given s = "eceba", k = 3,
 T is "eceb" which its length is 4.
@@ -22,7 +24,8 @@ O(n), n is the size of the string s.
 */
     /**
      * @param s : A string
-     * @return : The length of the longest substring
+     * @return : The length of the longest
+substring
      *           that contains at most k distinct
 characters.
      */

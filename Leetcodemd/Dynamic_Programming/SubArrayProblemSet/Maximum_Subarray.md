@@ -13,81 +13,91 @@
 <pre>
 /* Maximum Subarray I
 Given an array of integers,
-find a contiguous subarray which has the largest sum.
+find a contiguous subarray which has the largest
+sum.
 The subarray should contain at least one number.
 Example
 Given the array [−2,2,−3,4,−1,2,1,−5,3],
-the contiguous subarray [4,−1,2,1] has the largest sum = 6.
+the contiguous subarray [4,−1,2,1] has the largest
+sum = 6.
 Challenge
 Can you do it in time complexity O(n)?
 */
 /* 知识点总结：
 子数组 Subarray
 令
-**********************************************************
-PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] = 0
-！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0   ！！！！！！！！！！
+**************************************************
+********
 易知构造 PrefixSum 耗费 O(n) 时间和 O(n) 空间
 如需计算子数组从下标i到下标j之间的所有数之和
 则有 :
-**********************************************************
-Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]  ！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
+！！！！！！！！！！
+**************************************************
+********
 一定要有顺序！！！ 除非Closest to zero 特殊情况
 */
 /* 知识点：Subarray Problems
-    PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] =
-0
+    PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0
     Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
 */
     /**
      * @param nums: A list of integers
-     * @return: A integer indicate the sum of max subarray
+     * @return: A integer indicate the sum of max
+subarray
      */
 /* Maximum Subarray II
-Given an array of integers, find two non-overlapping
-subarrays which have the largest sum.
+Given an array of integers, find two non-
+overlapping subarrays which have the largest sum.
 The number in each subarray should be contiguous.
 Return the largest sum.
 Notice
 The subarray should contain at least one number
 Example
-For given [1, 3, -1, 2, -1, 2], the two subarrays are [1, 3]
-and [2, -1, 2] or [1, 3, -1, 2] and [2],
+For given [1, 3, -1, 2, -1, 2], the two subarrays
+are [1, 3] and [2, -1, 2] or [1, 3, -1, 2] and
+[2],
 they both have the largest sum 7.
 Challenge
 Can you do it in time complexity O(n) ?
 */
 /* 知识点：Subarray Problems
-    PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] =
-0
+    PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0
     Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
 */
     /**
      * @param nums: A list of integers
-     * @return: An integer denotes the sum of max two non-
-overlapping subarrays
+     * @return: An integer denotes the sum of max
+two non-overlapping subarrays
      */
 /* Subarray Sum Closest
-Given an integer array, find a subarray with sum closest to
-zero.
-Return the indexes of the first number and last number.
+Given an integer array, find a subarray with sum
+closest to zero.
+Return the indexes of the first number and last
+number.
 Example
-Given [-3, 1, 1, -3, 5], return [0, 2], [1, 3], [1, 1], [2,
-2] or [0, 4].
+Given [-3, 1, 1, -3, 5], return [0, 2], [1, 3],
+[1, 1], [2, 2] or [0, 4].
 Challenge
 O(nlogn) time
 */
 /* 知识点：Subarray Problems
-    PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] =
-0
+    PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0
     Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
 */
     /**
      * @param nums: A list of integers
-     * @return: A list of integers includes the index of the
-first number
+     * @return: A list of integers includes the
+index of the first number
      *          and the index of the last number
      */
 </pre>

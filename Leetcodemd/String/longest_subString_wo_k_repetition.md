@@ -12,13 +12,14 @@
 <div class='comment-block'>
 <pre>
 /* Longest Substring Without Repeating Characters
-Given a string, find the length of the longest substring
-without repeating characters.
+Given a string, find the length of the longest
+substring without repeating characters.
 Example
-For example, the longest substring without repeating letters
-for "abcabcbb" is "abc", which the length is 3.
-For "bbbbb" the longest substring is "b", with the length of
-1.
+For example, the longest substring without
+repeating letters for "abcabcbb" is "abc", which
+the length is 3.
+For "bbbbb" the longest substring is "b", with the
+length of 1.
 Challenge
 O(n) time
 */
@@ -26,9 +27,11 @@ O(n) time
      * @param s: a string
      * @return: an integer
      */
-/* Longest Substring with At Most K Distinct Characters
-Given a string s, find the length of the longest substring T
-that contains at most k distinct characters.
+/* Longest Substring with At Most K Distinct
+Characters
+Given a string s, find the length of the longest
+substring T that contains at most k distinct
+characters.
 Example
 For example, Given s = "eceba", k = 3,
 T is "eceb" which its length is 4.
@@ -37,7 +40,8 @@ O(n), n is the size of the string s.
 */
     /**
      * @param s : A string
-     * @return : The length of the longest substring
+     * @return : The length of the longest
+substring
      *           that contains at most k distinct
 characters.
      */

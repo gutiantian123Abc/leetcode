@@ -12,8 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Delete Node in the Middle of Singly Linked List
-Implement an algorithm to delete a node in the middle of a
-singly linked list, //注意是middle
+Implement an algorithm to delete a node in the
+middle of a singly linked list, //注意是middle
 given only access to that node.
 Example
 Given 1->2->3->4, and node 3. return 1->2->4
@@ -30,7 +30,8 @@ Given 1->2->3->4, and node 3. return 1->2->4
  * }
  */
     /**
-     * @param node: the node in the list should be deleted
+     * @param node: the node in the list should be
+deleted
      * @return: nothing
      */
 </pre>

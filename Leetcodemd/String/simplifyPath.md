@@ -12,17 +12,19 @@
 <div class='comment-block'>
 <pre>
 /*  Simplify Path
-Given an absolute path for a file (Unix-style), simplify it.
+Given an absolute path for a file (Unix-style),
+simplify it.
 Example
 "/home/", => "/home"
 "/a/./b/../../c/", => "/c"
 Challenge
 Did you consider the case where path = "/../"?
 In this case, you should return "/".
-Another corner case is the path might contain multiple
-slashes '/' together, such as "/home//foo/".
-In this case, you should ignore redundant slashes and return
-"/home/foo".
+Another corner case is the path might contain
+multiple slashes '/' together, such as
+"/home//foo/".
+In this case, you should ignore redundant slashes
+and return "/home/foo".
 */
 /* BackGround Knowledge:
 /a/./ -> still in /a

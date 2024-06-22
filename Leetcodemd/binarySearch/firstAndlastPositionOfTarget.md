@@ -12,24 +12,25 @@
 <div class='comment-block'>
 <pre>
 /* First Position of Target
-For a given sorted array (ascending order) and a target
-number,
-find the first index of this number in O(log n) time
-complexity.
-If the target number does not exist in the array, return -1.
+For a given sorted array (ascending order) and a
+target number,
+find the first index of this number in O(log n)
+time complexity.
+If the target number does not exist in the array,
+return -1.
 Example
-If the array is [1, 2, 3, 3, 4, 5, 10], for given target 3,
-return 2.
+If the array is [1, 2, 3, 3, 4, 5, 10], for given
+target 3, return 2.
 */
     /**
      * @param nums: The integer array.
      * @param target: Target to find.
-     * @return: The first position of target. Position
-starts from 0.
+     * @return: The first position of target.
+Position starts from 0.
      */
 /* Last Position of Target
-Find the last position of a target number in a sorted array.
-Return -1 if target does not exist.
+Find the last position of a target number in a
+sorted array. Return -1 if target does not exist.
 Example
 Given [1, 2, 2, 4, 5, 5].
 For target = 2, return 2.
@@ -37,8 +38,8 @@ For target = 5, return 5.
 For target = 6, return -1.
 */
     /**
-     * @param nums: An integer array sorted in ascending
-order
+     * @param nums: An integer array sorted in
+ascending order
      * @param target: An integer
      * @return an integer
      */

@@ -12,10 +12,10 @@
 <div class='comment-block'>
 <pre>
 /* Flatten Binary Tree to Linked List
-Flatten a binary tree to a fake "linked list" in pre-order
-traversal.
-Here we use the right pointer in TreeNode as the next
-pointer in ListNode.
+Flatten a binary tree to a fake "linked list" in
+pre-order traversal.
+Here we use the right pointer in TreeNode as the
+next pointer in ListNode.
 Example
               1
                \
@@ -43,7 +43,8 @@ Do it in-place without any extra memory.
  * }
  */
     /**
-     * @param root: a TreeNode, the root of the binary tree
+     * @param root: a TreeNode, the root of the
+binary tree
      * @return: nothing
      */
 </pre>

@@ -12,12 +12,13 @@
 <div class='comment-block'>
 <pre>
 /* Longest Increasing Continuous subsequence II
-Give you an integer matrix (with row size n, column size
-m)，find the longest increasing continuous subsequence in
-this matrix.
-(The definition of the longest increasing continuous
-subsequence here can start at any row or column and go
-up/down/right/left any direction).
+Give you an integer matrix (with row size n,
+column size m)，find the longest increasing
+continuous subsequence in this matrix.
+(The definition of the longest increasing
+continuous subsequence here can start at any row
+or column and go up/down/right/left any
+direction).
 Example
 Given a matrix:
 [
@@ -35,7 +36,8 @@ DFS 的本质是用recursion遍历每一种可能找到答案，
 而DP 在这里起到了避免recursion重复计算的妙处，
 所以， 纯DFS的话， 本题的Time Complexity应为: O((mn)^2),
 因为在遍历每个点的时候都可能触及到全图
-但加上DP的话Time Complexity应为: O(mn)， 因为避免了重复计算， 只需遍历全图一遍即可
+但加上DP的话Time Complexity应为: O(mn)， 因为避免了重复计算，
+只需遍历全图一遍即可
 */
     /*
      * @param : An integer matrix

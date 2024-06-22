@@ -12,11 +12,12 @@
 <div class='comment-block'>
 <pre>
 /* Find Duplicate Subtrees
-Given a binary tree, return all duplicate subtrees. For each
-kind of duplicate subtrees,
-you only need to return the root node of any one of them.
-Two trees are duplicate if they have the same structure with
-same node values.
+Given a binary tree, return all duplicate
+subtrees. For each kind of duplicate subtrees,
+you only need to return the root node of any one
+of them.
+Two trees are duplicate if they have the same
+structure with same node values.
 Example 1:
         1
        / \
@@ -31,8 +32,8 @@ The following are two duplicate subtrees:
     4
 and
     4
-Therefore, you need to return above trees' root in the form
-of a list.
+Therefore, you need to return above trees' root in
+the form of a list.
 */
 /**
  * Definition for a binary tree node.

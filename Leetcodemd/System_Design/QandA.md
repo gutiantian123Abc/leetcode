@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /*
-Design Q&A application as in Amazon has it for each product
+Design Q&A application as in Amazon has it for
+each product
 */
 </pre>
 </div>

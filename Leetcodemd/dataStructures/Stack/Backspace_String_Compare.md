@@ -12,8 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Backspace String Compare
-Given two strings S and T, return if they are equal when
-both are
+Given two strings S and T, return if they are
+equal when both are
 typed into empty text editors. # means a backspace
 character.
 Example 1:
@@ -35,7 +35,8 @@ Explanation: S becomes "c" while T becomes "b".
 Note:
 1 <= S.length <= 200
 1 <= T.length <= 200
-S and T only contain lowercase letters and '#' characters.
+S and T only contain lowercase letters and '#'
+characters.
 Follow up:
 Can you solve it in O(N) time and O(1) space?
 */

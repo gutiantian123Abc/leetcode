@@ -12,15 +12,17 @@
 <div class='comment-block'>
 <pre>
 /* Generate Parentheses
-Given n pairs of parentheses, write a function to generate
-all combinations of well-formed parentheses.
+Given n pairs of parentheses, write a function to
+generate all combinations of well-formed
+parentheses.
 Example
 Given n = 3, a solution set is:
 "((()))", "(()())", "(())()", "()(())", "()()()"
 */
     /**
      * @param n n pairs
-     * @return All combinations of well-formed parentheses
+     * @return All combinations of well-formed
+parentheses
      */
 </pre>
 </div>

@@ -12,11 +12,12 @@
 <div class='comment-block'>
 <pre>
 /* Evaluate Reverse Polish Notation
-Evaluate the value of an arithmetic expression in Reverse
-Polish Notation.
-Valid operators are +, -, *, /. Each operand may be an
-integer or another expression.
-Have you met this question in a real interview? Yes
+Evaluate the value of an arithmetic expression in
+Reverse Polish Notation.
+Valid operators are +, -, *, /. Each operand may
+be an integer or another expression.
+Have you met this question in a real interview?
+Yes
 Example
 ["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
 ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6

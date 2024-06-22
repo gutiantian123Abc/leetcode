@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Rotate Image
-You are given an n x n 2D matrix representing an image.
+You are given an n x n 2D matrix representing an
+image.
 Rotate the image by 90 degrees (clockwise).
 Example
 Given a matrix
@@ -31,17 +32,18 @@ rotate it by 90 degrees (clockwise), return
      * @return: Void
      */
 /*
-The idea was firstly transpose the matrix and then flip it
-symmetrically. For instance,
+The idea was firstly transpose the matrix and then
+flip it symmetrically. For instance,
 1  2  3
 4  5  6
 7  8  9
-after transpose, it will be swap(matrix[i][j], matrix[j][i])
+after transpose, it will be swap(matrix[i][j],
+matrix[j][i])
 1  4  7
 2  5  8
 3  6  9
-Then flip the matrix horizontally. (swap(matrix[i][j],
-matrix[i][matrix.length-1-j])
+Then flip the matrix horizontally.
+(swap(matrix[i][j], matrix[i][matrix.length-1-j])
 7  4  1
 8  5  2
 9  6  3

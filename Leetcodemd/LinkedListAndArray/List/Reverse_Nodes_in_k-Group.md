@@ -12,12 +12,12 @@
 <div class='comment-block'>
 <pre>
 /* Reverse Nodes in k-Group
-Given a linked list, reverse the nodes of a linked list k at
-a time and return its modified list.
-If the number of nodes is not a multiple of k then left-out
-nodes in the end should remain as it is.
-You may not alter the values in the nodes, only nodes itself
-may be changed.
+Given a linked list, reverse the nodes of a linked
+list k at a time and return its modified list.
+If the number of nodes is not a multiple of k then
+left-out nodes in the end should remain as it is.
+You may not alter the values in the nodes, only
+nodes itself may be changed.
 Only constant memory is allowed.
 Example
 Given this linked list: 1->2->3->4->5
@@ -38,8 +38,10 @@ For k = 3, you should return: 3->2->1->4->5
      * @return a ListNode
      */
         /* 解题思路：
-        原本： head --> n1 -->  ....... nk --> nkPLus --> ....
-        变成： head --> nk -->  ....... n1 --> nkPlus --> ....
+        原本： head --> n1 -->  ....... nk --> nkPLus
+--> ....
+        变成： head --> nk -->  ....... n1 --> nkPlus
+--> ....
         返回： n1 (注意： head 只是dummy node, 借用一下)
         */
 </pre>

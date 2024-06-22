@@ -12,11 +12,12 @@
 <div class='comment-block'>
 <pre>
 /* Longest Common Substring
-Given two strings, find the longest common substring.
+Given two strings, find the longest common
+substring.
 Return the length of it.
 Notice
-The characters in substring should occur continuously in
-original string.
+The characters in substring should occur
+continuously in original string.
 This is different with subsequence.
 Example
 Given A = "ABCD", B = "CBCE", return 2.
@@ -25,7 +26,8 @@ O(n x m) time and memory.
 */
     /**
      * @param A, B: Two string.
-     * @return: the length of the longest common substring.
+     * @return: the length of the longest common
+substring.
      */
 </pre>
 </div>

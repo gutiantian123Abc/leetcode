@@ -12,108 +12,125 @@
 <div class='comment-block'>
 <pre>
 /* Subarray Sum
-Given an integer array, find a subarray where the sum of
-numbers is zero.
-Your code should return the index of the first number and
-the index of the last number.
+Given an integer array, find a subarray where the
+sum of numbers is zero.
+Your code should return the index of the first
+number and the index of the last number.
 Notice
-There is at least one subarray that it's sum equals to zero.
+There is at least one subarray that it's sum
+equals to zero.
 Example
 Given [-3, 1, 2, -3, 4], return [0, 2] or [1, 3].
 */
 /* 知识点总结：
 子数组 Subarray
 令
-**********************************************************
-PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] = 0
-！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0   ！！！！！！！！！！
+**************************************************
+********
 易知构造 PrefixSum 耗费 O(n) 时间和 O(n) 空间
 如需计算子数组从下标i到下标j之间的所有数之和
 则有 :
-**********************************************************
-Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]  ！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
+！！！！！！！！！！
+**************************************************
+********
 一定要有顺序！！！ 除非Closest to zero 特殊情况
 */
 /* 知识点：Subarray Problems
-    PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] =
-0
+    PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0
     Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
 */
     /**
      * @param nums: A list of integers
-     * @return: A list of integers includes the index of the
-first number
+     * @return: A list of integers includes the
+index of the first number
      *          and the index of the last number
      */
 /* 知识点总结：
 子数组 Subarray
 令
-**********************************************************
-PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] = 0
-！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0   ！！！！！！！！！！
+**************************************************
+********
 易知构造 PrefixSum 耗费 O(n) 时间和 O(n) 空间
 如需计算子数组从下标i到下标j之间的所有数之和
 则有 :
-**********************************************************
-Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]  ！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
+！！！！！！！！！！
+**************************************************
+********
 一定要有顺序！！！ 除非Closest to zero 特殊情况
 */
 /* 知识点：Subarray Problems
-    PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] =
-0
+    PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0
     Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
 */
 /* Better way (制式装备)
 public class Solution {
     /**
      * @param nums: A list of integers
-     * @return: A list of integers includes the index of the
-first number
+     * @return: A list of integers includes the
+index of the first number
      *          and the index of the last number
 */
 /* Minimum Size Subarray Sum
-Given an array of n positive integers and a positive integer
-s,
-find the minimal length of a subarray of which the sum ≥ s.
-If there isn't one, return -1 instead.
-Given the array [2,3,1,2,4,3] and s = 7, the subarray [4,3]
-has the minimal length under the problem constraint.
+Given an array of n positive integers and a
+positive integer s,
+find the minimal length of a subarray of which the
+sum ≥ s. If there isn't one, return -1 instead.
+Given the array [2,3,1,2,4,3] and s = 7, the
+subarray [4,3] has the minimal length under the
+problem constraint.
 */
 /* 知识点总结：
 子数组 Subarray
 令
-**********************************************************
-PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] = 0
-！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0   ！！！！！！！！！！
+**************************************************
+********
 易知构造 PrefixSum 耗费 O(n) 时间和 O(n) 空间
 如需计算子数组从下标i到下标j之间的所有数之和
 则有 :
-**********************************************************
-Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]  ！！！！！！！！！！
-**********************************************************
+**************************************************
+********
+Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
+！！！！！！！！！！
+**************************************************
+********
 一定要有顺序！！！ 除非Closest to zero 特殊情况
 */
 /* 知识点：Subarray Problems
-    PrefixSum[i] = A[0] + A[1] + … A[i - 1], PrefixSum[0] =
-0
+    PrefixSum[i] = A[0] + A[1] + … A[i - 1],
+PrefixSum[0] = 0
     Sum(i~j) = PrefixSum[j + 1] - PrefixSum[i]
 */
     /**
      * @param nums: an array of integers
      * @param s: an integer
-     * @return: an integer representing the minimum size of
-subarray
+     * @return: an integer representing the
+minimum size of subarray
      */
     /**
      * @param nums: an array of integers
      * @param s: an integer
-     * @return: an integer representing the minimum size of
-subarray
+     * @return: an integer representing the
+minimum size of subarray
      */
         /* 窗口类指针移动模板
         int j = 0;

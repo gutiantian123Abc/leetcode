@@ -12,10 +12,12 @@
 <div class='comment-block'>
 <pre>
 /* Add and Search Word
-Design a data structure that supports the following two
-operations: addWord(word) and search(word)
-search(word) can search a literal word or a regular
-expression string containing only letters a-z or ..
+Design a data structure that supports the
+following two operations: addWord(word) and
+search(word)
+search(word) can search a literal word or a
+regular expression string containing only letters
+a-z or ..
 A . means it can represent any one letter.
 Example
 addWord("bad")

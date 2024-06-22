@@ -12,11 +12,13 @@
 <div class='comment-block'>
 <pre>
 /* Subsets
-Given a set of distinct integers, return all possible
-subsets.
+Given a set of distinct integers, return all
+possible subsets.
 Notice::
-Elements in a subset must be in non-descending order.
-The solution set must not contain duplicate subsets.
+Elements in a subset must be in non-descending
+order.
+The solution set must not contain duplicate
+subsets.
 Example
 If S = [1,2,3], a solution is:
 [
@@ -32,19 +34,22 @@ If S = [1,2,3], a solution is:
 */
     /**
      * @param S: A set of numbers.
-     * @return: A list of lists. All valid subsets.
+     * @return: A list of lists. All valid
+subsets.
      */
 /* Subset II
 Given a collection of integers that might contain
 duplicates, S, return all possible subsets.
-Note: Elements in a subset must be in non-descending order.
-The solution set must not contain duplicate subsets. For
-example, If S = [1,2,2], a solution is:
+Note: Elements in a subset must be in non-
+descending order. The solution set must not
+contain duplicate subsets. For example, If S =
+[1,2,2], a solution is:
 [ [2], [1], [1,2,2], [2,2], [1,2], [] ]
 */
     /**
      * @param nums: A set of numbers.
-     * @return: A list of lists. All valid subsets.
+     * @return: A list of lists. All valid
+subsets.
      */
 </pre>
 </div>

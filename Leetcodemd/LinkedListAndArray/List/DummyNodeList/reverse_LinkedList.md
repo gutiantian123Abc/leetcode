@@ -13,7 +13,8 @@
 <pre>
 /* Reverse Linked List
 Example
-For linked list 1->2->3, the reversed linked list is 3->2->1
+For linked list 1->2->3, the reversed linked list
+is 3->2->1
 Challenge
 Reverse it in-place and in one-pass
 */
@@ -30,13 +31,14 @@ Reverse it in-place and in one-pass
  */
     /**
      * @param head: The head of linked list.
-     * @return: The new head of reversed linked list.
+     * @return: The new head of reversed linked
+list.
      */
 /* Reverse Linked List II
 Reverse a linked list from position m to n.
 Notice
-Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤
-length of list.
+Given m, n satisfy the following condition: 1 ≤ m
+≤ n ≤ length of list.
 Example
 Given 1->2->3->4->5->NULL, m = 2 and n = 4, return
 1->4->3->2->5->NULL.
@@ -55,7 +57,8 @@ Reverse it in-place and in one-pass
  * }
  */
     /**
-     * @param ListNode head is the head of the linked list
+     * @param ListNode head is the head of the
+linked list
      * @oaram m and n
      * @return: The head of the reversed ListNode
      */

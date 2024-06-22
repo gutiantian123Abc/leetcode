@@ -12,8 +12,8 @@
 <div class='comment-block'>
 <pre>
 /*  Single Number I
-Given 2*n + 1 numbers, every numbers occurs twice except
-one, find it.
+Given 2*n + 1 numbers, every numbers occurs twice
+except one, find it.
 Example
 Given [1,2,2,1,3,4,3], return 4
 Challenge

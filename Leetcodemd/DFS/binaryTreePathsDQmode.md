@@ -12,7 +12,8 @@
 <div class='comment-block'>
 <pre>
 /* Binary Tree Paths DQ mode (注意看 traverse mode)
-Given a binary tree, return all root-to-leaf paths.
+Given a binary tree, return all root-to-leaf
+paths.
 Example
 Given the following binary tree:
    1

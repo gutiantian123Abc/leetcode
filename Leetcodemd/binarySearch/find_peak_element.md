@@ -12,18 +12,21 @@
 <div class='comment-block'>
 <pre>
 /* Find Peak Element
-There is an integer array which has the following features:
+There is an integer array which has the following
+features:
 The numbers in adjacent positions are different.
 A[0] < A[1] && A[A.length - 2] > A[A.length - 1].
 We define a position P is a peek if:
 A[P] > A[P-1] && A[P] > A[P+1]
-Find a peak element in this array. Return the index of the
-peak.
+Find a peak element in this array. Return the
+index of the peak.
 Notice
-The array may contains multiple peeks, find any of them.
+The array may contains multiple peeks, find any of
+them.
 Example
 Given [1, 2, 1, 3, 4, 5, 7, 6]
-Return index 1 (which is number 2) or 6 (which is number 7)
+Return index 1 (which is number 2) or 6 (which is
+number 7)
 Challenge
 Time complexity O(logN)
 */
@@ -32,20 +35,22 @@ Time complexity O(logN)
      * @return: return any of peek positions.
      */
 /*Find Peak Element II
-There is an integer matrix which has the following features:
+There is an integer matrix which has the following
+features:
 The numbers in adjacent positions are different.
 The matrix has n rows and m columns.
-For all i < m, A[0][i] < A[1][i] && A[n - 2][i] > A[n -
-1][i].
-For all j < n, A[j][0] < A[j][1] && A[j][m - 2] > A[j][m -
-1].
+For all i < m, A[0][i] < A[1][i] && A[n - 2][i] >
+A[n - 1][i].
+For all j < n, A[j][0] < A[j][1] && A[j][m - 2] >
+A[j][m - 1].
 We define a position P is a peek if:
-A[j][i] > A[j+1][i] && A[j][i] > A[j-1][i] && A[j][i] >
-A[j][i+1] && A[j][i] > A[j][i-1]
-Find a peak element in this matrix. Return the index of the
-peak.
+A[j][i] > A[j+1][i] && A[j][i] > A[j-1][i] &&
+A[j][i] > A[j][i+1] && A[j][i] > A[j][i-1]
+Find a peak element in this matrix. Return the
+index of the peak.
 Notice
-The matrix may contains multiple peeks, find any of them.
+The matrix may contains multiple peeks, find any
+of them.
 Example
 Given a matrix:
 [
@@ -55,22 +60,23 @@ Given a matrix:
   [14,18,19,20,10],
   [13,14,11,10,9]
 ]
-return index of 41 (which is [1,1]) or index of 24 (which is
-[2,2])
+return index of 41 (which is [1,1]) or index of 24
+(which is [2,2])
 Challenge
 Solve it in O(n+m) time.
-If you come up with an algorithm that you thought it is O(n
-log m) or O(m log n),
-can you prove it is actually O(n+m) or propose a similar but
-O(n+m) algorithm?
+If you come up with an algorithm that you thought
+it is O(n log m) or O(m log n),
+can you prove it is actually O(n+m) or propose a
+similar but O(n+m) algorithm?
 */
 /*
-Let T(m,n) as time complexity of finding peak element in an
-m*n array.
+Let T(m,n) as time complexity of finding peak
+element in an m*n array.
 T(m,n) = T(m/2,n/2)+c(m+n)
               = T(m/4,n/4)+c(m+n)+c(m/2+n/2)
               = ...
-              = T(1,1) + c(m+n)(1+1/2+1/4+...+1/(m+n))
+              = T(1,1) +
+c(m+n)(1+1/2+1/4+...+1/(m+n))
               = c(2(m+n))
               = O(m+n)
 */

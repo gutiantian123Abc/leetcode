@@ -12,8 +12,9 @@
 <div class='comment-block'>
 <pre>
 /* Spiral Matrix I
-Given a matrix of m x n elements (m rows, n columns), return
-all elements of the matrix in spiral order.
+Given a matrix of m x n elements (m rows, n
+columns), return all elements of the matrix in
+spiral order.
 Example
 Given the following matrix:
 [
@@ -28,8 +29,9 @@ You should return [1,2,3,6,9,8,7,4,5].
      * @return an integer list
      */
 /*Spiral Matrix II
-Given an integer n, generate a square matrix filled with
-elements from 1 to n^2 in spiral order.
+Given an integer n, generate a square matrix
+filled with elements from 1 to n^2 in spiral
+order.
 Example
 Given n = 3,
 You should return the following matrix:

@@ -12,14 +12,15 @@
 <div class='comment-block'>
 <pre>
 /* Coin Change
-You are given coins of different denominations and a total
-amount of money amount. Write a function to compute the
-fewest number of coins that you need to make up that amount.
-If that amount of money cannot be made up by any combination
-of the coins, return -1.
+You are given coins of different denominations and
+a total amount of money amount. Write a function
+to compute the fewest number of coins that you
+need to make up that amount.
+If that amount of money cannot be made up by any
+combination of the coins, return -1.
 Notice
-You may assume that you have an infinite number of each kind
-of coin.
+You may assume that you have an infinite number of
+each kind of coin.
 Example
 Given coins = [1, 2, 5], amount = 11
 return 3 (11 = 5 + 5 + 1)
@@ -28,9 +29,10 @@ return -1.
 */
     /**
      * @param coins  a list of integer
-     * @param amount a total amount of money amount
-     * @return the fewest number of coins that you need to
-make up
+     * @param amount a total amount of money
+amount
+     * @return the fewest number of coins that you
+need to make up
      */
 </pre>
 </div>

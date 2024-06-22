@@ -12,12 +12,13 @@
 <div class='comment-block'>
 <pre>
 /* 767. Reorganize String
-https://leetcode.com/problems/reorganize-string/description/
-Given a string s, rearrange the characters of s so that any
-two adjacent
+https://leetcode.com/problems/reorganize-
+string/description/
+Given a string s, rearrange the characters of s so
+that any two adjacent
 characters are not the same.
-Return any possible rearrangement of s or return "" if not
-possible.
+Return any possible rearrangement of s or return
+"" if not possible.
 Example 1:
 Input: s = "aab"
 Output: "aba"

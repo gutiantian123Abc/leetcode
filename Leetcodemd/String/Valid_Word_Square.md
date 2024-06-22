@@ -12,11 +12,11 @@
 <div class='comment-block'>
 <pre>
 /*888. Valid Word Square
-Given a sequence of words, check whether it forms a valid
-word square.
-A sequence of words forms a valid word square if the k^th
-row and column read the exact same string, where 0 ≤ k <
-max(numRows, numColumns).
+Given a sequence of words, check whether it forms
+a valid word square.
+A sequence of words forms a valid word square if
+the k^th row and column read the exact same
+string, where 0 ≤ k < max(numRows, numColumns).
 Example
 Given
 [
@@ -55,14 +55,16 @@ Given
 ]
 return false
 Explanation:
-The third row reads "read" while the third column reads
-"lead".
+The third row reads "read" while the third column
+reads "lead".
 Therefore, it is NOT a valid word square.
 Notice
-The number of words given is at least 1 and does not exceed
+The number of words given is at least 1 and does
+not exceed 500.
+Word length will be at least 1 and does not exceed
 500.
-Word length will be at least 1 and does not exceed 500.
-Each word contains only lowercase English alphabet a-z.*/
+Each word contains only lowercase English alphabet
+a-z.*/
     /**
      * @param words: a list of string
      * @return: a boolean

@@ -12,28 +12,29 @@
 <div class='comment-block'>
 <pre>
 /* 914. Flip Game
-You are playing the following Flip Game with your friend:
-Given a string that contains only these two characters: +
-and -, you and your friend take turns to flip two
-consecutive "++" into "--". The game ends when a person can
-no longer make a move and therefore the other person will be
-the winner.
-Write a function to compute all possible states of the
-string after one valid move.
+You are playing the following Flip Game with your
+friend: Given a string that contains only these
+two characters: + and -, you and your friend take
+turns to flip two consecutive "++" into "--". The
+game ends when a person can no longer make a move
+and therefore the other person will be the winner.
+Write a function to compute all possible states of
+the string after one valid move.
 Example
-Given s = "++++", after one move, it may become one of the
-following states:
+Given s = "++++", after one move, it may become
+one of the following states:
 [
   "--++",
   "+--+",
   "++--"
 ]
-If there is no valid move, return an empty list [].
+If there is no valid move, return an empty list
+[].
 */
     /**
      * @param s: the given string
-     * @return: all the possible states of the string after
-one valid move
+     * @return: all the possible states of the
+string after one valid move
      */
 </pre>
 </div>

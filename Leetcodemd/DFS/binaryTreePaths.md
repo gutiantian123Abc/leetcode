@@ -13,7 +13,8 @@
 <pre>
 /*  Binary Tree Paths // DFS Traversal Mode, see
 Divide&Qonquer mode in divede and qonquer
-Given a binary tree, return all root-to-leaf paths.
+Given a binary tree, return all root-to-leaf
+paths.
 Example
 Given the following binary tree:
    1

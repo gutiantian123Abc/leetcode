@@ -12,10 +12,13 @@
 <div class='comment-block'>
 <pre>
 /* Binary Tree Path Sum
-Given a binary tree, find all paths that sum of the nodes in
-the path equals to a given number target.
-A valid path is from root node to any of the leaf nodes.
-Have you met this question in a real interview? Yes
+Given a binary tree, find all paths that sum of
+the nodes in the path equals to a given number
+target.
+A valid path is from root node to any of the leaf
+nodes.
+Have you met this question in a real interview?
+Yes
 Example
 Given a binary tree, and target = 5:
      1
