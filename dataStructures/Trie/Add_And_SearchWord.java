@@ -1,19 +1,20 @@
-/* Add and Search Word
-Design a data structure that supports the following two operations: addWord(word) and search(word)
-
-search(word) can search a literal word or a regular expression string containing only letters a-z or ..
-
-A . means it can represent any one letter.
-
-Example
-addWord("bad")
-addWord("dad")
-addWord("mad")
-search("pad")  // return false
-search("bad")  // return true
-search(".ad")  // return true
-search("b..")  // return true
-*/
+/**
+ * Add and Search Word
+ * Design a data structure that supports the following two operations: addWord(word) and search(word)
+ *
+ * search(word) can search a literal word or a regular expression string containing only letters a-z or ..
+ *
+ * A . means it can represent any one letter.
+ *
+ * Example:
+ * addWord("bad")
+ * addWord("dad")
+ * addWord("mad")
+ * search("pad")  // return false
+ * search("bad")  // return true
+ * search(".ad")  // return true
+ * search("b..")  // return true
+ */
 //知识要点： 这里因为是在遍历Trie找词， 所以BFS和在DFS都可以应用， 但WordSearch题目里则只能用DFS！！！
 /*BFS + Tire*/
 public class WordDictionary {
@@ -119,7 +120,6 @@ public class WordDictionary {
 // wordDictionary.search("pattern");
 
 
-
 /* DFS version
 */
 public class WordDictionary {
@@ -220,4 +220,3 @@ public class WordDictionary {
         return find(word.toCharArray(), 0, root);
     }
 }
-

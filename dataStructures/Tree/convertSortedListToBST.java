@@ -1,14 +1,13 @@
-/* Convert Sorted List to Balanced BST
-Given a singly linked list where elements are sorted in ascending order, 
-convert it to a height balanced BST.
-
-Have you met this question in a real interview? Yes
-Example
-               2
-1->2->3  =>   / \
-             1   3
-
-*/
+/**
+ * Convert Sorted List to Balanced BST
+ * Given a singly linked list where elements are sorted in ascending order,
+ * convert it to a height balanced BST.
+ *
+ * Example:
+ *                2
+ * 1->2->3  =>   / \
+ *              1   3
+ */
 
 //Solution1 (参考 convert sorted array to BST), 目前只会这一种方法）
 /**

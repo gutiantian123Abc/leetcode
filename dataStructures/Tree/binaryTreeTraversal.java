@@ -1,16 +1,17 @@
-/* Binary Tree Preorder Traversal
-Given a binary tree, return the preorder traversal of its nodes' values.
-
-Example
-Given:
-
-    1
-   / \
-  2   3
- / \
-4   5
-return [1,2,4,5,3].
-*/
+/**
+ * Binary Tree Preorder Traversal
+ * Given a binary tree, return the preorder traversal of its nodes' values.
+ *
+ * Example:
+ * Given:
+ *
+ *     1
+ *    / \
+ *   2   3
+ *  / \
+ * 4   5
+ * return [1,2,4,5,3].
+ */
 
 /**
  * Definition of TreeNode:
@@ -52,20 +53,21 @@ public class Solution {
 }
 
 
-/* Binary Tree Postorder Traversal
-Given a binary tree, return the postorder traversal of its nodes' values.
-Example
-Given binary tree {1,#,2,3},
+/**
+ * Binary Tree Postorder Traversal
+ * Given a binary tree, return the postorder traversal of its nodes' values.
+ * Example
+ * Given binary tree {1,#,2,3},
+ *
+ *    1
+ *     \
+ *      2
+ *     /
+ *    3
+ *
+ * return [3,2,1].
+ */
 
-   1
-    \
-     2
-    /
-   3
- 
-
-return [3,2,1].
-*/
 /**
  * Definition of TreeNode:
  * public class TreeNode {
@@ -105,22 +107,21 @@ public class Solution {
 }
 
 
-
-/* Binary Tree Inorder Traversal
-Given a binary tree, return the inorder traversal of its nodes' values.
-
-Example
-Given binary tree {1,#,2,3},
-
-   1
-    \
-     2
-    /
-   3
- 
-
-return [1,3,2].
-*/
+/**
+ * Binary Tree Inorder Traversal
+ * Given a binary tree, return the inorder traversal of its nodes' values.
+ *
+ * Example
+ * Given binary tree {1,#,2,3},
+ *
+ *    1
+ *     \
+ *      2
+ *     /
+ *    3
+ *
+ * return [1,3,2].
+ */
 
 /**
  * Definition of TreeNode:
@@ -159,16 +160,3 @@ public class Solution {
         helper(result, root.right);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

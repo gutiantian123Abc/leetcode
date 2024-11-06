@@ -1,20 +1,25 @@
-/* Implement Trie
-Implement a trie with insert, search, and startsWith methods.
-
-Example
-insert("lintcode")
-search("code")
->>> false
-startsWith("lint")
->>> true
-startsWith("linterror")
->>> false
-insert("linterror")
-search("lintcode)
->>> true
-startsWith("linterror")
->>> true
-*/
+/**
+ * Implement Trie
+ * Implement a trie with insert, search, and startsWith methods.
+ *
+ * Example:
+ * insert("lintcode")
+ * search("code")
+ * >>> false
+ *
+ * startsWith("lint")
+ * >>> true
+ *
+ * startsWith("linterror")
+ * >>> false
+ *
+ * insert("linterror")
+ * search("lintcode)
+ * >>> true
+ *
+ * startsWith("linterror")
+ * >>> true
+ */
 
 /**
  * Your Trie object will be instantiated and called as such:

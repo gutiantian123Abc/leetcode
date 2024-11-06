@@ -1,34 +1,36 @@
-/* Number of Airplanes in the Sky
-Given an interval list which are flying and landing time of the flight. How many airplanes are on the sky at most?
+/**
+ * Number of Airplanes in the Sky
+ * Given an interval list which are flying and landing time of the flight.
+ * How many airplanes are on the sky at most?
+ *
+ * Example:
+ * For interval list
+ * [
+ *   (1,10),
+ *   (2,3),
+ *   (5,8),
+ *   (4,7)
+ * ]
+ * Return 3
+ *
+ * Notice:
+ * If landing and flying happens at the same time, we consider landing should happen at first.
+ */
 
-Example
-For interval list
-
-[
-  (1,10),
-  (2,3),
-  (5,8),
-  (4,7)
-]
-Return 3
-
-Notice
-If landing and flying happens at the same time, we consider landing should happen at first.
-*/
-
-/* 知识要点：
-Sweep Line
-扫描线算法 区间问题巧妙解法
-
-扫描问题的特点
-1. 事件往往是以区间的形式存在
-2. 区间两端代表事件的开始和结束
-3. 按照区间起点排序，起点相同的按照终点排序
-
-扫描线要点
-将起点和终点打散排序
-[[1,3], [2,4]] => [[1,start],[2,start],[3,end],[4,end]]
-*/
+/**
+ * 知识要点：
+ * Sweep Line
+ * 扫描线算法 区间问题巧妙解法
+ *
+ * 扫描问题的特点
+ * 1. 事件往往是以区间的形式存在
+ * 2. 区间两端代表事件的开始和结束
+ * 3. 按照区间起点排序，起点相同的按照终点排序
+ *
+ * 扫描线要点
+ * 将起点和终点打散排序
+ * [[1,3], [2,4]] => [[1,start],[2,start],[3,end],[4,end]]
+ */
 
 /**
  * Definition of Interval:
