@@ -1,6 +1,7 @@
-/* Topological Sorting
-https://www.lintcode.com/problem/topological-sorting/description
-*/
+/**
+ * Topological Sorting
+ * https://www.lintcode.com/problem/topological-sorting/description
+ */
 
 /**
  * Definition for Directed graph.
@@ -11,7 +12,7 @@ https://www.lintcode.com/problem/topological-sorting/description
  * };
  */
 
-public class Solution {
+public final class Solution {
     /*
      * @param graph: A list of Directed graph node
      * @return: Any topological order for the given graph.
