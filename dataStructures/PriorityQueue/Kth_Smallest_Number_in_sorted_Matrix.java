@@ -1,20 +1,19 @@
-/* Kth Smallest Number in Sorted Matrix 解题思路： 寻找下面所有最可能
-Find the kth smallest number in at row and column sorted matrix.
-
-Example
-Given k = 4 and a matrix:
-
-[
-  [1 ,5 ,7],
-  [3 ,7 ,8],
-  [4 ,8 ,9],
-]
-return 5
-
-Challenge 
-Solve it in O(k log n) time where n is the bigger one between row size and column size.
-*/
-
+/**
+ * Kth Smallest Number in Sorted Matrix 解题思路： 寻找下面所有最可能
+ * Find the kth smallest number in at row and column sorted matrix.
+ *
+ * Example:
+ * Given k = 4 and a matrix:
+ * [
+ *   [1 ,5 ,7],
+ *   [3 ,7 ,8],
+ *   [4 ,8 ,9],
+ * ]
+ * return 5
+ *
+ * Challenge:
+ * Solve it in O(k log n) time where n is the bigger one between row size and column size.
+ */
 //题型规律: 遇见求Top K ... in a matrix 或者是 arrays ..., 一般用这类 Priority Queue BFS Method
 public class Solution {
     /**
@@ -76,28 +75,28 @@ public class Solution {
 }
 
 
-
-
-
-/* Kth Smallest Sum In Two Sorted Arrays 解题思路： 寻找下面所有最可能
-Given two integer arrays sorted in ascending order and an integer k. Define sum = a + b, where a is an element from the first array and b is an element from the second one. Find the kth smallest sum out of all possible sums.
-
-Have you met this question in a real interview? Yes
-Example
-Given [1, 7, 11] and [2, 4, 6].
-
-For k = 3, return 7.
-
-For k = 4, return 9.
-
-For k = 8, return 15.
-
-Challenge 
-Do it in either of the following time complexity:
-
-O(k log min(n, m, k)). where n is the size of A, and m is the size of B.
-O( (m + n) log maxValue). where maxValue is the max number in A and B.
-*/
+/**
+ * Kth Smallest Sum In Two Sorted Arrays 解题思路： 寻找下面所有最可能
+ * Given two integer arrays sorted in ascending order and an integer k.
+ * Define sum = a + b, where a is an element from the first array and b
+ * is an element from the second one. Find the kth smallest sum out of all possible sums.
+ *
+ *
+ * Example:
+ * Given [1, 7, 11] and [2, 4, 6].
+ *
+ * For k = 3, return 7.
+ *
+ * For k = 4, return 9.
+ *
+ * For k = 8, return 15.
+ *
+ * Challenge :
+ * Do it in either of the following time complexity:
+ *
+ * O(k log min(n, m, k)). where n is the size of A, and m is the size of B.
+ * O( (m + n) log maxValue). where maxValue is the max number in A and B.
+ */
 
 public class Solution {
     /**
