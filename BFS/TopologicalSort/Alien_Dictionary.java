@@ -2,13 +2,12 @@
  * Alien Dictionary
  *
  * There is a new alien language which uses the latin alphabet.
- * \ However, the order among letters are unknown to you.
+ * However, the order among letters are unknown to you.
  * You receive a list of non-empty words from the dictionary,
  * where words are sorted lexicographically by the rules of this new language.
  *  Derive the order of letters in this language.
  *
  * Example 1:
- *
  * Input:
  * [
  *   "wrt",
@@ -23,7 +22,6 @@
  *
  *
  * Example 2:
- *
  * Input:
  * [
  *   "z",
@@ -31,8 +29,10 @@
  * ]
  *
  * Output: "zx"
- * Example 3:
  *
+ *
+ *
+ * Example 3:
  * Input:
  * [
  *   "z",

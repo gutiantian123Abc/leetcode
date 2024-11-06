@@ -1,10 +1,12 @@
-/* First Position of Target
-For a given sorted array (ascending order) and a target number, 
-find the first index of this number in O(log n) time complexity.
-If the target number does not exist in the array, return -1.
-Example
-If the array is [1, 2, 3, 3, 4, 5, 10], for given target 3, return 2.
-*/
+/**
+ * First Position of Target
+ * For a given sorted array (ascending order) and a target number,
+ * find the first index of this number in O(log n) time complexity.
+ * If the target number does not exist in the array, return -1.
+ *
+ * Example:
+ * If the array is [1, 2, 3, 3, 4, 5, 10], for given target 3, return 2.
+ */
 
 class Solution {
     /**
@@ -44,15 +46,17 @@ class Solution {
 }
 
 
-/* Last Position of Target
-Find the last position of a target number in a sorted array. Return -1 if target does not exist.
-
-Example
-Given [1, 2, 2, 4, 5, 5].
-For target = 2, return 2.
-For target = 5, return 5.
-For target = 6, return -1.
-*/
+/**
+ * Last Position of Target
+ * Find the last position of a target number in a sorted array.
+ * Return -1 if target does not exist.
+ *
+ * Example:
+ * Given [1, 2, 2, 4, 5, 5].
+ * For target = 2, return 2.
+ * For target = 5, return 5.
+ * For target = 6, return -1.
+ */
 
 public class Solution {
     /**

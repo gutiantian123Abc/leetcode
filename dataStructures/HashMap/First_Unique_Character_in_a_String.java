@@ -1,10 +1,11 @@
-/* First Unique Character in a String
-Find the first unique character in a given string. 
-You can assume that there is at least one unique character in the string.
-
-Example
-For "abaccdeff", return 'b'.
-*/
+/**
+ * First Unique Character in a String
+ * Find the first unique character in a given string.
+ * You can assume that there is at least one unique character in the string.
+ *
+ * Example:
+ * For "abaccdeff", return 'b'.
+ */
 
 //这道题更好的方法是 First_Unique_Number_In_Stream， HashMap + LinkedList 
 

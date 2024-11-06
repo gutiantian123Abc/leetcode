@@ -1,15 +1,17 @@
-/* Sqrt(x)
-Implement int sqrt(int x).
-Compute and return the square root of x.
-Example
-sqrt(3) = 1
-sqrt(4) = 2
-sqrt(5) = 2
-sqrt(10) = 3
-
-Challenge 
-O(log(x))
-*/
+/**
+ * Sqrt(x)
+ * Implement int sqrt(int x).
+ * Compute and return the square root of x.
+ *
+ * Example:
+ * sqrt(3) = 1
+ * sqrt(4) = 2
+ * sqrt(5) = 2
+ * sqrt(10) = 3
+ *
+ * Challenge:
+ * O(log(x))
+ */
 
 class Solution {
     /**
@@ -39,19 +41,18 @@ class Solution {
 }
 
 
-
-/* Sqrt II
-Implement double sqrt(double x) and x >= 0.
-
-Compute and return the square root of x.
-
-You do not care about the accuracy of the result, we will help you to output results.
-
-Have you met this question in a real interview? Yes
-Example
-Given n = 2 return 1.41421356
-*/
-
+/**
+ * Sqrt II
+ * Implement double sqrt(double x) and x >= 0.
+ *
+ * Compute and return the square root of x.
+ *
+ * You do not care about the accuracy of the result, we will help you to output results.
+ *
+ * Have you met this question in a real interview? Yes
+ * Example:
+ * Given n = 2 return 1.41421356
+ */
 public class Solution {
     /**
      * @param x a double
