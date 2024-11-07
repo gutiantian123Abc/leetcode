@@ -32,7 +32,8 @@ employee_id is the primary key of this table. It's guaranteed that experience_ye
 Each row of this table contains information about one employee.
  
 
-Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+Write an SQL query that reports the average experience years of all the employees for each project,
+rounded to 2 digits.
 
 Return the result table in any order.
 
@@ -69,9 +70,9 @@ Output:
 | 1           | 2.00          |
 | 2           | 2.50          |
 +-------------+---------------+
-Explanation: The average experience years for the first project is (3 + 2 + 1) / 3 = 2.00 and for the second project is (3 + 2) / 2 = 2.50
+Explanation: The average experience years for the first project is (3 + 2 + 1) / 3 = 2.00 and
+for the second project is (3 + 2) / 2 = 2.50
 */
-
 # Write your MySQL query statement below
 select P.project_id, round(avg(E.experience_years), 2) as average_years
 from Project as P left outer join Employee as E
@@ -164,10 +165,3 @@ having count(employee_id) = (
   order by count(*) desc 
   limit 1
 )
-
-
-
-
-
-
-

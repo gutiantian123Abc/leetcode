@@ -67,7 +67,6 @@ Output:
 | null |
 +------+
 Explanation: There are no single numbers in the input table so we return null.
-
 */
 
 # Write your MySQL query statement below

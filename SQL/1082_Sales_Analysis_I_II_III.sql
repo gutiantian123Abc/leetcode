@@ -2,7 +2,6 @@
 
 1082. Sales Analysis I
 
-
 https://leetcode.com/problems/sales-analysis-i/description/
 
 Table: Product
@@ -70,8 +69,6 @@ Output:
 +-------------+
 Explanation: Both sellers with id 1 and 3 sold products with the most total price of 2800.
 */
-
-
 # Write your MySQL query statement below
 select seller_id
 from Sales
@@ -86,13 +83,11 @@ having sum(price) = (
 
 
 
-
 /*
-
 1083. Sales Analysis II
 
-
-Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table.
+Write an SQL query that reports the buyers who have bought S8 but not iPhone.
+Note that S8 and iPhone are products present in the Product table.
 
 Return the result table in any order.
 
@@ -154,7 +149,8 @@ while COUNT(condition) would not achieve this result because COUNT doesn't inter
 /*
 1084. Sales Analysis III
 
-Write an SQL query that reports the products that were only sold in the first quarter of 2019. That is, between 2019-01-01 and 2019-03-31 inclusive.
+Write an SQL query that reports the products that were only sold in the first quarter of 2019.
+That is, between 2019-01-01 and 2019-03-31 inclusive.
 
 Return the result table in any order.
 
@@ -195,8 +191,6 @@ The product with id 3 was sold after spring 2019.
 We return only product 1 as it is the product that was only sold in the spring of 2019.
 
 */
-
-
 # Write your MySQL query statement below
 select P.product_id, P.product_name
 from Product as P inner join Sales as S
@@ -207,17 +201,3 @@ having (
   and
   max(S.sale_date) <= '2019-03-31'
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-

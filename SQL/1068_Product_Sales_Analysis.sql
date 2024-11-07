@@ -87,7 +87,7 @@ group by S.sale_id
 
 https://leetcode.com/problems/product-sales-analysis-ii/
 
-able: Sales
+Table: Sales
 
 +-------------+-------+
 | Column Name | Type  |
@@ -150,7 +150,6 @@ Output:
 | 100          | 22             |
 | 200          | 15             |
 +--------------+----------------+
-
 */
 
 # Write your MySQL query statement below
@@ -158,20 +157,3 @@ select P.product_id as product_id, sum(S.quantity) as total_quantity
 from Product as P inner join Sales as S
 on P.product_id = S.product_id
 group by P.product_id
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

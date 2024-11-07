@@ -40,7 +40,6 @@ Output:
 | 2  | bob@example.com  |
 +----+------------------+
 Explanation: john@example.com is repeated two times. We keep the row with the smallest Id = 1.
-
 */
 
 -- Solution 1: Delete

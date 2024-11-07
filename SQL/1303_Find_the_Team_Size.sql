@@ -52,7 +52,6 @@ Explanation:
 Employees with Id 1,2,3 are part of a team with team_id = 8.
 Employee with Id 4 is part of a team with team_id = 7.
 Employees with Id 5,6 are part of a team with team_id = 9.
-
 */
 
 # Write your MySQL query statement below
@@ -64,9 +63,3 @@ from Employee as E1 inner join
   ) as E2 
 on E1.team_id = E2.team_id
 group by E1.employee_id
-
-
-
-
-
-

@@ -20,7 +20,8 @@ The extra column has optional information about the action, such as a reason for
 extra is never NULL.
  
 
-Write an SQL query that reports the number of posts reported yesterday for each report reason. Assume today is 2019-07-05.
+Write an SQL query that reports the number of posts reported yesterday for each report reason.
+Assume today is 2019-07-05.
 
 Return the result table in any order.
 
@@ -65,10 +66,3 @@ select extra as report_reason, count(distinct post_id) as report_count
 from Actions
 where action_date = '2019-07-04' and action = 'report'
 group by extra
-
-
-
-
-
-
-

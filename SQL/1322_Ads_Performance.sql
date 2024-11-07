@@ -13,7 +13,8 @@ Table: Ads
 | action        | enum    |
 +---------------+---------+
 (ad_id, user_id) is the primary key for this table.
-Each row of this table contains the ID of an Ad, the ID of a user, and the action taken by this user regarding this Ad.
+Each row of this table contains the ID of an Ad, the ID of a user,
+and the action taken by this user regarding this Ad.
 The action column is an ENUM type of ('Clicked', 'Viewed', 'Ignored').
  
 
@@ -27,7 +28,6 @@ Write an SQL query to find the ctr of each Ad. Round ctr to two decimal points.
 Return the result table ordered by ctr in descending order and by ad_id in ascending order in case of a tie.
 
 The query result format is in the following example.
-
  
 
 Example 1:
@@ -63,7 +63,6 @@ for ad_id = 2, ctr = (1/(1+2)) * 100 = 33.33
 for ad_id = 3, ctr = (1/(1+1)) * 100 = 50.00
 for ad_id = 5, ctr = 0.00, Note that ad_id = 5 has no clicks or views.
 Note that we do not care about Ignored Ads.
-
 */
 
 select ad_id, (
@@ -77,17 +76,16 @@ group by ad_id
 order by ctr desc, ad_id asc
 
 /*
-
 Spectial Note:
 In MySQL, the COUNT(expression) function returns the number of rows that the expression does not evaluate to NULL. 
-When you use COUNT(action='Clicked'), it counts all the rows, irrespective of whether the condition action='Clicked' is true or false, 
-because the condition action='Clicked' does not evaluate to NULL in any row (it's either true or false).
+When you use COUNT(action='Clicked'), it counts all the rows, irrespective of whether the condition action='Clicked'
+is true or false, because the condition action='Clicked' does not evaluate to NULL in any row (it's either true or false).
 
-On the other hand, MySQL treats true as 1 and false as 0. Therefore, SUM(action='Clicked') is equivalent to adding 1 for every row 
-where action='Clicked' is true and 0 where it is false. This effectively counts the number of rows where action='Clicked' is true.
+On the other hand, MySQL treats true as 1 and false as 0.
+Therefore, SUM(action='Clicked') is equivalent to adding 1 for every row
+where action='Clicked' is true and 0 where it is false.
+This effectively counts the number of rows where action='Clicked' is true.
 
 So in your case, SUM(action='Clicked') is the correct usage as it gives the count of 'Clicked' actions, 
 while COUNT(action='Clicked') would give the total count of all rows, which is not the intended requirement.
-
 */
-

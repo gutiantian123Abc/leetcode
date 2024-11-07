@@ -15,7 +15,8 @@ Table: ActorDirector
 timestamp is the primary key column for this table.
  
 
-Write a SQL query for a report that provides the pairs (actor_id, director_id) where the actor has cooperated with the director at least three times.
+Write a SQL query for a report that provides the pairs (actor_id, director_id)
+where the actor has cooperated with the director at least three times.
 
 Return the result table in any order.
 
@@ -45,7 +46,6 @@ Output:
 | 1           | 1           |
 +-------------+-------------+
 Explanation: The only pair is (1, 1) where they cooperated exactly 3 times.
-
 */
 
 # Write your MySQL query statement below
@@ -53,7 +53,3 @@ select actor_id, director_id
 from ActorDirector
 group by actor_id, director_id
 having count(*) >= 3
-
-
-
-

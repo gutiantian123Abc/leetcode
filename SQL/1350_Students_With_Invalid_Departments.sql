@@ -82,9 +82,3 @@ select S.id, S.name
 from Students as S left outer join Departments as D
 on S.department_id = D.id
 where D.id is null
-
-
-
-
-
-

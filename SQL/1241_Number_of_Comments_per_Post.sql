@@ -16,7 +16,8 @@ parent_id is null for posts.
 parent_id for comments is sub_id for another post in the table.
  
 
-Write an SQL query to find the number of comments per post. The result table should contain post_id and its corresponding number_of_comments.
+Write an SQL query to find the number of comments per post.
+The result table should contain post_id and its corresponding number_of_comments.
 
 The Submissions table may contain duplicate comments. You should count the number of unique comments per post.
 
@@ -56,11 +57,11 @@ Output:
 | 12      | 0                  |
 +---------+--------------------+
 Explanation: 
-The post with id 1 has three comments in the table with id 3, 4, and 9. The comment with id 3 is repeated in the table, we counted it only once.
+The post with id 1 has three comments in the table with id 3, 4, and 9.
+The comment with id 3 is repeated in the table, we counted it only once.
 The post with id 2 has two comments in the table with id 5 and 10.
 The post with id 12 has no comments in the table.
 The comment with id 6 is a comment on a deleted post with id 7 so we ignored it.
-
 */
 # Write your MySQL query statement below
 select L.sub_id as post_id, count(distinct R.sub_id) as number_of_comments
@@ -69,11 +70,3 @@ on L.sub_id = R.parent_id
 where L.parent_id is null
 group by L.sub_id
 order by L.sub_id asc
-
-
-
-
-
-
-
-

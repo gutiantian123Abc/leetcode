@@ -37,11 +37,13 @@ Result table:
 +-----------------+
 | 3               |
 +-----------------+
-The customer with number 3 has two orders, which is greater than either customer 1 or 2 because each of them only has one order. 
+The customer with number 3 has two orders,
+which is greater than either customer 1 or 2 because each of them only has one order.
 So the result is customer_number 3.
  
 
-Follow up: What if more than one customer have the largest number of orders, can you find all the customer_number in this case?
+Follow up: What if more than one customer have the largest number of orders,
+can you find all the customer_number in this case?
 */
 # Write your MySQL query statement below
 select customer_number

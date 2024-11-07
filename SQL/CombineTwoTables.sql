@@ -28,7 +28,8 @@ AddressId is the primary key column for this table.
 Each row of this table containts information about the city and state of one person with ID = PersonId.
  
 
-Write an SQL query to report the first name, last name, city, and state of each person in the Person table. If the address of a PersonId is not present in the Address table, report null instead.
+Write an SQL query to report the first name, last name, city, and state of each person in the Person table.
+If the address of a PersonId is not present in the Address table, report null instead.
 
 Return the result table in any order.
 
@@ -63,7 +64,6 @@ Output:
 Explanation: 
 There is no address in the address table for the PersonId = 1 so we return null in their city and state.
 AddressId = 1 contains information about the address of PersonId = 2.
-
 */
 
 --Solution 1: Join:
@@ -71,5 +71,3 @@ AddressId = 1 contains information about the address of PersonId = 2.
 select firstName, lastName, city, state
 from Person left outer join Address
 on Person.personId = Address.personId
-
-

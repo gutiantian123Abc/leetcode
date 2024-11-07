@@ -1,5 +1,5 @@
-/*
-603. Consecutive Available Seats
+/**
+  603. Consecutive Available Seats
 https://leetcode.com/problems/consecutive-available-seats/description/
 
 Table: Cinema
@@ -12,7 +12,7 @@ Table: Cinema
 +-------------+------+
 seat_id is an auto-increment primary key column for this table.
 Each row of this table indicates whether the ith seat is free or not. 1 means free while 0 means occupied.
- 
+
 
 Write an SQL query to report all the consecutive available seats in the cinema.
 
@@ -22,11 +22,11 @@ The test cases are generated so that more than two seats are consecutively avail
 
 The query result format is in the following example.
 
- 
+
 
 Example 1:
 
-Input: 
+Input:
 Cinema table:
 +---------+------+
 | seat_id | free |
@@ -37,7 +37,7 @@ Cinema table:
 | 4       | 1    |
 | 5       | 1    |
 +---------+------+
-Output: 
+Output:
 +---------+
 | seat_id |
 +---------+

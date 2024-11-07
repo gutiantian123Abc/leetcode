@@ -1,5 +1,5 @@
-/*
-607. Sales Person
+/**
+  607. Sales Person
 https://leetcode.com/problems/sales-person/description/
 
 
@@ -15,8 +15,9 @@ Table: SalesPerson
 | hire_date       | date    |
 +-----------------+---------+
 sales_id is the primary key column for this table.
-Each row of this table indicates the name and the ID of a salesperson alongside their salary, commission rate, and hire date.
- 
+Each row of this table indicates the name and the ID of a salesperson alongside their salary,
+commission rate, and hire date.
+
 
 Table: Company
 
@@ -29,7 +30,7 @@ Table: Company
 +-------------+---------+
 com_id is the primary key column for this table.
 Each row of this table indicates the name and the ID of a company and the city in which the company is located.
- 
+
 
 Table: Orders
 
@@ -45,20 +46,22 @@ Table: Orders
 order_id is the primary key column for this table.
 com_id is a foreign key to com_id from the Company table.
 sales_id is a foreign key to sales_id from the SalesPerson table.
-Each row of this table contains information about one order. This includes the ID of the company, the ID of the salesperson, the date of the order, and the amount paid.
- 
+Each row of this table contains information about one order.
+This includes the ID of the company, the ID of the salesperson, the date of the order, and the amount paid.
 
-Write an SQL query to report the names of all the salespersons who did not have any orders related to the company with the name "RED".
+
+Write an SQL query to report the names of all the salespersons
+who did not have any orders related to the company with the name "RED".
 
 Return the result table in any order.
 
 The query result format is in the following example.
 
- 
+
 
 Example 1:
 
-Input: 
+Input:
 SalesPerson table:
 +----------+------+--------+-----------------+------------+
 | sales_id | name | salary | commission_rate | hire_date  |
@@ -87,7 +90,7 @@ Orders table:
 | 3        | 3/1/2014   | 1      | 1        | 50000  |
 | 4        | 4/1/2014   | 1      | 4        | 25000  |
 +----------+------------+--------+----------+--------+
-Output: 
+Output:
 +------+
 | name |
 +------+
@@ -95,10 +98,11 @@ Output:
 | Mark |
 | Alex |
 +------+
-Explanation: 
-According to orders 3 and 4 in the Orders table, it is easy to tell that only salesperson John and Pam have sales to company RED, so we report all the other names in the table salesperson.
+Explanation:
+According to orders 3 and 4 in the Orders table,
+it is easy to tell that only salesperson John and Pam have
+sales to company RED, so we report all the other names in the table salesperson.
 */
-
 # Write your MySQL query statement below
 select SalesPerson.name
 from SalesPerson
@@ -109,5 +113,3 @@ where SalesPerson.sales_id not in
   on O.com_id = C.com_id
   where C.name = "RED"
 )
-
-

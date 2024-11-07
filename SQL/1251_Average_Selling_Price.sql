@@ -1,5 +1,4 @@
 /*
-
 1251. Average Selling Price
 https://leetcode.com/problems/average-selling-price/description/
 
@@ -15,7 +14,8 @@ Table: Prices
 +---------------+---------+
 (product_id, start_date, end_date) is the primary key for this table.
 Each row of this table indicates the price of the product_id in the period from start_date to end_date.
-For each product_id there will be no two overlapping periods. That means there will be no two intersecting periods for the same product_id.
+For each product_id there will be no two overlapping periods.
+That means there will be no two intersecting periods for the same product_id.
  
 
 Table: UnitsSold
@@ -71,9 +71,7 @@ Explanation:
 Average selling price = Total Price of Product / Number of products sold.
 Average selling price for product 1 = ((100 * 5) + (15 * 20)) / 115 = 6.96
 Average selling price for product 2 = ((200 * 15) + (30 * 30)) / 230 = 16.96
-
 */
-
 # Write your MySQL query statement below
 select U.product_id, round(sum(U.units * P.price) / sum(U.units), 2) as average_price
 from UnitsSold as U join Prices as P

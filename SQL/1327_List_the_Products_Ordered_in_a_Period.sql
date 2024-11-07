@@ -81,9 +81,7 @@ Products with product_id = 2 is ordered in February a total of 80.
 Products with product_id = 3 is ordered in February a total of (2 + 3) = 5.
 Products with product_id = 4 was not ordered in February 2020.
 Products with product_id = 5 is ordered in February a total of (50 + 50) = 100.
-
 */
-
 
 # Write your MySQL query statement below
 select P.product_name, sum(O.unit) as unit
@@ -91,15 +89,4 @@ from Products as P inner join Orders as O
 on P.product_id = O.product_id
 where O.order_date between '2020-02-01' and '2020-02-29'
 group by P.product_id
-having sum(O.unit) >= 100 
-
-
-
-
-
-
-
-
-
-
-
+having sum(O.unit) >= 100

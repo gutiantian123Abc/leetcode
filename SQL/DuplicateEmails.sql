@@ -17,7 +17,6 @@ Write an SQL query to report all the duplicate emails.
 Return the result table in any order.
 
 The query result format is in the following example.
-
  
 
 Example 1:
@@ -38,12 +37,9 @@ Output:
 | a@b.com |
 +---------+
 Explanation: a@b.com is repeated two times.
-
 */
 
 select email as Email
 from Person
 group by email
 having count(*) > 1
-
-

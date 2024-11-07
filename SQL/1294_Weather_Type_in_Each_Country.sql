@@ -108,19 +108,3 @@ from Countries inner join Weather
 on Countries.country_id = Weather.country_id
 where Weather.day between '2019-11-01' and '2019-11-30'
 group by Countries.country_id;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

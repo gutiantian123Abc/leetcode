@@ -1,6 +1,5 @@
-/*
-
-511. Game Play Analysis I
+/**
+  511. Game Play Analysis I
 
 https://leetcode.com/problems/game-play-analysis-i/
 
@@ -16,8 +15,9 @@ Table: Activity
 +--------------+---------+
 (player_id, event_date) is the primary key of this table.
 This table shows the activity of players of some games.
-Each row is a record of a player who logged in and played a number of games (possibly 0) before logging out on someday using some device.
- 
+Each row is a record of a player who logged in and played a number of games (possibly 0)
+before logging out on someday using some device.
+
 
 Write an SQL query to report the first login date for each player.
 
@@ -25,11 +25,10 @@ Return the result table in any order.
 
 The query result format is in the following example.
 
- 
+
 
 Example 1:
-
-Input: 
+Input:
 Activity table:
 +-----------+-----------+------------+--------------+
 | player_id | device_id | event_date | games_played |
@@ -40,7 +39,7 @@ Activity table:
 | 3         | 1         | 2016-03-02 | 0            |
 | 3         | 4         | 2018-07-03 | 5            |
 +-----------+-----------+------------+--------------+
-Output: 
+Output:
 +-----------+-------------+
 | player_id | first_login |
 +-----------+-------------+
@@ -48,8 +47,6 @@ Output:
 | 2         | 2017-06-25  |
 | 3         | 2016-03-02  |
 +-----------+-------------+
-
-
 */
 select player_id , min(event_date) as first_login
 from Activity
@@ -57,10 +54,8 @@ group by player_id
 
 
 
-
-
-/*
-512. Game Play Analysis II
+/**
+  512. Game Play Analysis II
 
 https://leetcode.com/problems/game-play-analysis-ii/
 
@@ -70,11 +65,11 @@ Return the result table in any order.
 
 The query result format is in the following example.
 
- 
+
 
 Example 1:
 
-Input: 
+Input:
 Activity table:
 +-----------+-----------+------------+--------------+
 | player_id | device_id | event_date | games_played |
@@ -85,7 +80,7 @@ Activity table:
 | 3         | 1         | 2016-03-02 | 0            |
 | 3         | 4         | 2018-07-03 | 5            |
 +-----------+-----------+------------+--------------+
-Output: 
+Output:
 +-----------+-----------+
 | player_id | device_id |
 +-----------+-----------+
@@ -93,8 +88,6 @@ Output:
 | 2         | 3         |
 | 3         | 1         |
 +-----------+-----------+
-
-
 */
 
 # Write your MySQL query statement below
@@ -105,10 +98,3 @@ where (player_id, event_date) in (
   from Activity
   group by player_id
 )
-
-
-
-
-
-
-

@@ -19,12 +19,12 @@ The table shows the user activities for a social media website.
 Note that each session belongs to exactly one user.
  
 
-Write an SQL query to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively. A user was active on someday if they made at least one activity on that day.
+Write an SQL query to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively.
+A user was active on someday if they made at least one activity on that day.
 
 Return the result table in any order.
 
 The query result format is in the following example.
-
  
 
 Example 1:
@@ -76,11 +76,11 @@ group by activity_date
 1142. User Activity for the Past 30 Days II
 
 
-Write an SQL query to find the average number of sessions per user for a period of 30 days ending 2019-07-27 inclusively, rounded to 2 decimal places. The sessions we want to count for a user are those with at least one activity in that time period.
+Write an SQL query to find the average number of sessions per user for a period of 30 days ending 2019-07-27 inclusively,
+rounded to 2 decimal places. The sessions we want to count for a user are those with at least one activity
+in that time period.
 
 The query result format is in the following example.
-
- 
 
 Example 1:
 
@@ -110,36 +110,11 @@ Output:
 +---------------------------+ 
 | 1.33                      |
 +---------------------------+
-Explanation: User 1 and 2 each had 1 session in the past 30 days while user 3 had 2 sessions so the average is (1 + 1 + 2) / 3 = 1.33.
-
-
+Explanation: User 1 and 2 each had 1 session in the past 30 days
+while user 3 had 2 sessions so the average is (1 + 1 + 2) / 3 = 1.33.
 */
 
 # Write your MySQL query statement below
 select ifnull(round(count(distinct user_id, session_id) / count(distinct user_id), 2), 0.00)as average_sessions_per_user
 from Activity
 where activity_date > '2019-06-27' and activity_date <= '2019-07-27'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

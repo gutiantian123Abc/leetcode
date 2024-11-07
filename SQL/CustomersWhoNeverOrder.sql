@@ -60,7 +60,6 @@ Output:
 | Henry     |
 | Max       |
 +-----------+
-
 */
 -- Sokution: Using sub-query and NOT IN clause
 # Write your MySQL query statement below
