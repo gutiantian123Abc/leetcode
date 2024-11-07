@@ -1,11 +1,12 @@
-/* Longest Common Subsequence
-Given two strings, find the longest common subsequence (LCS).
-Your code should return the length of LCS.
-Example
-For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
-For "ABCD" and "EACB", the LCS is "AC", return 2.
-*/
-
+/**
+ * Longest Common Subsequence
+ * Given two strings, find the longest common subsequence (LCS).
+ * Your code should return the length of LCS.
+ *
+ * Example:
+ * For "ABCD" and "EDCA", the LCS is "A" (or "D", "C"), return 1.
+ * For "ABCD" and "EACB", the LCS is "AC", return 2.
+ */
 public class Solution {
     /**
      * @param A, B: Two strings.
@@ -29,6 +30,5 @@ public class Solution {
         return nums[a][b];
     }
 }
-
 
 //See longestCommonSubString.java Related

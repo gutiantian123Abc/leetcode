@@ -1,16 +1,18 @@
-/* Longest Common Substring
-Given two strings, find the longest common substring.
-Return the length of it.
-Notice
-The characters in substring should occur continuously in original string. 
-This is different with subsequence.
-
-Example
-Given A = "ABCD", B = "CBCE", return 2.
-Challenge 
-O(n x m) time and memory.
-*/
-
+/**
+ * Longest Common Substring
+ * Given two strings, find the longest common substring.
+ * Return the length of it.
+ *
+ * Notice:
+ * The characters in substring should occur continuously in original string.
+ * This is different with subsequence.
+ *
+ * Example:
+ * Given A = "ABCD", B = "CBCE", return 2.
+ *
+ * Challenge:
+ * O(n x m) time and memory.
+ */
 public class Solution {
     /**
      * @param A, B: Two string.
@@ -22,8 +24,7 @@ public class Solution {
             return 0;
         }
 
-//State: f[i][j] is the length of the longest lcs ended with A[i - 1] & B[j - 1] in A[0..i-1] & B[0..j-1]
-        
+        //State: f[i][j] is the length of the longest lcs ended with A[i - 1] & B[j - 1] in A[0..i-1] & B[0..j-1]
         int a = A.length(), b = B.length();
         
         int[][] nums = new int[a + 1][b + 1];
@@ -48,5 +49,3 @@ public class Solution {
         return max;
     }
 }
-
-
