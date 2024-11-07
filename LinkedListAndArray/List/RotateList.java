@@ -1,9 +1,10 @@
-/* Rotate List
-Given a list, rotate the list to the right by k places, where k is non-negative.
-Example
-Given 1->2->3->4->5 and k = 2, return 4->5->1->2->3.
-*/
-
+/**
+ * Rotate List
+ * Given a list, rotate the list to the right by k places, where k is non-negative.
+ *
+ * Example
+ * Given 1->2->3->4->5 and k = 2, return 4->5->1->2->3.
+ */
 
 /*
   Definition for singly-linked list.
@@ -65,13 +66,12 @@ public class Solution {
 }
 
 
-
-
-/* 变形 Reverse Linked List I
-
-Example
-For linked list 1->2->3, the reversed linked list is 3->2->1
-*/
+/**
+ * 变形 Reverse Linked List I
+ *
+ * Example:
+ * For linked list 1->2->3, the reversed linked list is 3->2->1
+ */
 
 /**
  * Definition for ListNode.
@@ -110,17 +110,18 @@ public class Solution {
 }
 
 
-/* 拓展  Reverse Linked List II
-
-Reverse a linked list from position m to n.
-Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
-
-Example
-Given 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.
-
-Challenge 
-Reverse it in-place and in one-pass
-*/
+/**
+ * 拓展  Reverse Linked List II
+ *
+ * Reverse a linked list from position m to n.
+ * Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
+ *
+ * Example:
+ * Given 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.
+ *
+ * Challenge:
+ * Reverse it in-place and in one-pass
+ */
 
 /**
  * Definition for ListNode
@@ -173,8 +174,3 @@ public class Solution {
         return dummy.next;
     }
 }
-
-
-
-
-

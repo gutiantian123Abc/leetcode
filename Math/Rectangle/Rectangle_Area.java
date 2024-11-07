@@ -1,13 +1,14 @@
-/* Rectangle Area
-https://leetcode.com/problems/rectangle-area/
-
-Find the total area covered by two rectilinear rectangles in a 2D plane.
-
-Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.
-
-Rectangle Area
-Assume that the total area is never beyond the maximum possible value of int.
-*/
+/**
+ * Rectangle Area
+ * https://leetcode.com/problems/rectangle-area/
+ *
+ * Find the total area covered by two rectilinear rectangles in a 2D plane.
+ *
+ * Each rectangle is defined by its bottom left corner and top right corner as shown in the figure.
+ *
+ * Rectangle Area
+ * Assume that the total area is never beyond the maximum possible value of int.
+ */
 //https://leetcode.com/problems/rectangle-area/description/
 class Solution {
     public int computeArea(int ax1, int ay1, int ax2, int ay2, int bx1, int by1, int bx2, int by2) {

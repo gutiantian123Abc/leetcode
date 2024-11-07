@@ -1,12 +1,12 @@
-/*
-Given a collection of intervals, merge all overlapping intervals.
-[                     [
-  [1, 3],               [1, 6],
-  [2, 6],      =>       [8, 10],
-  [8, 10],              [15, 18]
-  [15, 18]            ]
-]
-*/
+/**
+ * Given a collection of intervals, merge all overlapping intervals.
+ *     [                     [
+ *       [1, 3],               [1, 6],
+ *       [2, 6],      =>       [8, 10],
+ *       [8, 10],              [15, 18]
+ *       [15, 18]            ]
+ *     ]
+ */
 
 /**
  * Definition of Interval:

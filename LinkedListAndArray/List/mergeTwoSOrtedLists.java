@@ -1,10 +1,13 @@
-/* Merge Two Sorted Lists
-Merge two sorted (ascending) linked lists and return it as a new sorted list. The new sorted list should be made by splicing together the nodes of the two lists and sorted in ascending order.
-Example
-Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null.
-
-Related Question: Add Two Numbers
-*/
+/**
+ * Merge Two Sorted Lists
+ * Merge two sorted (ascending) linked lists and return it as a new sorted list.
+ * The new sorted list should be made by splicing together the nodes of the two lists and sorted in ascending order.
+ *
+ * Example
+ * Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null.
+ *
+ * Related Question: Add Two Numbers
+ */
 
 /**
  * Definition for ListNode.
@@ -50,19 +53,19 @@ public class Solution {
     }
 }
 
-
-/* 加强版 Merge k Sorted Lists
-Merge k sorted linked lists and return it as one sorted list.
-Analyze and describe its complexity.
-Example
-Given lists:
-[
-  2->4->null,
-  null,
-  -1->null
-],
-return -1->2->4->null.
-*/
+/**
+ * 加强版 Merge k Sorted Lists
+ * Merge k sorted linked lists and return it as one sorted list.
+ * Analyze and describe its complexity.
+ * Example:
+ * Given lists:
+ * [
+ *   2->4->null,
+ *   null,
+ *   -1->null
+ * ],
+ * return -1->2->4->null.
+ */
 
 /**
  * Definition for ListNode.
@@ -120,4 +123,3 @@ public class Solution {
         return dummy.next;
     }
 }
-
