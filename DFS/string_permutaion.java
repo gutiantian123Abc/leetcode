@@ -1,9 +1,10 @@
-/* String Permutation
-Given two strings, write a method to decide if one is a permutation of the other.
-
-Example
-abcd is a permutation of bcad, but abbe is not a permutation of abe
-*/
+/**
+ * String Permutation
+ * Given two strings, write a method to decide if one is a permutation of the other.
+ *
+ * Example:
+ * abcd is a permutation of bcad, but abbe is not a permutation of abe
+ */
 
 public class Solution {
     /*
@@ -33,15 +34,16 @@ public class Solution {
 }
 
 
-/* String Permutation II
-Given a string, find all permutations of it without duplicates.
-
-Example
-Given "abb", return ["abb", "bab", "bba"].
-
-Given "aabb", return ["aabb", "abab", "baba", "bbaa", "abba", "baab"].
-这道题就是permutaions II
-*/
+/**
+ * String Permutation II
+ * Given a string, find all permutations of it without duplicates.
+ *
+ * Example:
+ * Given "abb", return ["abb", "bab", "bba"].
+ *
+ * Given "aabb", return ["aabb", "abab", "baba", "bbaa", "abba", "baab"].
+ * 这道题就是permutaions II
+ */
 public class Solution {
     /*
      * @param str: A string
@@ -74,7 +76,7 @@ public class Solution {
             if ( visited[i] == 1 || ( i != 0 && word[i] == word[i - 1] && visited[i-1] == 0)){
                 continue;
             }
-             /*
+            /*
             上面的判断主要是为了去除重复元素影响。
             比如，给出一个排好序的数组，[1,2,2]，那么第一个2和第二2如果在结果中互换位置，
             我们也认为是同一种方案，所以我们强制要求相同的数字，原来排在前面的，在结果
@@ -89,14 +91,3 @@ public class Solution {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-

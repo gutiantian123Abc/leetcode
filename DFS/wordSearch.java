@@ -1,12 +1,14 @@
-/*WordSearch II
-Given a matrix of lower alphabets and a dictionary.
-Find all words in the dictionary that can be found in the matrix. 
-A word can start from any position in the matrix and go left/right/up/down to the adjacent position. 
-*/
-//http://www.lintcode.com/en/problem/word-search-ii/
+/**
+ * WordSearch II
+ * http://www.lintcode.com/en/problem/word-search-ii/
+ * Given a matrix of lower alphabets and a dictionary.
+ * Find all words in the dictionary that can be found in the matrix.
+ * A word can start from any position in the matrix and go left/right/up/down to the adjacent position.
+ */
 
 //ONly solution！！！！！！:  Tire + DFS 搜索矩阵类字符串
-//知识点： 此种在char matrix 里面用Trie搜索字符串的问题不能用BFS(区别于在Trie里用BFS找word)， 在这里我们是用DFS或BFS配合Trie在matrix里面
+//知识点： 此种在char matrix 里面用Trie搜索字符串的问题不能用BFS(区别于在Trie里用BFS找word)，
+// 在这里我们是用DFS或BFS配合Trie在matrix里面
 //遍历， 而不是用BFS或DFS遍历Trie, 所以只能用DFS+Trie
 
 public class Solution {

@@ -1,21 +1,22 @@
-/* Binary Tree Paths DQ mode (注意看 traverse mode)
-Given a binary tree, return all root-to-leaf paths.
-
-Example
-Given the following binary tree:
-
-   1
- /   \
-2     3
- \
-  5
-All root-to-leaf paths are:
-
-[
-  "1->2->5",
-  "1->3"
-]
-*/
+/**
+ * Binary Tree Paths DQ mode (注意看 traverse mode)
+ * Given a binary tree, return all root-to-leaf paths.
+ *
+ * Example:
+ * Given the following binary tree:
+ *
+ *    1
+ *  /   \
+ * 2     3
+ *  \
+ *   5
+ * All root-to-leaf paths are:
+ *
+ * [
+ *   "1->2->5",
+ *   "1->3"
+ * ]
+ */
 
 /**
  * Definition of TreeNode:

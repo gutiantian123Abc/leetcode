@@ -1,24 +1,24 @@
-/* Subsets
-Given a set of distinct integers, return all possible subsets.
-
-Notice::
-Elements in a subset must be in non-descending order.
-The solution set must not contain duplicate subsets.
-
-Example
-If S = [1,2,3], a solution is:
-[
-  [3],
-  [1],
-  [2],
-  [1,2,3],
-  [1,3],
-  [2,3],
-  [1,2],
-  []
-]
-*/
-
+/**
+ * Subsets
+ * Given a set of distinct integers, return all possible subsets.
+ *
+ * Notice:
+ * Elements in a subset must be in non-descending order.
+ * The solution set must not contain duplicate subsets.
+ *
+ * Example:
+ * If S = [1,2,3], a solution is:
+ * [
+ *   [3],
+ *   [1],
+ *   [2],
+ *   [1,2,3],
+ *   [1,3],
+ *   [2,3],
+ *   [1,2],
+ *   []
+ * ]
+ */
 // 对比 permutations, combinations, catlan combinations
 //SPace and Time: O(2^n)
 class Solution {
@@ -47,12 +47,13 @@ class Solution {
     }
 }
 
-/* Subset II
-Given a collection of integers that might contain duplicates, S, return all possible subsets.
-Note: Elements in a subset must be in non-descending order. The solution set must not contain duplicate subsets. For example, If S = [1,2,2], a solution is:
-[ [2], [1], [1,2,2], [2,2], [1,2], [] ]
-*/
-
+/**
+ * Subset II
+ * Given a collection of integers that might contain duplicates, S, return all possible subsets.
+ * Note: Elements in a subset must be in non-descending order.
+ * The solution set must not contain duplicate subsets. For example, If S = [1,2,2], a solution is:
+ * [ [2], [1], [1,2,2], [2,2], [1,2], [] ]
+ */
 class Solution {
     /**
      * @param nums: A set of numbers.
@@ -88,4 +89,3 @@ class Solution {
         }
     }
 }
-

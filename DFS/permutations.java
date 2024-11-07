@@ -1,18 +1,20 @@
-/* Permutations
-Given a list of numbers, return all possible permutations.
-Notice
-You can assume that there is no duplicate numbers in the list.
-Example:
-For nums = [1,2,3], the permutations are:
-[
-  [1,2,3],
-  [1,3,2],
-  [2,1,3],
-  [2,3,1],
-  [3,1,2],
-  [3,2,1]
-]
-*/
+/**
+ * Permutations
+ * Given a list of numbers, return all possible permutations.
+ * Notice
+ * You can assume that there is no duplicate numbers in the list.
+ *
+ * Example:
+ * For nums = [1,2,3], the permutations are:
+ * [
+ *   [1,2,3],
+ *   [1,3,2],
+ *   [2,1,3],
+ *   [2,3,1],
+ *   [3,1,2],
+ *   [3,2,1]
+ * ]
+ */
 // 对比 subsets, combinations, catlan combinations
 class Solution {
     /**
@@ -46,19 +48,18 @@ class Solution {
 }
 
 
-
-/* Permutations II
-Given a list of numbers with duplicate number in it. Find all unique permutations.
-Example
-For numbers [1,2,2] the unique permutations are:
-
-[
-  [1,2,2],
-  [2,1,2],
-  [2,2,1]
-]
-*/
-
+/**
+ * Permutations II
+ * Given a list of numbers with duplicate number in it. Find all unique permutations.
+ *
+ * Example:
+ * For numbers [1,2,2] the unique permutations are:
+ * [
+ *   [1,2,2],
+ *   [2,1,2],
+ *   [2,2,1]
+ * ]
+ */
 class Solution {
     /**
      * @param nums: A list of integers.

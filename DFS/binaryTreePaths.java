@@ -1,20 +1,23 @@
-/*  Binary Tree Paths // DFS Traversal Mode, see Divide&Qonquer mode in divede and qonquer
-Given a binary tree, return all root-to-leaf paths.
-Example
-Given the following binary tree:
-
-   1
- /   \
-2     3
- \
-  5
-All root-to-leaf paths are:
-
-[
-  "1->2->5",
-  "1->3"
-]
-*/
+/**
+ * Binary Tree Paths
+ * // DFS Traversal Mode, see Divide&Qonquer mode in divede and qonquer
+ * Given a binary tree, return all root-to-leaf paths.
+ *
+ * Example:
+ * Given the following binary tree:
+ *
+ *    1
+ *  /   \
+ * 2     3
+ *  \
+ *   5
+ * All root-to-leaf paths are:
+ *
+ * [
+ *   "1->2->5",
+ *   "1->3"
+ * ]
+ */
 
 //VI: Traditional Version 重复利用ArrayList, 不断加，减， 返回， Backtracking
 /**
@@ -121,5 +124,3 @@ public class Solution {
         }        
     }
 }
-
-
