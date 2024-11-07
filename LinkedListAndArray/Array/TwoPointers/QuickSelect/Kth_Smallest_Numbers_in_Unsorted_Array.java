@@ -1,8 +1,10 @@
-/* Find the kth smallest numbers in an unsorted integer array.
-Example
-Given [3, 4, 1, 2, 5], k = 3, the 3rd smallest numbers are [1, 2, 3].
-Complexity O(n)!!!
-*/
+/**
+ * Find the kth smallest numbers in an unsorted integer array.
+ *
+ * Example
+ * Given [3, 4, 1, 2, 5], k = 3, the 3rd smallest numbers are [1, 2, 3].
+ * Complexity O(n)!!!
+ */
 //经典模板！！！！！
 class Solution {
     /*
@@ -23,12 +25,14 @@ class Solution {
         int i = start, j = end;
         int pivot = nums[start + (end - start) / 2];
         while(i <= j) {
-        	//必须是：nums[i] < pivot， 不能是 nums[i] <= pivot, 对比分区划分Partition Array！！！这里与分区或分数划分不同的原因在于我们最后可以乘return nums[j + 1]的便利
+        	//必须是：nums[i] < pivot， 不能是 nums[i] <= pivot, 对比分区划分Partition Array！！！
+            // 这里与分区或分数划分不同的原因在于我们最后可以乘return nums[j + 1]的便利
             while(i <= j && nums[i] < pivot) {
                 i++;
             }
             
-            //必须是：nums[j] > pivot， 不能是 nums[j] >= pivot, 对比分区划分Partition Array！！！这里与分区或分数划分不同的原因在于我们最后可以乘return nums[j + 1]的便利
+            //必须是：nums[j] > pivot， 不能是 nums[j] >= pivot, 对比分区划分Partition Array！！！
+            // 这里与分区或分数划分不同的原因在于我们最后可以乘return nums[j + 1]的便利
             while(i <= j && nums[j] > pivot) {
                 j--;
             }

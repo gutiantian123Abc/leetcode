@@ -1,13 +1,14 @@
-/* Minimum Size Subarray Sum 
-Given an array of n positive integers and a positive integer s, 
-find the minimal length of a subarray of which the sum ≥ s. 
-If there isn't one, return -1 instead.
-
-Example
-Given the array [2,3,1,2,4,3] and s = 7, 
-the subarray [4,3] has the minimal length under the problem constraint.
-O(2n)
-*/
+/**
+ * Minimum Size Subarray Sum
+ * Given an array of n positive integers and a positive integer s,
+ * find the minimal length of a subarray of which the sum ≥ s.
+ * If there isn't one, return -1 instead.
+ *
+ * Example:
+ * Given the array [2,3,1,2,4,3] and s = 7,
+ * the subarray [4,3] has the minimal length under the problem constraint.
+ * O(2n)
+ */
 
 public class Solution {
     /**
@@ -18,23 +19,23 @@ public class Solution {
     public int minimumSize(int[] nums, int s) {
         // write your code here
 
-        /* 窗口类指针移动模板
-        int j = 0;
-
-        for(int i = 0; i < nums.length; i++) {
-
-        	while(j < nums.length) {
-        		if(满足条件) {
-					j++;
-					更行j状态
-        		}else{
-					break;
-        		}
-        	}
-
-        	更新i状态
-        }
-        */
+        /**
+         * 窗口类指针移动模板
+         *         int j = 0;
+         *
+         *         for(int i = 0; i < nums.length; i++) {
+         *
+         *         	while(j < nums.length) {
+         *         		if(满足条件) {
+         * 					j++;
+         * 					更行j状态
+         *         		                }else{
+         * 					break;
+         *                }            *         	}
+         *
+         *         	更新i状态
+         *         }
+         */
         int sum = 0;
         int ans = Integer.MAX_VALUE;
         int j = 0;

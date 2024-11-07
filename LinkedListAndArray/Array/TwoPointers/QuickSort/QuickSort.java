@@ -1,5 +1,6 @@
-/* Quick Sort
-*/
+/**
+ * Quick Sort
+ */
 
 public class Solution {
     /**

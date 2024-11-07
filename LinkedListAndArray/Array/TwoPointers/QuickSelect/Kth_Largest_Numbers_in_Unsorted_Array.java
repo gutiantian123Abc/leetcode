@@ -1,13 +1,12 @@
-/* Kth Largest Element
-
-Example
-In array [9,3,2,4,8], the 3rd largest element is 4.
-
-In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is 3 and etc.
-
-Challenge 
-O(n) time, O(1) extra memory.
-*/
+/**
+ * Kth Largest Element
+ * Example:
+ * In array [9,3,2,4,8], the 3rd largest element is 4.
+ * In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4, 3rd largest element is 3 and etc.
+ *
+ * Challenge:
+ * O(n) time, O(1) extra memory.
+ */
 
 class Solution {
     /*
@@ -58,7 +57,6 @@ class Solution {
         return nums[j + 1];//此种情况代表 j 和 i 之间存在一个数， 因此选它
     }
     
-
 
     private void swap(int[] nums, int a, int b) {
         int tmp = nums[a];
