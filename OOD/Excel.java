@@ -1,13 +1,14 @@
-/* 这是一道模拟Excel 的题目， 需要implement 
-1. get(x, y)
-2. set(x, y, value)
-3. addRow()
-4. addRow(index)
-5. removeRow(index)
-6. addColumn()
-7. addColumn(index)
-8. removeColume(index)
-*/
+/**
+ * 这是一道模拟Excel 的题目， 需要implement
+ * 1. get(x, y)
+ * 2. set(x, y, value)
+ * 3. addRow()
+ * 4. addRow(index)
+ * 5. removeRow(index)
+ * 6. addColumn()
+ * 7. addColumn(index)
+ * 8. removeColume(index)
+ */
 
 /**
  * Created by xiangtiangu on 12/17/18.
@@ -123,4 +124,3 @@ public class Spreadsheet {
         System.out.println(sheet.toString());
     }
 }
-
