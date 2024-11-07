@@ -1,14 +1,14 @@
-/* Majority Number I
-
-Given an array of integers, 
-the majority number is the number that occurs more than half of the size of the array. Find it.
-
-Example
-Given [1, 1, 1, 1, 2, 2, 2], return 1
-
-Challenge 
-O(n) time and O(1) extra space
-*/
+/**
+ * Majority Number I
+ * Given an array of integers,
+ * the majority number is the number that occurs more than half of the size of the array. Find it.
+ *
+ * Example:
+ * Given [1, 1, 1, 1, 2, 2, 2], return 1
+ *
+ * Challenge:
+ * O(n) time and O(1) extra space
+ */
 
 public class Solution {
     /**
@@ -44,21 +44,17 @@ public class Solution {
 }
 
 
-
-
-
-
-
-/* Majority Number II
-Given an array of integers, the majority number is the number that occurs more than 1/3 of the size of the array.
-Find it.
-
-Example
-Given [1, 2, 1, 2, 1, 3, 3], return 1.
-
-Challenge 
-O(n) time and O(1) extra space.
-*/
+/**
+ * Majority Number II
+ * Given an array of integers, the majority number is the number that occurs more than 1/3 of the size of the array.
+ * Find it.
+ *
+ * Example:
+ * Given [1, 2, 1, 2, 1, 3, 3], return 1.
+ *
+ * Challenge:
+ * O(n) time and O(1) extra space.
+ */
 
 public class Solution {
     /**
@@ -102,7 +98,7 @@ public class Solution {
     }
 }
 
-
-/* 总结：
-例如找出 1/k majority numbers 的问题， 可以设置 k-1 个candidate
-*/
+/**
+ * 总结：
+ * 例如找出 1/k majority numbers 的问题， 可以设置 k-1 个candidate
+ */

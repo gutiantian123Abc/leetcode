@@ -1,8 +1,9 @@
-/* Sentence Screen Fitting: https://www.lintcode.com/problem/sentence-screen-fitting/description
+/* Sentence Screen Fitting
+https://www.lintcode.com/problem/sentence-screen-fitting/description
 Given a rows x cols screen and a sentence represented by a list of non-empty words, 
 find how many times the given sentence can be fitted on the screen.
 
-Example
+Example 1:
 Given rows = 2, cols = 8, sentence = ["hello", "world"], retrun 1.
 
 Explanation:
@@ -10,16 +11,20 @@ hello---
 world---
 
 The character '-' signifies an empty space on the screen.
-Given rows = 3, cols = 6, sentence = ["a", "bcd", "e"], return 2.
 
+
+Example 2:
+Given rows = 3, cols = 6, sentence = ["a", "bcd", "e"], return 2.
 Explanation:
 a-bcd- 
 e-a---
 bcd-e-
 
 The character '-' signifies an empty space on the screen.
-Given rows = 4, cols = 5, sentence = ["I", "had", "apple", "pie"], return 1.
 
+
+Example 3:
+Given rows = 4, cols = 5, sentence = ["I", "had", "apple", "pie"], return 1.
 Explanation:
 I-had
 apple
@@ -27,7 +32,8 @@ pie-I
 had--
 
 The character '-' signifies an empty space on the screen.
-Notice
+
+Notice:
 A word cannot be split into two lines.
 The order of words in the sentence must remain unchanged.
 Two consecutive words in a line must be separated by a single space.
