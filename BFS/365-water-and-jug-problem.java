@@ -36,6 +36,9 @@
  * Constraints:
  *
  * 1 <= jug1Capacity, jug2Capacity, targetCapacity <= 106
+ *
+ *
+ * Added test comment for AI to check
  */
 
 class Solution {
